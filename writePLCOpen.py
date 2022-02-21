@@ -1,4 +1,4 @@
-from parsePNML_dev import ET, getET, Net, Page, Place, Transition, Arc, runPNMLParse
+from parsePNML import ET, getET, Net, Page, Place, Transition, Arc, runPNMLParse
 
 class POU:
 

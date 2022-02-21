@@ -1,5 +1,5 @@
 
-from parsePNML_dev import Place, Arc, parsePNML, runPNMLParse
+from parsePNML import Place, Arc, parsePNML, runPNMLParse
 
 
 def main():
