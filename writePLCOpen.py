@@ -232,6 +232,7 @@ def writePLCOpen():
         POxml.SubElement(sfcsetflags, "SFCErrorAnalyzation", {"Declare":"true", "Use":"false"})
         POxml.SubElement(sfcsetflags, "SFCErrorAnalyzationTable", {"Declare":"true", "Use":"false"})
         POxml.SubElement(sfcsetflags, "CurrentSteps", {"Declare":"true", "Use":"false"})
+        
                
                 
         
