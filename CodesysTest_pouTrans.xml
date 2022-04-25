@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://www.plcopen.org/xml/tc6_0200">
+  <fileHeader companyName="" productName="CODESYS" productVersion="CODESYS V3.5 SP17 Patch 3" creationDateTime="2022-04-24T22:05:35.9296647" />
+  <contentHeader name="CodesysTest_empty.project" modificationDateTime="2022-04-23T22:33:03.5422534">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="1" y="1" />
+      </fbd>
+      <ld>
+        <scaling x="1" y="1" />
+      </ld>
+      <sfc>
+        <scaling x="1" y="1" />
+      </sfc>
+    </coordinateInfo>
+    <addData>
+      <data name="http://www.3s-software.com/plcopenxml/projectinformation" handleUnknown="implementation">
+        <ProjectInformation />
+      </data>
+    </addData>
+  </contentHeader>
+  <types>
+    <dataTypes />
+    <pous>
+      <pou name="POU" pouType="program">
+        <interface />
+        <transitions>
+          <transition name="TRANS">
+            <body>
+              <ST>
+                <xhtml xmlns="http://www.w3.org/1999/xhtml">gvl.tr0</xhtml>
+              </ST>
+            </body>
+            <addData>
+              <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                <ObjectId>ec44b17c-3369-488b-952c-25272e9926ff</ObjectId>
+              </data>
+            </addData>
+          </transition>
+        </transitions>
+        <body>
+          <ST>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+          </ST>
+        </body>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>7ff25311-21af-42ff-9cae-da0ddc5b5cdf</ObjectId>
+          </data>
+        </addData>
+      </pou>
+    </pous>
+  </types>
+  <instances>
+    <configurations />
+  </instances>
+  <addData>
+    <data name="http://www.3s-software.com/plcopenxml/projectstructure" handleUnknown="discard">
+      <ProjectStructure>
+        <Object Name="POU" ObjectId="7ff25311-21af-42ff-9cae-da0ddc5b5cdf">
+          <Object Name="TRANS" ObjectId="ec44b17c-3369-488b-952c-25272e9926ff" />
+        </Object>
+      </ProjectStructure>
+    </data>
+  </addData>
+</project>

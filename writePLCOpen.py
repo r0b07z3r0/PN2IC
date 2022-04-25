@@ -233,11 +233,31 @@ def writePLCOpen():
         POxml.SubElement(sfcsetflags, "SFCErrorAnalyzationTable", {"Declare":"true", "Use":"false"})
         POxml.SubElement(sfcsetflags, "CurrentSteps", {"Declare":"true", "Use":"false"})
         
-               
-                
+     #POU Transition          
+    datatrans = POxml.SubElement(adresource, "data", {"name":"http://www.3s-software.com/plcopenxml/pou",
+                                                        "handleUnknown":"implementation"})
+    poutrans = POxml.SubElement(datatrans, "pou", {"name":"transitions", "pouType":"program"})
         
-        
-            
+    POxml.SubElement(poutrans, "interface")            
+    
+    trans = POxml.SubElement(poutrans, "transitions")
+    
+    for tr in transitions:
+        transst = POxml.SubElement(POxml.SubElement(POxml.SubElement(trans, "transition",{"name":"t1"}),
+                                                           "body"), "ST")
+        #trigger of in ST of transitions
+        POxml.SubElement(transst, "xhtml",{"xmlns":"http://www.w3.org/1999/xhtml"}).text = "gvl.tr1"
+    
+    POxml.SubElement(POxml.SubElement(POxml.SubElement(poutrans, "body"), "ST"), "xhtml",
+    {"xmlns":"http://www.w3.org/1999/xhtml"})
+    
+    
+    
+    
+    
+    
+    
+    
     POxml.indent(plcopen, " ", 0)
     ET.ElementTree(plcopen).write("PLCopen_writer.xml")
 
