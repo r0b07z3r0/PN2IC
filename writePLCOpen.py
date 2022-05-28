@@ -1,5 +1,5 @@
 import time
-from parsePNML import ET, getET, Net, Page, Place, Transition, Arc, runPNMLParse
+from parsePNML import ET, getET, Net, Page, Place, Transition, Arc, parsePNML, runPNMLParse
 import xml.etree.ElementTree as POxml
 import re
 
@@ -10,6 +10,8 @@ class POU:
     objectId: str
     name: str
     lang: str
+    
+    flowSequence = []
 
     instances: set
     instances = set()
@@ -17,9 +19,9 @@ class POU:
     pouInstances = []
     listPOUName = []
     
-    def __init__(self, oid):
-        self.objectId = oid
-        POU.pouInstances.append(self.objectId)
+    def __init__(self, name):
+        self.name = name
+        POU.pouInstances.append(self.name)
     
     def setPOUName(self, name):
         self.name = name
@@ -30,16 +32,92 @@ class POU:
     @classmethod
     def print_instances(cls):
         for instance in cls.instances:
-            print('ID: ' + instance.obkectId)
+            print('ID: ' + instance.objectId)
             print('Name: ' + instance.name)
             
 class Steps:
     
     POUname: str
+    id: str
     localID: str
     initialStep: str
     name: str
+    connectionPointInRefId: str
+    hasJump: bool
     
+    transitions: list
+    
+    instances: set
+    instances = set()
+    
+    stepsInstances = []
+    listStepsName = []
+    
+    
+    def __init__(self, id):
+        self.id = id
+        Steps.instances.add(self)
+        Steps.stepsInstances.append(self.id)
+    
+    def setStepsName(self, name):
+        self.name = name
+        Steps.instances.add(self)
+        Steps.listStepsName.append(self.name)
+        
+    def setStepsPOU(self, pou):
+        self.POUname = pou
+        
+    def setStepsInitialMark(self, initialStep):
+        self.initialStep = initialStep
+
+    @classmethod
+    def print_instances(cls):
+        for instance in cls.instances:
+            print('ID: ' + instance.id)
+            print('POU: ' + instance.POUname)
+            print('InitialStep: ' + instance.initialStep)
+
+class SFCtransition:
+    
+    POUname: str
+    name: str
+    localID: str
+    connectionPointInRefId: str
+    condition: str
+
+class InVariable:
+    
+    POUname: str
+    localID: str
+    connectionPointOut: str
+    preStepID: str
+    preStepName: str
+    posTransitionID: str
+        
+def tlookup(p1, p2):
+    print("tlookup")
+    p1id = Place.getID(p1)
+    p2id = Place.getID(p2)
+    p1trlist = []
+    p2trlist = []
+    arcp1list = []
+    arcp2list = []
+    trlist = []
+    
+    p1trlist = Arc.getTSuc(p1id)
+    p2trlist = Arc.getTPre(p2id)    
+    
+    print("getTsuc: " + p1)
+    print(p1trlist)
+    print("getTpre: " + p2)
+    print(p2trlist)
+    
+    for p1tr in p1trlist:
+        for p2tr in p2trlist:
+            if p1tr == p2tr:
+                trlist.append(p1tr)
+    
+    return trlist
     
     
 def defineFlows():
@@ -47,11 +125,11 @@ def defineFlows():
     
     #The file must be inputed by user on app GUI
     #A pop-up must ask for the struct file
-    file = open('pequenaFabricaInterpretada_wAUTONET-struct.txt')
+    file = open('WRITER-struct.txt')
     lines = file.readlines()
     file.close()
-    for line in lines:
-        print('line index:'+ str(lines.index(line)) + ' line:' + line)
+    #for line in lines:
+    #    print('line index:'+ str(lines.index(line)) + ' line:' + line)
     
     psemiflowindex = lines.index('P-SEMI-FLOWS GENERATING SET ------------------------------------- \n')
     tsemiflowindex = lines.index('T-SEMI-FLOWS GENERATING SET ------------------------------------- \n')
@@ -60,25 +138,91 @@ def defineFlows():
     
     flowslines = lines[psemiflowindex+4:tsemiflowindex-3]
     
-    testflow = 'p0 p1 {p lugar} {p3 place} p4 (1)\n'
+    #testflow = 'p0 p1 {p lugar} {p3 place} p4 (1)\n'
     
-    flowslines.append(testflow)
+    #flowslines.append(testflow)
     
     print(flowslines)
     
     
     for flows in flowslines:
+               
         flows = re.sub('(\{)(.*?)\s(.*?)(\})', r'\2_\3', flows)
         flows = re.sub('\(.*?\n+', '', flows)
         flows = flows.strip()
         flowlist.append(flows.split(' '))
- 
-    print(flowlist)
+        
+        
+
+        
+    print("Flowlist: " + str(flowlist))
     
     
 def definePOUs():
     print('Defining POUs')
+    #print(flowlist)
     
+    flowscount = 1
+    
+    for flow in flowlist:
+        pouname = "flow_" + str(flowscount)
+        print(pouname)
+        print(flow)
+        globals()[pouname] = POU(pouname)
+        flowAux = flow.copy()
+        flowSequence = []
+        inVarSequence = []
+        
+        for place in flow:
+            print("place: " + str(place))
+            print("initialMark of " + place + " is " + Place.getInitialMark(place))
+            #define steps
+            placeId = pouname + "_" + place
+            globals()[placeId] = Steps(placeId)
+            globals()[placeId].setStepsPOU(pouname)
+            globals()[placeId].setStepsInitialMark(Place.getInitialMark(place))
+            if Place.getInitialMark(place) == "1":
+               flowSequence.append(place)
+               flowAux.remove(place)
+            
+                        
+            #define invariables
+        print("teste: " + str(flow))
+        #define Transitions
+        trlist = []
+        flowindex = 0
+        seq = 0
+        print("printFlow:" + str(flow))
+        
+        while len(flowAux) > 0:
+            print("flowAux: " + str(flowAux))
+            print("seq: " + str(seq))
+            trlist = tlookup(flowSequence[flowindex], flowAux[seq])
+            if len(trlist) > 0:
+                flowSequence.append(flowAux[seq])
+                flowAux.remove(flowAux[seq])
+                inVarSequence.append(trlist)
+                seq = 0
+                flowindex+=1
+            else:
+                seq+=1
+       
+        print("Original Flow: ")
+        print(flow)
+        print("Flow Sequence: " + str(flowSequence))
+        print("inVarSeq: " + str(inVarSequence))
+
+        
+        flowscount+=1
+    
+    #print("Print Steps")
+    #Steps.print_instances()
+        
+    #arcos = Arc.getTPre(Place.getID(flowlist[0][0]))
+    #transicao = Transition.getName(arcos[0])
+    #print(arcos[0] + ":" + transicao)
+    #trlist = tlookup(flowlist[0][0],flowlist[0][1])
+    #print(trlist)
     
     
 def writePLCOpen():
@@ -265,9 +409,11 @@ def writePLCOpen():
 
 def main():
     
+    writerpnml = open("WRITER.pnml")
+    parsePNML(writerpnml)
     defineFlows()
     definePOUs()
-    writePLCOpen()
+    #writePLCOpen()
     
 if __name__ == "__main__":
     main()

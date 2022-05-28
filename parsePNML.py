@@ -148,7 +148,7 @@ class Place:
     @classmethod
     def getInitialMark(cls, name):
         for instance in cls.instances:
-            print(instance.name)
+            #print(instance.name)
             if instance.name == name:
                 return instance.initial_mark       
 
@@ -206,7 +206,11 @@ class Transition:
             print('Label Graph: ' + instance.label_graph_x + " , " + instance.label_graph_y)
             print('Transition Pos: ' + instance.position_x + " , " + instance.position_y)
 
-
+    @classmethod
+    def getName(cls, id):
+        for instance in cls.instances:
+            if instance.id == id:
+                return instance.name
 class Arc:
     
     id: str
@@ -260,11 +264,11 @@ class Arc:
             print('Has Transition as Target: ' + str(instance.hasTransitionAsTarget))
 
     @classmethod
-    def getTPre(cls, Pid):
+    def getTPre(cls, id):
         listTPre = []
-        print("Getting TPre")
+        #print("Getting TPre")
         for instance in cls.instances:
-            if instance.target == Pid:
+            if instance.target == id:
                 listTPre.append(instance.source)
         return listTPre
    
@@ -452,24 +456,24 @@ def main():
     #parsePNML('pequenaFabricaInterpretada.pnml')
     #parsePNML('2WayManufacturing.pnml')
     print("__PRINT_PLACES_START__")
-    print(len(Place.placesInstances))
+    #print(len(Place.placesInstances))
     
-    Place.print_instances()
-    print("__PRINT_PLACES_END__")
+    #Place.print_instances()
+    #print("__PRINT_PLACES_END__")
     
-    print("\n__PRINT_TRANSITION_START__")
-    print(len(Transition.transitionInstances))
+    #print("\n__PRINT_TRANSITION_START__")
+    #print(len(Transition.transitionInstances))
     
-    Transition.print_instances()
-    print("__PRINT_TRANSITION_END__")
+    #Transition.print_instances()
+    #print("__PRINT_TRANSITION_END__")
     
-    print("\n__PRINT_ARC_START__")
-    print(len(Arc.arcInstances))
+    #print("\n__PRINT_ARC_START__")
+    #print(len(Arc.arcInstances))
     
-    Arc.print_instances()
-    print("__PRINT_ARC_END__")
+    #Arc.print_instances()
+    #print("__PRINT_ARC_END__")
     
-    print(Place.listPlace())
+    #print(Place.listPlace())
     
 if __name__ == "__main__":
     main()
