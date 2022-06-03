@@ -11,8 +11,8 @@ class POU:
     name: str
     lang: str
     
-    flowSequence = []
-
+    #flowSequence : []
+    trSequence = []
     instances: set
     instances = set()
     
@@ -21,13 +21,27 @@ class POU:
     
     def __init__(self, name):
         self.name = name
+        self.stepSequence = []
+        self.transitionSequence = []
+        self.flowSequence = []
         POU.pouInstances.append(self.name)
+        POU.instances.add(self)
     
     def setPOUName(self, name):
         self.name = name
-        POU.instances.add(self)
-        POU.listPOUName.append(self.name)
         
+        POU.listPOUName.append(self.name)
+    
+    def setStepSequence(self, placeSeq):
+        self.stepSequence = placeSeq
+    
+    def setTrSequence(self, trseq):
+        self.transitionSequence = trseq
+    
+    def setFlowSequence(self, flowseq):
+        self.flowSequence = flowseq
+    
+    
           
     @classmethod
     def print_instances(cls):
@@ -166,12 +180,15 @@ def definePOUs():
     
     for flow in flowlist:
         pouname = "flow_" + str(flowscount)
+        print('POU Name:')
         print(pouname)
+        print("Places in " + pouname)
         print(flow)
         globals()[pouname] = POU(pouname)
         flowAux = flow.copy()
+        placeSequence = []
         flowSequence = []
-        inVarSequence = []
+        trSequence = []
         
         for place in flow:
             print("place: " + str(place))
@@ -182,7 +199,7 @@ def definePOUs():
             globals()[placeId].setStepsPOU(pouname)
             globals()[placeId].setStepsInitialMark(Place.getInitialMark(place))
             if Place.getInitialMark(place) == "1":
-               flowSequence.append(place)
+               placeSequence.append(place)
                flowAux.remove(place)
             
                         
@@ -190,27 +207,40 @@ def definePOUs():
         print("teste: " + str(flow))
         #define Transitions
         trlist = []
-        flowindex = 0
+        placeIndex = 0
         seq = 0
         print("printFlow:" + str(flow))
         
         while len(flowAux) > 0:
             print("flowAux: " + str(flowAux))
             print("seq: " + str(seq))
-            trlist = tlookup(flowSequence[flowindex], flowAux[seq])
+            trlist = tlookup(placeSequence[placeIndex], flowAux[seq])
+            print("trlist:")
+            print(trlist)
             if len(trlist) > 0:
-                flowSequence.append(flowAux[seq])
+                placeSequence.append(flowAux[seq])
                 flowAux.remove(flowAux[seq])
-                inVarSequence.append(trlist)
+                trSequence.append(trlist)
                 seq = 0
-                flowindex+=1
+                placeIndex+=1
             else:
                 seq+=1
-       
+        trlist = tlookup(placeSequence[len(placeSequence)-1], placeSequence[0])
+        trSequence.append(trlist)
+        globals()[pouname].setStepSequence(placeSequence)
+        globals()[pouname].setTrSequence(trSequence)
+        
+        for i in range(len(placeSequence)):
+            flowSequence.append(placeSequence[i])
+            flowSequence.append(trSequence[i])
+        
+        globals()[pouname].setFlowSequence(flowSequence)
+        
         print("Original Flow: ")
         print(flow)
-        print("Flow Sequence: " + str(flowSequence))
-        print("inVarSeq: " + str(inVarSequence))
+        print("Place Sequence: " + str(placeSequence))
+        print("Tr Sequence: " + str(trSequence))
+        
 
         
         flowscount+=1
@@ -267,9 +297,9 @@ def writePLCOpen():
     potask = POxml.SubElement(poresource, "task",{"name":"MainTask", "interval":"PT0.02S", "priority":"1"})
     
     flowcount = 1
-    for flow in flowlist:
+    for flow in POU.instances:
         print(flow)
-        pouInstance = POxml.SubElement(potask, "pouInstance", {"name":"flow"+str(flowcount),
+        pouInstance = POxml.SubElement(potask, "pouInstance", {"name": flow.name,
                                                                "typeName":""})
         POxml.SubElement(POxml.SubElement(pouInstance, "documentation"),
                          "xhtml", {"xmlns":"http://www.w3.org/1999/xhtml"})
@@ -286,7 +316,8 @@ def writePLCOpen():
     globalVars = POxml.SubElement(poresource, "globalVars", {"name":"GVL"})
     
     #for transition in transition.instances:
-    POxml.SubElement(POxml.SubElement(POxml.SubElement(globalVars, "variable", {"name":"tr0"}), "type"), "BOOL")
+    for transition in Transition.instances:
+        POxml.SubElement(POxml.SubElement(POxml.SubElement(globalVars, "variable", {"name":transition.name}), "type"), "BOOL")
         
     
     adresource = POxml.SubElement(poresource, "addData")
@@ -294,11 +325,11 @@ def writePLCOpen():
     #for each sfc in flowlist + 1 sfc for transition declaration
     
     flowcount = 1
-    for flow in flowlist:
+    for flow in POU.instances:
         poudata = POxml.SubElement(adresource, "data", {"name":"http://www.3s-software.com/plcopenxml/pou",
                                                         "handleUnknown":"implementation"})
         
-        pousfc = POxml.SubElement(poudata, "pou", {"name":"flow"+str(flowcount),
+        pousfc = POxml.SubElement(poudata, "pou", {"name":flow.name,
                                                                                       "pouType":"program"})
         
         pouinterface = POxml.SubElement(pousfc, "interface")
@@ -307,7 +338,7 @@ def writePLCOpen():
 
         localid = 0
         
-        for step in flow:
+        for step in flow.stepSequence:
             sfcstep = POxml.SubElement(sfcbody, "step", {"localId":str(localid), "name":step})
             POxml.SubElement(sfcstep, "position", {"x":"0", "y":"0"})
             stepconnectionPointIn = POxml.SubElement(sfcstep, "connectionPointIn")
@@ -318,10 +349,40 @@ def writePLCOpen():
                                               {"name":"http://www.3s-software.com/plcopenxml/sfc/element",
                                                "handleUnknown":"implementation"}),
                              "attributes", {"xmlns":""})
-            
+        
+        
+        #Check for parallel transitions
+        
+        selDiv = POxml.SubElement(sfcbody,"selectionDivergence", {"localId":"1"})
+        POxml.SubElement(selDiv, "position", {"x":"0", "y":"0"})
+        selDivconnectionPointIn = POxml.SubElement(selDiv, "connectionPointIn")
+        #refLocalId in connectionPointIn points to previous step
+        POxml.SubElement(selDivconnectionPointIn, "connection", {"refLocalId":"2"})
+        #Repeat connectionPointOut for each transition in parallel
+        POxml.SubElement(selDiv, "connectionPointOut", {"formalParameter":"sfc"})
+        POxml.SubElement(selDiv, "connectionPointOut", {"formalParameter":"sfc"})
+        
+        POxml.SubElement(POxml.SubElement(POxml.SubElement(selDiv, "addData"), "data",
+                                              {"name":"http://www.3s-software.com/plcopenxml/sfc/element",
+                                               "handleUnknown":"implementation"}),
+                             "attributes", {"xmlns":""})
+        
+        
+        selConv = POxml.SubElement(sfcbody,"selectionDivergence", {"localId":"1"})
+        POxml.SubElement(selConv, "position", {"x":"0", "y":"0"})
+        #Loop connectionPointIn for each transition in parallel
+        selConvconnectionPointIn = POxml.SubElement(selConv, "connectionPointIn")
+        #refLocalId in connectionPointIn points to previous transition
+        POxml.SubElement(selConvconnectionPointIn, "connection", {"refLocalId":"2"})
+        
+        POxml.SubElement(selConv, "connectionPointOut", {"formalParameter":"sfc"})
+        
+        
+           
         #inVariable are like arches in PN
-        inVariables = [1,2]
-        for inVariable in inVariables:
+        #inVariables = [1,2]
+        
+        for inVariable in flow.transitionSequence:
             invar = POxml.SubElement(sfcbody, "inVariable", {"localId":"4"})
             POxml.SubElement(invar, "position", {"x":"0", "y":"0"})
             invarconnectionPointOut = POxml.SubElement(invar, "connectionPointOut")
@@ -413,7 +474,21 @@ def main():
     parsePNML(writerpnml)
     defineFlows()
     definePOUs()
-    #writePLCOpen()
+    writePLCOpen()
+    
+    print("Checking POUs:")
+    print("Total Number of POUs:")
+    print(len(POU.instances))
+    for pous in POU.instances:
+        print("POU Name:")
+        print(pous.name)
+        print("Step Sequence:")
+        print(pous.stepSequence)
+        print("Tr Sequence:")
+        print(pous.transitionSequence)
+        print("Flow Sequence:")
+        print(pous.flowSequence)
+        
     
 if __name__ == "__main__":
     main()
