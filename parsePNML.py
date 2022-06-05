@@ -170,7 +170,8 @@ class Transition:
     transitionInstances = []
     
     def __init__(self, id):
-        self.id = id.attrib['id']
+        print("=====================Transition IDs :" + id)
+        self.id = id
         Transition.transitionInstances.append(self.id)
     
     def setTransitionName(self, name):
@@ -383,7 +384,7 @@ def parsePNML(pnmlfile):
                               + "transition"):
         # TRANSITION ELEMENTS: ID; NAME; NAME_GRAPHICS; LABEL; LABEL_GRAPHICS; TRANSITION_POSITION
         print("Transition ID: " + str(transition_elements.attrib))
-        globals()[transition_elements.attrib['id']] = Transition(transition_elements)
+        globals()[transition_elements.attrib['id']] = Transition(transition_elements.attrib['id'])
         
        
         for name_elements in transition_elements.iter("{http://www.pnml.org/version-2009/grammar/pnml}"

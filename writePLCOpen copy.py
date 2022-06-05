@@ -1,5 +1,3 @@
-from telnetlib import theNULL
-from threading import local
 import time
 from parsePNML import ET, getET, Net, Page, Place, Transition, Arc, parsePNML, runPNMLParse
 import xml.etree.ElementTree as POxml
@@ -77,7 +75,7 @@ class Steps:
     
     def setStepsName(self, name):
         self.name = name
-        #Steps.instances.add(self)
+        Steps.instances.add(self)
         Steps.listStepsName.append(self.name)
         
     def setStepsPOU(self, pou):
@@ -86,26 +84,12 @@ class Steps:
     def setStepsInitialMark(self, initialStep):
         self.initialStep = initialStep
 
-    def setStepsLocalID(self, localID):
-        self.localID = localID
-        
-    def setStepsConnPointIn(self, connPointIn):
-        self.connectionPointInRefId = connPointIn
-    
-    @classmethod
-    def getStepLocalID(cls, id):
-        for instance in cls.instances:
-            if instance.id == id:
-                return instance.localID
-            
     @classmethod
     def print_instances(cls):
         for instance in cls.instances:
             print('ID: ' + instance.id)
-            print('Name: ' + instance.name)
+            print('POU: ' + instance.POUname)
             print('InitialStep: ' + instance.initialStep)
-            print("LocalID:" + instance.localID)
-            
 
 class SFCtransition:
     
@@ -115,83 +99,14 @@ class SFCtransition:
     connectionPointInRefId: str
     condition: str
 
-    def __init__(self, name):
-        self.name = name
-    
-    def setPOUname(self, pouname):
-        self.POUname = pouname
-        
-    def setLocalID(self, localID):
-        self.localID = localID
-        
-    def setConnPointIn(self, connPointIn):
-        self.connectionPointInRefId = connPointIn
-        
-    def setCondition(self, condition):
-        self.condition = condition
-        
-        
 class InVariable:
     
     POUname: str
     localID: str
-    name: str
-    expression: str
-    
-    def __init__(self, name):
-        self.name = name
-    
-    def setPOUname(self, pouname):
-        self.POUname = pouname
-        
-    def setLocalID(self, localID):
-        self.localID = localID
-        
-    def setExpression(self, expression):
-        self.expression = expression
-    
-class SelectDiverg:
-    
-    POUname: str
-    name: str
-    localID: str
-    connectionPointInRefId: str
-    connectionPointOutQty: int
-    
-    def __init__(self, name):
-        self.name = name
-    
-    def setPOUname(self, pouname):
-        self.POUname = pouname
-        
-    def setLocalID(self, localID):
-        self.localID = localID
-               
-    def setConnPointIn(self, connPointIn):
-        self.connPointIn = connPointIn
-        
-    def setConnPointOutQty(self, connOutQty):
-        self.connectionPointOutQty = connOutQty
-    
-class SelectConverg:
-    
-    POUname: str
-    localID: str
-    connectionPointInRefId: str
-    connectionPointOutRedId: str
-    
-    def __init__(self, name):
-        self.name = name
-        self.connPointIn = []
-        
-    def setPOUname(self, pouname):
-        self.POUname = pouname
-        
-    def setLocalID(self, localID):
-        self.localID = localID
-        
-    def setConnPointIn(self, connPointIn):
-        self.connPointIn.append(connPointIn)
+    connectionPointOut: str
+    preStepID: str
+    preStepName: str
+    posTransitionID: str
         
 def tlookup(p1, p2):
     print("tlookup")
@@ -282,7 +197,6 @@ def definePOUs():
             placeId = pouname + "_" + place
             globals()[placeId] = Steps(placeId)
             globals()[placeId].setStepsPOU(pouname)
-            globals()[placeId].setStepsName(place)
             globals()[placeId].setStepsInitialMark(Place.getInitialMark(place))
             if Place.getInitialMark(place) == "1":
                placeSequence.append(place)
@@ -326,122 +240,7 @@ def definePOUs():
         print(flow)
         print("Place Sequence: " + str(placeSequence))
         print("Tr Sequence: " + str(trSequence))
-        print("Flow Sequence: " + str(flowSequence))
         
-        #Complete Steps definition and ...
-        #Selection Divergences, InVariables, Transitions, Selection Convergences and Jump Steps
-        flowElements = []
-        
-        isStep = True
-        localID = 0
-        print("~~~~~~~~~~DEFINING ELEMENTS~~~~~~~~~~")
-        for elements in flowSequence:
-            print("isStep:" + str(isStep)) 
-            if isStep:
-                if flowSequence.index(elements) == 0:
-                    print("Defining Initial Step")
-                    placeId = pouname + "_" + elements
-                    #print("POU name: " + pouname)
-                    #print("Element Name: " + elements)
-                    #print("-----------------------: " + placeId)
-                    #print("localID: " + str(localID))
-                    globals()[placeId].setStepsLocalID(str(localID))
-                    flowElements.append("initialStep_" + str(localID))
-                    #print(Steps.getStepLocalID(placeId))
-                    localID =+1
-                else:
-                    print("Defining Normal Step")
-                    
-                    placeId = pouname + "_" + elements
-                    #print("POU name: " + pouname)
-                    #print("Element Name: " + elements)
-                    #print("-----------------------: " + placeId)
-                    #print("localID: " + str(localID))
-                    globals()[placeId].setStepsLocalID(str(localID))
-                    flowElements.append("Step_" + str(localID))
-                    #print(Steps.getStepLocalID(placeId))
-                    localID =+1
-            else:
-                if len(elements) > 1:
-                    print("Transition in parallel detected")
-                    #More than 1 transition needs a select Divergence to make it parallel
-                    print(elements)
-                    selDivName = pouname + "_selectDiverg_" + str(flowSequence.index(elements))
-                    flowElements.append("SelectDiverg_"+str(localID))
-                    globals()[selDivName] = SelectDiverg(selDivName)
-                    globals()[selDivName].setPOUname(pouname)
-                    globals()[selDivName].setLocalID(str(localID))
-                    globals()[selDivName].setConnPointIn(str(localID-1))
-                    
-                    localID =+1
-                    
-                    for transition in elements:
-                        print("Defining transitions in parallel")
-                        #InVariables
-                        inVarName = pouname + "_inVar_" + str(localID)
-                        globals()[inVarName] = InVariable(inVarName)
-                        globals()[inVarName].setPOUname(pouname)
-                        globals()[inVarName].setLocalID(str(localID))
-                        globals()[inVarName].setExpression("transitions." + Transition.getName(transition))
-                        flowElements.append("inVar_" + str(localID))
-                        
-                        
-                        localID =+1
-                        
-                        trname = pouname + "_" + Transition.getName(transition) + "_" + str(flowSequence.index(elements))
-                        flowElements.append("transition_" + str(localID))
-                        globals()[trname] = SFCtransition(trname)
-                        globals()[trname].setPOUname(pouname)
-                        globals()[trname].setLocalID(str(localID))
-                        globals()[trname].setConnPointIn(globals()[selDivName].localID)
-                        globals()[trname].setCondition(str(localID-1))
-                        
-                        localID =+1
-                        
-                    #Defining Select Convergence
-                    selConvName = pouname + "_selectConverg_" + str(flowSequence.index(elements))
-                    flowElements.append("SelectConverg_"+str(localID))
-                    globals()[selConvName] = SelectConverg(selConvName)
-                    globals()[selConvName].setPOUname(pouname)
-                    globals()[selConvName].setLocalID(str(localID))
-                    for transition in elements:
-                        trname = pouname + "_" + Transition.getName(transition) + "_" + str(flowSequence.index(elements))
-                        globals()[selConvName].setConnPointIn(trname)
-                    
-                    localID =+1
-                
-                else:
-                    transition = elements[0]
-                    print("Defining simple transitions")
-                    #InVariables
-                    inVarName = pouname + "_inVar_" + str(localID)
-                    globals()[inVarName] = InVariable(inVarName)
-                    globals()[inVarName].setPOUname(pouname)
-                    globals()[inVarName].setLocalID(str(localID))
-                    globals()[inVarName].setExpression("transitions." + Transition.getName(transition))
-                    flowElements.append("inVar_" + str(localID))
-                    
-                    
-                    localID =+1
-                    
-                    trname = pouname + "_" + Transition.getName(transition) + "_" + str(localID)
-                    flowElements.append("transition_" + str(localID))
-                    globals()[trname] = SFCtransition(trname)
-                    globals()[trname].setPOUname(pouname)
-                    globals()[trname].setLocalID(str(localID))
-                    globals()[trname].setConnPointIn(globals()[selDivName].localID)
-                    globals()[trname].setCondition(str(localID-1))
-                    
-                    localID =+1
-                    
-                    
-            if isStep:
-                isStep = False
-            else:
-                isStep = True
-                    
-            
-            
 
         
         flowscount+=1
@@ -675,7 +474,7 @@ def main():
     parsePNML(writerpnml)
     defineFlows()
     definePOUs()
-    #writePLCOpen()
+    writePLCOpen()
     
     print("Checking POUs:")
     print("Total Number of POUs:")
@@ -690,8 +489,6 @@ def main():
         print("Flow Sequence:")
         print(pous.flowSequence)
         
-    Steps.print_instances()
-    
     
 if __name__ == "__main__":
     main()
