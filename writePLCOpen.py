@@ -1,6 +1,7 @@
 from telnetlib import theNULL
 from threading import local
 import time
+from tokenize import String
 from parsePNML import ET, getET, Net, Page, Place, Transition, Arc, parsePNML, runPNMLParse
 import xml.etree.ElementTree as POxml
 import re
@@ -26,6 +27,7 @@ class POU:
         self.stepSequence = []
         self.transitionSequence = []
         self.flowSequence = []
+        self.flowElements = []
         POU.pouInstances.append(self.name)
         POU.instances.add(self)
     
@@ -43,6 +45,8 @@ class POU:
     def setFlowSequence(self, flowseq):
         self.flowSequence = flowseq
     
+    def setFlowElements(self, flowelem):
+        self.flowElements = flowelem
     
           
     @classmethod
@@ -59,7 +63,6 @@ class Steps:
     initialStep: str
     name: str
     connectionPointInRefId: str
-    hasJump: bool
     
     transitions: list
     
@@ -114,9 +117,13 @@ class SFCtransition:
     localID: str
     connectionPointInRefId: str
     condition: str
+    
+    instances: set
+    instances = set()
 
     def __init__(self, name):
         self.name = name
+        self.instances.add(self)
     
     def setPOUname(self, pouname):
         self.POUname = pouname
@@ -168,17 +175,18 @@ class SelectDiverg:
         self.localID = localID
                
     def setConnPointIn(self, connPointIn):
-        self.connPointIn = connPointIn
+        self.connectionPointInRefId = connPointIn
         
     def setConnPointOutQty(self, connOutQty):
         self.connectionPointOutQty = connOutQty
     
 class SelectConverg:
     
+    name: str
     POUname: str
     localID: str
     connectionPointInRefId: str
-    connectionPointOutRedId: str
+    connectionPointOutRefId: str
     
     def __init__(self, name):
         self.name = name
@@ -192,6 +200,29 @@ class SelectConverg:
         
     def setConnPointIn(self, connPointIn):
         self.connPointIn.append(connPointIn)
+      
+class JumpStep:
+    
+    name: str
+    POUname: str
+    localID: str
+    connectionPointInRefId: str
+    targetName: str
+    
+    def __init__(self, name):
+        self.name = name
+        
+    def setPOUname(self, pouname):
+        self.POUname = pouname
+        
+    def setLocalID(self, localID):
+        self.localID = localID
+        
+    def setConnPointIn(self, connPointIn):
+        self.connectionPointInRefId = connPointIn
+
+    def setTargetName(self, targetName):
+        self.targetName = targetName
         
 def tlookup(p1, p2):
     print("tlookup")
@@ -264,7 +295,22 @@ def definePOUs():
     flowscount = 1
     
     for flow in flowlist:
-        pouname = "flow_" + str(flowscount)
+        
+        print("------------------------ Flow Specs Detection -----------------------------")
+        for places in flow:
+            if places.startswith("Spec"):
+                print(places)
+                if flow.index(places) == len(flow)-1:
+                    print("Ultimo Spec")
+                    specflow = re.findall("(.*)_", places)[0]
+                    print(specflow)
+                    pouname = specflow
+            else:
+                print("Not Spec")
+                pouname = "flow_" + str(flowscount)
+                break
+                
+        #pouname = "flow_" + str(flowscount)
         print('POU Name:')
         print(pouname)
         print("Places in " + pouname)
@@ -346,9 +392,9 @@ def definePOUs():
                     #print("-----------------------: " + placeId)
                     #print("localID: " + str(localID))
                     globals()[placeId].setStepsLocalID(str(localID))
-                    flowElements.append("initialStep_" + str(localID))
+                    flowElements.append("initialStep_(" + placeId + ")" + "_ID_" + str(localID))
                     #print(Steps.getStepLocalID(placeId))
-                    localID =+1
+                    localID = localID + 1
                 else:
                     print("Defining Normal Step")
                     
@@ -358,22 +404,24 @@ def definePOUs():
                     #print("-----------------------: " + placeId)
                     #print("localID: " + str(localID))
                     globals()[placeId].setStepsLocalID(str(localID))
-                    flowElements.append("Step_" + str(localID))
+                    globals()[placeId].setStepsConnPointIn(str(localID-1))
+                    flowElements.append("Step_(" + placeId + ")" + "_ID_" + str(localID))
                     #print(Steps.getStepLocalID(placeId))
-                    localID =+1
+                    localID = localID + 1
             else:
                 if len(elements) > 1:
                     print("Transition in parallel detected")
                     #More than 1 transition needs a select Divergence to make it parallel
                     print(elements)
                     selDivName = pouname + "_selectDiverg_" + str(flowSequence.index(elements))
-                    flowElements.append("SelectDiverg_"+str(localID))
+                    flowElements.append("SelectDiverg_("+selDivName+")_ID_"+str(localID))
                     globals()[selDivName] = SelectDiverg(selDivName)
                     globals()[selDivName].setPOUname(pouname)
                     globals()[selDivName].setLocalID(str(localID))
                     globals()[selDivName].setConnPointIn(str(localID-1))
+                    globals()[selDivName].setConnPointOutQty(len(elements))
                     
-                    localID =+1
+                    localID = localID + 1
                     
                     for transition in elements:
                         print("Defining transitions in parallel")
@@ -383,32 +431,31 @@ def definePOUs():
                         globals()[inVarName].setPOUname(pouname)
                         globals()[inVarName].setLocalID(str(localID))
                         globals()[inVarName].setExpression("transitions." + Transition.getName(transition))
-                        flowElements.append("inVar_" + str(localID))
+                        flowElements.append("inVar_(" + inVarName + ")_ID_" + str(localID))
                         
                         
-                        localID =+1
+                        localID = localID + 1
                         
                         trname = pouname + "_" + Transition.getName(transition) + "_" + str(flowSequence.index(elements))
-                        flowElements.append("transition_" + str(localID))
+                        flowElements.append("transition_(" + trname + ")_ID_" + str(localID))
                         globals()[trname] = SFCtransition(trname)
                         globals()[trname].setPOUname(pouname)
                         globals()[trname].setLocalID(str(localID))
                         globals()[trname].setConnPointIn(globals()[selDivName].localID)
                         globals()[trname].setCondition(str(localID-1))
                         
-                        localID =+1
+                        localID = localID + 1
                         
                     #Defining Select Convergence
                     selConvName = pouname + "_selectConverg_" + str(flowSequence.index(elements))
-                    flowElements.append("SelectConverg_"+str(localID))
+                    flowElements.append("SelectConverg_("+ selConvName+")_ID_"+str(localID))
                     globals()[selConvName] = SelectConverg(selConvName)
                     globals()[selConvName].setPOUname(pouname)
                     globals()[selConvName].setLocalID(str(localID))
                     for transition in elements:
                         trname = pouname + "_" + Transition.getName(transition) + "_" + str(flowSequence.index(elements))
                         globals()[selConvName].setConnPointIn(trname)
-                    
-                    localID =+1
+                    localID = localID + 1
                 
                 else:
                     transition = elements[0]
@@ -419,28 +466,38 @@ def definePOUs():
                     globals()[inVarName].setPOUname(pouname)
                     globals()[inVarName].setLocalID(str(localID))
                     globals()[inVarName].setExpression("transitions." + Transition.getName(transition))
-                    flowElements.append("inVar_" + str(localID))
+                    flowElements.append("inVar_(" + inVarName + ")_ID_" + str(localID))
                     
                     
-                    localID =+1
+                    localID = localID + 1
                     
-                    trname = pouname + "_" + Transition.getName(transition) + "_" + str(localID)
-                    flowElements.append("transition_" + str(localID))
+                    trname = pouname + "_" + Transition.getName(transition) + "_" + str(flowSequence.index(elements))
+                    flowElements.append("transition_(" + trname + ")_ID_" + str(localID))
                     globals()[trname] = SFCtransition(trname)
                     globals()[trname].setPOUname(pouname)
                     globals()[trname].setLocalID(str(localID))
-                    globals()[trname].setConnPointIn(globals()[selDivName].localID)
+                    globals()[trname].setConnPointIn(str(localID-2))
                     globals()[trname].setCondition(str(localID-1))
                     
-                    localID =+1
+                    localID = localID + 1
                     
                     
             if isStep:
                 isStep = False
             else:
                 isStep = True
+        
+        #Defining jumStep
+        jumpStepName = pouname + "_jumpStep"
+        flowElements.append("jumpStep_("+ jumpStepName+")_ID_"+str(localID))
+        globals()[jumpStepName] = JumpStep(jumpStepName)
+        globals()[jumpStepName].setPOUname(pouname)
+        globals()[jumpStepName].setLocalID(str(localID))
+        globals()[jumpStepName].setConnPointIn(str(localID-1))
+        globals()[jumpStepName].setTargetName(flowSequence[0])
+        
                     
-            
+        globals()[pouname].setFlowElements(flowElements)   
             
 
         
@@ -499,7 +556,7 @@ def writePLCOpen():
     
     flowcount = 1
     for flow in POU.instances:
-        print(flow)
+        #print(flow.name)
         pouInstance = POxml.SubElement(potask, "pouInstance", {"name": flow.name,
                                                                "typeName":""})
         POxml.SubElement(POxml.SubElement(pouInstance, "documentation"),
@@ -527,92 +584,176 @@ def writePLCOpen():
     
     flowcount = 1
     for flow in POU.instances:
+        print("Writing flow:" + flow.name)
         poudata = POxml.SubElement(adresource, "data", {"name":"http://www.3s-software.com/plcopenxml/pou",
                                                         "handleUnknown":"implementation"})
         
-        pousfc = POxml.SubElement(poudata, "pou", {"name":flow.name,
-                                                                                      "pouType":"program"})
+        pousfc = POxml.SubElement(poudata, "pou", {"name":flow.name,"pouType":"program"})
         
         pouinterface = POxml.SubElement(pousfc, "interface")
                         
         sfcbody = POxml.SubElement(POxml.SubElement(pousfc, "body"), "SFC")
 
         localid = 0
+        print("Flow elements:")
+        print(flow.flowElements)
         
-        for step in flow.stepSequence:
-            sfcstep = POxml.SubElement(sfcbody, "step", {"localId":str(localid), "name":step})
-            POxml.SubElement(sfcstep, "position", {"x":"0", "y":"0"})
-            stepconnectionPointIn = POxml.SubElement(sfcstep, "connectionPointIn")
-            #refLocalId in connectionPointIn points to previous transition
-            connection = POxml.SubElement(stepconnectionPointIn, "connection", {"refLocalId":"2"})
-            stepconnectionPointOut = POxml.SubElement(sfcstep, "connectionPointOut", {"formalParameter":"sfc"})
-            POxml.SubElement(POxml.SubElement(POxml.SubElement(sfcstep, "addData"), "data",
-                                              {"name":"http://www.3s-software.com/plcopenxml/sfc/element",
-                                               "handleUnknown":"implementation"}),
-                             "attributes", {"xmlns":""})
-        
-        
-        #Check for parallel transitions
-        
-        selDiv = POxml.SubElement(sfcbody,"selectionDivergence", {"localId":"1"})
-        POxml.SubElement(selDiv, "position", {"x":"0", "y":"0"})
-        selDivconnectionPointIn = POxml.SubElement(selDiv, "connectionPointIn")
-        #refLocalId in connectionPointIn points to previous step
-        POxml.SubElement(selDivconnectionPointIn, "connection", {"refLocalId":"2"})
-        #Repeat connectionPointOut for each transition in parallel
-        POxml.SubElement(selDiv, "connectionPointOut", {"formalParameter":"sfc"})
-        POxml.SubElement(selDiv, "connectionPointOut", {"formalParameter":"sfc"})
-        
-        POxml.SubElement(POxml.SubElement(POxml.SubElement(selDiv, "addData"), "data",
-                                              {"name":"http://www.3s-software.com/plcopenxml/sfc/element",
-                                               "handleUnknown":"implementation"}),
-                             "attributes", {"xmlns":""})
-        
-        
-        selConv = POxml.SubElement(sfcbody,"selectionDivergence", {"localId":"1"})
-        POxml.SubElement(selConv, "position", {"x":"0", "y":"0"})
-        #Loop connectionPointIn for each transition in parallel
-        selConvconnectionPointIn = POxml.SubElement(selConv, "connectionPointIn")
-        #refLocalId in connectionPointIn points to previous transition
-        POxml.SubElement(selConvconnectionPointIn, "connection", {"refLocalId":"2"})
-        
-        POxml.SubElement(selConv, "connectionPointOut", {"formalParameter":"sfc"})
-        
-        
-           
-        #inVariable are like arches in PN
-        #inVariables = [1,2]
-        
-        for inVariable in flow.transitionSequence:
-            invar = POxml.SubElement(sfcbody, "inVariable", {"localId":"4"})
-            POxml.SubElement(invar, "position", {"x":"0", "y":"0"})
-            invarconnectionPointOut = POxml.SubElement(invar, "connectionPointOut")
-            POxml.SubElement(invar,"expression").text = "transitions.t0"
-         
-        transitions = [1,2]   
-        for transition in transitions:
-            sfctrans = POxml.SubElement(sfcbody, "transistion", {"localId":"5"})
-            POxml.SubElement(sfctrans, "position", {"x":"0", "y":"0"})
-            transconnectionPointIn = POxml.SubElement(sfctrans, "connectionPointIn")
-            POxml.SubElement(transconnectionPointIn, "connection", {"refLocalId":"3", "formalParameter":"SFC"})
-            transcondition = POxml.SubElement(sfctrans, "condition")
-            POxml.SubElement(POxml.SubElement(transcondition, "connectionPointIn"), "connection",
-                             {"refLocalId":"4"})
-            POxml.SubElement(POxml.SubElement(POxml.SubElement(sfctrans, "addData"), "data",
-                                              {"name":"http://www.3s-software.com/plcopenxml/sfc/element",
-                                               "handleUnknown":"implementation"}),
-                             "attributes", {"xmlns":""})
+        for element in flow.flowElements:
+            print("Elements: " + element)
             
-        jumpsteps = [1,2]
-        for jumstep in jumpsteps:
-            sfcjump = POxml.SubElement(sfcbody, "jumpStep", {"localId":"6", "targetName":"p0"})
-            POxml.SubElement(sfcjump, "position", {"x":"0", "y":"0"})
-            POxml.SubElement(POxml.SubElement(sfcjump, "connectionPointIn"), "connection",
-                             {"refLocalId":"5"})  
-            POxml.SubElement(POxml.SubElement(POxml.SubElement(sfcjump, "addData"), "data",
-                                              {"name":"http://www.3s-software.com/plcopenxml/sfc/element",
-                                               "handleUnknown":"implementation"}),
-                             "attributes", {"xmlns":""})
+            if element.startswith("initialStep"):
+                #Write initialStep
+                print("Writing initialStep")
+                stepID = re.findall("\((.*?)\)", element)[0]
+                print(stepID)
+                stepName = globals()[stepID].name
+                localID = globals()[stepID].localID
+                print(stepName)
+                
+                sfcstep = POxml.SubElement(sfcbody, "step", {"localId":localID, "initialStep": "true", "name":stepName})
+                POxml.SubElement(sfcstep, "position", {"x":"0", "y":"0"})
+                stepconnectionPointIn = POxml.SubElement(sfcstep, "connectionPointIn")
+                #refLocalId in connectionPointIn points to previous transition
+                #connection = POxml.SubElement(stepconnectionPointIn, "connection", {"refLocalId":"2"})
+                stepconnectionPointOut = POxml.SubElement(sfcstep, "connectionPointOut", {"formalParameter":"sfc"})
+                POxml.SubElement(POxml.SubElement(POxml.SubElement(sfcstep, "addData"), "data",
+                                                {"name":"http://www.3s-software.com/plcopenxml/sfc/element",
+                                                "handleUnknown":"implementation"}),
+                                "attributes", {"xmlns":""})
+                
+            elif element.startswith("Step"):
+                #Write Step
+                print("Writing Step")
+                stepID = re.findall("\((.*?)\)", element)[0]
+                print(stepID)
+                stepName = globals()[stepID].name
+                localID = globals()[stepID].localID
+                refLocalId = globals()[stepID].connectionPointInRefId
+                
+                print(stepName)
+                
+                sfcstep = POxml.SubElement(sfcbody, "step", {"localId":localID, "name":stepName})
+                POxml.SubElement(sfcstep, "position", {"x":"0", "y":"0"})
+                stepconnectionPointIn = POxml.SubElement(sfcstep, "connectionPointIn")
+                #refLocalId in connectionPointIn points to previous transition
+                connection = POxml.SubElement(stepconnectionPointIn, "connection", {"refLocalId":refLocalId})
+                stepconnectionPointOut = POxml.SubElement(sfcstep, "connectionPointOut", {"formalParameter":"sfc"})
+                POxml.SubElement(POxml.SubElement(POxml.SubElement(sfcstep, "addData"), "data",
+                                                {"name":"http://www.3s-software.com/plcopenxml/sfc/element",
+                                                "handleUnknown":"implementation"}),
+                                "attributes", {"xmlns":""})
+                
+            elif element.startswith("SelectDiverg"):
+                #Write SelectDiverg
+                print("Writing SelectDiverg")
+                selDivID = re.findall("\((.*?)\)", element)[0]
+                print(selDivID)
+                selDivName = globals()[selDivID].name
+                localID = globals()[selDivID].localID
+                refLocalId = globals()[selDivID].connectionPointInRefId
+                connOutQty = globals()[selDivID].connectionPointOutQty
+                print(selDivName)
+                
+                selDiv = POxml.SubElement(sfcbody,"selectionDivergence", {"localId":localID})
+                POxml.SubElement(selDiv, "position", {"x":"0", "y":"0"})
+                selDivconnectionPointIn = POxml.SubElement(selDiv, "connectionPointIn")
+                #refLocalId in connectionPointIn points to previous step
+                POxml.SubElement(selDivconnectionPointIn, "connection", {"refLocalId":refLocalId})
+                #Repeat connectionPointOut for each transition in parallel
+                for connOut in range(connOutQty):
+                    POxml.SubElement(selDiv, "connectionPointOut", {"formalParameter":"sfc"})
+                
+                POxml.SubElement(POxml.SubElement(POxml.SubElement(selDiv, "addData"), "data",
+                                                    {"name":"http://www.3s-software.com/plcopenxml/sfc/element",
+                                                    "handleUnknown":"implementation"}),
+                                    "attributes", {"xmlns":""})
+        
+        
+            elif element.startswith("inVar"):
+                #Write inVar
+                print("Writing inVar")
+                inVarID = re.findall("\((.*?)\)", element)[0]
+                print(inVarID)
+                inVarName = globals()[inVarID].name
+                localID = globals()[inVarID].localID
+                expression = globals()[inVarID].expression
+                print(inVarName)
+                
+                print("Writing inVar")
+                invar = POxml.SubElement(sfcbody, "inVariable", {"localId":localID})
+                POxml.SubElement(invar, "position", {"x":"0", "y":"0"})
+                invarconnectionPointOut = POxml.SubElement(invar, "connectionPointOut")
+                POxml.SubElement(invar,"expression").text = expression
+            
+            elif element.startswith("transition"):
+                #Write transition
+                print("Writing transition")
+                transitionID = re.findall("\((.*?)\)", element)[0]
+                print(transitionID)
+                trName = globals()[transitionID].name
+                localID = globals()[transitionID].localID
+                refLocalId = globals()[transitionID].connectionPointInRefId
+                condition = globals()[transitionID].condition
+                print(trName)
+                
+                sfctrans = POxml.SubElement(sfcbody, "transition", {"localId":localID})
+                POxml.SubElement(sfctrans, "position", {"x":"0", "y":"0"})
+                transconnectionPointIn = POxml.SubElement(sfctrans, "connectionPointIn")
+                POxml.SubElement(transconnectionPointIn, "connection", {"refLocalId":refLocalId, "formalParameter":"SFC"})
+                transcondition = POxml.SubElement(sfctrans, "condition")
+                POxml.SubElement(POxml.SubElement(transcondition, "connectionPointIn"), "connection",
+                                {"refLocalId":condition})
+                POxml.SubElement(POxml.SubElement(POxml.SubElement(sfctrans, "addData"), "data",
+                                                {"name":"http://www.3s-software.com/plcopenxml/sfc/element",
+                                                "handleUnknown":"implementation"}),
+                                "attributes", {"xmlns":""})
+            
+            elif element.startswith("SelectConverg"):
+                #Write SelectConverg
+                print("Writing SelectConverg")
+                selConvID = re.findall("\((.*?)\)", element)[0]
+                print(selConvID)
+                selConvName = globals()[selConvID].name
+                localID = globals()[selConvID].localID
+                connInList = globals()[selConvID].connPointIn
+                print(connInList)
+                print(selConvName)
+                
+                selConv = POxml.SubElement(sfcbody,"selectionConvergence", {"localId":localID})
+                POxml.SubElement(selConv, "position", {"x":"0", "y":"0"})
+                for connTr in connInList:
+                    refLocalId = globals()[connTr].localID
+                    #Loop connectionPointIn for each transition in parallel
+                    selConvconnectionPointIn = POxml.SubElement(selConv, "connectionPointIn")
+                    #refLocalId in connectionPointIn points to previous transition
+                    POxml.SubElement(selConvconnectionPointIn, "connection", {"refLocalId":refLocalId})
+                
+                POxml.SubElement(selConv, "connectionPointOut", {"formalParameter":"sfc"})
+        
+            elif element.startswith("jumpStep"):
+                #Write jumpStep
+                print("Writing jumpStep")
+                jumpStepID = re.findall("\((.*?)\)", element)[0]
+                print(transitionID)
+                jumpName = globals()[jumpStepID].name
+                localID = globals()[jumpStepID].localID
+                refLocalId = globals()[jumpStepID].connectionPointInRefId
+                targetName = globals()[jumpStepID].targetName
+                
+                print(jumpName)
+                
+                sfcjump = POxml.SubElement(sfcbody, "jumpStep", {"localId":localID, "targetName":targetName})
+                POxml.SubElement(sfcjump, "position", {"x":"0", "y":"0"})
+                POxml.SubElement(POxml.SubElement(sfcjump, "connectionPointIn"), "connection",
+                                {"refLocalId":refLocalId})  
+                POxml.SubElement(POxml.SubElement(POxml.SubElement(sfcjump, "addData"), "data",
+                                                {"name":"http://www.3s-software.com/plcopenxml/sfc/element",
+                                                "handleUnknown":"implementation"}),
+                                "attributes", {"xmlns":""})
+            
+            else:
+                print("Element Invalid!")
+        
             
         #Settings of POU
         sfcsettings = POxml.SubElement(POxml.SubElement(POxml.SubElement(pousfc, "addData"), "data",
@@ -648,11 +789,32 @@ def writePLCOpen():
     
     trans = POxml.SubElement(poutrans, "transitions")
     
-    for tr in transitions:
-        transst = POxml.SubElement(POxml.SubElement(POxml.SubElement(trans, "transition",{"name":"t1"}),
+    #transitions = [1,1]
+    for tr in Transition.instances:
+        
+        decList = []
+        #print(tr.name)
+        print(Arc.getTPre(tr.id))
+        for pSpec in Arc.getTPre(tr.id):
+            specif = re.findall("p-(.*)", pSpec)[0]
+            print("Specification:")
+            print(specif)
+            if specif.startswith("Spec"):
+                specif2 = re.findall("(.*)_", specif)[0]
+                decList.append(" AND " + specif2 + "." + specif + ".x")
+            print("End specification")
+        
+        transitionName = tr.name
+        transitionDeclaration = transitionName
+        for decla in decList:
+            transitionDeclaration = transitionDeclaration + decla
+            
+        print("Declaration:" + transitionDeclaration)                    
+        
+        transst = POxml.SubElement(POxml.SubElement(POxml.SubElement(trans, "transition",{"name":transitionName}),
                                                            "body"), "ST")
         #trigger of in ST of transitions
-        POxml.SubElement(transst, "xhtml",{"xmlns":"http://www.w3.org/1999/xhtml"}).text = "gvl.tr1"
+        POxml.SubElement(transst, "xhtml",{"xmlns":"http://www.w3.org/1999/xhtml"}).text = "GVL." + transitionDeclaration
     
     POxml.SubElement(POxml.SubElement(POxml.SubElement(poutrans, "body"), "ST"), "xhtml",
     {"xmlns":"http://www.w3.org/1999/xhtml"})
@@ -675,11 +837,12 @@ def main():
     parsePNML(writerpnml)
     defineFlows()
     definePOUs()
-    #writePLCOpen()
+    writePLCOpen()
     
-    print("Checking POUs:")
-    print("Total Number of POUs:")
-    print(len(POU.instances))
+    #print("Checking POUs:")
+    #print("Total Number of POUs:")
+    #print(len(POU.instances))
+    '''
     for pous in POU.instances:
         print("POU Name:")
         print(pous.name)
@@ -689,8 +852,11 @@ def main():
         print(pous.transitionSequence)
         print("Flow Sequence:")
         print(pous.flowSequence)
-        
-    Steps.print_instances()
+        print("Flow Elements:")
+        print(pous.flowElements)        
+    '''
+    
+    #Steps.print_instances()
     
     
 if __name__ == "__main__":
