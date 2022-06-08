@@ -1,0 +1,43 @@
+Struct version 3.6.0 -- 07/07/20 -- LAAS/CNRS
+
+parsed net pequenaFabricaInterpretada_wAUTONET
+
+7 places, 4 transitions, 14 arcs
+
+net pequenaFabricaInterpretada_wAUTONET
+tr t0 : {START_M1;R_TRIG(qbM1_START)} p1 s0  -> p0 s1 
+tr t1 : {END_M1;R_TRIG(ibM1_END)} p0  -> p1 p4 
+tr t2 : {START_M2;R_TRIG(qbM2_START)} p3 p4 s1  -> p2 s0 
+tr t3 : {END_M2;R_TRIG(ibM2_END)} p2  -> p3 
+pl p1 : {M1_OFF; R:M1_START} (1)
+pl p3 : {M2_OFF;R:M2_START} (1)
+pl s0 (1)
+pl p0 : {M1_ON;N:M1_START}
+pl p2 : {M2_ON;N:M2_START}
+pl p4 : BUFFER
+
+0.000s
+
+P-SEMI-FLOWS GENERATING SET ------------------------------------- 
+
+invariant
+
+p0 p1 (1)
+p0 p4 s0 (1)
+s0 s1 (1)
+p2 p3 (1)
+
+0.000s
+
+T-SEMI-FLOWS GENERATING SET ------------------------------------- 
+
+consistent
+
+t0 t1 t2 t3
+
+0.000s
+
+ANALYSIS COMPLETED  --------------------------------------------- 
+
+
+

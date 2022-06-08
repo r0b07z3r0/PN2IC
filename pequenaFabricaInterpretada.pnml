@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="n-3624-AC380-0" type ="http://www.laas.fr/tina/tpn">
+  <name>
+   <text>pequenaFabricaInterpretada</text>
+  </name>
+ <page id="g-3624-AC3AB-1">
+  <place id="p-3624-AC3B4-2">
+  <name>
+   <text>p0</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>M1_ON;N:M1_START</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="310" y="50"/>
+   </graphics>
+  </place>
+  <place id="p-3624-AC3F6-3">
+  <name>
+   <text>p1</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>M1_OFF; R:M1_START</text>
+    <graphics>
+     <offset x="0" y="10" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="310" y="170"/>
+   </graphics>
+  </place>
+  <place id="p-3624-AC402-4">
+  <name>
+   <text>p2</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>M2_ON;N:M2_START</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="840" y="50"/>
+   </graphics>
+  </place>
+  <place id="p-3624-AC40A-5">
+  <name>
+   <text>p3</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>M2_OFF;R:M2_START</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="840" y="170"/>
+   </graphics>
+  </place>
+  <place id="p-3624-AC412-6">
+  <name>
+   <text>p4</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>BUFFER</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="505" y="110"/>
+   </graphics>
+  </place>
+  <transition id="t-3624-AC41A-7">
+  <name>
+   <text>t0</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>START_M1;R_TRIG(qbM1_START)</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="250" y="110"/>
+   </graphics>
+  </transition>
+  <transition id="t-3624-AC427-8">
+  <name>
+   <text>t1</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>END_M1;R_TRIG(ibM1_END)</text>
+    <graphics>
+     <offset x="10" y="10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="370" y="110"/>
+   </graphics>
+  </transition>
+  <transition id="t-3624-AC430-9">
+  <name>
+   <text>t2</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>START_M2;R_TRIG(qbM2_START)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="780" y="110"/>
+   </graphics>
+  </transition>
+  <transition id="t-3624-AC43B-10">
+  <name>
+   <text>t3</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>END_M2;R_TRIG(ibM2_END)</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="900" y="110"/>
+   </graphics>
+  </transition>
+  <arc id="e-3624-AC447-11" source="p-3624-AC40A-5" target="t-3624-AC430-9">
+  </arc>
+  <arc id="e-3624-AC453-12" source="t-3624-AC41A-7" target="p-3624-AC3B4-2">
+  </arc>
+  <arc id="e-3624-AC454-13" source="t-3624-AC43B-10" target="p-3624-AC40A-5">
+  </arc>
+  <arc id="e-3624-AC456-14" source="p-3624-AC402-4" target="t-3624-AC43B-10">
+  </arc>
+  <arc id="e-3624-AC457-15" source="t-3624-AC430-9" target="p-3624-AC402-4">
+  </arc>
+  <arc id="e-3624-AC459-16" source="p-3624-AC412-6" target="t-3624-AC430-9">
+  </arc>
+  <arc id="e-3624-AC45D-17" source="t-3624-AC427-8" target="p-3624-AC412-6">
+  </arc>
+  <arc id="e-3624-AC45F-18" source="p-3624-AC3F6-3" target="t-3624-AC41A-7">
+  </arc>
+  <arc id="e-3624-AC460-19" source="t-3624-AC427-8" target="p-3624-AC3F6-3">
+  </arc>
+  <arc id="e-3624-AC461-20" source="p-3624-AC3B4-2" target="t-3624-AC427-8">
+  </arc>
+ </page>
+ </net>
+</pnml>

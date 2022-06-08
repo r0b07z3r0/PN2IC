@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://www.plcopen.org/xml/tc6_0200">
+  <fileHeader companyName="" productName="CODESYS" productVersion="CODESYS V3.5 SP17 Patch 3" creationDateTime="2022-06-05T18:18:27.6110924" />
+  <contentHeader name="parallel.project" modificationDateTime="2022-05-14T22:34:49.5278322">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="1" y="1" />
+      </fbd>
+      <ld>
+        <scaling x="1" y="1" />
+      </ld>
+      <sfc>
+        <scaling x="1" y="1" />
+      </sfc>
+    </coordinateInfo>
+    <addData>
+      <data name="http://www.3s-software.com/plcopenxml/projectinformation" handleUnknown="implementation">
+        <ProjectInformation />
+      </data>
+    </addData>
+  </contentHeader>
+  <types>
+    <dataTypes />
+    <pous />
+  </types>
+  <instances>
+    <configurations />
+  </instances>
+  <addData>
+    <data name="http://www.3s-software.com/plcopenxml/application" handleUnknown="implementation">
+      <resource name="Application">
+        <task name="MainTask" interval="PT0.1S" priority="1">
+          <pouInstance name="flow_1" typeName="">
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+            </documentation>
+          </pouInstance>
+          <pouInstance name="flow_2" typeName="">
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+            </documentation>
+          </pouInstance>
+          <pouInstance name="flow_3" typeName="">
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+            </documentation>
+          </pouInstance>
+          <pouInstance name="flow_4" typeName="">
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+            </documentation>
+          </pouInstance>
+          <addData>
+            <data name="http://www.3s-software.com/plcopenxml/tasksettings" handleUnknown="implementation">
+              <TaskSettings KindOfTask="Cyclic" Interval="t#100ms" IntervalUnit="ms" WithinSPSTimeSlicing="true">
+                <Watchdog Enabled="false" TimeUnit="ms" />
+              </TaskSettings>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+              <ObjectId>4872a761-3c26-4459-a6a3-4fac58d872f5</ObjectId>
+            </data>
+          </addData>
+        </task>
+        <globalVars name="GVL">
+          <variable name="t1">
+            <type>
+              <BOOL />
+            </type>
+          </variable>
+          <variable name="t3">
+            <type>
+              <BOOL />
+            </type>
+          </variable>
+          <variable name="t0">
+            <type>
+              <BOOL />
+            </type>
+          </variable>
+          <variable name="t2">
+            <type>
+              <BOOL />
+            </type>
+          </variable>
+          <variable name="t4">
+            <type>
+              <BOOL />
+            </type>
+          </variable>
+          <addData>
+            <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+              <ObjectId>feee9dc3-cbd5-43f7-a92e-dacf7675ebcb</ObjectId>
+            </data>
+          </addData>
+        </globalVars>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+            <pou name="flow_1" pouType="program">
+              <interface />
+              <body>
+                <SFC>
+                  <step localId="0" initialStep="true" name="p1">
+                    <position x="0" y="0" />
+                    <connectionPointIn />
+                    <connectionPointOut formalParameter="sfc" />
+                    <addData>
+                      <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+                        <attributes xmlns="">
+                          <attribute guid="38391c6d-6d4a-42f8-8ee7-9f45e5adafa8">p1</attribute>
+                          <attribute guid="01580b27-6378-448b-8ecb-0e4b795b58d6">FALSE</attribute>
+                          <attribute guid="bc882c11-1e91-4dd8-a6b8-2075724ed18b">0</attribute>
+                          <attribute guid="6844a48e-46c2-4cc8-a185-a478f3b99cc0">TRUE</attribute>
+                          <attribute guid="62e1754b-7629-4e63-9cec-10ae0c536f1f">FALSE</attribute>
+                        </attributes>
+                      </data>
+                    </addData>
+                  </step>
+                  <inVariable localId="1">
+                    <position x="0" y="0" />
+                    <connectionPointOut />
+                    <expression>transitions.t0</expression>
+                  </inVariable>
+                  <transition localId="2">
+                    <position x="0" y="0" />
+                    <connectionPointIn>
+                      <connection refLocalId="0" formalParameter="sfc" />
+                    </connectionPointIn>
+                    <condition>
+                      <connectionPointIn>
+                        <connection refLocalId="1" />
+                      </connectionPointIn>
+                    </condition>
+                    <addData>
+                      <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+                        <attributes xmlns="">
+                          <attribute guid="38391c6d-6d4a-42f8-8ee7-9f45e5adafa8">transitions.t0</attribute>
+                          <attribute guid="01580b27-6378-448b-8ecb-0e4b795b58d6">FALSE</attribute>
+                          <attribute guid="bc882c11-1e91-4dd8-a6b8-2075724ed18b">0</attribute>
+                          <attribute guid="62e1754b-7629-4e63-9cec-10ae0c536f1f">FALSE</attribute>
+                          <attribute guid="8294df19-5962-4dee-a874-1051dabb0e3e">0</attribute>
+                        </attributes>
+                      </data>
+                    </addData>
+                  </transition>
+                  <step localId="3" name="Step0">
+                    <position x="0" y="0" />
+                    <connectionPointIn>
+                      <connection refLocalId="2" />
+                    </connectionPointIn>
+                    <connectionPointOut formalParameter="sfc" />
+                    <addData>
+                      <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+                        <attributes xmlns="">
+                          <attribute guid="38391c6d-6d4a-42f8-8ee7-9f45e5adafa8">Step0</attribute>
+                          <attribute guid="01580b27-6378-448b-8ecb-0e4b795b58d6">FALSE</attribute>
+                          <attribute guid="bc882c11-1e91-4dd8-a6b8-2075724ed18b">0</attribute>
+                          <attribute guid="6844a48e-46c2-4cc8-a185-a478f3b99cc0">FALSE</attribute>
+                          <attribute guid="62e1754b-7629-4e63-9cec-10ae0c536f1f">FALSE</attribute>
+                        </attributes>
+                      </data>
+                    </addData>
+                  </step>
+                  <inVariable localId="4">
+                    <position x="0" y="0" />
+                    <connectionPointOut />
+                    <expression>transitions.t1</expression>
+                  </inVariable>
+                  <transition localId="5">
+                    <position x="0" y="0" />
+                    <connectionPointIn>
+                      <connection refLocalId="3" formalParameter="sfc" />
+                    </connectionPointIn>
+                    <condition>
+                      <connectionPointIn>
+                        <connection refLocalId="4" />
+                      </connectionPointIn>
+                    </condition>
+                    <addData>
+                      <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+                        <attributes xmlns="">
+                          <attribute guid="38391c6d-6d4a-42f8-8ee7-9f45e5adafa8">transitions.t1</attribute>
+                          <attribute guid="01580b27-6378-448b-8ecb-0e4b795b58d6">FALSE</attribute>
+                          <attribute guid="bc882c11-1e91-4dd8-a6b8-2075724ed18b">0</attribute>
+                          <attribute guid="62e1754b-7629-4e63-9cec-10ae0c536f1f">FALSE</attribute>
+                          <attribute guid="8294df19-5962-4dee-a874-1051dabb0e3e">0</attribute>
+                        </attributes>
+                      </data>
+                    </addData>
+                  </transition>
+                  <jumpStep localId="6" targetName="p1">
+                    <position x="0" y="0" />
+                    <connectionPointIn>
+                      <connection refLocalId="5" />
+                    </connectionPointIn>
+                    <addData>
+                      <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+                        <attributes xmlns="">
+                          <attribute guid="38391c6d-6d4a-42f8-8ee7-9f45e5adafa8">p1</attribute>
+                          <attribute guid="01580b27-6378-448b-8ecb-0e4b795b58d6">FALSE</attribute>
+                        </attributes>
+                      </data>
+                    </addData>
+                  </jumpStep>
+                </SFC>
+              </body>
+              <addData>
+                <data name="http://www.3s-software.com/plcopenxml/sfcsettings" handleUnknown="implementation">
+                  <SFCSettings>
+                    <LibTitle>IecSfc</LibTitle>
+                    <LibCompany>System</LibCompany>
+                    <LibVersion>4.1.0.0</LibVersion>
+                    <LibNamespace>IecSfc</LibNamespace>
+                    <CalcActiveTransOnly>false</CalcActiveTransOnly>
+                    <UseDefaults>false</UseDefaults>
+                    <Flags>
+                      <EnableLimit Declare="true" Use="false" />
+                      <Init Declare="true" Use="false" />
+                      <Reset Declare="true" Use="false" />
+                      <QuitError Declare="true" Use="false" />
+                      <Pause Declare="true" Use="false" />
+                      <Error Declare="true" Use="false" />
+                      <Trans Declare="true" Use="false" />
+                      <ErrorStep Declare="true" Use="false" />
+                      <ErrorPOU Declare="true" Use="false" />
+                      <CurrentStep Declare="true" Use="false" />
+                      <Tip Declare="true" Use="false" />
+                      <TipMode Declare="true" Use="false" />
+                      <MaxFlags Declare="true" Use="false" />
+                      <SFCErrorAnalyzation Declare="true" Use="false" />
+                      <SFCErrorAnalyzationTable Declare="true" Use="false" />
+                      <CurrentSteps Declare="true" Use="false" />
+                    </Flags>
+                  </SFCSettings>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                  <ObjectId>37f08278-84c1-4b53-8633-1ddb03a9eac3</ObjectId>
+                </data>
+              </addData>
+            </pou>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+            <pou name="flow_2" pouType="program">
+              <interface />
+              <body>
+                <SFC>
+                  <step localId="0" initialStep="true" name="Spec1_0">
+                    <position x="0" y="0" />
+                    <connectionPointIn />
+                    <connectionPointOut formalParameter="sfc" />
+                    <addData>
+                      <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+                        <attributes xmlns="">
+                          <attribute guid="38391c6d-6d4a-42f8-8ee7-9f45e5adafa8">Spec1_0</attribute>
+                          <attribute guid="01580b27-6378-448b-8ecb-0e4b795b58d6">FALSE</attribute>
+                          <attribute guid="bc882c11-1e91-4dd8-a6b8-2075724ed18b">0</attribute>
+                          <attribute guid="6844a48e-46c2-4cc8-a185-a478f3b99cc0">TRUE</attribute>
+                          <attribute guid="62e1754b-7629-4e63-9cec-10ae0c536f1f">FALSE</attribute>
+                        </attributes>
+                      </data>
+                    </addData>
+                  </step>
+                </SFC>
+              </body>
+              <addData>
+                <data name="http://www.3s-software.com/plcopenxml/sfcsettings" handleUnknown="implementation">
+                  <SFCSettings>
+                    <LibTitle>IecSfc</LibTitle>
+                    <LibCompany>System</LibCompany>
+                    <LibVersion>4.1.0.0</LibVersion>
+                    <LibNamespace>IecSfc</LibNamespace>
+                    <CalcActiveTransOnly>false</CalcActiveTransOnly>
+                    <UseDefaults>false</UseDefaults>
+                    <Flags>
+                      <EnableLimit Declare="true" Use="false" />
+                      <Init Declare="true" Use="false" />
+                      <Reset Declare="true" Use="false" />
+                      <QuitError Declare="true" Use="false" />
+                      <Pause Declare="true" Use="false" />
+                      <Error Declare="true" Use="false" />
+                      <Trans Declare="true" Use="false" />
+                      <ErrorStep Declare="true" Use="false" />
+                      <ErrorPOU Declare="true" Use="false" />
+                      <CurrentStep Declare="true" Use="false" />
+                      <Tip Declare="true" Use="false" />
+                      <TipMode Declare="true" Use="false" />
+                      <MaxFlags Declare="true" Use="false" />
+                      <SFCErrorAnalyzation Declare="true" Use="false" />
+                      <SFCErrorAnalyzationTable Declare="true" Use="false" />
+                      <CurrentSteps Declare="true" Use="false" />
+                    </Flags>
+                  </SFCSettings>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                  <ObjectId>368d0ec8-f00c-44b7-8387-780ce08987e9</ObjectId>
+                </data>
+              </addData>
+            </pou>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+            <pou name="flow_3" pouType="program">
+              <interface />
+              <body>
+                <SFC>
+                  <step localId="0" initialStep="true" name="Spec1_0">
+                    <position x="0" y="0" />
+                    <connectionPointIn />
+                    <connectionPointOut formalParameter="sfc" />
+                    <addData>
+                      <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+                        <attributes xmlns="">
+                          <attribute guid="38391c6d-6d4a-42f8-8ee7-9f45e5adafa8">Spec1_0</attribute>
+                          <attribute guid="01580b27-6378-448b-8ecb-0e4b795b58d6">FALSE</attribute>
+                          <attribute guid="bc882c11-1e91-4dd8-a6b8-2075724ed18b">0</attribute>
+                          <attribute guid="6844a48e-46c2-4cc8-a185-a478f3b99cc0">TRUE</attribute>
+                          <attribute guid="62e1754b-7629-4e63-9cec-10ae0c536f1f">FALSE</attribute>
+                        </attributes>
+                      </data>
+                    </addData>
+                  </step>
+                </SFC>
+              </body>
+              <addData>
+                <data name="http://www.3s-software.com/plcopenxml/sfcsettings" handleUnknown="implementation">
+                  <SFCSettings>
+                    <LibTitle>IecSfc</LibTitle>
+                    <LibCompany>System</LibCompany>
+                    <LibVersion>4.1.0.0</LibVersion>
+                    <LibNamespace>IecSfc</LibNamespace>
+                    <CalcActiveTransOnly>false</CalcActiveTransOnly>
+                    <UseDefaults>false</UseDefaults>
+                    <Flags>
+                      <EnableLimit Declare="true" Use="false" />
+                      <Init Declare="true" Use="false" />
+                      <Reset Declare="true" Use="false" />
+                      <QuitError Declare="true" Use="false" />
+                      <Pause Declare="true" Use="false" />
+                      <Error Declare="true" Use="false" />
+                      <Trans Declare="true" Use="false" />
+                      <ErrorStep Declare="true" Use="false" />
+                      <ErrorPOU Declare="true" Use="false" />
+                      <CurrentStep Declare="true" Use="false" />
+                      <Tip Declare="true" Use="false" />
+                      <TipMode Declare="true" Use="false" />
+                      <MaxFlags Declare="true" Use="false" />
+                      <SFCErrorAnalyzation Declare="true" Use="false" />
+                      <SFCErrorAnalyzationTable Declare="true" Use="false" />
+                      <CurrentSteps Declare="true" Use="false" />
+                    </Flags>
+                  </SFCSettings>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                  <ObjectId>eac8c691-d018-4cc7-9fb6-09fe3b1f10c6</ObjectId>
+                </data>
+              </addData>
+            </pou>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+            <pou name="flow_4" pouType="program">
+              <interface />
+              <body>
+                <SFC>
+                  <step localId="0" initialStep="true" name="p3">
+                    <position x="0" y="0" />
+                    <connectionPointIn />
+                    <connectionPointOut formalParameter="sfc" />
+                    <addData>
+                      <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+                        <attributes xmlns="">
+                          <attribute guid="38391c6d-6d4a-42f8-8ee7-9f45e5adafa8">p3</attribute>
+                          <attribute guid="01580b27-6378-448b-8ecb-0e4b795b58d6">FALSE</attribute>
+                          <attribute guid="bc882c11-1e91-4dd8-a6b8-2075724ed18b">0</attribute>
+                          <attribute guid="6844a48e-46c2-4cc8-a185-a478f3b99cc0">TRUE</attribute>
+                          <attribute guid="62e1754b-7629-4e63-9cec-10ae0c536f1f">FALSE</attribute>
+                        </attributes>
+                      </data>
+                    </addData>
+                  </step>
+                </SFC>
+              </body>
+              <addData>
+                <data name="http://www.3s-software.com/plcopenxml/sfcsettings" handleUnknown="implementation">
+                  <SFCSettings>
+                    <LibTitle>IecSfc</LibTitle>
+                    <LibCompany>System</LibCompany>
+                    <LibVersion>4.1.0.0</LibVersion>
+                    <LibNamespace>IecSfc</LibNamespace>
+                    <CalcActiveTransOnly>false</CalcActiveTransOnly>
+                    <UseDefaults>false</UseDefaults>
+                    <Flags>
+                      <EnableLimit Declare="true" Use="false" />
+                      <Init Declare="true" Use="false" />
+                      <Reset Declare="true" Use="false" />
+                      <QuitError Declare="true" Use="false" />
+                      <Pause Declare="true" Use="false" />
+                      <Error Declare="true" Use="false" />
+                      <Trans Declare="true" Use="false" />
+                      <ErrorStep Declare="true" Use="false" />
+                      <ErrorPOU Declare="true" Use="false" />
+                      <CurrentStep Declare="true" Use="false" />
+                      <Tip Declare="true" Use="false" />
+                      <TipMode Declare="true" Use="false" />
+                      <MaxFlags Declare="true" Use="false" />
+                      <SFCErrorAnalyzation Declare="true" Use="false" />
+                      <SFCErrorAnalyzationTable Declare="true" Use="false" />
+                      <CurrentSteps Declare="true" Use="false" />
+                    </Flags>
+                  </SFCSettings>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                  <ObjectId>5eb1c8fa-ccb8-4717-8f23-231008320d10</ObjectId>
+                </data>
+              </addData>
+            </pou>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+            <pou name="transitions" pouType="program">
+              <interface />
+              <transitions>
+                <transition name="t1">
+                  <body>
+                    <ST>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">gvl.t1</xhtml>
+                    </ST>
+                  </body>
+                  <addData>
+                    <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                      <ObjectId>e45c75df-be6d-4ebe-affd-ce263fbedbd8</ObjectId>
+                    </data>
+                  </addData>
+                </transition>
+                <transition name="t3">
+                  <body>
+                    <ST>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">gvl.t3</xhtml>
+                    </ST>
+                  </body>
+                  <addData>
+                    <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                      <ObjectId>8d1b6097-63c7-483a-8e02-a8b370e727c5</ObjectId>
+                    </data>
+                  </addData>
+                </transition>
+                <transition name="t0">
+                  <body>
+                    <ST>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">gvl.t0</xhtml>
+                    </ST>
+                  </body>
+                  <addData>
+                    <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                      <ObjectId>55465fdf-724f-431f-819e-168fd1d11934</ObjectId>
+                    </data>
+                  </addData>
+                </transition>
+                <transition name="t2">
+                  <body>
+                    <ST>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">gvl.t2</xhtml>
+                    </ST>
+                  </body>
+                  <addData>
+                    <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                      <ObjectId>7fc3c9b1-4383-4f53-9f5a-b930e2774152</ObjectId>
+                    </data>
+                  </addData>
+                </transition>
+                <transition name="t4">
+                  <body>
+                    <ST>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">gvl.t4</xhtml>
+                    </ST>
+                  </body>
+                  <addData>
+                    <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                      <ObjectId>f72c39bb-bcda-4568-9c0d-657cc9ab31d5</ObjectId>
+                    </data>
+                  </addData>
+                </transition>
+              </transitions>
+              <body>
+                <ST>
+                  <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+                </ST>
+              </body>
+              <addData>
+                <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                  <ObjectId>5111394f-6551-4623-b2b0-08e279259244</ObjectId>
+                </data>
+              </addData>
+            </pou>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>ccca5a82-1573-4ca2-881e-f7eb8292386f</ObjectId>
+          </data>
+        </addData>
+      </resource>
+    </data>
+    <data name="http://www.3s-software.com/plcopenxml/projectstructure" handleUnknown="discard">
+      <ProjectStructure>
+        <Object Name="Application" ObjectId="ccca5a82-1573-4ca2-881e-f7eb8292386f">
+          <Object Name="MainTask" ObjectId="4872a761-3c26-4459-a6a3-4fac58d872f5" />
+          <Object Name="GVL" ObjectId="feee9dc3-cbd5-43f7-a92e-dacf7675ebcb" />
+          <Object Name="flow_1" ObjectId="37f08278-84c1-4b53-8633-1ddb03a9eac3" />
+          <Object Name="flow_2" ObjectId="368d0ec8-f00c-44b7-8387-780ce08987e9" />
+          <Object Name="flow_3" ObjectId="eac8c691-d018-4cc7-9fb6-09fe3b1f10c6" />
+          <Object Name="flow_4" ObjectId="5eb1c8fa-ccb8-4717-8f23-231008320d10" />
+          <Object Name="transitions" ObjectId="5111394f-6551-4623-b2b0-08e279259244">
+            <Object Name="t1" ObjectId="e45c75df-be6d-4ebe-affd-ce263fbedbd8" />
+            <Object Name="t3" ObjectId="8d1b6097-63c7-483a-8e02-a8b370e727c5" />
+            <Object Name="t0" ObjectId="55465fdf-724f-431f-819e-168fd1d11934" />
+            <Object Name="t2" ObjectId="7fc3c9b1-4383-4f53-9f5a-b930e2774152" />
+            <Object Name="t4" ObjectId="f72c39bb-bcda-4568-9c0d-657cc9ab31d5" />
+          </Object>
+        </Object>
+      </ProjectStructure>
+    </data>
+  </addData>
+</project>

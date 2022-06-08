@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="n-340C-E5347-0" type ="http://www.laas.fr/tina/tpn">
+  <name>
+   <text>pequenaFabricaInterpretada_wAUTONET</text>
+  </name>
+ <page id="g-340C-E535D-1">
+  <place id="p-340C-E5360-2">
+  <name>
+   <text>p0</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>M1_ON;N:M1_START</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="310" y="50"/>
+   </graphics>
+  </place>
+  <place id="p-340C-E554C-3">
+  <name>
+   <text>p1</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>M1_OFF; R:M1_START</text>
+    <graphics>
+     <offset x="0" y="10" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="310" y="170"/>
+   </graphics>
+  </place>
+  <place id="p-340C-E555D-4">
+  <name>
+   <text>p2</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>M2_ON;N:M2_START</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="840" y="50"/>
+   </graphics>
+  </place>
+  <place id="p-340C-E5561-5">
+  <name>
+   <text>p3</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>M2_OFF;R:M2_START</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="840" y="170"/>
+   </graphics>
+  </place>
+  <place id="p-340C-E5566-6">
+  <name>
+   <text>p4</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>BUFFER</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="505" y="110"/>
+   </graphics>
+  </place>
+  <place id="p-340C-E556A-7">
+  <name>
+   <text>s0</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="485" y="275"/>
+   </graphics>
+  </place>
+  <place id="p-340C-E556D-8">
+  <name>
+   <text>s1</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="675" y="275"/>
+   </graphics>
+  </place>
+  <transition id="t-340C-E556E-9">
+  <name>
+   <text>t0</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>START_M1;R_TRIG(qbM1_START)</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="250" y="110"/>
+   </graphics>
+  </transition>
+  <transition id="t-340C-E5575-10">
+  <name>
+   <text>t1</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>END_M1;R_TRIG(ibM1_END)</text>
+    <graphics>
+     <offset x="10" y="10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="370" y="110"/>
+   </graphics>
+  </transition>
+  <transition id="t-340C-E557A-11">
+  <name>
+   <text>t2</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>START_M2;R_TRIG(qbM2_START)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="780" y="110"/>
+   </graphics>
+  </transition>
+  <transition id="t-340C-E5583-12">
+  <name>
+   <text>t3</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>END_M2;R_TRIG(ibM2_END)</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="900" y="110"/>
+   </graphics>
+  </transition>
+  <arc id="e-340C-E558B-13" source="t-340C-E556E-9" target="p-340C-E5360-2">
+  </arc>
+  <arc id="e-340C-E558E-14" source="p-340C-E5561-5" target="t-340C-E557A-11">
+  </arc>
+  <arc id="e-340C-E558F-15" source="p-340C-E556A-7" target="t-340C-E556E-9">
+   <graphics>
+    <position x="295" y="257" />
+    <position x="208" y="172" />
+   </graphics>  </arc>
+  <arc id="e-340C-E5629-16" source="t-340C-E556E-9" target="p-340C-E556D-8">
+   <graphics>
+    <position x="333" y="140" />
+    <position x="605" y="228" />
+   </graphics>  </arc>
+  <arc id="e-340C-E562C-17" source="p-340C-E556D-8" target="t-340C-E557A-11">
+   <graphics>
+    <position x="714" y="265" />
+    <position x="780" y="153" />
+   </graphics>  </arc>
+  <arc id="e-340C-E5632-18" source="t-340C-E557A-11" target="p-340C-E556A-7">
+   <graphics>
+    <position x="698" y="132" />
+    <position x="516" y="228" />
+   </graphics>  </arc>
+  <arc id="e-340C-E5634-19" source="p-340C-E5360-2" target="t-340C-E5575-10">
+  </arc>
+  <arc id="e-340C-E5635-20" source="t-340C-E5575-10" target="p-340C-E554C-3">
+  </arc>
+  <arc id="e-340C-E5636-21" source="p-340C-E554C-3" target="t-340C-E556E-9">
+  </arc>
+  <arc id="e-340C-E5636-22" source="t-340C-E5575-10" target="p-340C-E5566-6">
+  </arc>
+  <arc id="e-340C-E5637-23" source="p-340C-E5566-6" target="t-340C-E557A-11">
+  </arc>
+  <arc id="e-340C-E563B-24" source="t-340C-E557A-11" target="p-340C-E555D-4">
+  </arc>
+  <arc id="e-340C-E563C-25" source="p-340C-E555D-4" target="t-340C-E5583-12">
+  </arc>
+  <arc id="e-340C-E563D-26" source="t-340C-E5583-12" target="p-340C-E5561-5">
+  </arc>
+ </page>
+ </net>
+</pnml>

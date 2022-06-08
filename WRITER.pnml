@@ -1,0 +1,240 @@
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="n-33C0-34CC2-0" type="http://www.pnml.org/version-2009/grammar/ptnet">
+  <name>
+   <text>pequenaFabrica_2Tr</text>
+  </name>
+  <page id="g-33C0-34D0C-1">
+   <place id="p-33C0-34D64-3">
+    <name>
+     <text>p1</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text />
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </label>
+    <initialMarking>
+     <text>1</text>
+    </initialMarking>
+    <graphics>
+     <position x="120" y="170" />
+    </graphics>
+   </place>
+   <place id="p-33C0-34D7B-5">
+    <name>
+     <text>p3</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text />
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </label>
+    <initialMarking>
+     <text>1</text>
+    </initialMarking>
+    <graphics>
+     <position x="440" y="170" />
+    </graphics>
+   </place>
+   <place id="p-33C0-34D74-4">
+    <name>
+     <text>p2</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text />
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="440" y="50" />
+    </graphics>
+   </place>
+   <place id="p-Spec1_0">
+    <name>
+     <text>Spec1_0</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text>AUTONET_Spec1</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </label>
+    <initialMarking>
+     <text>1</text>
+    </initialMarking>
+    <graphics>
+     <position x="0" y="0" />
+    </graphics>
+   </place>
+   <place id="p-33C0-34D7F-6">
+    <name>
+     <text>p4</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text />
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="280" y="110" />
+    </graphics>
+   </place>
+   <place id="p-Spec1_1">
+    <name>
+     <text>Spec1_1</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text>AUTONET_Spec1</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="10" y="0" />
+    </graphics>
+   </place>
+   <place id="p-33C0-34D24-2">
+    <name>
+     <text>p0</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text />
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="120" y="50" />
+    </graphics>
+   </place>
+   <transition id="t-33C0-34D8A-8">
+    <name>
+     <text>t1</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text />
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="180" y="110" />
+    </graphics>
+   </transition>
+   <transition id="t-33C0-34D85-7">
+    <name>
+     <text>t0</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text />
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="25" y="110" />
+    </graphics>
+   </transition>
+   <transition id="t-33C0-34D90-9">
+    <name>
+     <text>t2</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text />
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="380" y="110" />
+    </graphics>
+   </transition>
+   <transition id="t-33C0-34D93-10">
+    <name>
+     <text>t3</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text />
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="500" y="110" />
+    </graphics>
+   </transition>
+   <transition id="t-33C0-34D96-11">
+    <name>
+     <text>t4</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text />
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="85" y="110" />
+    </graphics>
+   </transition>
+   <arc id="e-Spec1_LOW_to_P_00" source="t-33C0-34D90-9" target="p-Spec1_0" />
+   <arc id="e-33C0-34DC5-21" source="t-33C0-34D8A-8" target="p-33C0-34D7F-6" />
+   <arc id="e-33C0-34DB9-15" source="p-33C0-34D7B-5" target="t-33C0-34D90-9" />
+   <arc id="e-Spec1_UP_to_P_10" source="t-33C0-34D85-7" target="p-Spec1_1" />
+   <arc id="e-33C0-34DC7-22" source="p-33C0-34D7F-6" target="t-33C0-34D90-9" />
+   <arc id="e-Spec1_UP_to_P_11" source="t-33C0-34D96-11" target="p-Spec1_1" />
+   <arc id="e-33C0-34DC9-23" source="t-33C0-34D90-9" target="p-33C0-34D74-4" />
+   <arc id="e-Spec1_LOW_from_P_10" source="p-Spec1_1" target="t-33C0-34D90-9" />
+   <arc id="e-33C0-34DB5-13" source="p-33C0-34D74-4" target="t-33C0-34D93-10" />
+   <arc id="e-Spec1_UP_from_P_00" source="p-Spec1_0" target="t-33C0-34D85-7" />
+   <arc id="e-33C0-34DBA-16" source="p-33C0-34D64-3" target="t-33C0-34D96-11" />
+   <arc id="e-33C0-34DBC-17" source="t-33C0-34D85-7" target="p-33C0-34D24-2" />
+   <arc id="e-33C0-34DC0-18" source="p-33C0-34D24-2" target="t-33C0-34D8A-8" />
+   <arc id="e-33C0-34DB7-14" source="t-33C0-34D93-10" target="p-33C0-34D7B-5" />
+   <arc id="e-33C0-34DA3-12" source="t-33C0-34D96-11" target="p-33C0-34D24-2" />
+   <arc id="e-33C0-34DC2-19" source="t-33C0-34D8A-8" target="p-33C0-34D64-3" />
+   <arc id="e-Spec1_UP_from_P_01" source="p-Spec1_0" target="t-33C0-34D96-11" />
+   <arc id="e-33C0-34DC4-20" source="p-33C0-34D64-3" target="t-33C0-34D85-7" />
+  </page>
+ </net>
+</pnml>
