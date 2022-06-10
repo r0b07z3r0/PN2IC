@@ -382,6 +382,7 @@ def definePOUs():
         localID = 0
         print("~~~~~~~~~~DEFINING ELEMENTS~~~~~~~~~~")
         for elements in flowSequence:
+            print(elements)
             print("isStep:" + str(isStep)) 
             if isStep:
                 if flowSequence.index(elements) == 0:
@@ -409,6 +410,8 @@ def definePOUs():
                     #print(Steps.getStepLocalID(placeId))
                     localID = localID + 1
             else:
+                print("Length")
+                print(len(elements))
                 if len(elements) > 1:
                     print("Transition in parallel detected")
                     #More than 1 transition needs a select Divergence to make it parallel
@@ -458,6 +461,7 @@ def definePOUs():
                     localID = localID + 1
                 
                 else:
+                    print(elements)
                     transition = elements[0]
                     print("Defining simple transitions")
                     #InVariables
@@ -829,7 +833,8 @@ def writePLCOpen():
     POxml.indent(plcopen, " ", 0)
     ET.ElementTree(plcopen).write("PLCopen_writer.xml")
 
-    
+def runPLCopenWriter():
+    main()   
 
 def main():
     
