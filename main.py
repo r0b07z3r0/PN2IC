@@ -1,4 +1,5 @@
 from tkinter.constants import ACTIVE, ANCHOR, DISABLED, NORMAL, S
+from writePLCOpen import runPLCopenWriter
 from writePNML import runPNMLWriter
 from parsePNML import Place, Arc, getET, main, parsePNML, runPNMLParse, ET, tree
 import tkinter as tk
@@ -7,6 +8,7 @@ import os
 from functools import partial
 
 root = tk.Tk()
+root.title("PN2IC - Petri Net to Implementable Code")
 apps = []
 placeAvailable = [""]
 selectedPlace = StringVar(root)
@@ -289,6 +291,9 @@ def bufferCalc():
         #print(Arc.getTPre(Place.getID(place)))
         
     runPNMLWriter()
+
+def runPLCopen():
+    runPLCopenWriter()
         
         
 canvas = tk.Canvas(root, height=400, width=1000, bg="#263d42")
@@ -324,6 +329,10 @@ runEquations = tk.Button(root, text="Run Spec Equations", padx=10, pady=5,
 
 runEquations.pack()
 
+runPLCopen = tk.Button(root, text="Run PLCopen Converter", padx=10, pady=5,
+                    fg="white", bg="#263d42", command=runPLCopen)
+
+runPLCopen.pack()
 
 root.mainloop()
 
