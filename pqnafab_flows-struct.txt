@@ -1,10 +1,10 @@
 Struct version 3.6.0 -- 07/07/20 -- LAAS/CNRS
 
-parsed net WRITER
+parsed net pqnafab_flows
 
 7 places, 4 transitions, 14 arcs
 
-net WRITER
+net pqnafab_flows
 tr t0 Spec1_0 p1  -> Spec1_1 p0 
 tr t1 p0  -> p1 p4 
 tr t2 Spec1_1 p3 p4  -> Spec1_0 p2 
@@ -24,14 +24,6 @@ p0 p1 (1)
 Spec1_0 p0 p4 (1)
 Spec1_0 Spec1_1 (1)
 p2 p3 (1)
-
-0.000s
-
-T-SEMI-FLOWS GENERATING SET ------------------------------------- 
-
-consistent
-
-t0 t1 t2 t3
 
 0.000s
 

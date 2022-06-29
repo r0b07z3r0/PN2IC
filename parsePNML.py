@@ -281,6 +281,7 @@ class Arc:
                 listTSuc.append(instance.target)
         return listTSuc
     
+
 def parsePNML(pnmlfile):
 
       

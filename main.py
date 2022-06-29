@@ -1,11 +1,13 @@
 from tkinter.constants import ACTIVE, ANCHOR, DISABLED, NORMAL, S
 from writePLCOpen import runPLCopenWriter
 from writePNML import runPNMLWriter
-from parsePNML import Place, Arc, getET, main, parsePNML, runPNMLParse, ET, tree
+from parsePNML import Place, Arc, Transition, getET, main, parsePNML, runPNMLParse, ET, tree
+from writeTCTfiles import runTCTfileWriter
 import tkinter as tk
 from tkinter import BooleanVar, Frame, Grid, OptionMenu, StringVar, filedialog, Text
 import os
 from functools import partial
+
 
 root = tk.Tk()
 root.title("PN2IC - Petri Net to Implementable Code")
@@ -292,6 +294,35 @@ def bufferCalc():
         
     runPNMLWriter()
 
+def runTCTfiles():
+    print("Running TCT files generator")
+    for place in Place.instances:
+        stateName = place.name
+        print("Place:" + place.name)
+        if place.hasinitialmark:
+            print("InitialMark")
+            trSucList = Arc.getTSuc(place.id)
+            trPreList = Arc.getTPre(place.id)
+            uptransitions = []
+            downtransitions = []
+            for trSuc in trSucList:
+                uptransitions.append(Transition.getName(trSuc))
+            for trPre in trPreList:
+                downtransitions.append(Transition.getName(trPre))
+        else:
+            trSucList = Arc.getTSuc(place.id)
+            trPreList = Arc.getTPre(place.id)
+            uptransitions = []
+            downtransitions = []
+            for trPre in trPreList:
+                uptransitions.append(Transition.getName(trPre))
+            for trSuc in trSucList:
+                downtransitions.append(Transition.getName(trSuc))
+        
+
+        runTCTfileWriter(stateName,uptransitions,downtransitions)
+
+
 def runPLCopen():
     runPLCopenWriter()
         
@@ -328,6 +359,11 @@ runEquations = tk.Button(root, text="Run Spec Equations", padx=10, pady=5,
                     fg="white", bg="#263d42", command=runEquations)
 
 runEquations.pack()
+
+runTCTfiles = tk.Button(root, text="Run TCT docs", padx=10, pady=5,
+                    fg="white", bg="#263d42", command=runTCTfiles)
+
+runTCTfiles.pack()
 
 runPLCopen = tk.Button(root, text="Run PLCopen Converter", padx=10, pady=5,
                     fg="white", bg="#263d42", command=runPLCopen)

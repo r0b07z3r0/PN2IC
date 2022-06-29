@@ -1,0 +1,28 @@
+p 150.0 250.0 p1 1 n
+p 470.0 130.0 p2 0 n
+p 470.0 250.0 p3 1 n
+p 310.0 190.0 p4 0 n
+t 90.0 190.0 t0 0 w n
+t 210.0 190.0 t1 0 w n
+t 410.0 190.0 t2 0 w n
+t 530.0 190.0 t3 0 w n
+p 150.0 130.0 p0 0 n
+p 285.0 50.0 Spec1_1 0 n AUTONET_Spec1 e
+p 145.0 50.0 Spec1_0 1 n AUTONET_Spec1 w
+e t0 Spec1_1 1 n
+e Spec1_0 t0 1 n
+e t2 Spec1_0 1 n
+e Spec1_1 t2 1 n
+e t3 p3 1 n
+e p2 t3 1 n
+e t2 p2 1 n
+e p4 t2 1 n
+e t1 p4 1 n
+e p1 t0 1 n
+e t1 p1 1 n
+e p0 t1 1 n
+e p3 t2 1 n
+e t0 p0 1 n
+h pqnafab_flows
+
+

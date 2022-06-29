@@ -839,7 +839,7 @@ def runPLCopenWriter():
 def main():
     
     writerpnml = open("WRITER.pnml")
-    parsePNML(writerpnml)
+    #parsePNML(writerpnml)
     defineFlows()
     definePOUs()
     writePLCOpen()

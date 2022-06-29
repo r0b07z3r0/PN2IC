@@ -1,0 +1,320 @@
+p 45.0 35.0 Spec1_0 1 n AUTONET_Spec1 c
+p 55.0 35.0 Spec1_1 0 n AUTONET_Spec1 c
+p 45.0 35.0 Spec2_0 1 n AUTONET_Spec2 c
+p 55.0 35.0 Spec2_1 0 n AUTONET_Spec2 c
+p 45.0 35.0 Spec3_0 1 n AUTONET_Spec3 c
+p 55.0 35.0 Spec3_1 0 n AUTONET_Spec3 c
+p 95.0 75.0 p0 1 n
+p 95.0 135.0 p1 0 n
+p 695.0 335.0 p10 0 n
+p 615.0 215.0 p11 0 n
+p 95.0 175.0 p12 0 n
+p 95.0 235.0 p13 1 n
+p 155.0 175.0 p14 0 n
+p 155.0 235.0 p15 0 n
+p 275.0 175.0 p16 0 n
+p 275.0 235.0 p17 0 n
+p 395.0 235.0 p18 0 n
+p 455.0 235.0 p19 0 n
+p 155.0 75.0 p2 1 n
+p 425.0 295.0 p20 0 n
+p 395.0 335.0 p21 0 n
+p 455.0 335.0 p22 0 n
+p 425.0 355.0 p23 0 n
+p 275.0 295.0 p24 0 n
+p 275.0 355.0 p25 0 n
+p 395.0 435.0 p26 0 n
+p 455.0 435.0 p27 0 n
+p 95.0 475.0 p28 0 n
+p 135.0 475.0 p29 1 n
+p 155.0 135.0 p3 0 n
+p 195.0 475.0 p30 0 n
+p 195.0 615.0 p31 1 n
+p 135.0 655.0 p32 0 n
+p 135.0 755.0 p33 0 n
+p 275.0 775.0 p34 0 n
+p 575.0 295.0 p35 1 n
+p 455.0 515.0 p36 0 n
+p 455.0 555.0 p37 0 n
+p 395.0 555.0 p38 0 n
+p 395.0 595.0 p39 0 n
+p 275.0 75.0 p4 0 n
+p 395.0 675.0 p40 0 n
+p 455.0 675.0 p41 0 n
+p 275.0 535.0 p42 0 n
+p 275.0 595.0 p43 1 n
+p 275.0 835.0 p44 0 n
+p 395.0 795.0 p45 0 n
+p 455.0 755.0 p46 0 n
+p 455.0 795.0 p47 0 n
+p 395.0 835.0 p48 0 n
+p 575.0 515.0 p49 1 n
+p 275.0 135.0 p5 0 n
+p 395.0 915.0 p50 0 n
+p 455.0 915.0 p51 0 n
+p 575.0 355.0 p52 0 n
+p 575.0 575.0 p53 0 n
+p 575.0 755.0 p54 0 n
+p 575.0 815.0 p55 0 n
+p 575.0 915.0 p56 1 n
+p 575.0 975.0 p57 0 n
+p 695.0 775.0 p58 1 n
+p 695.0 655.0 p59 0 n
+p 575.0 75.0 p6 0 n
+p 695.0 535.0 p60 0 n
+p 615.0 655.0 p61 0 n
+p 655.0 915.0 p62 1 n
+p 655.0 975.0 p63 0 n
+p 575.0 135.0 p7 0 n
+p 695.0 95.0 p8 0 n
+p 695.0 215.0 p9 1 n
+t 65.0 95.0 t0 n 0 w n {} ne
+t 125.0 95.0 t1 n 0 w n {} ne
+t 65.0 195.0 t10 n 0 w n {} ne
+t 125.0 195.0 t11 n 0 w n {} ne
+t 215.0 175.0 t12 n 0 w n {} ne
+t 215.0 235.0 t13 n 0 w n {} ne
+t 335.0 175.0 t14 n 0 w n {} ne
+t 335.0 235.0 t15 n 0 w n {} ne
+t 395.0 275.0 t16 w 0 w n {} ne
+t 455.0 275.0 t17 e 0 w n {} ne
+t 335.0 295.0 t18 n 0 w n {} ne
+t 335.0 355.0 t19 n 0 w n {} ne
+t 215.0 75.0 t2 n 0 w n {} ne
+t 135.0 335.0 t20 w 0 w n {} ne
+t 395.0 395.0 t21 w 0 w n {} ne
+t 455.0 395.0 t22 e 0 w n {} ne
+t 395.0 475.0 t23 w 0 w n {} ne
+t 455.0 475.0 t24 e 0 w n {} ne
+t 195.0 555.0 t25 w 0 w n {} ne
+t 135.0 615.0 t26 w 0 w n {} ne
+t 135.0 695.0 t27 e 0 w n {} ne
+t 135.0 795.0 t28 s 0 w n {} ne
+t 345.0 535.0 t29 n 0 w n {} ne
+t 215.0 135.0 t3 n 0 w n {} ne
+t 345.0 595.0 t30 n 0 w n {} ne
+t 395.0 635.0 t31 w 0 w n {} ne
+t 455.0 635.0 t32 e 0 w n {} ne
+t 395.0 715.0 t33 w 0 w n {} ne
+t 455.0 715.0 t34 e 0 w n {} ne
+t 515.0 295.0 t35 n 0 w n {} ne
+t 515.0 355.0 t36 n 0 w n {} ne
+t 395.0 875.0 t37 w 0 w n {} ne
+t 455.0 875.0 t38 e 0 w n {} ne
+t 345.0 775.0 t39 n 0 w n {} ne
+t 335.0 75.0 t4 n 0 w n {} ne
+t 345.0 835.0 t40 n 0 w n {} ne
+t 515.0 515.0 t41 n 0 w n {} ne
+t 515.0 575.0 t42 n 0 w n {} ne
+t 515.0 815.0 t43 n 0 w n {} ne
+t 515.0 755.0 t44 n 0 w n {} ne
+t 515.0 975.0 t45 n 0 w n {} ne
+t 515.0 915.0 t46 n 0 w n {} ne
+t 615.0 535.0 t47 n 0 w n {} ne
+t 615.0 775.0 t48 s 0 w n {} ne
+t 695.0 715.0 t49 w 0 w n {} ne
+t 335.0 135.0 t5 n 0 w n {} ne
+t 695.0 595.0 t50 w 0 w n {} ne
+t 615.0 935.0 t51 n 0 w n {} ne
+t 695.0 935.0 t52 n 0 w n {} ne
+t 615.0 95.0 t6 n 0 w n {} ne
+t 695.0 155.0 t7 w 0 w n {} ne
+t 695.0 275.0 t8 w 0 w n {} ne
+t 615.0 335.0 t9 s 0 w n {} ne
+p 760.0 900.0 Spec4_1 0 n AUTONET_Spec4 c
+p 130.0 925.0 Spec4_0 1 n AUTONET_Spec4 c
+e t40 Spec4_1 1 n
+e t38 Spec4_1 1 n
+e t44 Spec4_1 1 n
+e t33 Spec4_1 1 n
+e Spec4_0 t40 1 n
+e Spec4_0 t38 1 n
+e Spec4_0 t44 1 n
+e Spec4_0 t33 1 n
+e t37 Spec4_0 1 n
+e t39 Spec4_0 1 n
+e t34 Spec4_0 1 n
+e t43 Spec4_0 1 n
+e Spec4_1 t37 1 n
+e Spec4_1 t39 1 n
+e Spec4_1 t34 1 n
+e Spec4_1 t43 1 n
+e t30 Spec3_1 1 n
+e t23 Spec3_1 1 n
+e t32 Spec3_1 1 n
+e t41 Spec3_1 1 n
+e Spec3_0 t30 1 n
+e Spec3_0 t23 1 n
+e Spec3_0 t32 1 n
+e Spec3_0 t41 1 n
+e t31 Spec3_0 1 n
+e t42 Spec3_0 1 n
+e t29 Spec3_0 1 n
+e t24 Spec3_0 1 n
+e Spec3_1 t31 1 n
+e Spec3_1 t42 1 n
+e Spec3_1 t29 1 n
+e Spec3_1 t24 1 n
+e t19 Spec2_1 1 n
+e t22 Spec2_1 1 n
+e t16 Spec2_1 1 n
+e t35 Spec2_1 1 n
+e Spec2_0 t19 1 n
+e Spec2_0 t22 1 n
+e Spec2_0 t16 1 n
+e Spec2_0 t35 1 n
+e t36 Spec2_0 1 n
+e t17 Spec2_0 1 n
+e t21 Spec2_0 1 n
+e t18 Spec2_0 1 n
+e Spec2_1 t36 1 n
+e Spec2_1 t17 1 n
+e Spec2_1 t21 1 n
+e Spec2_1 t18 1 n
+e t13 Spec1_1 1 n
+e t14 Spec1_1 1 n
+e t3 Spec1_1 1 n
+e t4 Spec1_1 1 n
+e Spec1_0 t13 1 n
+e Spec1_0 t14 1 n
+e Spec1_0 t3 1 n
+e Spec1_0 t4 1 n
+e t15 Spec1_0 1 n
+e t12 Spec1_0 1 n
+e t5 Spec1_0 1 n
+e t2 Spec1_0 1 n
+e Spec1_1 t15 1 n
+e Spec1_1 t12 1 n
+e Spec1_1 t5 1 n
+e Spec1_1 t2 1 n
+e t23 p38 1 n
+e p37 t29 1 n
+e p36 t24 1 n
+e p33 t28 1 n
+e t27 p33 1 n
+e p32 t27 1 n
+e t26 p32 1 n
+e t25 p31 1 n
+e p31 t26 1 n
+e p29 t26 1 n
+e p53 t47 1 n
+e t20 p29 1 n
+e t24 p27 1 n
+e p27 t22 1 n
+e p26 t23 1 n
+e t21 p26 1 n
+e t22 p22 1 n
+e p21 t21 1 n
+e t20 p25 1 n
+e p24 t20 1 n
+e t19 p23 1 n
+e p55 t48 1 n
+e p25 t19 1 n
+e t18 p24 1 n
+e p20 t18 1 n
+e p19 t14 1 n
+e t17 p19 1 n
+e p22 t17 1 n
+e t16 p21 1 n
+e p18 t16 1 n
+e t15 p18 1 n
+e p13 t10 1 n
+e t48 p54 1 n
+e t10 p12 1 n
+e p12 t11 1 n
+e t11 p13 1 n
+e p14 t11 1 n
+e t11 p15 1 n
+e t12 p14 1 n
+e p16 t12 1 n
+e t13 p17 1 n
+e p15 t13 1 n
+e p17 t15 1 n
+e p57 t51 1 n
+e t14 p16 1 n
+e p11 t6 1 n
+e t9 p11 1 n
+e p10 t9 1 n
+e t8 p10 1 n
+e p9 t8 1 n
+e t7 p9 1 n
+e p8 t7 1 n
+e t6 p8 1 n
+e t6 p6 1 n
+e t51 p56 1 n
+e p7 t6 1 n
+e p6 t4 1 n
+e t4 p4 1 n
+e t5 p7 1 n
+e p5 t5 1 n
+e p3 t3 1 n
+e t3 p5 1 n
+e p4 t2 1 n
+e t2 p2 1 n
+e t1 p3 1 n
+e t51 p62 1 n
+e p2 t1 1 n
+e t1 p1 1 n
+e p0 t1 1 n
+e t0 p0 1 n
+e p1 t0 1 n
+e t41 p36 1 n
+e p49 t41 1 n
+e t42 p53 1 n
+e p38 t42 1 n
+e t44 p46 1 n
+e p62 t52 1 n
+e p54 t44 1 n
+e t43 p55 1 n
+e p45 t43 1 n
+e t45 p57 1 n
+e p56 t46 1 n
+e p50 t45 1 n
+e t46 p51 1 n
+e p35 t35 1 n
+e t9 p35 1 n
+e p52 t9 1 n
+e t52 p63 1 n
+e t36 p52 1 n
+e t47 p60 1 n
+e p60 t50 1 n
+e t50 p59 1 n
+e p59 t49 1 n
+e t49 p58 1 n
+e p58 t48 1 n
+e p23 t36 1 n
+e t35 p20 1 n
+e p51 t38 1 n
+e t37 p50 1 n
+e t40 p48 1 n
+e p47 t39 1 n
+e t39 p34 1 n
+e p44 t40 1 n
+e t28 p44 1 n
+e t48 p61 1 n
+e p34 t28 1 n
+e t38 p47 1 n
+e p48 t37 1 n
+e t33 p45 1 n
+e p46 t34 1 n
+e p30 t25 1 n
+e t28 p28 1 n
+e p28 t20 1 n
+e t34 p41 1 n
+e p41 t32 1 n
+e p61 t47 1 n
+e t32 p37 1 n
+e p40 t33 1 n
+e t31 p40 1 n
+e p39 t31 1 n
+e p43 t30 1 n
+e t25 p43 1 n
+e p42 t25 1 n
+e t29 p42 1 n
+e t28 p30 1 n
+e t30 p39 1 n
+e t47 p49 1 n
+e p63 t51 1 n
+h flexManufact_wAutonet small
+
+
