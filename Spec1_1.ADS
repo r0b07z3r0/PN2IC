@@ -1,6 +1,6 @@
 # CTCT ADS auto-generated
 
-p3
+Spec1_1
 
 State size (State set will be (0,1....,size-1)):
 # <-- Enter state size, in range 0 to 2000000, on line below.
@@ -25,5 +25,5 @@ Transitions:
 # Format: Exit_(Source)_State  Transition_Label  Entrance_(Target)_State.
 # Transition_Label in range 0 to 9999.
 # Example: 2 0 1 (for transition labeled 0 from state 2 to state 1).
-0     2  1    
-1     3  0    
+0     1  1    
+1     5  0    

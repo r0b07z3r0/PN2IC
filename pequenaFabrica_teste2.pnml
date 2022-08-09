@@ -1,0 +1,160 @@
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="n-2398-4C884-0" type ="http://www.pnml.org/version-2009/grammar/ptnet">
+  <name>
+   <text>pequenaFabrica_teste2</text>
+  </name>
+ <page id="g-2398-4C8A1-1">
+  <place id="p-2398-4C8A8-2">
+  <name>
+   <text>p0</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="85" y="50"/>
+   </graphics>
+  </place>
+  <place id="p-2398-4C8BC-3">
+  <name>
+   <text>p1</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="85" y="170"/>
+   </graphics>
+  </place>
+  <place id="p-2398-4C8C1-4">
+  <name>
+   <text>p2</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="405" y="50"/>
+   </graphics>
+  </place>
+  <place id="p-2398-4C8C3-5">
+  <name>
+   <text>p3</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="405" y="170"/>
+   </graphics>
+  </place>
+  <place id="p-2398-4C8C7-6">
+  <name>
+   <text>p4</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="200" y="65"/>
+   </graphics>
+  </place>
+  <place id="p-2398-4C8C9-7">
+  <name>
+   <text>p5</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="305" y="200"/>
+   </graphics>
+  </place>
+  <transition id="t-2398-4C8CC-8">
+  <name>
+   <text>t2</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="25" y="110"/>
+   </graphics>
+  </transition>
+  <transition id="t-2398-4C8CF-9">
+  <name>
+   <text>t3</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="145" y="110"/>
+   </graphics>
+  </transition>
+  <transition id="t-2398-4C8D3-10">
+  <name>
+   <text>t4</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="250" y="135"/>
+   </graphics>
+  </transition>
+  <transition id="t-2398-4C8D5-11">
+  <name>
+   <text>t5</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="345" y="110"/>
+   </graphics>
+  </transition>
+  <transition id="t-2398-4C8D7-12">
+  <name>
+   <text>t6</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="465" y="110"/>
+   </graphics>
+  </transition>
+  <arc id="e-2398-4C8DB-13" source="p-2398-4C8C9-7" target="t-2398-4C8D5-11">
+  </arc>
+  <arc id="e-2398-4C8E0-14" source="t-2398-4C8D7-12" target="p-2398-4C8C3-5">
+  </arc>
+  <arc id="e-2398-4C8E2-15" source="t-2398-4C8CC-8" target="p-2398-4C8A8-2">
+  </arc>
+  <arc id="e-2398-4C8E3-16" source="p-2398-4C8C3-5" target="t-2398-4C8D5-11">
+  </arc>
+  <arc id="e-2398-4C8E4-17" source="t-2398-4C8D3-10" target="p-2398-4C8C9-7">
+  </arc>
+  <arc id="e-2398-4C8E6-18" source="p-2398-4C8C7-6" target="t-2398-4C8D3-10">
+  </arc>
+  <arc id="e-2398-4C8E7-19" source="p-2398-4C8BC-3" target="t-2398-4C8CC-8">
+  </arc>
+  <arc id="e-2398-4C8E8-20" source="p-2398-4C8A8-2" target="t-2398-4C8CF-9">
+  </arc>
+  <arc id="e-2398-4C8E9-21" source="t-2398-4C8CF-9" target="p-2398-4C8BC-3">
+  </arc>
+  <arc id="e-2398-4C8EA-22" source="t-2398-4C8CF-9" target="p-2398-4C8C7-6">
+  </arc>
+  <arc id="e-2398-4C8EB-23" source="t-2398-4C8D5-11" target="p-2398-4C8C1-4">
+  </arc>
+  <arc id="e-2398-4C8EC-24" source="p-2398-4C8C1-4" target="t-2398-4C8D7-12">
+  </arc>
+ </page>
+ </net>
+</pnml>

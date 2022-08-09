@@ -327,7 +327,7 @@ def runPLCopen():
     runPLCopenWriter()
         
         
-canvas = tk.Canvas(root, height=400, width=1000, bg="#263d42")
+canvas = tk.Canvas(root, height=500, width=1000, bg="#263d42")
 canvas.pack()
 
 frame = tk.Frame(canvas, bg="white")
@@ -335,7 +335,7 @@ frame.place(relwidth=0.8, relheight=0.8, relx=0.1, rely=0.05)
 
 
 frameSCT = tk.Frame(frame, bg="#D3D3D3")
-frameSCT.place(rely=0.2, relx=0, relheight=1, relwidth=1)
+frameSCT.place(rely=0.2, relx=0, relheight=2, relwidth=1)
 bapplySCT = BooleanVar()
 checkBoxSCT = tk.Checkbutton(frameSCT, variable=bapplySCT, text="Apply SCT", command=applySCT, border=5,borderwidth=1)
 checkBoxSCT.grid(row='0', column='0', ipadx=0.2, ipady=10)

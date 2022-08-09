@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="n-4210-453C9-0" type ="http://www.laas.fr/tina/tpn">
+  <name>
+   <text>celulaRobotizadaReduzida_v6</text>
+  </name>
+ <page id="g-4210-453E7-1">
+  <place id="p-4210-453EE-2">
+  <name>
+   <text>p0</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>E1_ComPeca</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="340" y="110"/>
+   </graphics>
+  </place>
+  <place id="p-4210-45402-3">
+  <name>
+   <text>p1</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>E1_SemPeca</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="220" y="110"/>
+   </graphics>
+  </place>
+  <place id="p-4210-4540A-4">
+  <name>
+   <text>p10</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="60" y="1005"/>
+   </graphics>
+  </place>
+  <place id="p-4210-4540D-5">
+  <name>
+   <text>p11</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="60" y="1140"/>
+   </graphics>
+  </place>
+  <place id="p-4210-4540F-6">
+  <name>
+   <text>p13</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="60" y="1430"/>
+   </graphics>
+  </place>
+  <place id="p-4210-45413-7">
+  <name>
+   <text>p14</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="60" y="1560"/>
+   </graphics>
+  </place>
+  <place id="p-4210-45415-8">
+  <name>
+   <text>p15</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="35" y="1880"/>
+   </graphics>
+  </place>
+  <place id="p-4210-45419-9">
+  <name>
+   <text>p16</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="215" y="1885"/>
+   </graphics>
+  </place>
+  <place id="p-4210-4541B-10">
+  <name>
+   <text>p17</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="380" y="1050"/>
+   </graphics>
+  </place>
+  <place id="p-4210-4541E-11">
+  <name>
+   <text>p18</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="380" y="1185"/>
+   </graphics>
+  </place>
+  <place id="p-4210-45420-12">
+  <name>
+   <text>p2</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>E1_PecaDispMaquina</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="280" y="230"/>
+   </graphics>
+  </place>
+  <place id="p-4210-45427-13">
+  <name>
+   <text>p20</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="380" y="1475"/>
+   </graphics>
+  </place>
+  <place id="p-4210-4542A-14">
+  <name>
+   <text>p21</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="380" y="1605"/>
+   </graphics>
+  </place>
+  <place id="p-4210-4542D-15">
+  <name>
+   <text>p22</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="340" y="1875"/>
+   </graphics>
+  </place>
+  <place id="p-4210-4542F-16">
+  <name>
+   <text>p23</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="480" y="1875"/>
+   </graphics>
+  </place>
+  <place id="p-4210-45433-17">
+  <name>
+   <text>p7</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="500" y="605"/>
+   </graphics>
+  </place>
+  <place id="p-4210-45435-18">
+  <name>
+   <text>p8</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>Juncao</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="500" y="740"/>
+   </graphics>
+  </place>
+  <transition id="t-4210-454AC-19">
+  <name>
+   <text>t1</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_machine1FeederActuator</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="280" y="170"/>
+   </graphics>
+  </transition>
+  <transition id="t-4210-454B5-20">
+  <name>
+   <text>t11</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_sortingStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="380" y="1125"/>
+   </graphics>
+  </transition>
+  <transition id="t-4210-454BB-21">
+  <name>
+   <text>t13</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_liftingBlueLidStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="380" y="1545"/>
+   </graphics>
+  </transition>
+  <transition id="t-4210-454C2-22">
+  <name>
+   <text>t2</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machineFeeder1Sensor</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="280" y="50"/>
+   </graphics>
+  </transition>
+  <transition id="t-4210-454C9-23">
+  <name>
+   <text>t22</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_mainCrossingOutSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="500" y="825"/>
+   </graphics>
+  </transition>
+  <transition id="t-4210-454CF-24">
+  <name>
+   <text>t26</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sortingBlueSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="60" y="1200"/>
+   </graphics>
+  </transition>
+  <transition id="t-4210-454D7-25">
+  <name>
+   <text>t30</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_liftingBlueLidOutSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="60" y="1640"/>
+   </graphics>
+  </transition>
+  <transition id="t-4210-454DC-26">
+  <name>
+   <text>t34</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sortingBlueSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="380" y="1245"/>
+   </graphics>
+  </transition>
+  <transition id="t-4210-454E3-27">
+  <name>
+   <text>t38</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_liftingBlueLidOutSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="380" y="1685"/>
+   </graphics>
+  </transition>
+  <transition id="t-4210-454EA-28">
+  <name>
+   <text>t5</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_stopCrossingActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="500" y="665"/>
+   </graphics>
+  </transition>
+  <transition id="t-4210-454EF-29">
+  <name>
+   <text>t58</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_boxAlignBlueBaseSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="100" y="1810"/>
+   </graphics>
+  </transition>
+  <transition id="t-4210-454F5-30">
+  <name>
+   <text>t6</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machine1BusySensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="280" y="295"/>
+   </graphics>
+  </transition>
+  <transition id="t-4210-4552F-31">
+  <name>
+   <text>t60</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_boxAlignBlueLidSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="415" y="1815"/>
+   </graphics>
+  </transition>
+  <transition id="t-4210-45537-32">
+  <name>
+   <text>t7</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_sortingStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="60" y="1080"/>
+   </graphics>
+  </transition>
+  <transition id="t-4210-4553E-33">
+  <name>
+   <text>t9</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_liftingBlueBaseStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="60" y="1500"/>
+   </graphics>
+  </transition>
+  <arc id="e-4210-45546-34" source="t-4210-454CF-24" target="p-4210-4540F-6">
+  </arc>
+  <arc id="e-4210-4554E-35" source="p-4210-4542D-15" target="t-4210-4552F-31">
+  </arc>
+  <arc id="e-4210-45551-36" source="t-4210-454EF-29" target="p-4210-45419-9">
+  </arc>
+  <arc id="e-4210-45552-37" source="p-4210-45415-8" target="t-4210-454EF-29">
+  </arc>
+  <arc id="e-4210-45553-38" source="p-4210-45427-13" target="t-4210-454BB-21">
+  </arc>
+  <arc id="e-4210-45554-39" source="p-4210-4542A-14" target="t-4210-454E3-27">
+  </arc>
+  <arc id="e-4210-45556-40" source="t-4210-454BB-21" target="p-4210-4542A-14">
+  </arc>
+  <arc id="e-4210-45557-41" source="p-4210-4541E-11" target="t-4210-454DC-26">
+  </arc>
+  <arc id="e-4210-45558-42" source="t-4210-454B5-20" target="p-4210-4541E-11">
+  </arc>
+  <arc id="e-4210-45559-43" source="p-4210-4541B-10" target="t-4210-454B5-20">
+  </arc>
+  <arc id="e-4210-4555C-44" source="t-4210-4552F-31" target="p-4210-4542F-16">
+  </arc>
+  <arc id="e-4210-4555D-45" source="t-4210-454DC-26" target="p-4210-45427-13">
+  </arc>
+  <arc id="e-4210-4555E-46" source="p-4210-45402-3" target="t-4210-454C2-22">
+  </arc>
+  <arc id="e-4210-4555F-47" source="t-4210-454C2-22" target="p-4210-453EE-2">
+  </arc>
+  <arc id="e-4210-45560-48" source="p-4210-453EE-2" target="t-4210-454AC-19">
+  </arc>
+  <arc id="e-4210-45562-49" source="t-4210-454AC-19" target="p-4210-45402-3">
+  </arc>
+  <arc id="e-4210-45563-50" source="t-4210-454AC-19" target="p-4210-45420-12">
+  </arc>
+  <arc id="e-4210-45564-51" source="p-4210-45420-12" target="t-4210-454F5-30">
+  </arc>
+  <arc id="e-4210-45566-52" source="p-4210-45435-18" target="t-4210-454C9-23">
+  </arc>
+  <arc id="e-4210-45567-53" source="p-4210-45433-17" target="t-4210-454EA-28">
+  </arc>
+  <arc id="e-4210-45568-54" source="t-4210-454EA-28" target="p-4210-45435-18">
+  </arc>
+  <arc id="e-4210-4556A-55" source="p-4210-4540A-4" target="t-4210-45537-32">
+  </arc>
+  <arc id="e-4210-4556B-56" source="t-4210-454C9-23" target="p-4210-4540A-4">
+  </arc>
+  <arc id="e-4210-4556C-57" source="t-4210-45537-32" target="p-4210-4540D-5">
+  </arc>
+  <arc id="e-4210-4556D-58" source="p-4210-4540D-5" target="t-4210-454CF-24">
+  </arc>
+  <arc id="e-4210-4556F-59" source="t-4210-4553E-33" target="p-4210-45413-7">
+  </arc>
+  <arc id="e-4210-45571-60" source="p-4210-45413-7" target="t-4210-454D7-25">
+  </arc>
+  <arc id="e-4210-45572-61" source="p-4210-4540F-6" target="t-4210-4553E-33">
+  </arc>
+  <arc id="e-4210-45573-62" source="t-4210-454C9-23" target="p-4210-4541B-10">
+  </arc>
+  <arc id="e-4210-45574-63" source="t-4210-454F5-30" target="p-4210-45433-17">
+  </arc>
+  <arc id="e-4210-45575-64" source="p-4210-4542F-16" target="t-4210-454E3-27">
+  </arc>
+  <arc id="e-4210-45576-65" source="t-4210-454E3-27" target="p-4210-4542D-15">
+  </arc>
+  <arc id="e-4210-45577-66" source="t-4210-454D7-25" target="p-4210-45415-8">
+  </arc>
+  <arc id="e-4210-4557A-67" source="p-4210-45419-9" target="t-4210-454D7-25">
+  </arc>
+ </page>
+ </net>
+</pnml>
