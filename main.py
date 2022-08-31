@@ -3,14 +3,16 @@ from writePLCOpen import runPLCopenWriter
 from writePNML import runPNMLWriter
 from parsePNML import Place, Arc, Transition, getET, main, parsePNML, runPNMLParse, ET, tree
 from writeTCTfiles import runTCTfileWriter
+from writeTCT2PN import runTCT2PN
 import tkinter as tk
-from tkinter import BooleanVar, Frame, Grid, OptionMenu, StringVar, filedialog, Text
+from tkinter import BOTH, BooleanVar, Button, Frame, Grid, OptionMenu, StringVar, filedialog, Text
 import os
 from functools import partial
 
 
 root = tk.Tk()
 root.title("PN2IC - Petri Net to Implementable Code")
+root.geometry("1098x610")
 apps = []
 placeAvailable = [""]
 selectedPlace = StringVar(root)
@@ -66,7 +68,7 @@ def addApp():
     apps.append(filename)
     print(filename)
     for app in apps:
-        label = tk.Label(frame, text=app, bg="gray")
+        label = tk.Label(fileNameFrame, text=app)
         label.pack()
 
 def runApps():
@@ -86,10 +88,10 @@ def applySCT():
 
 
 def addSCTRestriction(self):
-    labelSCTRestriction = tk.Label(frameSCT,text="M(P(i))+M(P(n))", background="#D3D3D3")
+    labelSCTRestriction = tk.Label(frameSCT,text="M(P(i))+M(P(n))")
     labelSCTRestriction.grid(row=buttonAddSCTRestriction.grid_info()['row'], column='0', ipadx=10, ipady=10)
     global labelSCTLessThanEqual
-    labelSCTLessThanEqual = tk.Label(frameSCT, text="<=", background="#D3D3D3", font="bold", width=6)
+    labelSCTLessThanEqual = tk.Label(frameSCT, text="<=", font="bold", width=6)
     labelSCTLessThanEqual.grid(row=buttonAddSCTRestriction.grid_info()['row'], column='1', ipadx=10, ipady=10)
     listLabelLessThanEqual.append(labelSCTLessThanEqual)
     global entrySCTEquation
@@ -103,11 +105,15 @@ def addSCTRestriction(self):
     buttonAddSCTPlace.grid(row=buttonAddSCTRestriction.grid_info()['row'], column='3', ipadx=10, ipady=10)
     buttonAddSCTRestriction.grid(row=buttonAddSCTRestriction.grid_info()['row']+1)
     listAddPlaceButton.append(buttonAddSCTPlace)
+    
+    canvas.configure(scrollregion=canvas.bbox('all'))
+    
     addSCTPlace(buttonAddSCTRestriction.grid_info()['row']-1)
     addSCTPlace(buttonAddSCTRestriction.grid_info()['row']-1)
     global numberOfRestriction
     numberOfRestriction += 1
-        
+         
+    
 def addSCTPlace(self):
     print("CALLING ADD SCT PLACE from ADD %d" % self)
     print(buttonAddSCTPlace.winfo_id())
@@ -120,7 +126,9 @@ def addSCTPlace(self):
     listLabelLessThanEqual[self].grid(row=listAddPlaceButton[self].grid_info()['row'], column=listLabelLessThanEqual[self].grid_info()['column']+1)
     listEntryEquation[self].grid(row=listAddPlaceButton[self].grid_info()['row'], column=listLabelLessThanEqual[self].grid_info()['column']+1)
     listAddPlaceButton[self].grid(row=self, column = listLabelLessThanEqual[self].grid_info()['column']+2)
-
+    
+    canvas.configure(scrollregion=canvas.bbox('all')) 
+                     
 def runEquations():
     print("Number of Restriction: " + str(numberOfRestriction))
     
@@ -322,53 +330,86 @@ def runTCTfiles():
 
         runTCTfileWriter(stateName,uptransitions,downtransitions)
 
-
+def runSCT():
+    print("RUN SCT")
+    runTCT2PN()
+    
 def runPLCopen():
     runPLCopenWriter()
-        
-        
-canvas = tk.Canvas(root, height=500, width=1000, bg="#263d42")
-canvas.pack()
 
-frame = tk.Frame(canvas, bg="white")
-frame.place(relwidth=0.8, relheight=0.8, relx=0.1, rely=0.05)
+topFrame = tk.LabelFrame(root, text="File")
+topFrame.pack(fill=tk.BOTH, expand=0,padx=1,pady=1)
+
+fileNameFrame = tk.Frame(topFrame, bg="white")
+fileNameFrame.pack(side=tk.LEFT)
+  
+mainFrame = tk.LabelFrame(root, text="Specification Equations")
+mainFrame.pack(fill=BOTH, expand=1)
 
 
-frameSCT = tk.Frame(frame, bg="#D3D3D3")
-frameSCT.place(rely=0.2, relx=0, relheight=2, relwidth=1)
+canvas = tk.Canvas(mainFrame)
+canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=1)
+
+sctScrollH = tk.Scrollbar(mainFrame, orient=tk.HORIZONTAL, command=canvas.xview)
+sctScrollH.pack(side=tk.BOTTOM, fill=tk.X)
+
+sctScrollV = tk.Scrollbar(mainFrame, orient=tk.VERTICAL, command=canvas.yview)
+sctScrollV.pack(side=tk.RIGHT, fill=tk.Y)
+
+
+canvas.configure(yscrollcommand=sctScrollV.set, xscrollcommand=sctScrollH.set)
+canvas.bind('<Configure>', lambda e: canvas.configure(scrollregion=canvas.bbox('all')))
+
+
+frameSCT = tk.Frame(canvas)
+canvas.create_window((0,0), window=frameSCT, anchor="nw")
+
+
 bapplySCT = BooleanVar()
-checkBoxSCT = tk.Checkbutton(frameSCT, variable=bapplySCT, text="Apply SCT", command=applySCT, border=5,borderwidth=1)
-checkBoxSCT.grid(row='0', column='0', ipadx=0.2, ipady=10)
+
 buttonAddSCTRestriction = tk.Button(frameSCT,text="Add Restriction", state=DISABLED)
-buttonAddSCTRestriction.grid(row='1', column='0', ipadx=0, ipady=10)
+#buttonAddSCTRestriction.grid(row=1, column=0, ipadx=0, ipady=12)
+buttonAddSCTRestriction.grid(row=1, column=0, ipady=20)
 buttonAddSCTRestriction.config(command=lambda i=buttonAddSCTRestriction.grid_info()['row']: addSCTRestriction(i))
 
 
+commandFrame = tk.LabelFrame(root, text="Commands", padx=2, pady=5)
+commandFrame.pack()
 
-openFile = tk.Button(root, text="Open File", padx=10, pady=5,
+openFile = tk.Button(commandFrame, text="Open File", padx=10, pady=2,
                      fg="white", bg="#263d42", command=addApp)
 
-openFile.pack()
+openFile.grid(row=0, column=0, padx=2, pady=2)
 
-runApps = tk.Button(root, text="Run Apps", padx=10, pady=5,
+runApps = tk.Button(commandFrame, text="Run Apps", padx=10, pady=2,
                     fg="white", bg="#263d42", command=runApps)
 
-runApps.pack()
+runApps.grid(row=0, column=1, padx=2, pady=2)
 
-runEquations = tk.Button(root, text="Run Spec Equations", padx=10, pady=5,
+checkBoxSCT = tk.Checkbutton(commandFrame, variable=bapplySCT, text="Apply SCT", command=applySCT, padx=2, pady=2, bg='#263d42', fg='white', activeforeground='white', selectcolor="gray")
+#checkBoxSCT.grid(row=0, column=0, ipadx=0.2, ipady=10)
+checkBoxSCT.grid(row=0, column=2, padx=2, pady=2)
+
+runEquations = tk.Button(commandFrame, text="Run Spec Equations", padx=10, pady=2,
                     fg="white", bg="#263d42", command=runEquations)
 
-runEquations.pack()
+runEquations.grid(row=0, column=3, padx=2, pady=2)
 
-runTCTfiles = tk.Button(root, text="Run TCT docs", padx=10, pady=5,
+runTCTfiles = tk.Button(commandFrame, text="Gen TCT Files", padx=10, pady=2,
                     fg="white", bg="#263d42", command=runTCTfiles)
 
-runTCTfiles.pack()
+runTCTfiles.grid(row=0, column=4, padx=2, pady=2)
 
-runPLCopen = tk.Button(root, text="Run PLCopen Converter", padx=10, pady=5,
+runSCTfiles = tk.Button(commandFrame, text="Run SCT", padx=10, pady=2,
+                    fg="white", bg="#263d42", command=runSCT)
+
+runSCTfiles.grid(row=0, column=5, padx=2, pady=2)
+
+
+runPLCopen = tk.Button(commandFrame, text="Run PLCopen Converter", padx=10, pady=2,
                     fg="white", bg="#263d42", command=runPLCopen)
 
-runPLCopen.pack()
+runPLCopen.grid(row=0, column=6, padx=2, pady=2)
 
 root.mainloop()
 

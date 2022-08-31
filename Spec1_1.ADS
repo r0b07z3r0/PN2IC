@@ -26,4 +26,6 @@ Transitions:
 # Transition_Label in range 0 to 9999.
 # Example: 2 0 1 (for transition labeled 0 from state 2 to state 1).
 0     1  1    
+0     3  1    
 1     5  0    
+1     16  0    

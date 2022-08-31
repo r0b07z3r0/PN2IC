@@ -212,6 +212,13 @@ class Transition:
         for instance in cls.instances:
             if instance.id == id:
                 return instance.name
+            
+    @classmethod
+    def getID(cls, name):
+        for instance in cls.instances:
+            if instance.name == name:
+                return instance.id
+            
 class Arc:
     
     id: str
