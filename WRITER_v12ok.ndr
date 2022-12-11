@@ -1,0 +1,216 @@
+p 220.0 110.0 p1 1 n input1Empty w
+p 500.0 600.0 p10 0 w waitCrossing e
+p 500.0 740.0 p11 0 w conveyorCrossing e
+p 500.0 880.0 p12 0 w sortingConveyor e
+p 60.0 1000.0 p13 0 n blueBaseOnConveyor ne
+p 60.0 1140.0 p14 0 w sortingBconveyor e
+p 60.0 1280.0 p15 0 w pushLeft e
+p 60.0 1430.0 p16 0 w waitBoxBB e
+p 60.0 1590.0 p17 0 w rampBB e
+p 60.0 1770.0 p18 0 w blueBaseOnBox e
+p 60.0 1940.0 p19 0 w moveBoxBB e
+p 340.0 110.0 p2 0 n input1Filled e
+p 180.0 1940.0 p20 1 n boxAlignedBB ne
+p 380.0 1050.0 p21 0 n blueLidOnConveyor ne
+p 380.0 1180.0 p22 0 w sortingBconveyor e
+p 380.0 1320.0 p23 0 w pushRight e
+p 380.0 1480.0 p24 0 w waitBoxBL e
+p 380.0 1620.0 p25 0 w rampBL e
+p 380.0 1780.0 p26 0 w blueLidOnBox e
+p 380.0 1940.0 p27 0 w moveBoxBL e
+p 510.0 1940.0 p28 1 n boxAlignedBL ne
+p 620.0 1050.0 p29 0 n greenBaseOnConveyor ne
+p 280.0 230.0 p3 0 w input1Available e
+p 620.0 1180.0 p30 0 w sortingGconveyor e
+p 620.0 1320.0 p31 0 w pushRight e
+p 620.0 1480.0 p32 0 w waitBoxGB e
+p 620.0 1620.0 p33 0 w rampGB e
+p 620.0 1780.0 p34 0 w greenBaseOnBox e
+p 620.0 1940.0 p35 0 w moveBoxGB e
+p 750.0 1940.0 p36 1 n boxAlignedGB ne
+p 910.0 1000.0 p37 0 n greenLidOnConveyor ne
+p 910.0 1140.0 p38 0 w sortingGconveyor e
+p 910.0 1280.0 p39 0 w pushLeft e
+p 280.0 360.0 p4 0 w machine1On e
+p 910.0 1430.0 p40 0 w waitBoxGL e
+p 910.0 1600.0 p41 0 w rampGL e
+p 910.0 1760.0 p42 0 w greenLidOnBox e
+p 910.0 1940.0 p43 0 w moveBoxGL e
+p 1060.0 1940.0 p44 1 n boxAlignedGL ne
+p 660.0 110.0 p5 1 n input2Empty w
+p 780.0 110.0 p6 0 w input2Filled e
+p 720.0 230.0 p7 0 w input2Available e
+p 720.0 360.0 p8 0 w machine2On e
+p 500.0 480.0 p9 0 nw PecaEsteira ne
+t 280.0 170.0 t1 c 0 w n c_machine1FeederActuator w
+t 720.0 300.0 t10 c 0 w n o_machine2BusySensor e
+t 60.0 1840.0 t11 c 0 w n c_moveBoxConveyor e
+t 720.0 420.0 t12 c 0 w n o_machine2OutSensor ne
+t 380.0 1120.0 t13 c 0 w n c_sortingStopActuator e
+t 500.0 540.0 t14 c 0 w n o_mainCrossingInSensor w
+t 380.0 1540.0 t15 c 0 w n c_liftingBlueLidStopActuator e
+t 500.0 820.0 t16 c 0 w n o_mainCrossingOutSensor e
+t 380.0 1840.0 t17 c 0 w n c_moveBoxConveyor e
+t 120.0 920.0 t18 c 0 w n o_blueBaseVisionSensor ne
+t 620.0 1120.0 t19 c 0 w n c_sortingStopActuator e
+t 280.0 50.0 t2 c 0 w n o_machineFeeder1Sensor n
+t 60.0 1210.0 t20 c 0 w n o_sortingBlueSensor e
+t 620.0 1540.0 t21 c 0 w n c_liftingGreenLidStopActuator e
+t 60.0 1360.0 t22 c 0 w n o_liftingBlueBaseInSensor e
+t 620.0 1860.0 t23 c 0 w n c_moveBoxConveyor e
+t 60.0 1690.0 t24 c 0 w n o_liftingBlueLidOutSensor e
+t 910.0 1080.0 t25 c 0 w n c_sortingStopActuator e
+t 60.0 2020.0 t26 c 0 w n o_boxAlignBlueBaseSensor e
+t 910.0 1500.0 t27 c 0 w n c_liftingGreenBaseStopActuator e
+t 380.0 970.0 t28 c 0 w n o_blueLidVisionSensor ne
+t 910.0 1840.0 t29 c 0 w n c_moveBoxConveyor e
+t 720.0 170.0 t3 c 0 w n c_machine2FeederActuator w
+t 380.0 1240.0 t30 c 0 w n o_sortingBlueSensor e
+t 380.0 1410.0 t32 c 0 w n o_liftingBlueLidInSensor e
+t 380.0 1700.0 t34 c 0 w n o_liftingBlueLidOutSensor e
+t 380.0 2020.0 t36 c 0 w n o_boxAlignBlueLidSensor e
+t 620.0 970.0 t38 c 0 w n o_greenBaseVisionSensor ne
+t 280.0 300.0 t4 c 0 w n o_machine1BusySensor e
+t 620.0 1240.0 t40 c 0 w n o_sortingGreenSensor e
+t 620.0 1410.0 t42 c 0 w n o_liftingGreenLidInSensor e
+t 620.0 1700.0 t44 c 0 w n o_liftingGreenLidOutSensor e
+t 620.0 2020.0 t46 c 0 w n o_boxAlignGreenLidSensor e
+t 880.0 920.0 t48 c 0 w n o_greenLidVisionSensor ne
+t 500.0 660.0 t5 c 0 w n c_stopCrossingActuator e
+t 910.0 1200.0 t50 c 0 w n o_sortingGreenSensor e
+t 910.0 1360.0 t52 c 0 w n o_liftingGreenBaseInSensor e
+t 910.0 1690.0 t54 c 0 w n o_liftingGreenBaseOutSensor e
+t 910.0 2020.0 t56 c 0 w n o_boxAlignGreenBaseSensor e
+t 280.0 420.0 t6 c 0 w n o_machine1OutSensor e
+t 60.0 1080.0 t7 c 0 w n c_sortingStopActuator e
+t 720.0 50.0 t8 c 0 w n o_machineFeeder2Sensor n
+t 60.0 1500.0 t9 c 0 w n c_liftingBlueBaseStopActuator e
+p 245.0 550.0 SUPCON_S2_0 1 n AUTONET_SUPCON_S2_0 c
+p 565.0 340.0 SUPCON_S1_0 1 n AUTONET_SUPCON_S1_0 c
+p 225.0 1570.0 SUPCON_S7_0 1 n AUTONET_SUPCON_S7_0 c
+p 510.0 1590.0 SUPCON_S8_0 1 n AUTONET_SUPCON_S8_0 c
+p 765.0 1590.0 SUPCON_S9_0 1 n AUTONET_SUPCON_S9_0 c
+p 1110.0 1575.0 SUPCON_S10_0 1 n AUTONET_SUPCON_S10_0 c
+p 230.0 1130.0 SUPCON_S3_0 1 n AUTONET_SUPCON_S3_0 c
+p 500.0 1145.0 SUPCON_S4_0 1 n AUTONET_SUPCON_S4_0 c
+p 1065.0 1155.0 SUPCON_S6_0 1 n AUTONET_SUPCON_S6_0 s
+p 770.0 1195.0 SUPCON_S5_0 1 n AUTONET_SUPCON_S5_0 c
+e t46 SUPCON_S9_0 1 n
+e SUPCON_S9_0 t21 1 n
+e t36 SUPCON_S8_0 1 n
+e SUPCON_S8_0 t15 1 n
+e t26 SUPCON_S7_0 1 n
+e SUPCON_S7_0 t9 1 n
+e t27 SUPCON_S6_0 1 n
+e SUPCON_S6_0 t25 1 n
+e t21 SUPCON_S5_0 1 n
+e SUPCON_S5_0 t19 1 n
+e t15 SUPCON_S4_0 1 n
+e SUPCON_S4_0 t13 1 n
+e t9 SUPCON_S3_0 1 n
+e SUPCON_S3_0 t7 1 n
+e t25 SUPCON_S2_0 1 n
+e t19 SUPCON_S2_0 1 n
+e t13 SUPCON_S2_0 1 n
+e t7 SUPCON_S2_0 1 n
+e SUPCON_S2_0 t5 1 n
+e SUPCON_S1_0 t3 1 n
+e t5 SUPCON_S1_0 1 n
+e SUPCON_S1_0 t1 1 n
+e t56 SUPCON_S10_0 1 n
+e SUPCON_S10_0 t27 1 n
+e p42 t29 1 n
+e t54 p42 1 n
+e p34 t23 1 n
+e p28 t17 1 n
+e p14 t20 1 n
+e t44 p34 1 n
+e p26 t17 1 n
+e t34 p26 1 n
+e p18 t11 1 n
+e t24 p18 1 n
+e p44 t29 1 n
+e p27 t36 1 n
+e t11 p19 1 n
+e p20 t11 1 n
+e p12 t28 1 n
+e t26 p20 1 n
+e t9 p17 1 n
+e p19 t26 1 n
+e t29 p43 1 n
+e t48 p37 1 n
+e p40 t27 1 n
+e t56 p44 1 n
+e t52 p40 1 n
+e p39 t52 1 n
+e t50 p39 1 n
+e p12 t18 1 n
+e p41 t54 1 n
+e t27 p41 1 n
+e p17 t24 1 n
+e p38 t50 1 n
+e t25 p38 1 n
+e p37 t25 1 n
+e p43 t56 1 n
+e t38 p29 1 n
+e t23 p35 1 n
+e p29 t19 1 n
+e t14 p10 1 n
+e t19 p30 1 n
+e p30 t40 1 n
+e t21 p33 1 n
+e t36 p28 1 n
+e p33 t44 1 n
+e t40 p31 1 n
+e p31 t42 1 n
+e t42 p32 1 n
+e p32 t21 1 n
+e t28 p21 1 n
+e p10 t5 1 n
+e p36 t23 1 n
+e p24 t15 1 n
+e t32 p24 1 n
+e p23 t32 1 n
+e t20 p15 1 n
+e t30 p23 1 n
+e p25 t34 1 n
+e t15 p25 1 n
+e p22 t30 1 n
+e t13 p22 1 n
+e t5 p11 1 n
+e p21 t13 1 n
+e p1 t2 1 n
+e t46 p36 1 n
+e t2 p2 1 n
+e p2 t1 1 n
+e p15 t22 1 n
+e t1 p1 1 n
+e t1 p3 1 n
+e p3 t4 1 n
+e t4 p4 1 n
+e p13 t7 1 n
+e p4 t6 1 n
+e t6 p9 1 n
+e p35 t46 1 n
+e t12 p9 1 n
+e p8 t12 1 n
+e t10 p8 1 n
+e t22 p16 1 n
+e p7 t10 1 n
+e t3 p7 1 n
+e t3 p5 1 n
+e t7 p14 1 n
+e p6 t3 1 n
+e t8 p6 1 n
+e p5 t8 1 n
+e p9 t14 1 n
+e t17 p27 1 n
+e p11 t16 1 n
+e t16 p12 1 n
+e p16 t9 1 n
+e p12 t48 1 n
+e p12 t38 1 n
+e t18 p13 1 n
+h WRITER_v12ok
+
+

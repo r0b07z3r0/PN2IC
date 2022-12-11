@@ -1,0 +1,34 @@
+Tina version 3.7.0 -- 06/05/22 -- LAAS/CNRS
+
+mode -R
+
+INPUT NET ------------------------------------------------------- 
+
+parsed net WRITER_runSCT_trim2
+
+54 places, 43 transitions, 116 arcs
+
+0.000s
+
+REACHABILITY ANALYSIS ------------------------------------------- 
+
+bounded
+
+12845056 marking(s), 102563840 transition(s)
+
+4439.531s
+
+LIVENESS ANALYSIS ----------------------------------------------- 
+
+live
+reversible
+
+0 dead marking(s), 12845056 live marking(s)
+0 dead transition(s), 43 live transition(s)
+
+31.578s
+
+ANALYSIS COMPLETED ---------------------------------------------- 
+
+
+

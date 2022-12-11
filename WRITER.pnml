@@ -1,89 +1,18 @@
 <pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
- <net id="n-3E14-324A-0" type="http://www.laas.fr/tina/tpn">
+ <net id="n-15C4-D4EAB-0" type="http://www.laas.fr/tina/tpn">
   <name>
-   <text>celulaRobotizada_v8</text>
+   <text>celulaRobotizada_v12</text>
   </name>
-  <page id="g-3E14-326A-1">
-   <place id="p-3E14-33C1-34">
+  <page id="g-15C4-D51FC-1">
+   <place id="p-SUPCON_S2_0">
     <name>
-     <text>p43</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text />
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="195" y="1755" />
-    </graphics>
-   </place>
-   <place id="p-Spec7_1">
-    <name>
-     <text>Spec7_1</text>
+     <text>SUPCON_S2_0</text>
      <graphics>
       <offset x="0" y="-10" />
      </graphics>
     </name>
     <label>
-     <text>AUTONET_Spec7</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="10" y="0" />
-    </graphics>
-   </place>
-   <place id="p-3E14-33C3-35">
-    <name>
-     <text>p44</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>moveBox</text>
-     <graphics>
-      <offset x="10" y="-10" />
-     </graphics>
-    </label>
-    <initialMarking>
-     <text>1</text>
-    </initialMarking>
-    <graphics>
-     <position x="380" y="1770" />
-    </graphics>
-   </place>
-   <place id="p-3E14-33C8-36">
-    <name>
-     <text>p45</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text />
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="485" y="1770" />
-    </graphics>
-   </place>
-   <place id="p-Spec2_0">
-    <name>
-     <text>Spec2_0</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text>AUTONET_Spec2</text>
+     <text>AUTONET_SUPCON_S2_0</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
@@ -95,117 +24,109 @@
      <position x="0" y="0" />
     </graphics>
    </place>
-   <place id="p-3E14-33CB-37">
+   <place id="p-SUPCON_S3_0">
     <name>
-     <text>p46</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>moveBox</text>
-     <graphics>
-      <offset x="10" y="-10" />
-     </graphics>
-    </label>
-    <initialMarking>
-     <text>1</text>
-    </initialMarking>
-    <graphics>
-     <position x="620" y="1770" />
-    </graphics>
-   </place>
-   <place id="p-Spec2_1">
-    <name>
-     <text>Spec2_1</text>
+     <text>SUPCON_S3_0</text>
      <graphics>
       <offset x="0" y="-10" />
      </graphics>
     </name>
     <label>
-     <text>AUTONET_Spec2</text>
+     <text>AUTONET_SUPCON_S3_0</text>
      <graphics>
       <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="10" y="0" />
-    </graphics>
-   </place>
-   <place id="p-3E14-33D0-38">
-    <name>
-     <text>p47</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text />
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="720" y="1770" />
-    </graphics>
-   </place>
-   <place id="p-3E14-33D2-39">
-    <name>
-     <text>p48</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>moveBox</text>
-     <graphics>
-      <offset x="10" y="-10" />
      </graphics>
     </label>
     <initialMarking>
      <text>1</text>
     </initialMarking>
     <graphics>
-     <position x="910" y="1725" />
+     <position x="0" y="0" />
     </graphics>
    </place>
-   <place id="p-3E14-32CD-15">
+   <place id="p-SUPCON_S4_0">
     <name>
-     <text>p21</text>
+     <text>SUPCON_S4_0</text>
      <graphics>
-      <offset x="-10" y="0" />
+      <offset x="0" y="-10" />
      </graphics>
     </name>
     <label>
-     <text>waitBoxBB</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="60" y="1430" />
-    </graphics>
-   </place>
-   <place id="p-3E14-33D6-40">
-    <name>
-     <text>p49</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text />
+     <text>AUTONET_SUPCON_S4_0</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
     </label>
+    <initialMarking>
+     <text>1</text>
+    </initialMarking>
     <graphics>
-     <position x="1040" y="1725" />
+     <position x="0" y="0" />
     </graphics>
    </place>
-   <place id="p-3E14-33DA-41">
+   <place id="p-SUPCON_S5_0">
     <name>
-     <text>p5</text>
+     <text>SUPCON_S5_0</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text>AUTONET_SUPCON_S5_0</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </label>
+    <initialMarking>
+     <text>1</text>
+    </initialMarking>
+    <graphics>
+     <position x="0" y="0" />
+    </graphics>
+   </place>
+   <place id="p-SUPCON_S6_0">
+    <name>
+     <text>SUPCON_S6_0</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text>AUTONET_SUPCON_S6_0</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </label>
+    <initialMarking>
+     <text>1</text>
+    </initialMarking>
+    <graphics>
+     <position x="0" y="0" />
+    </graphics>
+   </place>
+   <place id="p-SUPCON_S7_0">
+    <name>
+     <text>SUPCON_S7_0</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text>AUTONET_SUPCON_S7_0</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </label>
+    <initialMarking>
+     <text>1</text>
+    </initialMarking>
+    <graphics>
+     <position x="0" y="0" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D5803-45">
+    <name>
+     <text>p9</text>
      <graphics>
       <offset x="-10" y="-10" />
      </graphics>
@@ -220,35 +141,86 @@
      <position x="500" y="480" />
     </graphics>
    </place>
-   <place id="p-3E14-329A-4">
+   <place id="p-15C4-D5801-44">
     <name>
-     <text>p11</text>
+     <text>p8</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>machine2On</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="720" y="360" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D57FD-43">
+    <name>
+     <text>p7</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>input2Available</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="720" y="230" />
+    </graphics>
+   </place>
+   <place id="p-SUPCON_S8_0">
+    <name>
+     <text>SUPCON_S8_0</text>
      <graphics>
       <offset x="0" y="-10" />
      </graphics>
     </name>
     <label>
-     <text>BracoPivotOff</text>
+     <text>AUTONET_SUPCON_S8_0</text>
      <graphics>
-      <offset x="10" y="10" />
+      <offset x="0" y="0" />
      </graphics>
     </label>
     <initialMarking>
      <text>1</text>
     </initialMarking>
     <graphics>
-     <position x="820" y="565" />
+     <position x="0" y="0" />
     </graphics>
    </place>
-   <place id="p-3E14-33DF-42">
+   <place id="p-15C4-D57F7-42">
     <name>
      <text>p6</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>input2Filled</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="780" y="110" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D57F3-41">
+    <name>
+     <text>p5</text>
      <graphics>
       <offset x="0" y="-10" />
      </graphics>
     </name>
     <label>
-     <text>E2_SemPeca</text>
+     <text>input2Empty</text>
      <graphics>
       <offset x="-10" y="0" />
      </graphics>
@@ -260,205 +232,15 @@
      <position x="660" y="110" />
     </graphics>
    </place>
-   <place id="p-3E14-3352-16">
+   <place id="p-15C4-D57EF-40">
     <name>
-     <text>p22</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>rampBB</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="60" y="1560" />
-    </graphics>
-   </place>
-   <place id="p-3E14-33E4-43">
-    <name>
-     <text>p7</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>E2_ComPeca</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="780" y="110" />
-    </graphics>
-   </place>
-   <place id="p-3E14-32A5-6">
-    <name>
-     <text>p13</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text />
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="500" y="605" />
-    </graphics>
-   </place>
-   <place id="p-3E14-33E9-44">
-    <name>
-     <text>p8</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>E2_PecaDispMaquina</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="720" y="230" />
-    </graphics>
-   </place>
-   <place id="p-3E14-3400-45">
-    <name>
-     <text>p9</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>E2_MaquinaON</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="720" y="355" />
-    </graphics>
-   </place>
-   <place id="p-3E14-32A0-5">
-    <name>
-     <text>p12</text>
+     <text>p44</text>
      <graphics>
       <offset x="0" y="-10" />
      </graphics>
     </name>
     <label>
-     <text>BracoPivotOn</text>
-     <graphics>
-      <offset x="10" y="-10" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="820" y="485" />
-    </graphics>
-   </place>
-   <place id="p-3E14-32B3-9">
-    <name>
-     <text>p16</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text>EsteiraCaixaOcupada</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="960" y="825" />
-    </graphics>
-   </place>
-   <place id="p-Spec3_0">
-    <name>
-     <text>Spec3_0</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text>AUTONET_Spec3</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <initialMarking>
-     <text>1</text>
-    </initialMarking>
-    <graphics>
-     <position x="0" y="0" />
-    </graphics>
-   </place>
-   <place id="p-3E14-32C0-12">
-    <name>
-     <text>p19</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text />
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="60" y="1140" />
-    </graphics>
-   </place>
-   <place id="p-Spec3_1">
-    <name>
-     <text>Spec3_1</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text>AUTONET_Spec3</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="10" y="0" />
-    </graphics>
-   </place>
-   <place id="p-3E14-32C4-13">
-    <name>
-     <text>p2</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>E1_PecaDispMaquina</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="280" y="230" />
-    </graphics>
-   </place>
-   <place id="p-3E14-32AD-8">
-    <name>
-     <text>p15</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text>EsteiraCaixaVazia</text>
+     <text>boxAlignedGL</text>
      <graphics>
       <offset x="10" y="-10" />
      </graphics>
@@ -467,503 +249,63 @@
      <text>1</text>
     </initialMarking>
     <graphics>
-     <position x="960" y="685" />
+     <position x="1060" y="1940" />
     </graphics>
    </place>
-   <place id="p-3E14-3292-3">
+   <place id="p-15C4-D57D7-39">
     <name>
-     <text>p1</text>
+     <text>p43</text>
      <graphics>
-      <offset x="0" y="-10" />
+      <offset x="-10" y="0" />
      </graphics>
     </name>
     <label>
-     <text>E1_ComPeca</text>
+     <text>moveBoxGL</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="340" y="110" />
+     <position x="910" y="1940" />
     </graphics>
    </place>
-   <place id="p-3E14-32A9-7">
+   <place id="p-15C4-D57D3-38">
     <name>
-     <text>p14</text>
+     <text>p42</text>
      <graphics>
       <offset x="-10" y="0" />
      </graphics>
     </name>
     <label>
-     <text>Juncao</text>
+     <text>greenLidOnBox</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="500" y="740" />
+     <position x="910" y="1760" />
     </graphics>
    </place>
-   <place id="p-3E14-327C-2">
+   <place id="p-15C4-D57D1-37">
     <name>
-     <text>p0</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text>E1_SemPeca</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </label>
-    <initialMarking>
-     <text>1</text>
-    </initialMarking>
-    <graphics>
-     <position x="220" y="110" />
-    </graphics>
-   </place>
-   <place id="p-3E14-32BE-11">
-    <name>
-     <text>p18</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text />
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="60" y="1005" />
-    </graphics>
-   </place>
-   <place id="p-3E14-32C9-14">
-    <name>
-     <text>p20</text>
+     <text>p41</text>
      <graphics>
       <offset x="-10" y="0" />
      </graphics>
     </name>
     <label>
-     <text />
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="60" y="1280" />
-    </graphics>
-   </place>
-   <place id="p-3E14-32B9-10">
-    <name>
-     <text>p17</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>Classificadora</text>
+     <text>rampGL</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="500" y="885" />
+     <position x="910" y="1600" />
     </graphics>
    </place>
-   <place id="p-Spec4_0">
+   <place id="p-15C4-D57CE-36">
     <name>
-     <text>Spec4_0</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text>AUTONET_Spec4</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <initialMarking>
-     <text>1</text>
-    </initialMarking>
-    <graphics>
-     <position x="0" y="0" />
-    </graphics>
-   </place>
-   <place id="p-Spec4_1">
-    <name>
-     <text>Spec4_1</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text>AUTONET_Spec4</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="10" y="0" />
-    </graphics>
-   </place>
-   <place id="p-3E14-3357-17">
-    <name>
-     <text>p24</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text />
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="380" y="1050" />
-    </graphics>
-   </place>
-   <place id="p-3E14-335A-18">
-    <name>
-     <text>p25</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text />
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="380" y="1185" />
-    </graphics>
-   </place>
-   <place id="p-3E14-335D-19">
-    <name>
-     <text>p26</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text />
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="380" y="1325" />
-    </graphics>
-   </place>
-   <place id="p-3E14-335F-20">
-    <name>
-     <text>p27</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>waitBoxBL</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="380" y="1475" />
-    </graphics>
-   </place>
-   <place id="p-3E14-3363-21">
-    <name>
-     <text>p28</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>rampBL</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="380" y="1605" />
-    </graphics>
-   </place>
-   <place id="p-Spec5_0">
-    <name>
-     <text>Spec5_0</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text>AUTONET_Spec5</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <initialMarking>
-     <text>1</text>
-    </initialMarking>
-    <graphics>
-     <position x="0" y="0" />
-    </graphics>
-   </place>
-   <place id="p-3E14-3367-22">
-    <name>
-     <text>p3</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>E1_MaquinaON</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="280" y="355" />
-    </graphics>
-   </place>
-   <place id="p-Spec5_1">
-    <name>
-     <text>Spec5_1</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text>AUTONET_Spec5</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="10" y="0" />
-    </graphics>
-   </place>
-   <place id="p-3E14-336C-23">
-    <name>
-     <text>p30</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text />
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="620" y="1050" />
-    </graphics>
-   </place>
-   <place id="p-3E14-336E-24">
-    <name>
-     <text>p31</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text />
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="620" y="1185" />
-    </graphics>
-   </place>
-   <place id="p-3E14-3372-25">
-    <name>
-     <text>p32</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text />
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="620" y="1325" />
-    </graphics>
-   </place>
-   <place id="p-Spec1_0">
-    <name>
-     <text>Spec1_0</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text>AUTONET_Spec1</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <initialMarking>
-     <text>1</text>
-    </initialMarking>
-    <graphics>
-     <position x="0" y="0" />
-    </graphics>
-   </place>
-   <place id="p-3E14-3374-26">
-    <name>
-     <text>p33</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>waitBoxGB</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="620" y="1475" />
-    </graphics>
-   </place>
-   <place id="p-Spec1_1">
-    <name>
-     <text>Spec1_1</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text>AUTONET_Spec1</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="10" y="0" />
-    </graphics>
-   </place>
-   <place id="p-3E14-3378-27">
-    <name>
-     <text>p34</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>rampGB</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="620" y="1605" />
-    </graphics>
-   </place>
-   <place id="p-Spec6_0">
-    <name>
-     <text>Spec6_0</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text>AUTONET_Spec6</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <initialMarking>
-     <text>1</text>
-    </initialMarking>
-    <graphics>
-     <position x="0" y="0" />
-    </graphics>
-   </place>
-   <place id="p-3E14-337C-28">
-    <name>
-     <text>p36</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text />
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="910" y="1005" />
-    </graphics>
-   </place>
-   <place id="p-Spec6_1">
-    <name>
-     <text>Spec6_1</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text>AUTONET_Spec6</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="10" y="0" />
-    </graphics>
-   </place>
-   <place id="p-3E14-3380-29">
-    <name>
-     <text>p37</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text />
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="910" y="1140" />
-    </graphics>
-   </place>
-   <place id="p-3E14-3382-30">
-    <name>
-     <text>p38</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text />
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="910" y="1280" />
-    </graphics>
-   </place>
-   <place id="p-3E14-3385-31">
-    <name>
-     <text>p39</text>
+     <text>p40</text>
      <graphics>
       <offset x="-10" y="0" />
      </graphics>
@@ -978,32 +320,83 @@
      <position x="910" y="1430" />
     </graphics>
    </place>
-   <place id="p-3E14-33B8-32">
+   <place id="p-15C4-D57CA-35">
     <name>
-     <text>p40</text>
+     <text>p4</text>
      <graphics>
       <offset x="-10" y="0" />
      </graphics>
     </name>
     <label>
-     <text>rampGL</text>
+     <text>machine1On</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="910" y="1560" />
+     <position x="280" y="360" />
     </graphics>
    </place>
-   <place id="p-3E14-33BC-33">
+   <place id="p-15C4-D57C7-34">
     <name>
-     <text>p42</text>
+     <text>p39</text>
      <graphics>
       <offset x="-10" y="0" />
      </graphics>
     </name>
     <label>
-     <text>moveBox</text>
+     <text>pushLeft</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="910" y="1280" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D57C3-33">
+    <name>
+     <text>p38</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>sortingGconveyor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="910" y="1140" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D57BF-32">
+    <name>
+     <text>p37</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text>greenLidOnConveyor</text>
+     <graphics>
+      <offset x="10" y="-10" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="910" y="1000" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D57BC-31">
+    <name>
+     <text>p36</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text>boxAlignedGB</text>
      <graphics>
       <offset x="10" y="-10" />
      </graphics>
@@ -1012,18 +405,18 @@
      <text>1</text>
     </initialMarking>
     <graphics>
-     <position x="60" y="1755" />
+     <position x="750" y="1935" />
     </graphics>
    </place>
-   <place id="p-Spec7_0">
+   <place id="p-SUPCON_S9_0">
     <name>
-     <text>Spec7_0</text>
+     <text>SUPCON_S9_0</text>
      <graphics>
       <offset x="0" y="-10" />
      </graphics>
     </name>
     <label>
-     <text>AUTONET_Spec7</text>
+     <text>AUTONET_SUPCON_S9_0</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
@@ -1035,77 +428,568 @@
      <position x="0" y="0" />
     </graphics>
    </place>
-   <transition id="t-3E14-35D6-77">
+   <place id="p-15C4-D57B9-30">
     <name>
-     <text>t54</text>
+     <text>p35</text>
      <graphics>
-      <offset x="0" y="0" />
+      <offset x="-10" y="0" />
      </graphics>
     </name>
     <label>
-     <text>o_liftingGreenBaseInSensor</text>
+     <text>moveBoxGB</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="910" y="1365" />
+     <position x="620" y="1940" />
     </graphics>
-   </transition>
-   <transition id="t-3E14-35E1-78">
+   </place>
+   <place id="p-15C4-D57B5-29">
     <name>
-     <text>t56</text>
+     <text>p34</text>
      <graphics>
-      <offset x="0" y="0" />
+      <offset x="-10" y="0" />
      </graphics>
     </name>
     <label>
-     <text>o_liftingGreenBaseOutSensor</text>
+     <text>greenBaseOnBox</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="910" y="1640" />
+     <position x="620" y="1780" />
     </graphics>
-   </transition>
-   <transition id="t-3E14-35EA-79">
+   </place>
+   <place id="p-15C4-D57B1-28">
     <name>
-     <text>t58</text>
+     <text>p33</text>
      <graphics>
-      <offset x="0" y="0" />
+      <offset x="-10" y="0" />
      </graphics>
     </name>
     <label>
-     <text>o_boxAlignBlueBaseSensor</text>
+     <text>rampGB</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="60" y="1855" />
+     <position x="620" y="1620" />
     </graphics>
-   </transition>
-   <transition id="t-3E14-35F5-80">
+   </place>
+   <place id="p-15C4-D57AD-27">
     <name>
-     <text>t6</text>
+     <text>p32</text>
      <graphics>
-      <offset x="0" y="0" />
+      <offset x="-10" y="0" />
      </graphics>
     </name>
     <label>
-     <text>o_machine1BusySensor</text>
+     <text>waitBoxGB</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="280" y="295" />
+     <position x="620" y="1480" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D5778-26">
+    <name>
+     <text>p31</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>pushRight</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="620" y="1320" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D5775-25">
+    <name>
+     <text>p30</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>sortingGconveyor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="620" y="1180" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D5771-24">
+    <name>
+     <text>p3</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>input1Available</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="280" y="230" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D576D-23">
+    <name>
+     <text>p29</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text>greenBaseOnConveyor</text>
+     <graphics>
+      <offset x="10" y="-10" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="620" y="1050" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D5769-22">
+    <name>
+     <text>p28</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text>boxAlignedBL</text>
+     <graphics>
+      <offset x="10" y="-10" />
+     </graphics>
+    </label>
+    <initialMarking>
+     <text>1</text>
+    </initialMarking>
+    <graphics>
+     <position x="510" y="1940" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D5765-21">
+    <name>
+     <text>p27</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>moveBoxBL</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="380" y="1940" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D5761-20">
+    <name>
+     <text>p26</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>blueLidOnBox</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="380" y="1780" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D575E-19">
+    <name>
+     <text>p25</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>rampBL</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="380" y="1620" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D575B-18">
+    <name>
+     <text>p24</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>waitBoxBL</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="380" y="1480" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D5757-17">
+    <name>
+     <text>p23</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>pushRight</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="380" y="1320" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D567B-9">
+    <name>
+     <text>p16</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>waitBoxBB</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="60" y="1430" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D5202-2">
+    <name>
+     <text>p1</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text>input1Empty</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </label>
+    <initialMarking>
+     <text>1</text>
+    </initialMarking>
+    <graphics>
+     <position x="220" y="110" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D5665-4">
+    <name>
+     <text>p11</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>conveyorCrossing</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="500" y="740" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D5680-10">
+    <name>
+     <text>p17</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>rampBB</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="60" y="1590" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D565B-3">
+    <name>
+     <text>p10</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>waitCrossing</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="500" y="600" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D566B-5">
+    <name>
+     <text>p12</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>sortingConveyor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="500" y="880" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D568A-12">
+    <name>
+     <text>p19</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>moveBoxBB</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="60" y="1940" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D5670-6">
+    <name>
+     <text>p13</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text>blueBaseOnConveyor</text>
+     <graphics>
+      <offset x="10" y="-10" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="60" y="1000" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D5679-8">
+    <name>
+     <text>p15</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>pushLeft</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="60" y="1280" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D5685-11">
+    <name>
+     <text>p18</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>blueBaseOnBox</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="60" y="1770" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D568C-13">
+    <name>
+     <text>p2</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text>input1Filled</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="340" y="110" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D5675-7">
+    <name>
+     <text>p14</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>sortingBconveyor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="60" y="1140" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D5753-16">
+    <name>
+     <text>p22</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>sortingBconveyor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="380" y="1180" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D5747-14">
+    <name>
+     <text>p20</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text>boxAlignedBB</text>
+     <graphics>
+      <offset x="10" y="-10" />
+     </graphics>
+    </label>
+    <initialMarking>
+     <text>1</text>
+    </initialMarking>
+    <graphics>
+     <position x="180" y="1940" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D574F-15">
+    <name>
+     <text>p21</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text>blueLidOnConveyor</text>
+     <graphics>
+      <offset x="10" y="-10" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="380" y="1050" />
+    </graphics>
+   </place>
+   <place id="p-SUPCON_S1_0">
+    <name>
+     <text>SUPCON_S1_0</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text>AUTONET_SUPCON_S1_0</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </label>
+    <initialMarking>
+     <text>1</text>
+    </initialMarking>
+    <graphics>
+     <position x="0" y="0" />
+    </graphics>
+   </place>
+   <place id="p-SUPCON_S10_0">
+    <name>
+     <text>SUPCON_S10_0</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text>AUTONET_SUPCON_S10_0</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </label>
+    <initialMarking>
+     <text>1</text>
+    </initialMarking>
+    <graphics>
+     <position x="0" y="0" />
+    </graphics>
+   </place>
+   <transition id="t-15C4-D58EE-73">
+    <name>
+     <text>t38</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>o_greenBaseVisionSensor</text>
+     <graphics>
+      <offset x="10" y="-10" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="620" y="970" />
     </graphics>
    </transition>
-   <transition id="t-3E14-35FF-81">
+   <transition id="t-15C4-D58EA-72">
     <name>
-     <text>t60</text>
+     <text>t36</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
@@ -1117,80 +1001,131 @@
      </graphics>
     </label>
     <graphics>
-     <position x="380" y="1850" />
+     <position x="380" y="2020" />
     </graphics>
    </transition>
-   <transition id="t-3E14-3653-82">
+   <transition id="t-15C4-D58E6-71">
     <name>
-     <text>t62</text>
+     <text>t34</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
     </name>
     <label>
-     <text>o_boxAlignGreenLidSensor</text>
+     <text>o_liftingBlueLidOutSensor</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="620" y="1850" />
+     <position x="380" y="1700" />
     </graphics>
    </transition>
-   <transition id="t-3E14-3660-83">
+   <transition id="t-15C4-D5865-53">
     <name>
-     <text>t64</text>
+     <text>t16</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
     </name>
     <label>
-     <text>o_boxAlignGreenBaseSensor</text>
+     <text>o_mainCrossingOutSensor</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="910" y="1805" />
+     <position x="500" y="820" />
     </graphics>
    </transition>
-   <transition id="t-3E14-366B-84">
+   <transition id="t-15C4-D58E1-70">
     <name>
-     <text>t66</text>
+     <text>t32</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
     </name>
     <label>
-     <text>o_packagedLineCrossingInSensor</text>
+     <text>o_liftingBlueLidInSensor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="380" y="1410" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D5861-52">
+    <name>
+     <text>t15</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>c_liftingBlueLidStopActuator</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="380" y="1540" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D58DD-69">
+    <name>
+     <text>t30</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>o_sortingBlueSensor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="380" y="1240" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D5829-51">
+    <name>
+     <text>t14</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>o_mainCrossingInSensor</text>
      <graphics>
       <offset x="-10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="920" y="750" />
+     <position x="500" y="540" />
     </graphics>
    </transition>
-   <transition id="t-3E14-3676-85">
+   <transition id="t-15C4-D58D6-68">
     <name>
-     <text>t68</text>
+     <text>t3</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
     </name>
     <label>
-     <text>o_packagedLineCrossingOutSensor</text>
+     <text>c_machine2FeederActuator</text>
      <graphics>
-      <offset x="10" y="0" />
+      <offset x="-10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="1000" y="750" />
+     <position x="720" y="170" />
     </graphics>
    </transition>
-   <transition id="t-3E14-3681-86">
+   <transition id="t-15C4-D5822-50">
     <name>
-     <text>t7</text>
+     <text>t13</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
@@ -1202,44 +1137,129 @@
      </graphics>
     </label>
     <graphics>
-     <position x="60" y="1080" />
+     <position x="380" y="1120" />
     </graphics>
    </transition>
-   <transition id="t-3E14-368A-87">
+   <transition id="t-15C4-D58D1-67">
     <name>
-     <text>t8</text>
+     <text>t29</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
     </name>
     <label>
-     <text>o_machine1OutSensor</text>
+     <text>c_moveBoxConveyor</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="280" y="415" />
+     <position x="910" y="1840" />
     </graphics>
    </transition>
-   <transition id="t-3E14-3695-88">
+   <transition id="t-15C4-D5816-49">
     <name>
-     <text>t9</text>
+     <text>t12</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
     </name>
     <label>
-     <text>c_liftingBlueBaseStopActuator</text>
+     <text>o_machine2OutSensor</text>
+     <graphics>
+      <offset x="10" y="-10" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="720" y="420" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D58CD-66">
+    <name>
+     <text>t28</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>o_blueLidVisionSensor</text>
+     <graphics>
+      <offset x="10" y="-10" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="380" y="970" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D5811-48">
+    <name>
+     <text>t11</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>c_moveBoxConveyor</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="60" y="1500" />
+     <position x="60" y="1840" />
     </graphics>
    </transition>
-   <transition id="t-3E14-3406-46">
+   <transition id="t-15C4-D58C9-65">
+    <name>
+     <text>t27</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>c_liftingGreenBaseStopActuator</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="910" y="1500" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D580D-47">
+    <name>
+     <text>t10</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>o_machine2BusySensor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="720" y="300" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D58C3-64">
+    <name>
+     <text>t26</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>o_boxAlignBlueBaseSensor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="60" y="2020" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D5807-46">
     <name>
      <text>t1</text>
      <graphics>
@@ -1256,162 +1276,9 @@
      <position x="280" y="170" />
     </graphics>
    </transition>
-   <transition id="t-3E14-340E-47">
+   <transition id="t-15C4-D5894-63">
     <name>
-     <text>t10</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>o_machineFeeder2Sensor</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="720" y="50" />
-    </graphics>
-   </transition>
-   <transition id="t-3E14-341A-48">
-    <name>
-     <text>t11</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>c_sortingStopActuator</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="380" y="1125" />
-    </graphics>
-   </transition>
-   <transition id="t-3E14-3420-49">
-    <name>
-     <text>t12</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>o_machine2BusySensor</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="720" y="295" />
-    </graphics>
-   </transition>
-   <transition id="t-3E14-342A-50">
-    <name>
-     <text>t13</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>c_liftingBlueLidStopActuator</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="380" y="1545" />
-    </graphics>
-   </transition>
-   <transition id="t-3E14-3437-51">
-    <name>
-     <text>t14</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>o_machine2OutSensor</text>
-     <graphics>
-      <offset x="10" y="-10" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="720" y="415" />
-    </graphics>
-   </transition>
-   <transition id="t-3E14-3441-52">
-    <name>
-     <text>t15</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>c_sortingStopActuator</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="620" y="1125" />
-    </graphics>
-   </transition>
-   <transition id="t-3E14-344A-53">
-    <name>
-     <text>t16</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>o_metalSensor</text>
-     <graphics>
-      <offset x="0" y="10" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="700" y="525" />
-    </graphics>
-   </transition>
-   <transition id="t-3E14-3454-54">
-    <name>
-     <text>t17</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>c_liftingGreenLidStopActuator</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="620" y="1545" />
-    </graphics>
-   </transition>
-   <transition id="t-3E14-3460-55">
-    <name>
-     <text>t18</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>discardSensor</text>
-     <graphics>
-      <offset x="10" y="-10" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="940" y="525" />
-    </graphics>
-   </transition>
-   <transition id="t-3E14-3469-56">
-    <name>
-     <text>t19</text>
+     <text>t25</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
@@ -1426,7 +1293,92 @@
      <position x="910" y="1080" />
     </graphics>
    </transition>
-   <transition id="t-3E14-3472-57">
+   <transition id="t-15C4-D588F-62">
+    <name>
+     <text>t24</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>o_liftingBlueLidOutSensor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="60" y="1690" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D588B-61">
+    <name>
+     <text>t23</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>c_moveBoxConveyor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="620" y="1860" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D5886-60">
+    <name>
+     <text>t22</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>o_liftingBlueBaseInSensor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="60" y="1360" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D5880-59">
+    <name>
+     <text>t21</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>c_liftingGreenLidStopActuator</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="620" y="1540" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D587B-58">
+    <name>
+     <text>t20</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>o_sortingBlueSensor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="60" y="1210" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D5877-57">
     <name>
      <text>t2</text>
      <graphics>
@@ -1443,60 +1395,26 @@
      <position x="280" y="50" />
     </graphics>
    </transition>
-   <transition id="t-3E14-34CF-58">
+   <transition id="t-15C4-D5871-56">
     <name>
-     <text>t20</text>
+     <text>t19</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
     </name>
     <label>
-     <text>o_mainCrossingInSensor</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="500" y="540" />
-    </graphics>
-   </transition>
-   <transition id="t-3E14-34D9-59">
-    <name>
-     <text>t21</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>c_liftingGreenBaseStopActuator</text>
+     <text>c_sortingStopActuator</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="910" y="1500" />
+     <position x="620" y="1120" />
     </graphics>
    </transition>
-   <transition id="t-3E14-34E8-60">
+   <transition id="t-15C4-D586D-55">
     <name>
-     <text>t22</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>o_mainCrossingOutSensor</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="500" y="825" />
-    </graphics>
-   </transition>
-   <transition id="t-3E14-34F3-61">
-    <name>
-     <text>t24</text>
+     <text>t18</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
@@ -1508,250 +1426,148 @@
      </graphics>
     </label>
     <graphics>
-     <position x="120" y="925" />
+     <position x="120" y="920" />
     </graphics>
    </transition>
-   <transition id="t-3E14-34FE-62">
+   <transition id="t-15C4-D5869-54">
     <name>
-     <text>t26</text>
+     <text>t17</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
     </name>
     <label>
-     <text>o_sortingBlueSensor</text>
+     <text>c_moveBoxConveyor</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="60" y="1200" />
+     <position x="380" y="1840" />
     </graphics>
    </transition>
-   <transition id="t-3E14-3506-63">
+   <transition id="t-15C4-D5963-88">
     <name>
-     <text>t28</text>
+     <text>t9</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
     </name>
     <label>
-     <text>o_liftingBlueBaseInSensor</text>
+     <text>c_liftingBlueBaseStopActuator</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="60" y="1365" />
+     <position x="60" y="1500" />
     </graphics>
    </transition>
-   <transition id="t-3E14-3511-64">
+   <transition id="t-15C4-D595F-87">
     <name>
-     <text>t3</text>
+     <text>t8</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
     </name>
     <label>
-     <text>E2_EmpurraPeca_c</text>
+     <text>o_machineFeeder2Sensor</text>
      <graphics>
-      <offset x="-10" y="0" />
+      <offset x="0" y="-10" />
      </graphics>
     </label>
     <graphics>
-     <position x="720" y="170" />
+     <position x="720" y="50" />
     </graphics>
    </transition>
-   <transition id="t-3E14-351A-65">
+   <transition id="t-15C4-D595B-86">
     <name>
-     <text>t30</text>
+     <text>t7</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
     </name>
     <label>
-     <text>o_liftingBlueLidOutSensor</text>
+     <text>c_sortingStopActuator</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="60" y="1640" />
+     <position x="60" y="1080" />
     </graphics>
    </transition>
-   <transition id="t-3E14-3525-66">
+   <transition id="t-15C4-D5958-85">
     <name>
-     <text>t32</text>
+     <text>t6</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
     </name>
     <label>
-     <text>o_blueLidVisionSensor</text>
-     <graphics>
-      <offset x="10" y="-10" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="380" y="970" />
-    </graphics>
-   </transition>
-   <transition id="t-3E14-352D-67">
-    <name>
-     <text>t34</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>o_sortingBlueSensor</text>
+     <text>o_machine1OutSensor</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="380" y="1245" />
+     <position x="280" y="420" />
     </graphics>
    </transition>
-   <transition id="t-3E14-3538-68">
+   <transition id="t-15C4-D5953-84">
     <name>
-     <text>t36</text>
+     <text>t56</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
     </name>
     <label>
-     <text>o_liftingBlueLidInSensor</text>
+     <text>o_boxAlignGreenBaseSensor</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="380" y="1410" />
+     <position x="910" y="2020" />
     </graphics>
    </transition>
-   <transition id="t-3E14-3543-69">
+   <transition id="t-15C4-D594E-83">
     <name>
-     <text>t38</text>
+     <text>t54</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
     </name>
     <label>
-     <text>o_liftingBlueLidOutSensor</text>
+     <text>o_liftingGreenBaseOutSensor</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="380" y="1685" />
+     <position x="910" y="1690" />
     </graphics>
    </transition>
-   <transition id="t-3E14-358B-70">
-    <name>
-     <text>t40</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>o_greenBaseVisionSensor</text>
-     <graphics>
-      <offset x="10" y="-10" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="620" y="970" />
-    </graphics>
-   </transition>
-   <transition id="t-3E14-3598-71">
-    <name>
-     <text>t42</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>o_sortingGreenSensor</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="620" y="1245" />
-    </graphics>
-   </transition>
-   <transition id="t-3E14-35A3-72">
-    <name>
-     <text>t46</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>o_liftingGreenLidInSensor</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="620" y="1410" />
-    </graphics>
-   </transition>
-   <transition id="t-3E14-35AC-73">
-    <name>
-     <text>t48</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>o_liftingGreenLidOutSensor</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="620" y="1685" />
-    </graphics>
-   </transition>
-   <transition id="t-3E14-35B7-74">
-    <name>
-     <text>t5</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>c_stopCrossingActuator</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="500" y="665" />
-    </graphics>
-   </transition>
-   <transition id="t-3E14-35C2-75">
-    <name>
-     <text>t50</text>
-     <graphics>
-      <offset x="0" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>o_greenLidVisionSensor</text>
-     <graphics>
-      <offset x="10" y="-10" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="880" y="925" />
-    </graphics>
-   </transition>
-   <transition id="t-3E14-35CB-76">
+   <transition id="t-15C4-D5949-82">
     <name>
      <text>t52</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>o_liftingGreenBaseInSensor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="910" y="1360" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D5945-81">
+    <name>
+     <text>t50</text>
      <graphics>
       <offset x="0" y="0" />
      </graphics>
@@ -1766,141 +1582,241 @@
      <position x="910" y="1200" />
     </graphics>
    </transition>
-   <arc id="e-3E14-3707-120" source="p-3E14-33DF-42" target="t-3E14-340E-47" />
-   <arc id="e-Spec1_LOW_from_P_11" source="p-Spec1_1" target="t-3E14-35B7-74" />
-   <arc id="e-3E14-3708-121" source="t-3E14-340E-47" target="p-3E14-33E4-43" />
-   <arc id="e-3E14-3709-122" source="t-3E14-35AC-73" target="p-3E14-33CB-37" />
-   <arc id="e-3E14-370B-123" source="p-3E14-33E4-43" target="t-3E14-3511-64" />
-   <arc id="e-Spec2_UP_from_P_00" source="p-Spec2_0" target="t-3E14-35B7-74" />
-   <arc id="e-3E14-370C-124" source="t-3E14-3511-64" target="p-3E14-33DF-42" />
-   <arc id="e-Spec2_LOW_to_P_00" source="t-3E14-3681-86" target="p-Spec2_0" />
-   <arc id="e-3E14-370D-125" source="t-3E14-3511-64" target="p-3E14-33E9-44" />
-   <arc id="e-Spec2_LOW_to_P_01" source="t-3E14-341A-48" target="p-Spec2_0" />
-   <arc id="e-3E14-370E-126" source="p-3E14-33E9-44" target="t-3E14-3420-49" />
-   <arc id="e-Spec2_LOW_to_P_02" source="t-3E14-3441-52" target="p-Spec2_0" />
-   <arc id="e-3E14-370F-127" source="t-3E14-3420-49" target="p-3E14-3400-45" />
-   <arc id="e-Spec2_LOW_to_P_03" source="t-3E14-3469-56" target="p-Spec2_0" />
-   <arc id="e-3E14-3712-128" source="p-3E14-3400-45" target="t-3E14-3437-51" />
-   <arc id="e-Spec2_UP_to_P_10" source="t-3E14-35B7-74" target="p-Spec2_1" />
-   <arc id="e-3E14-3713-129" source="t-3E14-3437-51" target="p-3E14-33DA-41" />
-   <arc id="e-Spec2_LOW_from_P_10" source="p-Spec2_1" target="t-3E14-3681-86" />
-   <arc id="e-3E14-3714-130" source="t-3E14-344A-53" target="p-3E14-32A0-5" />
-   <arc id="e-Spec2_LOW_from_P_11" source="p-Spec2_1" target="t-3E14-341A-48" />
-   <arc id="e-3E14-3716-131" source="p-3E14-33DA-41" target="t-3E14-344A-53" />
-   <arc id="e-Spec2_LOW_from_P_12" source="p-Spec2_1" target="t-3E14-3441-52" />
-   <arc id="e-3E14-3717-132" source="t-3E14-368A-87" target="p-3E14-33DA-41" />
-   <arc id="e-Spec2_LOW_from_P_13" source="p-Spec2_1" target="t-3E14-3469-56" />
-   <arc id="e-3E14-3718-133" source="t-3E14-35E1-78" target="p-3E14-33D2-39" />
-   <arc id="e-3E14-3719-134" source="p-3E14-3367-22" target="t-3E14-368A-87" />
-   <arc id="e-3E14-371B-135" source="t-3E14-35F5-80" target="p-3E14-3367-22" />
-   <arc id="e-Spec3_UP_from_P_00" source="p-Spec3_0" target="t-3E14-35B7-74" />
-   <arc id="e-3E14-371E-136" source="p-3E14-32C4-13" target="t-3E14-35F5-80" />
-   <arc id="e-Spec3_UP_from_P_01" source="p-Spec3_0" target="t-3E14-366B-84" />
-   <arc id="e-3E14-3720-137" source="t-3E14-3406-46" target="p-3E14-32C4-13" />
-   <arc id="e-Spec3_LOW_to_P_00" source="t-3E14-34E8-60" target="p-Spec3_0" />
-   <arc id="e-3E14-3721-138" source="t-3E14-3406-46" target="p-3E14-327C-2" />
-   <arc id="e-Spec3_LOW_to_P_01" source="t-3E14-3676-85" target="p-Spec3_0" />
-   <arc id="e-3E14-3722-139" source="p-3E14-3292-3" target="t-3E14-3406-46" />
-   <arc id="e-Spec3_UP_to_P_10" source="t-3E14-35B7-74" target="p-Spec3_1" />
-   <arc id="e-3E14-3724-140" source="t-3E14-3472-57" target="p-3E14-3292-3" />
-   <arc id="e-Spec3_UP_to_P_11" source="t-3E14-366B-84" target="p-Spec3_1" />
-   <arc id="e-3E14-3725-141" source="p-3E14-327C-2" target="t-3E14-3472-57" />
-   <arc id="e-Spec3_LOW_from_P_10" source="p-Spec3_1" target="t-3E14-34E8-60" />
-   <arc id="e-3E14-3726-142" source="p-3E14-33C3-35" target="t-3E14-35FF-81" />
-   <arc id="e-Spec3_LOW_from_P_11" source="p-Spec3_1" target="t-3E14-3676-85" />
-   <arc id="e-3E14-3728-143" source="t-3E14-35FF-81" target="p-3E14-33C8-36" />
-   <arc id="e-3E14-372A-144" source="t-3E14-35E1-78" target="p-3E14-33D6-40" />
-   <arc id="e-3E14-372B-145" source="p-3E14-3357-17" target="t-3E14-341A-48" />
-   <arc id="e-Spec4_UP_from_P_00" source="p-Spec4_0" target="t-3E14-3681-86" />
-   <arc id="e-3E14-372C-146" source="t-3E14-341A-48" target="p-3E14-335A-18" />
-   <arc id="e-Spec4_LOW_to_P_00" source="t-3E14-3695-88" target="p-Spec4_0" />
-   <arc id="e-3E14-372E-147" source="p-3E14-335A-18" target="t-3E14-352D-67" />
-   <arc id="e-Spec4_UP_to_P_10" source="t-3E14-3681-86" target="p-Spec4_1" />
-   <arc id="e-3E14-372F-148" source="t-3E14-342A-50" target="p-3E14-3363-21" />
-   <arc id="e-Spec4_LOW_from_P_10" source="p-Spec4_1" target="t-3E14-3695-88" />
-   <arc id="e-3E14-3731-149" source="p-3E14-3363-21" target="t-3E14-3543-69" />
-   <arc id="e-3E14-3732-150" source="t-3E14-352D-67" target="p-3E14-335D-19" />
-   <arc id="e-3E14-3734-151" source="p-3E14-335D-19" target="t-3E14-3538-68" />
-   <arc id="e-Spec5_UP_from_P_00" source="p-Spec5_0" target="t-3E14-341A-48" />
-   <arc id="e-3E14-3735-152" source="t-3E14-3538-68" target="p-3E14-335F-20" />
-   <arc id="e-Spec5_LOW_to_P_00" source="t-3E14-342A-50" target="p-Spec5_0" />
-   <arc id="e-3E14-3737-153" source="p-3E14-335F-20" target="t-3E14-342A-50" />
-   <arc id="e-Spec5_UP_to_P_10" source="t-3E14-341A-48" target="p-Spec5_1" />
-   <arc id="e-3E14-3738-154" source="t-3E14-3525-66" target="p-3E14-3357-17" />
-   <arc id="e-Spec5_LOW_from_P_10" source="p-Spec5_1" target="t-3E14-342A-50" />
-   <arc id="e-3E14-3739-155" source="t-3E14-351A-65" target="p-3E14-33BC-33" />
-   <arc id="e-3E14-373A-156" source="p-3E14-3374-26" target="t-3E14-3454-54" />
-   <arc id="e-3E14-374C-157" source="t-3E14-35A3-72" target="p-3E14-3374-26" />
-   <arc id="e-Spec6_UP_from_P_00" source="p-Spec6_0" target="t-3E14-3441-52" />
-   <arc id="e-3E14-3750-158" source="p-3E14-3372-25" target="t-3E14-35A3-72" />
-   <arc id="e-Spec6_LOW_to_P_00" source="t-3E14-3454-54" target="p-Spec6_0" />
-   <arc id="e-3E14-3751-159" source="t-3E14-3598-71" target="p-3E14-3372-25" />
-   <arc id="e-Spec6_UP_to_P_10" source="t-3E14-3441-52" target="p-Spec6_1" />
-   <arc id="e-3E14-3752-160" source="p-3E14-3378-27" target="t-3E14-35AC-73" />
-   <arc id="e-Spec6_LOW_from_P_10" source="p-Spec6_1" target="t-3E14-3454-54" />
-   <arc id="e-3E14-3753-161" source="t-3E14-3454-54" target="p-3E14-3378-27" />
-   <arc id="e-3E14-3754-162" source="p-3E14-336E-24" target="t-3E14-3598-71" />
-   <arc id="e-3E14-3756-163" source="t-3E14-3441-52" target="p-3E14-336E-24" />
-   <arc id="e-Spec7_UP_from_P_00" source="p-Spec7_0" target="t-3E14-3469-56" />
-   <arc id="e-3E14-3757-164" source="p-3E14-336C-23" target="t-3E14-3441-52" />
-   <arc id="e-Spec7_LOW_to_P_00" source="t-3E14-34D9-59" target="p-Spec7_0" />
-   <arc id="e-3E14-3759-165" source="t-3E14-3653-82" target="p-3E14-33D0-38" />
-   <arc id="e-Spec7_UP_to_P_10" source="t-3E14-3469-56" target="p-Spec7_1" />
-   <arc id="e-3E14-375C-166" source="p-3E14-33C1-34" target="t-3E14-351A-65" />
-   <arc id="e-Spec7_LOW_from_P_10" source="p-Spec7_1" target="t-3E14-34D9-59" />
-   <arc id="e-3E14-375D-167" source="p-3E14-33CB-37" target="t-3E14-3653-82" />
-   <arc id="e-3E14-375E-168" source="t-3E14-358B-70" target="p-3E14-336C-23" />
-   <arc id="e-3E14-375F-169" source="p-3E14-33D2-39" target="t-3E14-3660-83" />
-   <arc id="e-3E14-3761-170" source="t-3E14-3660-83" target="p-3E14-33D6-40" />
-   <arc id="e-3E14-3762-171" source="p-3E14-337C-28" target="t-3E14-3469-56" />
-   <arc id="e-3E14-3763-172" source="t-3E14-3469-56" target="p-3E14-3380-29" />
-   <arc id="e-3E14-3765-173" source="p-3E14-3380-29" target="t-3E14-35CB-76" />
-   <arc id="e-3E14-3767-174" source="t-3E14-34D9-59" target="p-3E14-33B8-32" />
-   <arc id="e-3E14-3769-175" source="p-3E14-33B8-32" target="t-3E14-35E1-78" />
-   <arc id="e-3E14-376A-176" source="t-3E14-35CB-76" target="p-3E14-3382-30" />
-   <arc id="e-3E14-376B-177" source="t-3E14-34F3-61" target="p-3E14-32BE-11" />
-   <arc id="e-3E14-376D-178" source="p-3E14-3382-30" target="t-3E14-35D6-77" />
-   <arc id="e-3E14-376E-179" source="t-3E14-35D6-77" target="p-3E14-3385-31" />
-   <arc id="e-3E14-376F-180" source="p-3E14-3385-31" target="t-3E14-34D9-59" />
-   <arc id="e-3E14-3772-181" source="t-3E14-35C2-75" target="p-3E14-337C-28" />
-   <arc id="e-3E14-369F-89" source="p-3E14-33C8-36" target="t-3E14-3543-69" />
-   <arc id="e-3E14-36AD-90" source="p-3E14-32CD-15" target="t-3E14-3695-88" />
-   <arc id="e-3E14-36AF-91" source="t-3E14-3506-63" target="p-3E14-32CD-15" />
-   <arc id="e-3E14-36B2-92" source="p-3E14-32C9-14" target="t-3E14-3506-63" />
-   <arc id="e-3E14-36B4-93" source="t-3E14-34FE-62" target="p-3E14-32C9-14" />
-   <arc id="e-3E14-36B6-94" source="p-3E14-3352-16" target="t-3E14-351A-65" />
-   <arc id="e-3E14-36B8-95" source="t-3E14-3695-88" target="p-3E14-3352-16" />
-   <arc id="e-3E14-36B9-96" source="p-3E14-32C0-12" target="t-3E14-34FE-62" />
-   <arc id="e-3E14-36BE-97" source="t-3E14-3681-86" target="p-3E14-32C0-12" />
-   <arc id="e-3E14-36C1-98" source="p-3E14-32BE-11" target="t-3E14-3681-86" />
-   <arc id="e-3E14-36C3-99" source="t-3E14-35B7-74" target="p-3E14-32A9-7" />
-   <arc id="e-3E14-36C5-100" source="t-3E14-3543-69" target="p-3E14-33C3-35" />
-   <arc id="e-3E14-36C7-101" source="p-3E14-32A5-6" target="t-3E14-35B7-74" />
-   <arc id="e-3E14-36C9-102" source="t-3E14-34CF-58" target="p-3E14-32A5-6" />
-   <arc id="e-3E14-36CC-103" source="t-3E14-35EA-79" target="p-3E14-33C1-34" />
-   <arc id="e-3E14-36D0-104" source="p-3E14-33BC-33" target="t-3E14-35EA-79" />
-   <arc id="e-3E14-36D7-105" source="p-3E14-32B9-10" target="t-3E14-34F3-61" />
-   <arc id="e-3E14-36D9-106" source="p-3E14-32B9-10" target="t-3E14-3525-66" />
-   <arc id="e-3E14-36DA-107" source="p-3E14-32B9-10" target="t-3E14-358B-70" />
-   <arc id="e-3E14-36DC-108" source="p-3E14-32B9-10" target="t-3E14-35C2-75" />
-   <arc id="e-3E14-36F5-109" source="t-3E14-34E8-60" target="p-3E14-32B9-10" />
-   <arc id="e-3E14-36F6-110" source="p-3E14-32A9-7" target="t-3E14-34E8-60" />
-   <arc id="e-3E14-36F8-111" source="p-3E14-33D0-38" target="t-3E14-35AC-73" />
-   <arc id="e-3E14-36F9-112" source="t-3E14-3676-85" target="p-3E14-32AD-8" />
-   <arc id="e-Spec1_UP_from_P_00" source="p-Spec1_0" target="t-3E14-3406-46" />
-   <arc id="e-3E14-36FD-113" source="p-3E14-32B3-9" target="t-3E14-3676-85" />
-   <arc id="e-Spec1_UP_from_P_01" source="p-Spec1_0" target="t-3E14-3511-64" />
-   <arc id="e-3E14-36FE-114" source="t-3E14-366B-84" target="p-3E14-32B3-9" />
-   <arc id="e-Spec1_LOW_to_P_00" source="t-3E14-344A-53" target="p-Spec1_0" />
-   <arc id="e-3E14-36FF-115" source="p-3E14-32AD-8" target="t-3E14-366B-84" />
-   <arc id="e-Spec1_LOW_to_P_01" source="t-3E14-35B7-74" target="p-Spec1_0" />
-   <arc id="e-3E14-3700-116" source="t-3E14-3460-55" target="p-3E14-329A-4" />
-   <arc id="e-Spec1_UP_to_P_10" source="t-3E14-3406-46" target="p-Spec1_1" />
-   <arc id="e-3E14-3701-117" source="p-3E14-32A0-5" target="t-3E14-3460-55" />
-   <arc id="e-Spec1_UP_to_P_11" source="t-3E14-3511-64" target="p-Spec1_1" />
-   <arc id="e-3E14-3702-118" source="p-3E14-329A-4" target="t-3E14-344A-53" />
-   <arc id="e-Spec1_LOW_from_P_10" source="p-Spec1_1" target="t-3E14-344A-53" />
-   <arc id="e-3E14-3704-119" source="p-3E14-33DA-41" target="t-3E14-34CF-58" />
+   <transition id="t-15C4-D5940-80">
+    <name>
+     <text>t5</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>c_stopCrossingActuator</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="500" y="660" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D593C-79">
+    <name>
+     <text>t48</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>o_greenLidVisionSensor</text>
+     <graphics>
+      <offset x="10" y="-10" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="880" y="920" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D5938-78">
+    <name>
+     <text>t46</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>o_boxAlignGreenLidSensor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="620" y="2020" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D5933-77">
+    <name>
+     <text>t44</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>o_liftingGreenLidOutSensor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="620" y="1700" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D592B-76">
+    <name>
+     <text>t42</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>o_liftingGreenLidInSensor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="620" y="1410" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D58F7-75">
+    <name>
+     <text>t40</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>o_sortingGreenSensor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="620" y="1240" />
+    </graphics>
+   </transition>
+   <transition id="t-15C4-D58F3-74">
+    <name>
+     <text>t4</text>
+     <graphics>
+      <offset x="0" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>o_machine1BusySensor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="280" y="300" />
+    </graphics>
+   </transition>
+   <arc id="e-15C4-D59A2-115" source="t-15C4-D5807-46" target="p-15C4-D5202-2" />
+   <arc id="e-15C4-D59A1-114" source="t-15C4-D5807-46" target="p-15C4-D5771-24" />
+   <arc id="e-15C4-D59A0-113" source="p-15C4-D5771-24" target="t-15C4-D58F3-74" />
+   <arc id="e-15C4-D599E-112" source="t-15C4-D58F3-74" target="p-15C4-D57CA-35" />
+   <arc id="e-ARC-SUP-SUPCON_S10_0" source="p-SUPCON_S10_0" target="t-15C4-D58C9-65" />
+   <arc id="e-15C4-D599D-111" source="p-15C4-D5670-6" target="t-15C4-D595B-86" />
+   <arc id="e-15C4-D599C-110" source="p-15C4-D57CA-35" target="t-15C4-D5958-85" />
+   <arc id="e-15C4-D599B-109" source="t-15C4-D5958-85" target="p-15C4-D5803-45" />
+   <arc id="e-15C4-D5999-108" source="p-15C4-D57B9-30" target="t-15C4-D5938-78" />
+   <arc id="e-15C4-D5998-107" source="t-15C4-D5816-49" target="p-15C4-D5803-45" />
+   <arc id="e-15C4-D5998-106" source="p-15C4-D5801-44" target="t-15C4-D5816-49" />
+   <arc id="e-15C4-D5995-105" source="t-15C4-D580D-47" target="p-15C4-D5801-44" />
+   <arc id="e-ARC-SUP-SUPCON_S10_7" source="t-15C4-D5953-84" target="p-SUPCON_S10_0" />
+   <arc id="e-15C4-D5994-104" source="t-15C4-D5886-60" target="p-15C4-D567B-9" />
+   <arc id="e-15C4-D5993-103" source="p-15C4-D57FD-43" target="t-15C4-D580D-47" />
+   <arc id="e-15C4-D5992-102" source="t-15C4-D58D6-68" target="p-15C4-D57FD-43" />
+   <arc id="e-15C4-D5992-101" source="t-15C4-D58D6-68" target="p-15C4-D57F3-41" />
+   <arc id="e-15C4-D5990-100" source="t-15C4-D595B-86" target="p-15C4-D5675-7" />
+   <arc id="e-15C4-D598F-99" source="p-15C4-D57F7-42" target="t-15C4-D58D6-68" />
+   <arc id="e-15C4-D598E-98" source="t-15C4-D595F-87" target="p-15C4-D57F7-42" />
+   <arc id="e-15C4-D598C-97" source="p-15C4-D57F3-41" target="t-15C4-D595F-87" />
+   <arc id="e-ARC-SUP-SUPCON_S2_0" source="p-SUPCON_S2_0" target="t-15C4-D5940-80" />
+   <arc id="e-15C4-D598B-96" source="p-15C4-D5803-45" target="t-15C4-D5829-51" />
+   <arc id="e-15C4-D598A-95" source="t-15C4-D5869-54" target="p-15C4-D5765-21" />
+   <arc id="e-15C4-D5989-94" source="p-15C4-D5665-4" target="t-15C4-D5865-53" />
+   <arc id="e-15C4-D5988-93" source="t-15C4-D5865-53" target="p-15C4-D566B-5" />
+   <arc id="e-15C4-D5987-92" source="p-15C4-D567B-9" target="t-15C4-D5963-88" />
+   <arc id="e-15C4-D5986-91" source="p-15C4-D566B-5" target="t-15C4-D593C-79" />
+   <arc id="e-15C4-D5985-90" source="p-15C4-D566B-5" target="t-15C4-D58EE-73" />
+   <arc id="e-15C4-D597F-89" source="t-15C4-D586D-55" target="p-15C4-D5670-6" />
+   <arc id="e-15C4-D59A3-116" source="p-15C4-D5679-8" target="t-15C4-D5886-60" />
+   <arc id="e-ARC-SUP-SUPCON_S2_13" source="t-15C4-D595B-86" target="p-SUPCON_S2_0" />
+   <arc id="e-15C4-D59A4-117" source="p-15C4-D568C-13" target="t-15C4-D5807-46" />
+   <arc id="e-ARC-SUP-SUPCON_S2_15" source="t-15C4-D5822-50" target="p-SUPCON_S2_0" />
+   <arc id="e-ARC-SUP-SUPCON_S2_17" source="t-15C4-D5871-56" target="p-SUPCON_S2_0" />
+   <arc id="e-15C4-D59A5-118" source="t-15C4-D5877-57" target="p-15C4-D568C-13" />
+   <arc id="e-15C4-D59A6-119" source="t-15C4-D5938-78" target="p-15C4-D57BC-31" />
+   <arc id="e-ARC-SUP-SUPCON_S2_19" source="t-15C4-D5894-63" target="p-SUPCON_S2_0" />
+   <arc id="e-15C4-D59A7-120" source="p-15C4-D5202-2" target="t-15C4-D5877-57" />
+   <arc id="e-ARC-SUP-SUPCON_S3_0" source="p-SUPCON_S3_0" target="t-15C4-D595B-86" />
+   <arc id="e-15C4-D59A9-121" source="p-15C4-D574F-15" target="t-15C4-D5822-50" />
+   <arc id="e-ARC-SUP-SUPCON_S3_7" source="t-15C4-D5963-88" target="p-SUPCON_S3_0" />
+   <arc id="e-15C4-D59AA-122" source="t-15C4-D5940-80" target="p-15C4-D5665-4" />
+   <arc id="e-15C4-D59AB-123" source="t-15C4-D5822-50" target="p-15C4-D5753-16" />
+   <arc id="e-15C4-D59AD-124" source="p-15C4-D5753-16" target="t-15C4-D58DD-69" />
+   <arc id="e-ARC-SUP-SUPCON_S4_0" source="p-SUPCON_S4_0" target="t-15C4-D5822-50" />
+   <arc id="e-15C4-D59AE-125" source="t-15C4-D5861-52" target="p-15C4-D575E-19" />
+   <arc id="e-ARC-SUP-SUPCON_S4_7" source="t-15C4-D5861-52" target="p-SUPCON_S4_0" />
+   <arc id="e-ARC-SUP-SUPCON_S5_0" source="p-SUPCON_S5_0" target="t-15C4-D5871-56" />
+   <arc id="e-15C4-D59AF-126" source="p-15C4-D575E-19" target="t-15C4-D58E6-71" />
+   <arc id="e-15C4-D59B0-127" source="t-15C4-D58DD-69" target="p-15C4-D5757-17" />
+   <arc id="e-ARC-SUP-SUPCON_S5_7" source="t-15C4-D5880-59" target="p-SUPCON_S5_0" />
+   <arc id="e-15C4-D59B1-128" source="t-15C4-D587B-58" target="p-15C4-D5679-8" />
+   <arc id="e-15C4-D59B4-129" source="p-15C4-D5757-17" target="t-15C4-D58E1-70" />
+   <arc id="e-15C4-D59B5-130" source="t-15C4-D58E1-70" target="p-15C4-D575B-18" />
+   <arc id="e-15C4-D59B6-131" source="p-15C4-D575B-18" target="t-15C4-D5861-52" />
+   <arc id="e-15C4-D59C9-132" source="p-15C4-D57BC-31" target="t-15C4-D588B-61" />
+   <arc id="e-ARC-SUP-SUPCON_S6_0" source="p-SUPCON_S6_0" target="t-15C4-D5894-63" />
+   <arc id="e-15C4-D59CA-133" source="p-15C4-D565B-3" target="t-15C4-D5940-80" />
+   <arc id="e-15C4-D59CB-134" source="t-15C4-D58CD-66" target="p-15C4-D574F-15" />
+   <arc id="e-15C4-D59CC-135" source="p-15C4-D57AD-27" target="t-15C4-D5880-59" />
+   <arc id="e-15C4-D59CF-136" source="t-15C4-D592B-76" target="p-15C4-D57AD-27" />
+   <arc id="e-ARC-SUP-SUPCON_S6_7" source="t-15C4-D58C9-65" target="p-SUPCON_S6_0" />
+   <arc id="e-ARC-SUP-SUPCON_S7_0" source="p-SUPCON_S7_0" target="t-15C4-D5963-88" />
+   <arc id="e-ARC-SUP-SUPCON_S7_7" source="t-15C4-D58C3-64" target="p-SUPCON_S7_0" />
+   <arc id="e-ARC-SUP-SUPCON_S8_0" source="p-SUPCON_S8_0" target="t-15C4-D5861-52" />
+   <arc id="e-ARC-SUP-SUPCON_S1_15" source="t-15C4-D5940-80" target="p-SUPCON_S1_0" />
+   <arc id="e-ARC-SUP-SUPCON_S8_7" source="t-15C4-D58EA-72" target="p-SUPCON_S8_0" />
+   <arc id="e-ARC-SUP-SUPCON_S9_0" source="p-SUPCON_S9_0" target="t-15C4-D5880-59" />
+   <arc id="e-15C4-D59D0-137" source="p-15C4-D5778-26" target="t-15C4-D592B-76" />
+   <arc id="e-15C4-D59D1-138" source="t-15C4-D58F7-75" target="p-15C4-D5778-26" />
+   <arc id="e-15C4-D59D2-139" source="p-15C4-D57B1-28" target="t-15C4-D5933-77" />
+   <arc id="e-15C4-D59D3-140" source="t-15C4-D58EA-72" target="p-15C4-D5769-22" />
+   <arc id="e-15C4-D59D4-141" source="t-15C4-D5880-59" target="p-15C4-D57B1-28" />
+   <arc id="e-15C4-D59D5-142" source="p-15C4-D5775-25" target="t-15C4-D58F7-75" />
+   <arc id="e-15C4-D59D6-143" source="t-15C4-D5871-56" target="p-15C4-D5775-25" />
+   <arc id="e-ARC-SUP-SUPCON_S9_7" source="t-15C4-D5938-78" target="p-SUPCON_S9_0" />
+   <arc id="e-15C4-D59D8-144" source="t-15C4-D5829-51" target="p-15C4-D565B-3" />
+   <arc id="e-15C4-D5A12-180" source="p-15C4-D57D3-38" target="t-15C4-D58D1-67" />
+   <arc id="e-15C4-D5A11-179" source="t-15C4-D594E-83" target="p-15C4-D57D3-38" />
+   <arc id="e-15C4-D5A10-178" source="p-15C4-D57B5-29" target="t-15C4-D588B-61" />
+   <arc id="e-15C4-D59FE-177" source="p-15C4-D5769-22" target="t-15C4-D5869-54" />
+   <arc id="e-15C4-D59FD-176" source="p-15C4-D5675-7" target="t-15C4-D587B-58" />
+   <arc id="e-15C4-D59FD-175" source="t-15C4-D5933-77" target="p-15C4-D57B5-29" />
+   <arc id="e-15C4-D59FC-174" source="p-15C4-D5761-20" target="t-15C4-D5869-54" />
+   <arc id="e-15C4-D59F9-173" source="t-15C4-D58E6-71" target="p-15C4-D5761-20" />
+   <arc id="e-15C4-D59F8-172" source="p-15C4-D5685-11" target="t-15C4-D5811-48" />
+   <arc id="e-15C4-D59F7-171" source="t-15C4-D588F-62" target="p-15C4-D5685-11" />
+   <arc id="e-15C4-D59F7-170" source="p-15C4-D57EF-40" target="t-15C4-D58D1-67" />
+   <arc id="e-15C4-D59F6-169" source="p-15C4-D5765-21" target="t-15C4-D58EA-72" />
+   <arc id="e-15C4-D59F5-168" source="t-15C4-D5811-48" target="p-15C4-D568A-12" />
+   <arc id="e-15C4-D59F4-167" source="p-15C4-D5747-14" target="t-15C4-D5811-48" />
+   <arc id="e-15C4-D59F1-166" source="p-15C4-D566B-5" target="t-15C4-D58CD-66" />
+   <arc id="e-15C4-D59F0-165" source="t-15C4-D58C3-64" target="p-15C4-D5747-14" />
+   <arc id="e-15C4-D59EF-164" source="t-15C4-D5963-88" target="p-15C4-D5680-10" />
+   <arc id="e-15C4-D59EE-163" source="p-15C4-D568A-12" target="t-15C4-D58C3-64" />
+   <arc id="e-15C4-D59ED-162" source="t-15C4-D58D1-67" target="p-15C4-D57D7-39" />
+   <arc id="e-15C4-D59EC-161" source="t-15C4-D593C-79" target="p-15C4-D57BF-32" />
+   <arc id="e-ARC-SUP-SUPCON_S1_0" source="p-SUPCON_S1_0" target="t-15C4-D5807-46" />
+   <arc id="e-15C4-D59EB-160" source="p-15C4-D57CE-36" target="t-15C4-D58C9-65" />
+   <arc id="e-15C4-D59EA-159" source="t-15C4-D5953-84" target="p-15C4-D57EF-40" />
+   <arc id="e-15C4-D59E7-158" source="t-15C4-D5949-82" target="p-15C4-D57CE-36" />
+   <arc id="e-15C4-D59E6-157" source="p-15C4-D57C7-34" target="t-15C4-D5949-82" />
+   <arc id="e-15C4-D59E5-156" source="t-15C4-D5945-81" target="p-15C4-D57C7-34" />
+   <arc id="e-15C4-D59E4-155" source="p-15C4-D566B-5" target="t-15C4-D586D-55" />
+   <arc id="e-ARC-SUP-SUPCON_S1_2" source="p-SUPCON_S1_0" target="t-15C4-D58D6-68" />
+   <arc id="e-15C4-D59E3-154" source="p-15C4-D57D1-37" target="t-15C4-D594E-83" />
+   <arc id="e-15C4-D59E3-153" source="t-15C4-D58C9-65" target="p-15C4-D57D1-37" />
+   <arc id="e-15C4-D59E1-152" source="p-15C4-D5680-10" target="t-15C4-D588F-62" />
+   <arc id="e-15C4-D59E0-151" source="p-15C4-D57C3-33" target="t-15C4-D5945-81" />
+   <arc id="e-15C4-D59DE-150" source="t-15C4-D5894-63" target="p-15C4-D57C3-33" />
+   <arc id="e-15C4-D59DD-149" source="p-15C4-D57BF-32" target="t-15C4-D5894-63" />
+   <arc id="e-15C4-D59DC-148" source="p-15C4-D57D7-39" target="t-15C4-D5953-84" />
+   <arc id="e-15C4-D59DB-147" source="t-15C4-D58EE-73" target="p-15C4-D576D-23" />
+   <arc id="e-15C4-D59DA-146" source="t-15C4-D588B-61" target="p-15C4-D57B9-30" />
+   <arc id="e-15C4-D59D9-145" source="p-15C4-D576D-23" target="t-15C4-D5871-56" />
   </page>
  </net>
 </pnml>

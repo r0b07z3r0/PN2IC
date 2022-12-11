@@ -1,16 +1,12 @@
 from telnetlib import theNULL
 from threading import local
 import time
-from tkinter import ARC
 from tokenize import String
 from parsePNML import ET, getET, Net, Page, Place, Transition, Arc, parsePNML, runPNMLParse
 import xml.etree.ElementTree as POxml
 import re
 
-#flowlist = []
-#global sfcSeq
-#sfcSeq = []
-
+flowlist = []
 
 class POU:
 
@@ -252,53 +248,9 @@ def tlookup(p1, p2):
                 trlist.append(p1tr)
     
     return trlist
-
-#RECURSIVE PARSE ===========================================    
-def recursiveParse(placeList, place):
-    print("recursiveParsing")
-    print("Place: " + place)
     
-    trSuc = Arc.getTSuc(Place.getID(place))
-    trSucNames = []
-    for trSucName in trSuc:
-        trSucNames.append(Transition.getName(trSucName))
     
-    print("trSucNames:")
-    print(trSucNames)
-    
-    if len(trSuc) > 1:
-            sfcSeq.append(["selDiverge", trSucNames])
-    for tr in trSuc:
-        print("Transition " + tr + " - " + (Transition.getName(tr)))
-        sfcSeq.append(Transition.getName(tr))
-        pSucIds = Arc.getTSuc(tr)
-        pSucList = []
-        for pSucId in pSucIds:
-            pSucList.append(Place.getName(pSucId))
-        print("pSuc:")
-        print(pSucList)
-        pSucListAux = pSucList
-        #Verify if Place is on placeList
-        for pVerify in pSucListAux:
-            if pVerify not in placeList[1:]:
-                pSucList.remove(pVerify)
-        
-        if pSucList == []:
-            print("JUMP")
-            sfcSeq.append("JumpStep")
-            continue
-        else:
-            sfcSeq.append(pSucList[0])
-                
-        print("pSuc After Verify:")
-        print(pSucList)
-        
-        recursiveParse(placeList, pSucList[0])    
-        
 def defineFlows():
-    
-    flowlist = []
-    
     print("Defining Flows")
     
     #The file must be inputed by user on app GUI
@@ -329,26 +281,16 @@ def defineFlows():
         flows = re.sub('\(.*?\n+', '', flows)
         flows = flows.strip()
         flowlist.append(flows.split(' '))
-    
-    flowlistOrder = []
-    for flow in flowlist:
-        flowOrder = []
-        flowTrail = flow
-        for place in flow:
-                if Place.getInitialMark(place) == "1":
-                    flowOrder.append(place)
-                    flowTrail.remove(place)    
-        flowOrder.extend(flowTrail)
-        flowlistOrder.append(flowOrder)
-    
-    print("FlowListOrder:" + str(flowlistOrder))    
+        
+        
+
+        
     print("Flowlist: " + str(flowlist))
-    return flowlistOrder
     
     
-def definePOUs(flowlist):
-    print('Defining POUs -----------------------------------------')
-    print(flowlist)
+def definePOUs():
+    print('Defining POUs')
+    #print(flowlist)
     
     flowscount = 1
     
@@ -367,99 +309,7 @@ def definePOUs(flowlist):
                 print("Not Spec")
                 pouname = "flow_" + str(flowscount)
                 break
-        
-        #TESTE BRANCHES #####################################################################
-        print("Teste BRANCHES de " + pouname + " ##########################")
-        newFlowSequence = []
-        global sfcSeq
-        sfcSeq = []
-        
-        branchIndex = 0
-        trSuc = []
-        initialStep = [flow[0]]
-        newFlowSequence.append(flow[0])
-        recursiveParse(flow, flow[0])
-        print(sfcSeq)
-        
-        newFlowSequence = sfcSeq
-        
-        sfcSeq = []
-        #Check for multiple transitions in initialStep
-        
-        #trSuc = Arc.getTSuc(Place.getID(flow[0]))
-        #print("Transitions after " + flow[0] + ":")
-        #print(trSuc)
-        #if len(trSuc) > 1:
-        #    newFlowSequence.append(["Branch"+ str(branchIndex), trSuc])
-        #for tr in trSuc:
-        #    print("Transition " + tr + " - " + (Transition.getName(tr)))
-        #    newFlowSequence.append(Transition.getName(tr))
-        #    newFlowSequence.append(Place.getName(Arc.getTSuc(tr)[0]))
-            
-            
-        newFlowSequence = initialStep + newFlowSequence    
-        print("FIM TESTE BRANCHES de " + pouname + " #######################")
-        
-        flowSequenceAux = newFlowSequence
-        
-        jumpID = 0
-        selDivergeID = 0
-        for element in flowSequenceAux:
-            if element == 'JumpStep':
-                newFlowSequence[flowSequenceAux.index(element)] = 'JumpStep_' + flowSequenceAux[flowSequenceAux.index(element)-1]
-                jumpID+=1
-            if element[0] == 'selDiverge':
-                newFlowSequence[flowSequenceAux.index(element)][0] = 'selDiverge_' + str(selDivergeID)
-                selDivergeID+=1
-
-
-        flowSequenceAux = newFlowSequence
-        print(flowSequenceAux)
-        selConvergeID = selDivergeID-1
-        for revElement in reversed(flowSequenceAux):
-            print(revElement)
-            if revElement[0].startswith('selDiverge'):
-                transDiv = flowSequenceAux[flowSequenceAux.index(revElement)-2]
-                for jump in flowSequenceAux[flowSequenceAux.index(revElement):]:
-                    print(jump)
-                    if jump == revElement[1][len(revElement[1])-1]:
-                        print('Converge')
-                        for nextJump in flowSequenceAux[flowSequenceAux.index(jump):]:
-                            print(nextJump)
-                            if not type(nextJump) is list:
-                                if nextJump.startswith('JumpStep'):
-                                    newFlowSequence.insert(newFlowSequence.index(nextJump)+1, 'selConverge_' + str(selConvergeID))
-                                    selConvergeID-=1
-                                    break
-        
-        print("newFlowSequence: selConv")
-        print(newFlowSequence)
-        
-        flowSequenceAux = newFlowSequence
-        
-        for fwdElement in flowSequenceAux:
-            if not type(fwdElement) is list:
-                if fwdElement.startswith('selConverge'):
-                    print('forward: ' + fwdElement)
-                    convPos = flowSequenceAux.index(fwdElement)
-                    jumpConvFinder = [fwdElement]
-                    for revConv in reversed(flowSequenceAux[:convPos]):
-                        print(revConv)
-                        if not type(revConv) is list:
-                            if revConv.startswith('JumpStep'):
-                                jumpConvFinder.append(revConv)
-                            if revConv.startswith('selConverge'):
-                                jumpConvFinder.append(revConv)
-                                break
-                        if revConv[0].startswith('selDiverge'):
-                            newFlowSequence[convPos] = jumpConvFinder
-                            break
-        
-        print("newFlowSequence: FIXED")
-        print(newFlowSequence)
-        print("FIM TESTE BRANCHES de " + pouname + " #######################")
-
-        #FIM TESTE BRANCHES #####################################################################        
+                
         #pouname = "flow_" + str(flowscount)
         print('POU Name: ' + pouname + ' places:')
         print(flow)
@@ -470,8 +320,8 @@ def definePOUs(flowlist):
         trSequence = []
         
         for place in flow:
-            ##print("place: " + str(place))
-            ##print("initialMark of " + place + " is " + Place.getInitialMark(place))
+            print("place: " + str(place))
+            print("initialMark of " + place + " is " + Place.getInitialMark(place))
             #define steps
             placeId = pouname + "_" + place
             globals()[placeId] = Steps(placeId)
@@ -484,19 +334,19 @@ def definePOUs(flowlist):
             
                         
             #define invariables
-        ##print("teste: " + str(flow))
+        print("teste: " + str(flow))
         #define Transitions
         trlist = []
         placeIndex = 0
         seq = 0
-        ##print("printFlow:" + str(flow))
+        print("printFlow:" + str(flow))
         
         while len(flowAux) > 0:
-            ##print("flowAux: " + str(flowAux))
-            ##print("seq: " + str(seq))
-            ##trlist = tlookup(placeSequence[placeIndex], flowAux[seq])
-            ##print("trlist:")
-            ##print(trlist)
+            print("flowAux: " + str(flowAux))
+            print("seq: " + str(seq))
+            trlist = tlookup(placeSequence[placeIndex], flowAux[seq])
+            print("trlist:")
+            print(trlist)
             if len(trlist) > 0:
                 placeSequence.append(flowAux[seq])
                 flowAux.remove(flowAux[seq])
@@ -505,7 +355,7 @@ def definePOUs(flowlist):
                 placeIndex+=1
             else:
                 seq+=1
-        ##trlist = tlookup(placeSequence[len(placeSequence)-1], placeSequence[0])
+        trlist = tlookup(placeSequence[len(placeSequence)-1], placeSequence[0])
         trSequence.append(trlist)
         globals()[pouname].setStepSequence(placeSequence)
         globals()[pouname].setTrSequence(trSequence)
@@ -988,8 +838,8 @@ def main():
     
     writerpnml = open("branch.pnml")
     parsePNML(writerpnml)
-    flowlist = defineFlows()
-    definePOUs(flowlist)
+    defineFlows()
+    definePOUs()
     writePLCOpen()
     
     #print("Checking POUs:")

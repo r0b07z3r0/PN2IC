@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--created Sat Nov 26 22:29:30 2022 by ndrio version 3.7.0-->
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="n-18F8-93A36-0" type ="http://www.laas.fr/tina/tpn">
+  <name>
+   <text>branch</text>
+  </name>
+ <page id="g-18F8-93BDC-1">
+  <place id="p-18F8-93BF0-2">
+  <name>
+   <text>p1</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>l2</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="50" y="180"/>
+   </graphics>
+  </place>
+  <place id="p-18F8-93FFD-3">
+  <name>
+   <text>p3</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>l3</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="105" y="360"/>
+   </graphics>
+  </place>
+  <place id="p-18F8-94006-4">
+  <name>
+   <text>p6</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>l4</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="400" y="95"/>
+   </graphics>
+  </place>
+  <place id="p-18F8-9400E-5">
+  <name>
+   <text>p7</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>l5</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="500" y="250"/>
+   </graphics>
+  </place>
+  <transition id="t-18F8-94012-6">
+  <name>
+   <text>t0</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>tr0</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="55" y="100"/>
+   </graphics>
+  </transition>
+  <transition id="t-18F8-9401B-7">
+  <name>
+   <text>t1</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>tr1</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="140" y="160"/>
+   </graphics>
+  </transition>
+  <transition id="t-18F8-94022-8">
+  <name>
+   <text>t2</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>tr2</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="30" y="300"/>
+   </graphics>
+  </transition>
+  <transition id="t-18F8-9402C-9">
+  <name>
+   <text>t3</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>tr3</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="195" y="225"/>
+   </graphics>
+  </transition>
+  <transition id="t-18F8-94035-10">
+  <name>
+   <text>t4</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>tr4</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="250" y="315"/>
+   </graphics>
+  </transition>
+  <transition id="t-18F8-94039-11">
+  <name>
+   <text>t5</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>tr5</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="340" y="370"/>
+   </graphics>
+  </transition>
+  <transition id="t-18F8-94041-12">
+  <name>
+   <text>t6</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>tr6</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="325" y="60"/>
+   </graphics>
+  </transition>
+  <transition id="t-18F8-94046-13">
+  <name>
+   <text>t7</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>tr7</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="445" y="170"/>
+   </graphics>
+  </transition>
+  <transition id="t-18F8-9404C-14">
+  <name>
+   <text>t8</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>tr8</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="360" y="240"/>
+   </graphics>
+  </transition>
+  <place id="p-18F8-94134-15">
+  <name>
+   <text>z3</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>l1</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="195" y="50"/>
+   </graphics>
+  </place>
+  <arc id="e-18F8-9413F-16" source="t-18F8-9404C-14" target="p-18F8-94134-15">
+  </arc>
+  <arc id="e-18F8-94144-17" source="p-18F8-93FFD-3" target="t-18F8-94039-11">
+  </arc>
+  <arc id="e-18F8-94146-18" source="t-18F8-94035-10" target="p-18F8-94134-15">
+  </arc>
+  <arc id="e-18F8-94149-19" source="p-18F8-93FFD-3" target="t-18F8-94035-10">
+  </arc>
+  <arc id="e-18F8-9414B-20" source="t-18F8-94022-8" target="p-18F8-93FFD-3">
+  </arc>
+  <arc id="e-18F8-9414D-21" source="p-18F8-93BF0-2" target="t-18F8-94022-8">
+  </arc>
+  <arc id="e-18F8-9414E-22" source="t-18F8-9401B-7" target="p-18F8-94134-15">
+  </arc>
+  <arc id="e-18F8-9414F-23" source="p-18F8-93BF0-2" target="t-18F8-9401B-7">
+  </arc>
+  <arc id="e-18F8-94151-24" source="t-18F8-94012-6" target="p-18F8-93BF0-2">
+  </arc>
+  <arc id="e-18F8-94152-25" source="p-18F8-94134-15" target="t-18F8-94012-6">
+  </arc>
+  <arc id="e-18F8-94156-26" source="p-18F8-9400E-5" target="t-18F8-9404C-14">
+  </arc>
+  <arc id="e-18F8-94157-27" source="t-18F8-94046-13" target="p-18F8-9400E-5">
+  </arc>
+  <arc id="e-18F8-94158-28" source="p-18F8-94006-4" target="t-18F8-94046-13">
+  </arc>
+  <arc id="e-18F8-9415A-29" source="t-18F8-94041-12" target="p-18F8-94006-4">
+  </arc>
+  <arc id="e-18F8-9415B-30" source="p-18F8-94134-15" target="t-18F8-94041-12">
+  </arc>
+  <arc id="e-18F8-9415C-31" source="t-18F8-9402C-9" target="p-18F8-94134-15">
+  </arc>
+  <arc id="e-18F8-9415D-32" source="p-18F8-93BF0-2" target="t-18F8-9402C-9">
+  </arc>
+  <arc id="e-18F8-9415E-33" source="t-18F8-94039-11" target="p-18F8-94134-15">
+  </arc>
+ </page>
+ </net>
+</pnml>
