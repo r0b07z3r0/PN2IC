@@ -103,7 +103,7 @@ pl p7 : input2Available
 pl p8 : machine2On
 pl p9 : PecaEsteira
 
-0.000s
+0.016s
 
 P-SEMI-FLOWS GENERATING SET ------------------------------------- 
 
@@ -126,7 +126,7 @@ p14 p15 p16 pSUPCON_S3_0 (1)
 
 invariant
 
-0.016s
+0.000s
 
 T-SEMI-FLOWS GENERATING SET ------------------------------------- 
 

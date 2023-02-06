@@ -10,7 +10,6 @@ import re
 #flowlist = []
 #global sfcSeq
 #sfcSeq = []
-global listconv
 
 
 class POU:
@@ -67,7 +66,6 @@ class Steps:
     localID: str
     initialStep: str
     name: str
-    label: str
     connectionPointInRefId: str
     
     transitions: list
@@ -88,10 +86,6 @@ class Steps:
         self.name = name
         #Steps.instances.add(self)
         Steps.listStepsName.append(self.name)
-    
-    def setStepsLabel(self, label):
-        self.label = label
-        #Steps.instances.add(self)
         
     def setStepsPOU(self, pou):
         self.POUname = pou
@@ -174,7 +168,6 @@ class SelectDiverg:
     localID: str
     connectionPointInRefId: str
     connectionPointOutQty: int
-    listSelectDiverge: list    
     
     def __init__(self, name):
         self.name = name
@@ -198,7 +191,6 @@ class SelectConverg:
     localID: str
     connectionPointInRefId: str
     connectionPointOutRefId: str
-    listSelectConverge: list
     
     def __init__(self, name):
         self.name = name
@@ -221,19 +213,9 @@ class JumpStep:
     connectionPointInRefId: str
     targetName: str
     
-    
-    instances: set
-    instances = set()
-    
-    jumpInstances = []
-    listJumpName = []
-
-    
     def __init__(self, name):
         self.name = name
-        JumpStep.instances.add(self)
-        JumpStep.jumpInstances.append(self.name)
-    
+        
     def setPOUname(self, pouname):
         self.POUname = pouname
         
@@ -245,13 +227,6 @@ class JumpStep:
 
     def setTargetName(self, targetName):
         self.targetName = targetName
-        
-    @classmethod
-    def print_instances(cls):
-        for instance in cls.instances:
-            print('POU name: ' + instance.POUname)
-            print('Name: ' + instance.name)
-            print("LocalID:" + instance.localID)
         
 def tlookup(p1, p2):
     print("tlookup")
@@ -278,29 +253,7 @@ def tlookup(p1, p2):
     
     return trlist
 
-def findSublist(subList, inList):
-    subListLength = len(subList)
-    for i in range(len(inList)-subListLength):
-        if subList == inList[i:i+subListLength]:
-            return (i, i+subListLength)
-    return None
-
-def isSublist(subList, inList):
-    subListLength = len(subList)
-    for i in range(len(inList)-subListLength):
-        if subList == inList[i:i+subListLength]:
-            return True
-    return False
-
-def removeSublistFromList(subList, inList):
-    indices = findSublist(subList, inList)
-    if not indices is None:
-        return inList[0:indices[0]] + inList[indices[1]:]
-    else:
-        return inList
-
 #RECURSIVE PARSE ===========================================    
-
 def recursiveParse(placeList, place):
     print("recursiveParsing")
     print("Place: " + place)
@@ -313,8 +266,8 @@ def recursiveParse(placeList, place):
     print("trSucNames:")
     print(trSucNames)
     
-    #if len(trSuc) > 1:
-    #        sfcSeq.append(["selDiverge", trSucNames])
+    if len(trSuc) > 1:
+            sfcSeq.append(["selDiverge", trSucNames])
     for tr in trSuc:
         print("Transition " + tr + " - " + (Transition.getName(tr)))
         sfcSeq.append(Transition.getName(tr))
@@ -324,14 +277,10 @@ def recursiveParse(placeList, place):
             pSucList.append(Place.getName(pSucId))
         print("pSuc:")
         print(pSucList)
-        pSucListAux = pSucList.copy()
+        pSucListAux = pSucList
         #Verify if Place is on placeList
         for pVerify in pSucListAux:
-            print('pVerify ' + pVerify)
-            print('Place LIST to be keeped')
-            print(placeList[1:])
             if pVerify not in placeList[1:]:
-                print(pVerify + ' REMOVED')
                 pSucList.remove(pVerify)
         
         if pSucList == []:
@@ -345,58 +294,6 @@ def recursiveParse(placeList, place):
         print(pSucList)
         
         recursiveParse(placeList, pSucList[0])    
-
-def findConv(seq, last, listconv):
-
-    print('\n\nRunning findConv')
-    print(seq)
-    print('LAST:')
-    print(last)
-    trlist = seq[0][1]
-    print(trlist)
-    jumplist = []
-    for eachTr in trlist:
-        print('\nTransition: ' + eachTr)
-        if not eachTr == trlist[len(trlist)-1]:
-            for eachElem in seq[seq.index([eachTr]):]:
-                print('eachElem')
-                print(eachElem)
-                if eachElem == []:
-                    #print('LAST FOUND!')
-                    #converge.append(seq[seq.index(eachElem)-1])
-                    break
-                elif eachElem[0] == last:
-                    print('LAST FOUND!')
-                    #converge.append([seq[0][0],seq[seq.index(eachElem)-1]])
-                    break
-                elif eachElem[0].startswith('selDiverge'):
-                    print('selDiverge FOUND')
-                    retConv = findConv(seq[seq.index(eachElem):],trlist[trlist.index(eachTr)+1], listconv)
-                    jumplist.append([retConv[0]])
-                    break
-                elif eachElem[0].startswith('JumpStep'):
-                    print('JUMPSTEP FOUND')
-                    jumplist.append(eachElem)
-                    break
-        else:
-            print('Ultimo')
-            for eachElem in seq[seq.index([eachTr]):]:
-                print(eachElem)
-                if eachElem == []:
-                    break
-                elif eachElem[0] == last:
-                    break
-                elif eachElem[0].startswith('selDiverge'):
-                    retConv = findConv(seq[seq.index(eachElem):],[], listconv)
-                    jumplist.append([retConv[0]])
-                    break
-                elif eachElem[0].startswith('JumpStep'):
-                    jumplist.append(eachElem)
-                    break
-    print(['selConverge'+ seq[0][0][seq[0][0].find('_'):],jumplist])
-    
-    listconv.append(['selConverge'+ seq[0][0][seq[0][0].find('_'):],jumplist])
-    return ['selConverge'+ seq[0][0][seq[0][0].find('_'):],jumplist]
         
 def defineFlows():
     
@@ -436,7 +333,7 @@ def defineFlows():
     flowlistOrder = []
     for flow in flowlist:
         flowOrder = []
-        flowTrail = flow.copy()
+        flowTrail = flow
         for place in flow:
                 if Place.getInitialMark(place) == "1":
                     flowOrder.append(place)
@@ -481,170 +378,89 @@ def definePOUs(flowlist):
         trSuc = []
         initialStep = [flow[0]]
         newFlowSequence.append(flow[0])
-        print('Flow before recursiveParse: ')
-        print(flow)
         recursiveParse(flow, flow[0])
-        print('sfcSeq after recursiveParse')
         print(sfcSeq)
-
-        newFlowSequence = sfcSeq.copy()
+        
+        newFlowSequence = sfcSeq
         
         sfcSeq = []
+        #Check for multiple transitions in initialStep
         
-        adjustSequence = newFlowSequence.copy()
-
-        seqList = [[]]
-        indSeq = 0
-        changeIndRep = False
-        
-        for num in range(len(adjustSequence)):
-            apt = seqList[indSeq].copy()
-            if adjustSequence[num:].count(adjustSequence[num]) > 1:
-                apt.append(adjustSequence[num])
-                if isSublist(apt,adjustSequence[num:]) and apt != ['JumpStep']:
-                    seqList[indSeq].append(adjustSequence[num])
-                    changeIndRep = True
-                else:
-                    changeIndRep = True
-            elif changeIndRep:
-                indSeq+=1
-                seqList.append([])
-                changeIndRep = False
-
-        for seqClean in seqList:
-            adjustSequence = removeSublistFromList(seqClean, adjustSequence)
-        
-        newFlowSequence = adjustSequence.copy()
+        #trSuc = Arc.getTSuc(Place.getID(flow[0]))
+        #print("Transitions after " + flow[0] + ":")
+        #print(trSuc)
+        #if len(trSuc) > 1:
+        #    newFlowSequence.append(["Branch"+ str(branchIndex), trSuc])
+        #for tr in trSuc:
+        #    print("Transition " + tr + " - " + (Transition.getName(tr)))
+        #    newFlowSequence.append(Transition.getName(tr))
+        #    newFlowSequence.append(Place.getName(Arc.getTSuc(tr)[0]))
+            
             
         newFlowSequence = initialStep + newFlowSequence    
         print("FIM TESTE BRANCHES de " + pouname + " #######################")
-        print('\nnewFlowAfter finding duplicates')
-        print(newFlowSequence)
         
-        print('Creating Transition List')
-        trList = []
-        for eachTr in newFlowSequence:
-            if eachTr.startswith('t'):
-                trList.append(eachTr)
+        flowSequenceAux = newFlowSequence
         
-        print('Adding selDiverge to Place with > 1 transition')
-        
-        newFlowAux = newFlowSequence.copy()
-        
-        selDivNum = 0
-        selDivList = []
-        for i in range(len(newFlowSequence)):
-            if newFlowSequence[i].startswith('p'):
-                trSuc = Arc.getTSuc(Place.getID(newFlowSequence[i]))
-                trSucNames = []
-                #Procula a lista de transicoes que sucedem o place do loop
-                for trSucName in trSuc:
-                    trSucNames.append(Transition.getName(trSucName))
-                #retira as transicoes que nao pertencem a esta flow
-                for eachTr in trSucNames:
-                    if not eachTr in trList:
-                        trSucNames.pop(trSucNames.index(eachTr))
-                if len(trSucNames) > 1:
-                    newFlowAux.insert(newFlowAux.index(newFlowSequence[i])+1, ['selDiverge_' + str(selDivNum), trSucNames])
-                    selDivList.append(['selDiverge_' + str(selDivNum), trSucNames])
-                    selDivNum+=1
-        
-        newFlowSequence = newFlowAux.copy()
-        
-        
-        #Add transitions to the jumpStep name
         jumpID = 0
-        for element in newFlowSequence:
+        selDivergeID = 0
+        for element in flowSequenceAux:
             if element == 'JumpStep':
-                newFlowSequence[newFlowSequence.index(element)] = 'JumpStep_' + newFlowSequence[newFlowSequence.index(element)-1]
+                newFlowSequence[flowSequenceAux.index(element)] = 'JumpStep_' + flowSequenceAux[flowSequenceAux.index(element)-1]
                 jumpID+=1
+            if element[0] == 'selDiverge':
+                newFlowSequence[flowSequenceAux.index(element)][0] = 'selDiverge_' + str(selDivergeID)
+                selDivergeID+=1
 
-        #list all elements in newFLowSequence
-        for seqElement in newFlowSequence:
-            if not type(seqElement) is list:
-                newFlowSequence[newFlowSequence.index(seqElement)] = [seqElement]
-                
-        print('\nnewFlowSequence after adding selDiverge:')
+
+        flowSequenceAux = newFlowSequence
+        print(flowSequenceAux)
+        selConvergeID = selDivergeID-1
+        for revElement in reversed(flowSequenceAux):
+            print(revElement)
+            if revElement[0].startswith('selDiverge'):
+                transDiv = flowSequenceAux[flowSequenceAux.index(revElement)-2]
+                for jump in flowSequenceAux[flowSequenceAux.index(revElement):]:
+                    print(jump)
+                    if jump == revElement[1][len(revElement[1])-1]:
+                        print('Converge')
+                        for nextJump in flowSequenceAux[flowSequenceAux.index(jump):]:
+                            print(nextJump)
+                            if not type(nextJump) is list:
+                                if nextJump.startswith('JumpStep'):
+                                    newFlowSequence.insert(newFlowSequence.index(nextJump)+1, 'selConverge_' + str(selConvergeID))
+                                    selConvergeID-=1
+                                    break
+        
+        print("newFlowSequence: selConv")
         print(newFlowSequence)
         
-        newFlowAux = newFlowSequence.copy()
-        for i in range(len(newFlowSequence)):
-            if i < len(newFlowSequence):
-                if newFlowSequence[i][0].startswith('t') and newFlowSequence[i+1][0].startswith('t'):
-                    newFlowAux.insert(newFlowAux.index(newFlowSequence[i])+1,['JumpStep_' + newFlowSequence[i][0]])
-
-        newFlowSequence = newFlowAux.copy()
-        print('\nnewFlowSequence after fixing JumpSteps:')
+        flowSequenceAux = newFlowSequence
+        
+        for fwdElement in flowSequenceAux:
+            if not type(fwdElement) is list:
+                if fwdElement.startswith('selConverge'):
+                    print('forward: ' + fwdElement)
+                    convPos = flowSequenceAux.index(fwdElement)
+                    jumpConvFinder = [fwdElement]
+                    for revConv in reversed(flowSequenceAux[:convPos]):
+                        print(revConv)
+                        if not type(revConv) is list:
+                            if revConv.startswith('JumpStep'):
+                                jumpConvFinder.append(revConv)
+                            if revConv.startswith('selConverge'):
+                                jumpConvFinder.append(revConv)
+                                break
+                        if revConv[0].startswith('selDiverge'):
+                            newFlowSequence[convPos] = jumpConvFinder
+                            break
+        
+        print("newFlowSequence: FIXED")
         print(newFlowSequence)
-        
-        #####TESTE FLOW AQUI################################################################################
-        
-        newFlowSequence.append([])
-        listconv = []
-        for each in newFlowSequence:
-            if len(each) > 0:
-                if each[0].startswith('selDiverge'):
-                    testeConv = findConv(newFlowSequence[newFlowSequence.index(each):], [],listconv)
-                    break
+        print("FIM TESTE BRANCHES de " + pouname + " #######################")
 
-        print('\ntesteConv:')
-        #print(testeConv)
-        print('\n\nCONVERGE LIST')
-        print(listconv)
-
-        newseq = newFlowSequence.copy()
-        
-        for i in range(len(listconv)):
-            print(listconv[i][1][len(listconv[i][1])-1])
-            newseq.insert(newseq.index(listconv[i][1][len(listconv[i][1])-1])+1,[listconv[i][0]])
-
-        newseq.pop(newseq.index([]))
-
-        #Format selConv from [selConv,[[jump],[jump2]]] to [selConv,[jump,jump2]]
-        for each in listconv:
-            if each[0].startswith('selConv'):
-                convFormat = []
-                convFormat.append(each[0])
-                convFormat.append([])
-                for each2 in each[1]:
-                    convFormat[1].extend(each2)
-                listconv[listconv.index(each)] = convFormat
-
-        #Insert the complete selConv to the selConv index
-        for each in newseq:
-            for each2 in listconv:
-                if each[0] == each2[0]:
-                    newseq[newseq.index(each)] = each2
-
-        print('\n\nNEW SEQ')
-        print(newseq)
-
-        listconv = []
-                
-                
-                
-        newFlowSequence = newseq.copy()
-        newseq = []
-        #ADD TARGET To JumpStep
-        print('Adding target to JumpSteps')
-        for each in newFlowSequence:
-            if each[0].startswith('JumpStep'):
-                print(newFlowSequence[newFlowSequence.index(each)-1])
-                trSource = newFlowSequence[newFlowSequence.index(each)-1][0]
-                targets = Arc.getTSuc(Transition.getID(trSource))
-                for each2 in targets:
-                    placesTarget = Place.getName(each2)
-                    if placesTarget in flow:
-                        print(placesTarget)
-                        newFlowSequence[newFlowSequence.index(each)].append([])
-                        newFlowSequence[newFlowSequence.index(each)][1] = placesTarget
-                        break
-        
-        ####################################################################################################
-        
-        print('\nnewFlowSequence after fixing Target Names:')
-        print(newFlowSequence)
-        
+        #FIM TESTE BRANCHES #####################################################################        
+        #pouname = "flow_" + str(flowscount)
         print('POU Name: ' + pouname + ' places:')
         print(flow)
         globals()[pouname] = POU(pouname)
@@ -653,7 +469,6 @@ def definePOUs(flowlist):
         flowSequence = []
         trSequence = []
         
-        #Place object declaration
         for place in flow:
             ##print("place: " + str(place))
             ##print("initialMark of " + place + " is " + Place.getInitialMark(place))
@@ -662,29 +477,65 @@ def definePOUs(flowlist):
             globals()[placeId] = Steps(placeId)
             globals()[placeId].setStepsPOU(pouname)
             globals()[placeId].setStepsName(place)
-            globals()[placeId].setStepsLabel(Place.getLabel(place))
             globals()[placeId].setStepsInitialMark(Place.getInitialMark(place))
             if Place.getInitialMark(place) == "1":
                placeSequence.append(place)
                flowAux.remove(place)
             
                         
-        flowSequence = newFlowSequence
+            #define invariables
+        ##print("teste: " + str(flow))
+        #define Transitions
+        trlist = []
+        placeIndex = 0
+        seq = 0
+        ##print("printFlow:" + str(flow))
+        
+        while len(flowAux) > 0:
+            ##print("flowAux: " + str(flowAux))
+            ##print("seq: " + str(seq))
+            ##trlist = tlookup(placeSequence[placeIndex], flowAux[seq])
+            ##print("trlist:")
+            ##print(trlist)
+            if len(trlist) > 0:
+                placeSequence.append(flowAux[seq])
+                flowAux.remove(flowAux[seq])
+                trSequence.append(trlist)
+                seq = 0
+                placeIndex+=1
+            else:
+                seq+=1
+        ##trlist = tlookup(placeSequence[len(placeSequence)-1], placeSequence[0])
+        trSequence.append(trlist)
+        globals()[pouname].setStepSequence(placeSequence)
+        globals()[pouname].setTrSequence(trSequence)
+        
+        for i in range(len(placeSequence)):
+            flowSequence.append(placeSequence[i])
+            flowSequence.append(trSequence[i])
+        
+        globals()[pouname].setFlowSequence(flowSequence)
+        
+        print("Original Flow: ")
+        print(flow)
+        print("Place Sequence: " + str(placeSequence))
+        print("Tr Sequence: " + str(trSequence))
+        print("Flow Sequence: " + str(flowSequence))
+        
+        #Complete Steps definition and ...
+        #Selection Divergences, InVariables, Transitions, Selection Convergences and Jump Steps
         flowElements = []
         
         isStep = True
         localID = 0
         print("~~~~~~~~~~DEFINING ELEMENTS~~~~~~~~~~")
         for elements in flowSequence:
-            #print('flowElements LOOP:')
-            #print(flowElements)
-            #print('element in loop:')
-            #print(elements)
-            
-            if elements[0].startswith('p'):
+            print(elements)
+            print("isStep:" + str(isStep)) 
+            if isStep:
                 if flowSequence.index(elements) == 0:
                     print("Defining Initial Step")
-                    placeId = pouname + "_" + elements[0]
+                    placeId = pouname + "_" + elements
                     #print("POU name: " + pouname)
                     #print("Element Name: " + elements)
                     #print("-----------------------: " + placeId)
@@ -696,7 +547,7 @@ def definePOUs(flowlist):
                 else:
                     print("Defining Normal Step")
                     
-                    placeId = pouname + "_" + elements[0]
+                    placeId = pouname + "_" + elements
                     #print("POU name: " + pouname)
                     #print("Element Name: " + elements)
                     #print("-----------------------: " + placeId)
@@ -706,101 +557,96 @@ def definePOUs(flowlist):
                     flowElements.append("Step_(" + placeId + ")" + "_ID_" + str(localID))
                     #print(Steps.getStepLocalID(placeId))
                     localID = localID + 1
-                    
-            elif elements[0].startswith('selDiverge'):
-                #print("selDiverge DETECTED")
-                #print(len(elements))
-                selDivName = pouname + "_selectDiverg_" + str(flowSequence.index(elements))
-                flowElements.append("SelectDiverg_("+selDivName+")_ID_"+str(localID))
-                globals()[selDivName] = SelectDiverg(selDivName)
-                globals()[selDivName].setPOUname(pouname)
-                globals()[selDivName].setLocalID(str(localID))
-                globals()[selDivName].setConnPointIn(str(localID-1))
-                globals()[selDivName].setConnPointOutQty(len(elements[1]))
-                globals()[selDivName].listSelectDiverge = elements[1]
-                    
-                localID = localID + 1
-            
-            elif elements[0].startswith('t'):
-                print('transition DETECTED')
-                print(elements[0])
-                
-                transition = elements[0]
-                #print("Defining simple transitions")
-                inVarName = pouname + "_inVar_" + str(flowSequence.index(elements))
-                globals()[inVarName] = InVariable(inVarName)
-                globals()[inVarName].setPOUname(pouname)
-                globals()[inVarName].setLocalID(str(localID))
-                globals()[inVarName].setExpression("transitions." + transition)
-                globals()[inVarName].setExpression("transitions." + transition)
-
-                flowElements.append("inVar_(" + inVarName + ")_ID_" + str(localID))
-                
-                
-                localID = localID + 1
-                
-                trname = pouname + "_" + transition + "_" + str(flowSequence.index(elements))
-                flowElements.append("transition_(" + trname + ")_ID_" + str(localID))
-                globals()[trname] = SFCtransition(trname)
-                globals()[trname].setPOUname(pouname)
-                globals()[trname].setLocalID(str(localID))
-                print('FIND SELDIVERGE ID')
-                print('localID atual: ' + str(localID))
-                for idFind in flowSequence:
-                    if idFind[0].startswith('selDiverge'):
-                        if elements[0] in idFind[1]:
-                            print('SELDIVERGE FOUND')
-                            refLocalName = pouname + "_selectDiverg_" + str(flowSequence.index(idFind))
-                            idRef = globals()[refLocalName].localID
-                            break
-                    else:
-                        #print('No SELDIVERGE')
-                        idRef = localID-2
-                print('idRef: ' + str(idRef))
-                globals()[trname].setConnPointIn(str(idRef))
-                globals()[trname].setCondition(str(localID-1))
-                
-                localID = localID + 1
-            
-            elif elements[0].startswith('JumpStep'):
-                #Defining jumStep
-                jumpStepName = pouname + '_' + elements[0] + '_' + str(flowSequence.index(elements))
-                flowElements.append("jumpStep_("+ jumpStepName+")_ID_"+str(localID))
-                globals()[jumpStepName] = JumpStep(jumpStepName)
-                globals()[jumpStepName].setPOUname(pouname)
-                globals()[jumpStepName].setLocalID(str(localID))
-                globals()[jumpStepName].setConnPointIn(str(localID-1))
-                print('targetName')
-                print(elements[1])
-                #Optional usage of name and label
-                #globals()[jumpStepName].setTargetName(elements[1])
-                globals()[jumpStepName].setTargetName(Place.getLabel(elements[1]))
-
-                
-                localID = localID + 1
-                      
-            elif elements[0].startswith('selConverge'):
-                selConvName = pouname + "_" + elements[0] + "_" + str(flowSequence.index(elements))
-                flowElements.append("SelectConverg_("+ selConvName+")_ID_"+str(localID))
-                globals()[selConvName] = SelectConverg(selConvName)
-                globals()[selConvName].setPOUname(pouname)
-                globals()[selConvName].setLocalID(str(localID))
-                globals()[selDivName].listSelectConverge = elements[1]
-                for transition in elements[1]:
-                    for searchIndex in flowSequence:
-                        if searchIndex[0] == transition:
-                            indexNumber = flowSequence.index(searchIndex)
-                    trname = pouname + "_" + transition + "_" + str(indexNumber)
-                    globals()[selConvName].setConnPointIn(trname)
-                localID = localID + 1
-                
             else:
-                print('FAILED TO RECOGNIZE ELEMENT')
+                print("Length")
+                print(len(elements))
+                if len(elements) > 1:
+                    print("Transition in parallel detected")
+                    #More than 1 transition needs a select Divergence to make it parallel
+                    print(elements)
+                    selDivName = pouname + "_selectDiverg_" + str(flowSequence.index(elements))
+                    flowElements.append("SelectDiverg_("+selDivName+")_ID_"+str(localID))
+                    globals()[selDivName] = SelectDiverg(selDivName)
+                    globals()[selDivName].setPOUname(pouname)
+                    globals()[selDivName].setLocalID(str(localID))
+                    globals()[selDivName].setConnPointIn(str(localID-1))
+                    globals()[selDivName].setConnPointOutQty(len(elements))
                     
+                    localID = localID + 1
+                    
+                    for transition in elements:
+                        print("Defining transitions in parallel")
+                        #InVariables
+                        inVarName = pouname + "_inVar_" + str(localID)
+                        globals()[inVarName] = InVariable(inVarName)
+                        globals()[inVarName].setPOUname(pouname)
+                        globals()[inVarName].setLocalID(str(localID))
+                        globals()[inVarName].setExpression("transitions." + Transition.getName(transition))
+                        flowElements.append("inVar_(" + inVarName + ")_ID_" + str(localID))
+                        
+                        
+                        localID = localID + 1
+                        
+                        trname = pouname + "_" + Transition.getName(transition) + "_" + str(flowSequence.index(elements))
+                        flowElements.append("transition_(" + trname + ")_ID_" + str(localID))
+                        globals()[trname] = SFCtransition(trname)
+                        globals()[trname].setPOUname(pouname)
+                        globals()[trname].setLocalID(str(localID))
+                        globals()[trname].setConnPointIn(globals()[selDivName].localID)
+                        globals()[trname].setCondition(str(localID-1))
+                        
+                        localID = localID + 1
+                        
+                    #Defining Select Convergence
+                    selConvName = pouname + "_selectConverg_" + str(flowSequence.index(elements))
+                    flowElements.append("SelectConverg_("+ selConvName+")_ID_"+str(localID))
+                    globals()[selConvName] = SelectConverg(selConvName)
+                    globals()[selConvName].setPOUname(pouname)
+                    globals()[selConvName].setLocalID(str(localID))
+                    for transition in elements:
+                        trname = pouname + "_" + Transition.getName(transition) + "_" + str(flowSequence.index(elements))
+                        globals()[selConvName].setConnPointIn(trname)
+                    localID = localID + 1
+                
+                else:
+                    print(elements)
+                    transition = elements[0]
+                    print("Defining simple transitions")
+                    #InVariables
+                    inVarName = pouname + "_inVar_" + str(localID)
+                    globals()[inVarName] = InVariable(inVarName)
+                    globals()[inVarName].setPOUname(pouname)
+                    globals()[inVarName].setLocalID(str(localID))
+                    globals()[inVarName].setExpression("transitions." + Transition.getName(transition))
+                    flowElements.append("inVar_(" + inVarName + ")_ID_" + str(localID))
+                    
+                    
+                    localID = localID + 1
+                    
+                    trname = pouname + "_" + Transition.getName(transition) + "_" + str(flowSequence.index(elements))
+                    flowElements.append("transition_(" + trname + ")_ID_" + str(localID))
+                    globals()[trname] = SFCtransition(trname)
+                    globals()[trname].setPOUname(pouname)
+                    globals()[trname].setLocalID(str(localID))
+                    globals()[trname].setConnPointIn(str(localID-2))
+                    globals()[trname].setCondition(str(localID-1))
+                    
+                    localID = localID + 1
+                    
+                    
+            if isStep:
+                isStep = False
+            else:
+                isStep = True
         
-        print(flowSequence)            
-        print('\n\n\nFLOW ELEMENTS: -------------------------------------------------')
-        print(flowElements)
+        #Defining jumStep
+        jumpStepName = pouname + "_jumpStep"
+        flowElements.append("jumpStep_("+ jumpStepName+")_ID_"+str(localID))
+        globals()[jumpStepName] = JumpStep(jumpStepName)
+        globals()[jumpStepName].setPOUname(pouname)
+        globals()[jumpStepName].setLocalID(str(localID))
+        globals()[jumpStepName].setConnPointIn(str(localID-1))
+        globals()[jumpStepName].setTargetName(flowSequence[0])
         
                     
         globals()[pouname].setFlowElements(flowElements)   
@@ -912,9 +758,7 @@ def writePLCOpen():
                 print("Writing initialStep")
                 stepID = re.findall("\((.*?)\)", element)[0]
                 print(stepID)
-                #Optional usage name or label
-                #stepName = globals()[stepID].name
-                stepName = globals()[stepID].label
+                stepName = globals()[stepID].name
                 localID = globals()[stepID].localID
                 print(stepName)
                 
@@ -934,9 +778,7 @@ def writePLCOpen():
                 print("Writing Step")
                 stepID = re.findall("\((.*?)\)", element)[0]
                 print(stepID)
-                #Optional usage name or label
-                #stepName = globals()[stepID].label
-                stepName = globals()[stepID].label
+                stepName = globals()[stepID].name
                 localID = globals()[stepID].localID
                 refLocalId = globals()[stepID].connectionPointInRefId
                 
@@ -1018,7 +860,28 @@ def writePLCOpen():
                                                 "handleUnknown":"implementation"}),
                                 "attributes", {"xmlns":""})
             
-            
+            elif element.startswith("SelectConverg"):
+                #Write SelectConverg
+                print("Writing SelectConverg")
+                selConvID = re.findall("\((.*?)\)", element)[0]
+                print(selConvID)
+                selConvName = globals()[selConvID].name
+                localID = globals()[selConvID].localID
+                connInList = globals()[selConvID].connPointIn
+                print(connInList)
+                print(selConvName)
+                
+                selConv = POxml.SubElement(sfcbody,"selectionConvergence", {"localId":localID})
+                POxml.SubElement(selConv, "position", {"x":"0", "y":"0"})
+                for connTr in connInList:
+                    refLocalId = globals()[connTr].localID
+                    #Loop connectionPointIn for each transition in parallel
+                    selConvconnectionPointIn = POxml.SubElement(selConv, "connectionPointIn")
+                    #refLocalId in connectionPointIn points to previous transition
+                    POxml.SubElement(selConvconnectionPointIn, "connection", {"refLocalId":refLocalId})
+                
+                POxml.SubElement(selConv, "connectionPointOut", {"formalParameter":"sfc"})
+        
             elif element.startswith("jumpStep"):
                 #Write jumpStep
                 print("Writing jumpStep")
@@ -1039,31 +902,6 @@ def writePLCOpen():
                                                 {"name":"http://www.3s-software.com/plcopenxml/sfc/element",
                                                 "handleUnknown":"implementation"}),
                                 "attributes", {"xmlns":""})
-            
-            
-            elif element.startswith("SelectConverg"):
-                #Write SelectConverg
-                print("Writing SelectConverg")
-                selConvID = re.findall("\((.*?)\)", element)[0]
-                print(selConvID)
-                selConvName = globals()[selConvID].name
-                localID = globals()[selConvID].localID
-                connInList = globals()[selConvID].connPointIn
-                print(connInList)
-                print(selConvName)
-                JumpStep.print_instances()
-                
-                
-                selConv = POxml.SubElement(sfcbody,"selectionConvergence", {"localId":localID})
-                POxml.SubElement(selConv, "position", {"x":"0", "y":"0"})
-                for connTr in connInList:
-                    refLocalId = globals()[connTr].localID
-                    #Loop connectionPointIn for each transition in parallel
-                    selConvconnectionPointIn = POxml.SubElement(selConv, "connectionPointIn")
-                    #refLocalId in connectionPointIn points to previous transition
-                    POxml.SubElement(selConvconnectionPointIn, "connection", {"refLocalId":refLocalId, "formalParameter":"sfc"})
-                
-                POxml.SubElement(selConv, "connectionPointOut")
             
             else:
                 print("Element Invalid!")
@@ -1148,7 +986,7 @@ def runPLCopenWriter():
 
 def main():
     
-    writerpnml = open("WRITER.pnml")
+    writerpnml = open("branch.pnml")
     parsePNML(writerpnml)
     flowlist = defineFlows()
     definePOUs(flowlist)

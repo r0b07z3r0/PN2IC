@@ -146,6 +146,12 @@ class Place:
                 return instance.name
     
     @classmethod
+    def getLabel(cls, name):
+        for instance in cls.instances:
+            if instance.name == name:
+                return instance.label
+            
+    @classmethod
     def getInitialMark(cls, name):
         for instance in cls.instances:
             #print(instance.name)

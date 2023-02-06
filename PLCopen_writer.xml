@@ -1,6 +1,6 @@
 <project xmlns="http://www.plcopen.org/xml/tc6_0200">
- <fileHeader companyName="PN2IC" productName="PLCopen" productVersion="CODESYS V3.5 SP17 Patch 3" creationDateTime="2022-11-27T12:11:19" />
- <contentHeader name="CodesysTest.project" modificationDateTime="2022-11-27T12:11:19">
+ <fileHeader companyName="PN2IC" productName="PLCopen" productVersion="CODESYS V3.5 SP17 Patch 3" creationDateTime="2023-01-02T17:01:06" />
+ <contentHeader name="CodesysTest.project" modificationDateTime="2023-01-02T17:01:06">
   <coordinateInfo>
    <fbd>
     <scaling x="1" y="1" />
@@ -29,7 +29,82 @@
   <data name="http://www.3s-software.com/plcopenxml/application" handleUnknown="implementation">
    <resource name="Application">
     <task name="MainTask" interval="PT0.02S" priority="1">
+     <pouInstance name="flow_2" typeName="">
+      <documentation>
+       <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+      </documentation>
+     </pouInstance>
+     <pouInstance name="flow_13" typeName="">
+      <documentation>
+       <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+      </documentation>
+     </pouInstance>
+     <pouInstance name="flow_14" typeName="">
+      <documentation>
+       <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+      </documentation>
+     </pouInstance>
+     <pouInstance name="flow_16" typeName="">
+      <documentation>
+       <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+      </documentation>
+     </pouInstance>
+     <pouInstance name="flow_7" typeName="">
+      <documentation>
+       <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+      </documentation>
+     </pouInstance>
+     <pouInstance name="flow_3" typeName="">
+      <documentation>
+       <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+      </documentation>
+     </pouInstance>
+     <pouInstance name="flow_12" typeName="">
+      <documentation>
+       <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+      </documentation>
+     </pouInstance>
+     <pouInstance name="flow_9" typeName="">
+      <documentation>
+       <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+      </documentation>
+     </pouInstance>
+     <pouInstance name="flow_11" typeName="">
+      <documentation>
+       <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+      </documentation>
+     </pouInstance>
+     <pouInstance name="flow_15" typeName="">
+      <documentation>
+       <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+      </documentation>
+     </pouInstance>
+     <pouInstance name="flow_4" typeName="">
+      <documentation>
+       <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+      </documentation>
+     </pouInstance>
      <pouInstance name="flow_1" typeName="">
+      <documentation>
+       <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+      </documentation>
+     </pouInstance>
+     <pouInstance name="flow_8" typeName="">
+      <documentation>
+       <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+      </documentation>
+     </pouInstance>
+     <pouInstance name="flow_6" typeName="">
+      <documentation>
+       <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+      </documentation>
+     </pouInstance>
+     <pouInstance name="flow_5" typeName="">
+      <documentation>
+       <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+      </documentation>
+     </pouInstance>
+     <pouInstance name="flow_10" typeName="">
       <documentation>
        <xhtml xmlns="http://www.w3.org/1999/xhtml" />
       </documentation>
@@ -41,7 +116,7 @@
      </addData>
     </task>
     <globalVars name="GVL">
-     <variable name="t0">
+     <variable name="t20">
       <type>
        <BOOL />
       </type>
@@ -51,7 +126,207 @@
        <BOOL />
       </type>
      </variable>
+     <variable name="t19">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t18">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t17">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t9">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t8">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t7">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t6">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t56">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t54">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t52">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t50">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
      <variable name="t5">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t48">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t46">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t44">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t42">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t40">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t4">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t38">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t36">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t34">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t16">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t32">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t15">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t30">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t14">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t3">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t13">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t29">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t12">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t28">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t11">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t27">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t10">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t26">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t1">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t25">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t24">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t23">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t22">
+      <type>
+       <BOOL />
+      </type>
+     </variable>
+     <variable name="t21">
       <type>
        <BOOL />
       </type>
@@ -59,11 +334,11 @@
     </globalVars>
     <addData>
      <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
-      <pou name="flow_1" pouType="program">
+      <pou name="flow_2" pouType="program">
        <interface />
        <body>
         <SFC>
-         <step localId="0" initialStep="true" name="z3">
+         <step localId="0" initialStep="true" name="boxAlignedBB">
           <position x="0" y="0" />
           <connectionPointIn />
           <connectionPointOut formalParameter="sfc" />
@@ -76,7 +351,7 @@
          <inVariable localId="1">
           <position x="0" y="0" />
           <connectionPointOut />
-          <expression>transitions.t0</expression>
+          <expression>transitions.t11</expression>
          </inVariable>
          <transition localId="2">
           <position x="0" y="0" />
@@ -94,7 +369,7 @@
            </data>
           </addData>
          </transition>
-         <step localId="3" name="p1">
+         <step localId="3" name="moveBoxBB">
           <position x="0" y="0" />
           <connectionPointIn>
            <connection refLocalId="2" />
@@ -109,7 +384,7 @@
          <inVariable localId="4">
           <position x="0" y="0" />
           <connectionPointOut />
-          <expression>transitions.t2</expression>
+          <expression>transitions.t26</expression>
          </inVariable>
          <transition localId="5">
           <position x="0" y="0" />
@@ -127,43 +402,10 @@
            </data>
           </addData>
          </transition>
-         <step localId="6" name="p3">
+         <jumpStep localId="6" targetName="boxAlignedBB">
           <position x="0" y="0" />
           <connectionPointIn>
            <connection refLocalId="5" />
-          </connectionPointIn>
-          <connectionPointOut formalParameter="sfc" />
-          <addData>
-           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
-            <attributes xmlns="" />
-           </data>
-          </addData>
-         </step>
-         <inVariable localId="7">
-          <position x="0" y="0" />
-          <connectionPointOut />
-          <expression>transitions.t5</expression>
-         </inVariable>
-         <transition localId="8">
-          <position x="0" y="0" />
-          <connectionPointIn>
-           <connection refLocalId="6" formalParameter="SFC" />
-          </connectionPointIn>
-          <condition>
-           <connectionPointIn>
-            <connection refLocalId="7" />
-           </connectionPointIn>
-          </condition>
-          <addData>
-           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
-            <attributes xmlns="" />
-           </data>
-          </addData>
-         </transition>
-         <jumpStep localId="9" targetName="z3">
-          <position x="0" y="0" />
-          <connectionPointIn>
-           <connection refLocalId="8" />
           </connectionPointIn>
           <addData>
            <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
@@ -202,13 +444,2703 @@
       </pou>
      </data>
      <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+      <pou name="flow_13" pouType="program">
+       <interface />
+       <body>
+        <SFC>
+         <step localId="0" initialStep="true" name="AUTONET_SUPCON_S6_0">
+          <position x="0" y="0" />
+          <connectionPointIn />
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="1">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t25</expression>
+         </inVariable>
+         <transition localId="2">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="0" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="1" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="3" name="sortingGconveyor">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="2" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="4">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t50</expression>
+         </inVariable>
+         <transition localId="5">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="3" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="4" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="6" name="pushLeft">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="5" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="7">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t52</expression>
+         </inVariable>
+         <transition localId="8">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="6" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="7" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="9" name="waitBoxGL">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="8" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="10">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t27</expression>
+         </inVariable>
+         <transition localId="11">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="9" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="10" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <jumpStep localId="12" targetName="AUTONET_SUPCON_S6_0">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="11" />
+          </connectionPointIn>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </jumpStep>
+        </SFC>
+       </body>
+       <addData>
+        <data name="http://www.3s-software.com/plcopenxml/sfcsettings" handleUnknown="implementation">
+         <SFCSettings>
+          <CalcActiveTramsOnly>false</CalcActiveTramsOnly>
+          <UseDefaults>false</UseDefaults>
+          <Flags>
+           <EnableLimit Declare="true" Use="false" />
+           <Init Declare="true" Use="false" />
+           <Reset Declare="true" Use="false" />
+           <QuitError Declare="true" Use="false" />
+           <Pause Declare="true" Use="false" />
+           <Error Declare="true" Use="false" />
+           <Trans Declare="true" Use="false" />
+           <ErrorStep Declare="true" Use="false" />
+           <ErrorPOU Declare="true" Use="false" />
+           <CurrentStep Declare="true" Use="false" />
+           <Tip Declare="true" Use="false" />
+           <TipMode Declare="true" Use="false" />
+           <MaxFlags Declare="true" Use="false" />
+           <SFCErrorAnalyzation Declare="true" Use="false" />
+           <SFCErrorAnalyzationTable Declare="true" Use="false" />
+           <CurrentSteps Declare="true" Use="false" />
+          </Flags>
+         </SFCSettings>
+        </data>
+       </addData>
+      </pou>
+     </data>
+     <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+      <pou name="flow_14" pouType="program">
+       <interface />
+       <body>
+        <SFC>
+         <step localId="0" initialStep="true" name="boxAlignedGL">
+          <position x="0" y="0" />
+          <connectionPointIn />
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="1">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t29</expression>
+         </inVariable>
+         <transition localId="2">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="0" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="1" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="3" name="moveBoxGL">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="2" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="4">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t56</expression>
+         </inVariable>
+         <transition localId="5">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="3" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="4" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <jumpStep localId="6" targetName="boxAlignedGL">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="5" />
+          </connectionPointIn>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </jumpStep>
+        </SFC>
+       </body>
+       <addData>
+        <data name="http://www.3s-software.com/plcopenxml/sfcsettings" handleUnknown="implementation">
+         <SFCSettings>
+          <CalcActiveTramsOnly>false</CalcActiveTramsOnly>
+          <UseDefaults>false</UseDefaults>
+          <Flags>
+           <EnableLimit Declare="true" Use="false" />
+           <Init Declare="true" Use="false" />
+           <Reset Declare="true" Use="false" />
+           <QuitError Declare="true" Use="false" />
+           <Pause Declare="true" Use="false" />
+           <Error Declare="true" Use="false" />
+           <Trans Declare="true" Use="false" />
+           <ErrorStep Declare="true" Use="false" />
+           <ErrorPOU Declare="true" Use="false" />
+           <CurrentStep Declare="true" Use="false" />
+           <Tip Declare="true" Use="false" />
+           <TipMode Declare="true" Use="false" />
+           <MaxFlags Declare="true" Use="false" />
+           <SFCErrorAnalyzation Declare="true" Use="false" />
+           <SFCErrorAnalyzationTable Declare="true" Use="false" />
+           <CurrentSteps Declare="true" Use="false" />
+          </Flags>
+         </SFCSettings>
+        </data>
+       </addData>
+      </pou>
+     </data>
+     <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+      <pou name="flow_16" pouType="program">
+       <interface />
+       <body>
+        <SFC>
+         <step localId="0" initialStep="true" name="AUTONET_SUPCON_S3_0">
+          <position x="0" y="0" />
+          <connectionPointIn />
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="1">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t7</expression>
+         </inVariable>
+         <transition localId="2">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="0" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="1" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="3" name="sortingBconveyor">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="2" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="4">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t20</expression>
+         </inVariable>
+         <transition localId="5">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="3" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="4" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="6" name="pushLeft">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="5" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="7">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t22</expression>
+         </inVariable>
+         <transition localId="8">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="6" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="7" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="9" name="waitBoxBB">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="8" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="10">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t9</expression>
+         </inVariable>
+         <transition localId="11">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="9" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="10" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <jumpStep localId="12" targetName="AUTONET_SUPCON_S3_0">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="11" />
+          </connectionPointIn>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </jumpStep>
+        </SFC>
+       </body>
+       <addData>
+        <data name="http://www.3s-software.com/plcopenxml/sfcsettings" handleUnknown="implementation">
+         <SFCSettings>
+          <CalcActiveTramsOnly>false</CalcActiveTramsOnly>
+          <UseDefaults>false</UseDefaults>
+          <Flags>
+           <EnableLimit Declare="true" Use="false" />
+           <Init Declare="true" Use="false" />
+           <Reset Declare="true" Use="false" />
+           <QuitError Declare="true" Use="false" />
+           <Pause Declare="true" Use="false" />
+           <Error Declare="true" Use="false" />
+           <Trans Declare="true" Use="false" />
+           <ErrorStep Declare="true" Use="false" />
+           <ErrorPOU Declare="true" Use="false" />
+           <CurrentStep Declare="true" Use="false" />
+           <Tip Declare="true" Use="false" />
+           <TipMode Declare="true" Use="false" />
+           <MaxFlags Declare="true" Use="false" />
+           <SFCErrorAnalyzation Declare="true" Use="false" />
+           <SFCErrorAnalyzationTable Declare="true" Use="false" />
+           <CurrentSteps Declare="true" Use="false" />
+          </Flags>
+         </SFCSettings>
+        </data>
+       </addData>
+      </pou>
+     </data>
+     <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+      <pou name="flow_7" pouType="program">
+       <interface />
+       <body>
+        <SFC>
+         <step localId="0" initialStep="true" name="AUTONET_SUPCON_S5_0">
+          <position x="0" y="0" />
+          <connectionPointIn />
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="1">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t19</expression>
+         </inVariable>
+         <transition localId="2">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="0" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="1" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="3" name="sortingGconveyor">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="2" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="4">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t40</expression>
+         </inVariable>
+         <transition localId="5">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="3" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="4" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="6" name="pushRight">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="5" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="7">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t42</expression>
+         </inVariable>
+         <transition localId="8">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="6" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="7" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="9" name="waitBoxGB">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="8" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="10">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t21</expression>
+         </inVariable>
+         <transition localId="11">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="9" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="10" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <jumpStep localId="12" targetName="AUTONET_SUPCON_S5_0">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="11" />
+          </connectionPointIn>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </jumpStep>
+        </SFC>
+       </body>
+       <addData>
+        <data name="http://www.3s-software.com/plcopenxml/sfcsettings" handleUnknown="implementation">
+         <SFCSettings>
+          <CalcActiveTramsOnly>false</CalcActiveTramsOnly>
+          <UseDefaults>false</UseDefaults>
+          <Flags>
+           <EnableLimit Declare="true" Use="false" />
+           <Init Declare="true" Use="false" />
+           <Reset Declare="true" Use="false" />
+           <QuitError Declare="true" Use="false" />
+           <Pause Declare="true" Use="false" />
+           <Error Declare="true" Use="false" />
+           <Trans Declare="true" Use="false" />
+           <ErrorStep Declare="true" Use="false" />
+           <ErrorPOU Declare="true" Use="false" />
+           <CurrentStep Declare="true" Use="false" />
+           <Tip Declare="true" Use="false" />
+           <TipMode Declare="true" Use="false" />
+           <MaxFlags Declare="true" Use="false" />
+           <SFCErrorAnalyzation Declare="true" Use="false" />
+           <SFCErrorAnalyzationTable Declare="true" Use="false" />
+           <CurrentSteps Declare="true" Use="false" />
+          </Flags>
+         </SFCSettings>
+        </data>
+       </addData>
+      </pou>
+     </data>
+     <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+      <pou name="flow_3" pouType="program">
+       <interface />
+       <body>
+        <SFC>
+         <step localId="0" initialStep="true" name="AUTONET_SUPCON_S7_0">
+          <position x="0" y="0" />
+          <connectionPointIn />
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="1">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t9</expression>
+         </inVariable>
+         <transition localId="2">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="0" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="1" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="3" name="rampBB">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="2" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="4">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t24</expression>
+         </inVariable>
+         <transition localId="5">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="3" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="4" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="6" name="blueBaseOnBox">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="5" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="7">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t11</expression>
+         </inVariable>
+         <transition localId="8">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="6" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="7" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="9" name="moveBoxBB">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="8" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="10">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t26</expression>
+         </inVariable>
+         <transition localId="11">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="9" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="10" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <jumpStep localId="12" targetName="AUTONET_SUPCON_S7_0">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="11" />
+          </connectionPointIn>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </jumpStep>
+        </SFC>
+       </body>
+       <addData>
+        <data name="http://www.3s-software.com/plcopenxml/sfcsettings" handleUnknown="implementation">
+         <SFCSettings>
+          <CalcActiveTramsOnly>false</CalcActiveTramsOnly>
+          <UseDefaults>false</UseDefaults>
+          <Flags>
+           <EnableLimit Declare="true" Use="false" />
+           <Init Declare="true" Use="false" />
+           <Reset Declare="true" Use="false" />
+           <QuitError Declare="true" Use="false" />
+           <Pause Declare="true" Use="false" />
+           <Error Declare="true" Use="false" />
+           <Trans Declare="true" Use="false" />
+           <ErrorStep Declare="true" Use="false" />
+           <ErrorPOU Declare="true" Use="false" />
+           <CurrentStep Declare="true" Use="false" />
+           <Tip Declare="true" Use="false" />
+           <TipMode Declare="true" Use="false" />
+           <MaxFlags Declare="true" Use="false" />
+           <SFCErrorAnalyzation Declare="true" Use="false" />
+           <SFCErrorAnalyzationTable Declare="true" Use="false" />
+           <CurrentSteps Declare="true" Use="false" />
+          </Flags>
+         </SFCSettings>
+        </data>
+       </addData>
+      </pou>
+     </data>
+     <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+      <pou name="flow_12" pouType="program">
+       <interface />
+       <body>
+        <SFC>
+         <step localId="0" initialStep="true" name="input2Empty">
+          <position x="0" y="0" />
+          <connectionPointIn />
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="1">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t8</expression>
+         </inVariable>
+         <transition localId="2">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="0" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="1" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="3" name="input2Filled">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="2" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="4">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t3</expression>
+         </inVariable>
+         <transition localId="5">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="3" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="4" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <jumpStep localId="6" targetName="input2Empty">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="5" />
+          </connectionPointIn>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </jumpStep>
+        </SFC>
+       </body>
+       <addData>
+        <data name="http://www.3s-software.com/plcopenxml/sfcsettings" handleUnknown="implementation">
+         <SFCSettings>
+          <CalcActiveTramsOnly>false</CalcActiveTramsOnly>
+          <UseDefaults>false</UseDefaults>
+          <Flags>
+           <EnableLimit Declare="true" Use="false" />
+           <Init Declare="true" Use="false" />
+           <Reset Declare="true" Use="false" />
+           <QuitError Declare="true" Use="false" />
+           <Pause Declare="true" Use="false" />
+           <Error Declare="true" Use="false" />
+           <Trans Declare="true" Use="false" />
+           <ErrorStep Declare="true" Use="false" />
+           <ErrorPOU Declare="true" Use="false" />
+           <CurrentStep Declare="true" Use="false" />
+           <Tip Declare="true" Use="false" />
+           <TipMode Declare="true" Use="false" />
+           <MaxFlags Declare="true" Use="false" />
+           <SFCErrorAnalyzation Declare="true" Use="false" />
+           <SFCErrorAnalyzationTable Declare="true" Use="false" />
+           <CurrentSteps Declare="true" Use="false" />
+          </Flags>
+         </SFCSettings>
+        </data>
+       </addData>
+      </pou>
+     </data>
+     <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+      <pou name="flow_9" pouType="program">
+       <interface />
+       <body>
+        <SFC>
+         <step localId="0" initialStep="true" name="AUTONET_SUPCON_S9_0">
+          <position x="0" y="0" />
+          <connectionPointIn />
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="1">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t21</expression>
+         </inVariable>
+         <transition localId="2">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="0" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="1" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="3" name="rampGB">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="2" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="4">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t44</expression>
+         </inVariable>
+         <transition localId="5">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="3" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="4" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="6" name="greenBaseOnBox">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="5" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="7">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t23</expression>
+         </inVariable>
+         <transition localId="8">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="6" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="7" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="9" name="moveBoxGB">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="8" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="10">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t46</expression>
+         </inVariable>
+         <transition localId="11">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="9" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="10" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <jumpStep localId="12" targetName="AUTONET_SUPCON_S9_0">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="11" />
+          </connectionPointIn>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </jumpStep>
+        </SFC>
+       </body>
+       <addData>
+        <data name="http://www.3s-software.com/plcopenxml/sfcsettings" handleUnknown="implementation">
+         <SFCSettings>
+          <CalcActiveTramsOnly>false</CalcActiveTramsOnly>
+          <UseDefaults>false</UseDefaults>
+          <Flags>
+           <EnableLimit Declare="true" Use="false" />
+           <Init Declare="true" Use="false" />
+           <Reset Declare="true" Use="false" />
+           <QuitError Declare="true" Use="false" />
+           <Pause Declare="true" Use="false" />
+           <Error Declare="true" Use="false" />
+           <Trans Declare="true" Use="false" />
+           <ErrorStep Declare="true" Use="false" />
+           <ErrorPOU Declare="true" Use="false" />
+           <CurrentStep Declare="true" Use="false" />
+           <Tip Declare="true" Use="false" />
+           <TipMode Declare="true" Use="false" />
+           <MaxFlags Declare="true" Use="false" />
+           <SFCErrorAnalyzation Declare="true" Use="false" />
+           <SFCErrorAnalyzationTable Declare="true" Use="false" />
+           <CurrentSteps Declare="true" Use="false" />
+          </Flags>
+         </SFCSettings>
+        </data>
+       </addData>
+      </pou>
+     </data>
+     <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+      <pou name="flow_11" pouType="program">
+       <interface />
+       <body>
+        <SFC>
+         <step localId="0" initialStep="true" name="AUTONET_SUPCON_S1_0">
+          <position x="0" y="0" />
+          <connectionPointIn />
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <selectionDivergence localId="1">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="0" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </selectionDivergence>
+         <inVariable localId="2">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t1</expression>
+         </inVariable>
+         <transition localId="3">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="1" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="2" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="4" name="input1Available">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="3" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="5">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t4</expression>
+         </inVariable>
+         <transition localId="6">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="4" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="5" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="7" name="machine1On">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="6" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="8">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t6</expression>
+         </inVariable>
+         <transition localId="9">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="7" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="8" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <jumpStep localId="10" targetName="PecaEsteira">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="9" />
+          </connectionPointIn>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </jumpStep>
+         <inVariable localId="11">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t3</expression>
+         </inVariable>
+         <transition localId="12">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="1" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="11" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="13" name="input2Available">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="12" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="14">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t10</expression>
+         </inVariable>
+         <transition localId="15">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="13" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="14" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="16" name="machine2On">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="15" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="17">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t12</expression>
+         </inVariable>
+         <transition localId="18">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="16" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="17" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="19" name="PecaEsteira">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="18" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="20">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t14</expression>
+         </inVariable>
+         <transition localId="21">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="19" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="20" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="22" name="waitCrossing">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="21" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="23">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t5</expression>
+         </inVariable>
+         <transition localId="24">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="22" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="23" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <jumpStep localId="25" targetName="AUTONET_SUPCON_S1_0">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="24" />
+          </connectionPointIn>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </jumpStep>
+         <selectionConvergence localId="26">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="10" formalParameter="sfc" />
+          </connectionPointIn>
+          <connectionPointIn>
+           <connection refLocalId="25" formalParameter="sfc" />
+          </connectionPointIn>
+          <connectionPointOut />
+         </selectionConvergence>
+        </SFC>
+       </body>
+       <addData>
+        <data name="http://www.3s-software.com/plcopenxml/sfcsettings" handleUnknown="implementation">
+         <SFCSettings>
+          <CalcActiveTramsOnly>false</CalcActiveTramsOnly>
+          <UseDefaults>false</UseDefaults>
+          <Flags>
+           <EnableLimit Declare="true" Use="false" />
+           <Init Declare="true" Use="false" />
+           <Reset Declare="true" Use="false" />
+           <QuitError Declare="true" Use="false" />
+           <Pause Declare="true" Use="false" />
+           <Error Declare="true" Use="false" />
+           <Trans Declare="true" Use="false" />
+           <ErrorStep Declare="true" Use="false" />
+           <ErrorPOU Declare="true" Use="false" />
+           <CurrentStep Declare="true" Use="false" />
+           <Tip Declare="true" Use="false" />
+           <TipMode Declare="true" Use="false" />
+           <MaxFlags Declare="true" Use="false" />
+           <SFCErrorAnalyzation Declare="true" Use="false" />
+           <SFCErrorAnalyzationTable Declare="true" Use="false" />
+           <CurrentSteps Declare="true" Use="false" />
+          </Flags>
+         </SFCSettings>
+        </data>
+       </addData>
+      </pou>
+     </data>
+     <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+      <pou name="flow_15" pouType="program">
+       <interface />
+       <body>
+        <SFC>
+         <step localId="0" initialStep="true" name="AUTONET_SUPCON_S10_0">
+          <position x="0" y="0" />
+          <connectionPointIn />
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="1">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t27</expression>
+         </inVariable>
+         <transition localId="2">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="0" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="1" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="3" name="rampGL">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="2" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="4">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t54</expression>
+         </inVariable>
+         <transition localId="5">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="3" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="4" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="6" name="greenLidOnBox">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="5" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="7">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t29</expression>
+         </inVariable>
+         <transition localId="8">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="6" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="7" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="9" name="moveBoxGL">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="8" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="10">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t56</expression>
+         </inVariable>
+         <transition localId="11">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="9" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="10" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <jumpStep localId="12" targetName="AUTONET_SUPCON_S10_0">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="11" />
+          </connectionPointIn>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </jumpStep>
+        </SFC>
+       </body>
+       <addData>
+        <data name="http://www.3s-software.com/plcopenxml/sfcsettings" handleUnknown="implementation">
+         <SFCSettings>
+          <CalcActiveTramsOnly>false</CalcActiveTramsOnly>
+          <UseDefaults>false</UseDefaults>
+          <Flags>
+           <EnableLimit Declare="true" Use="false" />
+           <Init Declare="true" Use="false" />
+           <Reset Declare="true" Use="false" />
+           <QuitError Declare="true" Use="false" />
+           <Pause Declare="true" Use="false" />
+           <Error Declare="true" Use="false" />
+           <Trans Declare="true" Use="false" />
+           <ErrorStep Declare="true" Use="false" />
+           <ErrorPOU Declare="true" Use="false" />
+           <CurrentStep Declare="true" Use="false" />
+           <Tip Declare="true" Use="false" />
+           <TipMode Declare="true" Use="false" />
+           <MaxFlags Declare="true" Use="false" />
+           <SFCErrorAnalyzation Declare="true" Use="false" />
+           <SFCErrorAnalyzationTable Declare="true" Use="false" />
+           <CurrentSteps Declare="true" Use="false" />
+          </Flags>
+         </SFCSettings>
+        </data>
+       </addData>
+      </pou>
+     </data>
+     <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+      <pou name="flow_4" pouType="program">
+       <interface />
+       <body>
+        <SFC>
+         <step localId="0" initialStep="true" name="boxAlignedBL">
+          <position x="0" y="0" />
+          <connectionPointIn />
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="1">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t17</expression>
+         </inVariable>
+         <transition localId="2">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="0" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="1" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="3" name="moveBoxBL">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="2" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="4">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t36</expression>
+         </inVariable>
+         <transition localId="5">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="3" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="4" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <jumpStep localId="6" targetName="boxAlignedBL">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="5" />
+          </connectionPointIn>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </jumpStep>
+        </SFC>
+       </body>
+       <addData>
+        <data name="http://www.3s-software.com/plcopenxml/sfcsettings" handleUnknown="implementation">
+         <SFCSettings>
+          <CalcActiveTramsOnly>false</CalcActiveTramsOnly>
+          <UseDefaults>false</UseDefaults>
+          <Flags>
+           <EnableLimit Declare="true" Use="false" />
+           <Init Declare="true" Use="false" />
+           <Reset Declare="true" Use="false" />
+           <QuitError Declare="true" Use="false" />
+           <Pause Declare="true" Use="false" />
+           <Error Declare="true" Use="false" />
+           <Trans Declare="true" Use="false" />
+           <ErrorStep Declare="true" Use="false" />
+           <ErrorPOU Declare="true" Use="false" />
+           <CurrentStep Declare="true" Use="false" />
+           <Tip Declare="true" Use="false" />
+           <TipMode Declare="true" Use="false" />
+           <MaxFlags Declare="true" Use="false" />
+           <SFCErrorAnalyzation Declare="true" Use="false" />
+           <SFCErrorAnalyzationTable Declare="true" Use="false" />
+           <CurrentSteps Declare="true" Use="false" />
+          </Flags>
+         </SFCSettings>
+        </data>
+       </addData>
+      </pou>
+     </data>
+     <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+      <pou name="flow_1" pouType="program">
+       <interface />
+       <body>
+        <SFC>
+         <step localId="0" initialStep="true" name="input1Empty">
+          <position x="0" y="0" />
+          <connectionPointIn />
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="1">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t2</expression>
+         </inVariable>
+         <transition localId="2">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="0" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="1" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="3" name="input1Filled">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="2" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="4">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t1</expression>
+         </inVariable>
+         <transition localId="5">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="3" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="4" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <jumpStep localId="6" targetName="input1Empty">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="5" />
+          </connectionPointIn>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </jumpStep>
+        </SFC>
+       </body>
+       <addData>
+        <data name="http://www.3s-software.com/plcopenxml/sfcsettings" handleUnknown="implementation">
+         <SFCSettings>
+          <CalcActiveTramsOnly>false</CalcActiveTramsOnly>
+          <UseDefaults>false</UseDefaults>
+          <Flags>
+           <EnableLimit Declare="true" Use="false" />
+           <Init Declare="true" Use="false" />
+           <Reset Declare="true" Use="false" />
+           <QuitError Declare="true" Use="false" />
+           <Pause Declare="true" Use="false" />
+           <Error Declare="true" Use="false" />
+           <Trans Declare="true" Use="false" />
+           <ErrorStep Declare="true" Use="false" />
+           <ErrorPOU Declare="true" Use="false" />
+           <CurrentStep Declare="true" Use="false" />
+           <Tip Declare="true" Use="false" />
+           <TipMode Declare="true" Use="false" />
+           <MaxFlags Declare="true" Use="false" />
+           <SFCErrorAnalyzation Declare="true" Use="false" />
+           <SFCErrorAnalyzationTable Declare="true" Use="false" />
+           <CurrentSteps Declare="true" Use="false" />
+          </Flags>
+         </SFCSettings>
+        </data>
+       </addData>
+      </pou>
+     </data>
+     <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+      <pou name="flow_8" pouType="program">
+       <interface />
+       <body>
+        <SFC>
+         <step localId="0" initialStep="true" name="boxAlignedGB">
+          <position x="0" y="0" />
+          <connectionPointIn />
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="1">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t23</expression>
+         </inVariable>
+         <transition localId="2">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="0" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="1" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="3" name="moveBoxGB">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="2" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="4">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t46</expression>
+         </inVariable>
+         <transition localId="5">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="3" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="4" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <jumpStep localId="6" targetName="boxAlignedGB">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="5" />
+          </connectionPointIn>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </jumpStep>
+        </SFC>
+       </body>
+       <addData>
+        <data name="http://www.3s-software.com/plcopenxml/sfcsettings" handleUnknown="implementation">
+         <SFCSettings>
+          <CalcActiveTramsOnly>false</CalcActiveTramsOnly>
+          <UseDefaults>false</UseDefaults>
+          <Flags>
+           <EnableLimit Declare="true" Use="false" />
+           <Init Declare="true" Use="false" />
+           <Reset Declare="true" Use="false" />
+           <QuitError Declare="true" Use="false" />
+           <Pause Declare="true" Use="false" />
+           <Error Declare="true" Use="false" />
+           <Trans Declare="true" Use="false" />
+           <ErrorStep Declare="true" Use="false" />
+           <ErrorPOU Declare="true" Use="false" />
+           <CurrentStep Declare="true" Use="false" />
+           <Tip Declare="true" Use="false" />
+           <TipMode Declare="true" Use="false" />
+           <MaxFlags Declare="true" Use="false" />
+           <SFCErrorAnalyzation Declare="true" Use="false" />
+           <SFCErrorAnalyzationTable Declare="true" Use="false" />
+           <CurrentSteps Declare="true" Use="false" />
+          </Flags>
+         </SFCSettings>
+        </data>
+       </addData>
+      </pou>
+     </data>
+     <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+      <pou name="flow_6" pouType="program">
+       <interface />
+       <body>
+        <SFC>
+         <step localId="0" initialStep="true" name="AUTONET_SUPCON_S4_0">
+          <position x="0" y="0" />
+          <connectionPointIn />
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="1">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t13</expression>
+         </inVariable>
+         <transition localId="2">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="0" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="1" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="3" name="sortingBconveyor">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="2" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="4">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t30</expression>
+         </inVariable>
+         <transition localId="5">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="3" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="4" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="6" name="pushRight">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="5" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="7">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t32</expression>
+         </inVariable>
+         <transition localId="8">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="6" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="7" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="9" name="waitBoxBL">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="8" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="10">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t15</expression>
+         </inVariable>
+         <transition localId="11">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="9" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="10" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <jumpStep localId="12" targetName="AUTONET_SUPCON_S4_0">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="11" />
+          </connectionPointIn>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </jumpStep>
+        </SFC>
+       </body>
+       <addData>
+        <data name="http://www.3s-software.com/plcopenxml/sfcsettings" handleUnknown="implementation">
+         <SFCSettings>
+          <CalcActiveTramsOnly>false</CalcActiveTramsOnly>
+          <UseDefaults>false</UseDefaults>
+          <Flags>
+           <EnableLimit Declare="true" Use="false" />
+           <Init Declare="true" Use="false" />
+           <Reset Declare="true" Use="false" />
+           <QuitError Declare="true" Use="false" />
+           <Pause Declare="true" Use="false" />
+           <Error Declare="true" Use="false" />
+           <Trans Declare="true" Use="false" />
+           <ErrorStep Declare="true" Use="false" />
+           <ErrorPOU Declare="true" Use="false" />
+           <CurrentStep Declare="true" Use="false" />
+           <Tip Declare="true" Use="false" />
+           <TipMode Declare="true" Use="false" />
+           <MaxFlags Declare="true" Use="false" />
+           <SFCErrorAnalyzation Declare="true" Use="false" />
+           <SFCErrorAnalyzationTable Declare="true" Use="false" />
+           <CurrentSteps Declare="true" Use="false" />
+          </Flags>
+         </SFCSettings>
+        </data>
+       </addData>
+      </pou>
+     </data>
+     <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+      <pou name="flow_5" pouType="program">
+       <interface />
+       <body>
+        <SFC>
+         <step localId="0" initialStep="true" name="AUTONET_SUPCON_S8_0">
+          <position x="0" y="0" />
+          <connectionPointIn />
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="1">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t15</expression>
+         </inVariable>
+         <transition localId="2">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="0" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="1" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="3" name="rampBL">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="2" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="4">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t34</expression>
+         </inVariable>
+         <transition localId="5">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="3" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="4" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="6" name="blueLidOnBox">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="5" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="7">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t17</expression>
+         </inVariable>
+         <transition localId="8">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="6" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="7" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="9" name="moveBoxBL">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="8" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="10">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t36</expression>
+         </inVariable>
+         <transition localId="11">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="9" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="10" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <jumpStep localId="12" targetName="AUTONET_SUPCON_S8_0">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="11" />
+          </connectionPointIn>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </jumpStep>
+        </SFC>
+       </body>
+       <addData>
+        <data name="http://www.3s-software.com/plcopenxml/sfcsettings" handleUnknown="implementation">
+         <SFCSettings>
+          <CalcActiveTramsOnly>false</CalcActiveTramsOnly>
+          <UseDefaults>false</UseDefaults>
+          <Flags>
+           <EnableLimit Declare="true" Use="false" />
+           <Init Declare="true" Use="false" />
+           <Reset Declare="true" Use="false" />
+           <QuitError Declare="true" Use="false" />
+           <Pause Declare="true" Use="false" />
+           <Error Declare="true" Use="false" />
+           <Trans Declare="true" Use="false" />
+           <ErrorStep Declare="true" Use="false" />
+           <ErrorPOU Declare="true" Use="false" />
+           <CurrentStep Declare="true" Use="false" />
+           <Tip Declare="true" Use="false" />
+           <TipMode Declare="true" Use="false" />
+           <MaxFlags Declare="true" Use="false" />
+           <SFCErrorAnalyzation Declare="true" Use="false" />
+           <SFCErrorAnalyzationTable Declare="true" Use="false" />
+           <CurrentSteps Declare="true" Use="false" />
+          </Flags>
+         </SFCSettings>
+        </data>
+       </addData>
+      </pou>
+     </data>
+     <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+      <pou name="flow_10" pouType="program">
+       <interface />
+       <body>
+        <SFC>
+         <step localId="0" initialStep="true" name="AUTONET_SUPCON_S2_0">
+          <position x="0" y="0" />
+          <connectionPointIn />
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="1">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t5</expression>
+         </inVariable>
+         <transition localId="2">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="0" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="1" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="3" name="conveyorCrossing">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="2" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="4">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t16</expression>
+         </inVariable>
+         <transition localId="5">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="3" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="4" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="6" name="sortingConveyor">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="5" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <selectionDivergence localId="7">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="6" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <connectionPointOut formalParameter="sfc" />
+          <connectionPointOut formalParameter="sfc" />
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </selectionDivergence>
+         <inVariable localId="8">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t48</expression>
+         </inVariable>
+         <transition localId="9">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="7" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="8" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="10" name="greenLidOnConveyor">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="9" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="11">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t25</expression>
+         </inVariable>
+         <transition localId="12">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="10" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="11" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <jumpStep localId="13" targetName="AUTONET_SUPCON_S2_0">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="12" />
+          </connectionPointIn>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </jumpStep>
+         <inVariable localId="14">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t38</expression>
+         </inVariable>
+         <transition localId="15">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="7" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="14" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="16" name="greenBaseOnConveyor">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="15" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="17">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t19</expression>
+         </inVariable>
+         <transition localId="18">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="16" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="17" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <jumpStep localId="19" targetName="AUTONET_SUPCON_S2_0">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="18" />
+          </connectionPointIn>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </jumpStep>
+         <inVariable localId="20">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t28</expression>
+         </inVariable>
+         <transition localId="21">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="7" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="20" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="22" name="blueLidOnConveyor">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="21" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="23">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t13</expression>
+         </inVariable>
+         <transition localId="24">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="22" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="23" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <jumpStep localId="25" targetName="AUTONET_SUPCON_S2_0">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="24" />
+          </connectionPointIn>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </jumpStep>
+         <inVariable localId="26">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t18</expression>
+         </inVariable>
+         <transition localId="27">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="7" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="26" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <step localId="28" name="blueBaseOnConveyor">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="27" />
+          </connectionPointIn>
+          <connectionPointOut formalParameter="sfc" />
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </step>
+         <inVariable localId="29">
+          <position x="0" y="0" />
+          <connectionPointOut />
+          <expression>transitions.t7</expression>
+         </inVariable>
+         <transition localId="30">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="28" formalParameter="SFC" />
+          </connectionPointIn>
+          <condition>
+           <connectionPointIn>
+            <connection refLocalId="29" />
+           </connectionPointIn>
+          </condition>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </transition>
+         <jumpStep localId="31" targetName="AUTONET_SUPCON_S2_0">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="30" />
+          </connectionPointIn>
+          <addData>
+           <data name="http://www.3s-software.com/plcopenxml/sfc/element" handleUnknown="implementation">
+            <attributes xmlns="" />
+           </data>
+          </addData>
+         </jumpStep>
+         <selectionConvergence localId="32">
+          <position x="0" y="0" />
+          <connectionPointIn>
+           <connection refLocalId="13" formalParameter="sfc" />
+          </connectionPointIn>
+          <connectionPointIn>
+           <connection refLocalId="19" formalParameter="sfc" />
+          </connectionPointIn>
+          <connectionPointIn>
+           <connection refLocalId="25" formalParameter="sfc" />
+          </connectionPointIn>
+          <connectionPointIn>
+           <connection refLocalId="31" formalParameter="sfc" />
+          </connectionPointIn>
+          <connectionPointOut />
+         </selectionConvergence>
+        </SFC>
+       </body>
+       <addData>
+        <data name="http://www.3s-software.com/plcopenxml/sfcsettings" handleUnknown="implementation">
+         <SFCSettings>
+          <CalcActiveTramsOnly>false</CalcActiveTramsOnly>
+          <UseDefaults>false</UseDefaults>
+          <Flags>
+           <EnableLimit Declare="true" Use="false" />
+           <Init Declare="true" Use="false" />
+           <Reset Declare="true" Use="false" />
+           <QuitError Declare="true" Use="false" />
+           <Pause Declare="true" Use="false" />
+           <Error Declare="true" Use="false" />
+           <Trans Declare="true" Use="false" />
+           <ErrorStep Declare="true" Use="false" />
+           <ErrorPOU Declare="true" Use="false" />
+           <CurrentStep Declare="true" Use="false" />
+           <Tip Declare="true" Use="false" />
+           <TipMode Declare="true" Use="false" />
+           <MaxFlags Declare="true" Use="false" />
+           <SFCErrorAnalyzation Declare="true" Use="false" />
+           <SFCErrorAnalyzationTable Declare="true" Use="false" />
+           <CurrentSteps Declare="true" Use="false" />
+          </Flags>
+         </SFCSettings>
+        </data>
+       </addData>
+      </pou>
+     </data>
+     <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
       <pou name="transitions" pouType="program">
        <interface />
        <transitions>
-        <transition name="t0">
+        <transition name="t20">
          <body>
           <ST>
-           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t0</xhtml>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t20</xhtml>
           </ST>
          </body>
         </transition>
@@ -219,10 +3151,290 @@
           </ST>
          </body>
         </transition>
+        <transition name="t19">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t19</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t18">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t18</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t17">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t17</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t9">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t9</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t8">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t8</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t7">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t7</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t6">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t6</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t56">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t56</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t54">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t54</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t52">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t52</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t50">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t50</xhtml>
+          </ST>
+         </body>
+        </transition>
         <transition name="t5">
          <body>
           <ST>
            <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t5</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t48">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t48</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t46">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t46</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t44">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t44</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t42">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t42</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t40">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t40</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t4">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t4</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t38">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t38</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t36">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t36</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t34">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t34</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t16">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t16</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t32">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t32</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t15">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t15</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t30">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t30</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t14">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t14</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t3">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t3</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t13">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t13</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t29">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t29</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t12">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t12</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t28">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t28</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t11">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t11</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t27">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t27</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t10">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t10</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t26">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t26</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t1">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t1</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t25">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t25</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t24">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t24</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t23">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t23</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t22">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t22</xhtml>
+          </ST>
+         </body>
+        </transition>
+        <transition name="t21">
+         <body>
+          <ST>
+           <xhtml xmlns="http://www.w3.org/1999/xhtml">GVL.t21</xhtml>
           </ST>
          </body>
         </transition>

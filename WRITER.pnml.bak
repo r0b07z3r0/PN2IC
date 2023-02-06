@@ -6,7 +6,7 @@
   <page id="g-15C4-D51FC-1">
    <place id="p-SUPCON_S2_0">
     <name>
-     <text>pSUPCON_S2_0</text>
+     <text>SUPCON_S2_0</text>
      <graphics>
       <offset x="0" y="-10" />
      </graphics>
@@ -26,7 +26,7 @@
    </place>
    <place id="p-SUPCON_S3_0">
     <name>
-     <text>pSUPCON_S3_0</text>
+     <text>SUPCON_S3_0</text>
      <graphics>
       <offset x="0" y="-10" />
      </graphics>
@@ -46,7 +46,7 @@
    </place>
    <place id="p-SUPCON_S4_0">
     <name>
-     <text>pSUPCON_S4_0</text>
+     <text>SUPCON_S4_0</text>
      <graphics>
       <offset x="0" y="-10" />
      </graphics>
@@ -66,7 +66,7 @@
    </place>
    <place id="p-SUPCON_S5_0">
     <name>
-     <text>pSUPCON_S5_0</text>
+     <text>SUPCON_S5_0</text>
      <graphics>
       <offset x="0" y="-10" />
      </graphics>
@@ -86,7 +86,7 @@
    </place>
    <place id="p-SUPCON_S6_0">
     <name>
-     <text>pSUPCON_S6_0</text>
+     <text>SUPCON_S6_0</text>
      <graphics>
       <offset x="0" y="-10" />
      </graphics>
@@ -106,7 +106,7 @@
    </place>
    <place id="p-SUPCON_S7_0">
     <name>
-     <text>pSUPCON_S7_0</text>
+     <text>SUPCON_S7_0</text>
      <graphics>
       <offset x="0" y="-10" />
      </graphics>
@@ -177,7 +177,7 @@
    </place>
    <place id="p-SUPCON_S8_0">
     <name>
-     <text>pSUPCON_S8_0</text>
+     <text>SUPCON_S8_0</text>
      <graphics>
       <offset x="0" y="-10" />
      </graphics>
@@ -410,7 +410,7 @@
    </place>
    <place id="p-SUPCON_S9_0">
     <name>
-     <text>pSUPCON_S9_0</text>
+     <text>SUPCON_S9_0</text>
      <graphics>
       <offset x="0" y="-10" />
      </graphics>
@@ -932,7 +932,7 @@
    </place>
    <place id="p-SUPCON_S1_0">
     <name>
-     <text>pSUPCON_S1_0</text>
+     <text>SUPCON_S1_0</text>
      <graphics>
       <offset x="0" y="-10" />
      </graphics>
@@ -952,7 +952,7 @@
    </place>
    <place id="p-SUPCON_S10_0">
     <name>
-     <text>pSUPCON_S10_0</text>
+     <text>SUPCON_S10_0</text>
      <graphics>
       <offset x="0" y="-10" />
      </graphics>
