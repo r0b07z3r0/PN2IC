@@ -1,0 +1,1669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="n-898-E8061-0" type ="http://www.laas.fr/tina/tpn">
+  <name>
+   <text>celulaRobotizada_v3</text>
+  </name>
+ <page id="g-898-E8091-1">
+  <place id="p-898-E809F-2">
+  <name>
+   <text>p0</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>E1_ComPeca</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="340" y="110"/>
+   </graphics>
+  </place>
+  <place id="p-898-E80C0-3">
+  <name>
+   <text>p1</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>E1_SemPeca</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="220" y="110"/>
+   </graphics>
+  </place>
+  <place id="p-898-E80CF-4">
+  <name>
+   <text>p10</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>E2_MaquinaOff</text>
+    <graphics>
+     <offset x="0" y="10" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="940" y="355"/>
+   </graphics>
+  </place>
+  <place id="p-898-E80D8-5">
+  <name>
+   <text>p11</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>E2_ComPeca</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="780" y="110"/>
+   </graphics>
+  </place>
+  <place id="p-898-E80E0-6">
+  <name>
+   <text>p12</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="380" y="1050"/>
+   </graphics>
+  </place>
+  <place id="p-898-E80E7-7">
+  <name>
+   <text>p13</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>BracoPivotOff</text>
+    <graphics>
+     <offset x="10" y="10" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="820" y="565"/>
+   </graphics>
+  </place>
+  <place id="p-898-E80F6-8">
+  <name>
+   <text>p14</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>Juncao</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="500" y="740"/>
+   </graphics>
+  </place>
+  <place id="p-898-E8102-9">
+  <name>
+   <text>p15</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>EsteiraCaixaVazia</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="960" y="685"/>
+   </graphics>
+  </place>
+  <place id="p-898-E810B-10">
+  <name>
+   <text>p16</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>EsteiraCaixaOcupada</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="960" y="825"/>
+   </graphics>
+  </place>
+  <place id="p-898-E8113-11">
+  <name>
+   <text>p17</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>Classificadora</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="500" y="885"/>
+   </graphics>
+  </place>
+  <place id="p-898-E8119-12">
+  <name>
+   <text>p18</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="380" y="1185"/>
+   </graphics>
+  </place>
+  <place id="p-898-E811B-13">
+  <name>
+   <text>p19</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="380" y="1325"/>
+   </graphics>
+  </place>
+  <place id="p-898-E811F-14">
+  <name>
+   <text>p2</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>E1_PecaDispMaquina</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="280" y="230"/>
+   </graphics>
+  </place>
+  <place id="p-898-E81D9-15">
+  <name>
+   <text>p20</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="380" y="1475"/>
+   </graphics>
+  </place>
+  <place id="p-898-E81E0-16">
+  <name>
+   <text>p21</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="380" y="1605"/>
+   </graphics>
+  </place>
+  <place id="p-898-E81E2-17">
+  <name>
+   <text>p22</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="35" y="1880"/>
+   </graphics>
+  </place>
+  <place id="p-898-E81E7-18">
+  <name>
+   <text>p23</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="215" y="1885"/>
+   </graphics>
+  </place>
+  <place id="p-898-E81E9-19">
+  <name>
+   <text>p24</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>BlueLidLivre</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="500" y="1605"/>
+   </graphics>
+  </place>
+  <place id="p-898-E81F1-20">
+  <name>
+   <text>p25</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="340" y="1875"/>
+   </graphics>
+  </place>
+  <place id="p-898-E81F3-21">
+  <name>
+   <text>p26</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="480" y="1875"/>
+   </graphics>
+  </place>
+  <place id="p-898-E81F7-22">
+  <name>
+   <text>p27</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="620" y="1050"/>
+   </graphics>
+  </place>
+  <place id="p-898-E81F9-23">
+  <name>
+   <text>p28</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="620" y="1185"/>
+   </graphics>
+  </place>
+  <place id="p-898-E81FD-24">
+  <name>
+   <text>p29</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="620" y="1325"/>
+   </graphics>
+  </place>
+  <place id="p-898-E81FF-25">
+  <name>
+   <text>p3</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>E1_MaquinaON</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="280" y="355"/>
+   </graphics>
+  </place>
+  <place id="p-898-E8204-26">
+  <name>
+   <text>p30</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="60" y="1005"/>
+   </graphics>
+  </place>
+  <place id="p-898-E8208-27">
+  <name>
+   <text>p31</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="620" y="1475"/>
+   </graphics>
+  </place>
+  <place id="p-898-E820A-28">
+  <name>
+   <text>p32</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="620" y="1605"/>
+   </graphics>
+  </place>
+  <place id="p-898-E820E-29">
+  <name>
+   <text>p33</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>GreenLidLivre</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="740" y="1605"/>
+   </graphics>
+  </place>
+  <place id="p-898-E8214-30">
+  <name>
+   <text>p34</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="610" y="1880"/>
+   </graphics>
+  </place>
+  <place id="p-898-E8216-31">
+  <name>
+   <text>p35</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="810" y="1875"/>
+   </graphics>
+  </place>
+  <place id="p-898-E825A-32">
+  <name>
+   <text>p36</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="910" y="1005"/>
+   </graphics>
+  </place>
+  <place id="p-898-E825D-33">
+  <name>
+   <text>p37</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="910" y="1140"/>
+   </graphics>
+  </place>
+  <place id="p-898-E8261-34">
+  <name>
+   <text>p38</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="910" y="1280"/>
+   </graphics>
+  </place>
+  <place id="p-898-E8263-35">
+  <name>
+   <text>p39</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="910" y="1430"/>
+   </graphics>
+  </place>
+  <place id="p-898-E8267-36">
+  <name>
+   <text>p4</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>PecaEsteira</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="500" y="480"/>
+   </graphics>
+  </place>
+  <place id="p-898-E826D-37">
+  <name>
+   <text>p40</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="500" y="605"/>
+   </graphics>
+  </place>
+  <place id="p-898-E8270-38">
+  <name>
+   <text>p41</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="60" y="1140"/>
+   </graphics>
+  </place>
+  <place id="p-898-E8272-39">
+  <name>
+   <text>p42</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="910" y="1560"/>
+   </graphics>
+  </place>
+  <place id="p-898-E8277-40">
+  <name>
+   <text>p43</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>GreenBaseLivre</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="1030" y="1560"/>
+   </graphics>
+  </place>
+  <place id="p-898-E827C-41">
+  <name>
+   <text>p44</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="60" y="1560"/>
+   </graphics>
+  </place>
+  <place id="p-898-E827E-42">
+  <name>
+   <text>p45</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="60" y="1280"/>
+   </graphics>
+  </place>
+  <place id="p-898-E829A-43">
+  <name>
+   <text>p46</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="60" y="1430"/>
+   </graphics>
+  </place>
+  <place id="p-898-E829C-44">
+  <name>
+   <text>p47</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>BlueBaseLivre</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="180" y="1560"/>
+   </graphics>
+  </place>
+  <place id="p-898-E82A6-45">
+  <name>
+   <text>p48</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="910" y="1850"/>
+   </graphics>
+  </place>
+  <place id="p-898-E82A8-46">
+  <name>
+   <text>p49</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="1065" y="1860"/>
+   </graphics>
+  </place>
+  <place id="p-898-E82AC-47">
+  <name>
+   <text>p5</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>BracoPivotOn</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="820" y="485"/>
+   </graphics>
+  </place>
+  <place id="p-898-E82B1-48">
+  <name>
+   <text>p6</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>E1_MaquinaOff</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="80" y="355"/>
+   </graphics>
+  </place>
+  <place id="p-898-E82D3-49">
+  <name>
+   <text>p7</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>E2_SemPeca</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="660" y="110"/>
+   </graphics>
+  </place>
+  <place id="p-898-E82D9-50">
+  <name>
+   <text>p8</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>E2_PecaDispMaquina</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="720" y="230"/>
+   </graphics>
+  </place>
+  <place id="p-898-E82DE-51">
+  <name>
+   <text>p9</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>E2_MaquinaON</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="720" y="355"/>
+   </graphics>
+  </place>
+  <transition id="t-898-E82E5-52">
+  <name>
+   <text>t1</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_machine1FeederActuator</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="280" y="170"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E82EC-53">
+  <name>
+   <text>t10</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machineFeeder2Sensor</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="720" y="50"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E82F4-54">
+  <name>
+   <text>t11</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_sortingStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="380" y="1125"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E82FA-55">
+  <name>
+   <text>t12</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machine2BusySensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="720" y="295"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E8301-56">
+  <name>
+   <text>t13</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_liftingBlueLidStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="380" y="1545"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E8309-57">
+  <name>
+   <text>t14</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machine2OutSensor</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="720" y="415"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E830F-58">
+  <name>
+   <text>t15</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_sortingStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="620" y="1125"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E8317-59">
+  <name>
+   <text>t16</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_metalSensor</text>
+    <graphics>
+     <offset x="0" y="10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="700" y="525"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E831C-60">
+  <name>
+   <text>t17</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_liftingGreenLidStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="620" y="1545"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E8353-61">
+  <name>
+   <text>t18</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>discardSensor</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="940" y="525"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E8358-62">
+  <name>
+   <text>t19</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_sortingStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="910" y="1080"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E8360-63">
+  <name>
+   <text>t2</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machineFeeder1Sensor</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="280" y="50"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E8365-64">
+  <name>
+   <text>t20</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_mainCrossingInSensor</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="500" y="540"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E836E-65">
+  <name>
+   <text>t21</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_liftingGreenBaseStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="910" y="1500"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E8376-66">
+  <name>
+   <text>t22</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_mainCrossingOutSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="500" y="825"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E837E-67">
+  <name>
+   <text>t24</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_blueBaseVisionSensor</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="120" y="925"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E8385-68">
+  <name>
+   <text>t26</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sortingBlueSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="60" y="1200"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E838B-69">
+  <name>
+   <text>t28</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_liftingBlueBaseInSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="60" y="1365"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E8393-70">
+  <name>
+   <text>t3</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_machine2FeederActuator</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="720" y="170"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E839A-71">
+  <name>
+   <text>t30</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_liftingBlueLidOutSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="60" y="1640"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E83A8-72">
+  <name>
+   <text>t32</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_blueLidVisionSensor</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="380" y="970"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E83C2-73">
+  <name>
+   <text>t34</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sortingBlueSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="380" y="1245"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E83CA-74">
+  <name>
+   <text>t36</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_liftingBlueLidInSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="380" y="1410"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E83D1-75">
+  <name>
+   <text>t38</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_liftingBlueLidOutSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="380" y="1685"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E83D7-76">
+  <name>
+   <text>t40</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_greenBaseVisionSensor</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="620" y="970"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E83DE-77">
+  <name>
+   <text>t42</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sortingGreenSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="620" y="1245"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E83E4-78">
+  <name>
+   <text>t46</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_liftingGreenLidInSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="620" y="1410"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E83EB-79">
+  <name>
+   <text>t48</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_liftingGreenLidOutSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="620" y="1685"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E83F2-80">
+  <name>
+   <text>t5</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_stopCrossingActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="500" y="665"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E83F9-81">
+  <name>
+   <text>t50</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_greenLidVisionSensor</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="880" y="925"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E83FF-82">
+  <name>
+   <text>t52</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sortingGreenSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="910" y="1200"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E8406-83">
+  <name>
+   <text>t54</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_liftingGreenBaseInSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="910" y="1365"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E840C-84">
+  <name>
+   <text>t56</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_liftingGreenBaseOutSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="910" y="1640"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E8428-85">
+  <name>
+   <text>t58</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_boxAlignBlueBaseSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="100" y="1810"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E8431-86">
+  <name>
+   <text>t6</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machine1BusySensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="280" y="295"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E8436-87">
+  <name>
+   <text>t60</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_boxAlignBlueLidSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="415" y="1815"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E843E-88">
+  <name>
+   <text>t62</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_boxAlignGreenLidSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="685" y="1830"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E8445-89">
+  <name>
+   <text>t64</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_boxAlignGreenBaseSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="975" y="1800"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E844C-90">
+  <name>
+   <text>t66</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_packagedLineCrossingInSensor</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="920" y="750"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E8454-91">
+  <name>
+   <text>t68</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_packagedLineCrossingOutSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="1000" y="750"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E845B-92">
+  <name>
+   <text>t7</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_sortingStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="60" y="1080"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E8461-93">
+  <name>
+   <text>t8</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machine1OutSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="280" y="415"/>
+   </graphics>
+  </transition>
+  <transition id="t-898-E8466-94">
+  <name>
+   <text>t9</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_liftingBlueBaseStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="60" y="1500"/>
+   </graphics>
+  </transition>
+  <arc id="e-898-E846F-95" source="p-898-E82A8-46" target="t-898-E840C-84">
+  </arc>
+  <arc id="e-898-E8479-96" source="t-898-E8428-85" target="p-898-E81E7-18">
+  </arc>
+  <arc id="e-898-E847D-97" source="t-898-E8385-68" target="p-898-E827E-42">
+  </arc>
+  <arc id="e-898-E847F-98" source="p-898-E827E-42" target="t-898-E838B-69">
+  </arc>
+  <arc id="e-898-E8480-99" source="t-898-E838B-69" target="p-898-E829A-43">
+  </arc>
+  <arc id="e-898-E8481-100" source="p-898-E829A-43" target="t-898-E8466-94">
+  </arc>
+  <arc id="e-898-E8483-101" source="p-898-E829C-44" target="t-898-E838B-69">
+  </arc>
+  <arc id="e-898-E8484-102" source="t-898-E837E-67" target="p-898-E8204-26">
+  </arc>
+  <arc id="e-898-E8486-103" source="p-898-E81E2-17" target="t-898-E8428-85">
+  </arc>
+  <arc id="e-898-E849C-104" source="t-898-E839A-71" target="p-898-E829C-44">
+  </arc>
+  <arc id="e-898-E849E-105" source="t-898-E83F9-81" target="p-898-E825A-32">
+  </arc>
+  <arc id="e-898-E849F-106" source="p-898-E8277-40" target="t-898-E8406-83">
+  </arc>
+  <arc id="e-898-E84A1-107" source="t-898-E840C-84" target="p-898-E8277-40">
+  </arc>
+  <arc id="e-898-E84A2-108" source="p-898-E8263-35" target="t-898-E836E-65">
+  </arc>
+  <arc id="e-898-E84A4-109" source="t-898-E8406-83" target="p-898-E8263-35">
+  </arc>
+  <arc id="e-898-E84A5-110" source="p-898-E8261-34" target="t-898-E8406-83">
+  </arc>
+  <arc id="e-898-E84A6-111" source="t-898-E83FF-82" target="p-898-E8261-34">
+  </arc>
+  <arc id="e-898-E84AA-112" source="t-898-E840C-84" target="p-898-E82A6-45">
+  </arc>
+  <arc id="e-898-E84AB-113" source="p-898-E8272-39" target="t-898-E840C-84">
+  </arc>
+  <arc id="e-898-E84AC-114" source="t-898-E836E-65" target="p-898-E8272-39">
+  </arc>
+  <arc id="e-898-E84AD-115" source="p-898-E825D-33" target="t-898-E83FF-82">
+  </arc>
+  <arc id="e-898-E84AE-116" source="t-898-E8358-62" target="p-898-E825D-33">
+  </arc>
+  <arc id="e-898-E84B0-117" source="p-898-E825A-32" target="t-898-E8358-62">
+  </arc>
+  <arc id="e-898-E84B1-118" source="t-898-E8445-89" target="p-898-E82A8-46">
+  </arc>
+  <arc id="e-898-E84B4-119" source="p-898-E82A6-45" target="t-898-E8445-89">
+  </arc>
+  <arc id="e-898-E84B5-120" source="t-898-E83D7-76" target="p-898-E81F7-22">
+  </arc>
+  <arc id="e-898-E84B8-121" source="p-898-E8214-30" target="t-898-E843E-88">
+  </arc>
+  <arc id="e-898-E84B9-122" source="t-898-E843E-88" target="p-898-E8216-31">
+  </arc>
+  <arc id="e-898-E84BA-123" source="p-898-E8216-31" target="t-898-E83EB-79">
+  </arc>
+  <arc id="e-898-E84BC-124" source="p-898-E81F7-22" target="t-898-E830F-58">
+  </arc>
+  <arc id="e-898-E84BD-125" source="t-898-E830F-58" target="p-898-E81F9-23">
+  </arc>
+  <arc id="e-898-E84BF-126" source="p-898-E81F9-23" target="t-898-E83DE-77">
+  </arc>
+  <arc id="e-898-E84C2-127" source="t-898-E831C-60" target="p-898-E820A-28">
+  </arc>
+  <arc id="e-898-E84C4-128" source="p-898-E820A-28" target="t-898-E83EB-79">
+  </arc>
+  <arc id="e-898-E84C5-129" source="t-898-E83DE-77" target="p-898-E81FD-24">
+  </arc>
+  <arc id="e-898-E84C6-130" source="p-898-E81FD-24" target="t-898-E83E4-78">
+  </arc>
+  <arc id="e-898-E84C8-131" source="t-898-E83E4-78" target="p-898-E8208-27">
+  </arc>
+  <arc id="e-898-E84C9-132" source="p-898-E8208-27" target="t-898-E831C-60">
+  </arc>
+  <arc id="e-898-E84CA-133" source="t-898-E83EB-79" target="p-898-E820E-29">
+  </arc>
+  <arc id="e-898-E84CB-134" source="t-898-E83EB-79" target="p-898-E8214-30">
+  </arc>
+  <arc id="e-898-E84D6-135" source="p-898-E820E-29" target="t-898-E83E4-78">
+  </arc>
+  <arc id="e-898-E84D9-136" source="t-898-E83A8-72" target="p-898-E80E0-6">
+  </arc>
+  <arc id="e-898-E84DB-137" source="p-898-E81E9-19" target="t-898-E83CA-74">
+  </arc>
+  <arc id="e-898-E84DE-138" source="t-898-E83D1-75" target="p-898-E81E9-19">
+  </arc>
+  <arc id="e-898-E84E0-139" source="p-898-E81D9-15" target="t-898-E8301-56">
+  </arc>
+  <arc id="e-898-E84E3-140" source="t-898-E83CA-74" target="p-898-E81D9-15">
+  </arc>
+  <arc id="e-898-E84E5-141" source="p-898-E811B-13" target="t-898-E83CA-74">
+  </arc>
+  <arc id="e-898-E84E9-142" source="t-898-E83C2-73" target="p-898-E811B-13">
+  </arc>
+  <arc id="e-898-E84EC-143" source="p-898-E81E0-16" target="t-898-E83D1-75">
+  </arc>
+  <arc id="e-898-E84ED-144" source="t-898-E8301-56" target="p-898-E81E0-16">
+  </arc>
+  <arc id="e-898-E84EF-145" source="p-898-E81F3-21" target="t-898-E83D1-75">
+  </arc>
+  <arc id="e-898-E84F0-146" source="p-898-E8119-12" target="t-898-E83C2-73">
+  </arc>
+  <arc id="e-898-E84F2-147" source="t-898-E82F4-54" target="p-898-E8119-12">
+  </arc>
+  <arc id="e-898-E84F3-148" source="p-898-E80E0-6" target="t-898-E82F4-54">
+  </arc>
+  <arc id="e-898-E84F5-149" source="t-898-E8436-87" target="p-898-E81F3-21">
+  </arc>
+  <arc id="e-898-E84F8-150" source="p-898-E80C0-3" target="t-898-E8360-63">
+  </arc>
+  <arc id="e-898-E8523-151" source="t-898-E8360-63" target="p-898-E809F-2">
+  </arc>
+  <arc id="e-898-E8524-152" source="p-898-E809F-2" target="t-898-E82E5-52">
+  </arc>
+  <arc id="e-898-E8526-153" source="t-898-E82E5-52" target="p-898-E80C0-3">
+  </arc>
+  <arc id="e-898-E8527-154" source="t-898-E82E5-52" target="p-898-E811F-14">
+  </arc>
+  <arc id="e-898-E8528-155" source="p-898-E811F-14" target="t-898-E8431-86">
+  </arc>
+  <arc id="e-898-E852A-156" source="t-898-E83D1-75" target="p-898-E81F1-20">
+  </arc>
+  <arc id="e-898-E852D-157" source="t-898-E8431-86" target="p-898-E81FF-25">
+  </arc>
+  <arc id="e-898-E852F-158" source="p-898-E81FF-25" target="t-898-E8461-93">
+  </arc>
+  <arc id="e-898-E8530-159" source="t-898-E8461-93" target="p-898-E8267-36">
+  </arc>
+  <arc id="e-898-E8532-160" source="p-898-E8267-36" target="t-898-E8317-59">
+  </arc>
+  <arc id="e-898-E8533-161" source="t-898-E8317-59" target="p-898-E82AC-47">
+  </arc>
+  <arc id="e-898-E8534-162" source="t-898-E8461-93" target="p-898-E82B1-48">
+  </arc>
+  <arc id="e-898-E8535-163" source="t-898-E8309-57" target="p-898-E80CF-4">
+  </arc>
+  <arc id="e-898-E8537-164" source="t-898-E8309-57" target="p-898-E8267-36">
+  </arc>
+  <arc id="e-898-E8539-165" source="p-898-E82DE-51" target="t-898-E8309-57">
+  </arc>
+  <arc id="e-898-E853A-166" source="t-898-E82FA-55" target="p-898-E82DE-51">
+  </arc>
+  <arc id="e-898-E853C-167" source="t-898-E839A-71" target="p-898-E81E2-17">
+  </arc>
+  <arc id="e-898-E853D-168" source="p-898-E82D9-50" target="t-898-E82FA-55">
+  </arc>
+  <arc id="e-898-E853E-169" source="t-898-E8393-70" target="p-898-E82D9-50">
+  </arc>
+  <arc id="e-898-E853F-170" source="t-898-E8393-70" target="p-898-E82D3-49">
+  </arc>
+  <arc id="e-898-E8541-171" source="p-898-E80D8-5" target="t-898-E8393-70">
+  </arc>
+  <arc id="e-898-E8543-172" source="t-898-E82EC-53" target="p-898-E80D8-5">
+  </arc>
+  <arc id="e-898-E8546-173" source="p-898-E82D3-49" target="t-898-E82EC-53">
+  </arc>
+  <arc id="e-898-E8547-174" source="p-898-E8267-36" target="t-898-E8365-64">
+  </arc>
+  <arc id="e-898-E8548-175" source="p-898-E80E7-7" target="t-898-E8317-59">
+  </arc>
+  <arc id="e-898-E8549-176" source="p-898-E82AC-47" target="t-898-E8353-61">
+  </arc>
+  <arc id="e-898-E854B-177" source="t-898-E8353-61" target="p-898-E80E7-7">
+  </arc>
+  <arc id="e-898-E854C-178" source="p-898-E81E7-18" target="t-898-E839A-71">
+  </arc>
+  <arc id="e-898-E854E-179" source="p-898-E8102-9" target="t-898-E844C-90">
+  </arc>
+  <arc id="e-898-E8550-180" source="t-898-E844C-90" target="p-898-E810B-10">
+  </arc>
+  <arc id="e-898-E8552-181" source="p-898-E810B-10" target="t-898-E8454-91">
+  </arc>
+  <arc id="e-898-E8553-182" source="t-898-E8454-91" target="p-898-E8102-9">
+  </arc>
+  <arc id="e-898-E8554-183" source="p-898-E80F6-8" target="t-898-E8376-66">
+  </arc>
+  <arc id="e-898-E8556-184" source="t-898-E8376-66" target="p-898-E8113-11">
+  </arc>
+  <arc id="e-898-E8557-185" source="p-898-E8113-11" target="t-898-E83F9-81">
+  </arc>
+  <arc id="e-898-E8558-186" source="p-898-E8113-11" target="t-898-E83D7-76">
+  </arc>
+  <arc id="e-898-E8559-187" source="p-898-E8113-11" target="t-898-E83A8-72">
+  </arc>
+  <arc id="e-898-E855C-188" source="p-898-E8113-11" target="t-898-E837E-67">
+  </arc>
+  <arc id="e-898-E855D-189" source="p-898-E81F1-20" target="t-898-E8436-87">
+  </arc>
+  <arc id="e-898-E855E-190" source="p-898-E82B1-48" target="t-898-E8431-86">
+  </arc>
+  <arc id="e-898-E8560-191" source="p-898-E80CF-4" target="t-898-E82FA-55">
+  </arc>
+  <arc id="e-898-E8561-192" source="t-898-E8365-64" target="p-898-E826D-37">
+  </arc>
+  <arc id="e-898-E8563-193" source="p-898-E826D-37" target="t-898-E83F2-80">
+  </arc>
+  <arc id="e-898-E8564-194" source="t-898-E83F2-80" target="p-898-E80F6-8">
+  </arc>
+  <arc id="e-898-E8565-195" source="p-898-E8204-26" target="t-898-E845B-92">
+  </arc>
+  <arc id="e-898-E8568-196" source="t-898-E845B-92" target="p-898-E8270-38">
+  </arc>
+  <arc id="e-898-E8569-197" source="p-898-E8270-38" target="t-898-E8385-68">
+  </arc>
+  <arc id="e-898-E856B-198" source="t-898-E8466-94" target="p-898-E827C-41">
+  </arc>
+  <arc id="e-898-E857D-199" source="p-898-E827C-41" target="t-898-E839A-71">
+  </arc>
+ </page>
+ </net>
+</pnml>

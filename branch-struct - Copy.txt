@@ -1,0 +1,47 @@
+Struct version 3.7.0 -- 06/05/22 -- LAAS/CNRS
+
+parsed net branch
+
+5 places, 9 transitions, 18 arcs
+
+net branch
+tr t0 : tr0 p0  -> p1 
+tr t1 : tr1 p1  -> p0 
+tr t2 : tr2 p1  -> p3 
+tr t3 : tr3 p1  -> p0 
+tr t4 : tr4 p3  -> p0 
+tr t5 : tr5 p3  -> p0 
+tr t6 : tr6 p0  -> p6 
+tr t7 : tr7 p6  -> p7 
+tr t8 : tr8 p7  -> p0 
+pl p0 : l1 (1)
+pl p1 : l2
+pl p3 : l3
+pl p6 : l4
+pl p7 : l5
+
+0.000s
+
+P-SEMI-FLOWS GENERATING SET ------------------------------------- 
+
+p0 p1 p3 p6 p7 (1)
+
+invariant
+
+0.000s
+
+T-SEMI-FLOWS GENERATING SET ------------------------------------- 
+
+t6 t7 t8 (3)
+t0 t3 (2)
+t0 t1 (2)
+t0 t2 t5 (3)
+t0 t2 t4 (3)
+
+consistent
+
+0.000s
+
+ANALYSIS COMPLETED  --------------------------------------------- 
+
+

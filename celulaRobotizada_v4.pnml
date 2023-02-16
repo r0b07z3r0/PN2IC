@@ -1,0 +1,1488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="n-2898-DEC34-0" type ="http://www.laas.fr/tina/tpn">
+  <name>
+   <text>celulaRobotizada_v4</text>
+  </name>
+ <page id="g-2898-DEC5F-1">
+  <place id="p-2898-DED9F-2">
+  <name>
+   <text>p0</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>E1_ComPeca</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="340" y="110"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEDB8-3">
+  <name>
+   <text>p1</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>E1_SemPeca</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="220" y="110"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEDC1-4">
+  <name>
+   <text>p12</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="380" y="1050"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEDC5-5">
+  <name>
+   <text>p13</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>BracoPivotOff</text>
+    <graphics>
+     <offset x="10" y="10" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="820" y="565"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEDCB-6">
+  <name>
+   <text>p14</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>Juncao</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="500" y="740"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEDD0-7">
+  <name>
+   <text>p15</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>EsteiraCaixaVazia</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="960" y="685"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEDD6-8">
+  <name>
+   <text>p16</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>EsteiraCaixaOcupada</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="960" y="825"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEDDD-9">
+  <name>
+   <text>p17</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>Classificadora</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="500" y="885"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEDE2-10">
+  <name>
+   <text>p18</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="380" y="1185"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEDE4-11">
+  <name>
+   <text>p19</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="380" y="1325"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEDE8-12">
+  <name>
+   <text>p2</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>E1_PecaDispMaquina</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="280" y="230"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEDED-13">
+  <name>
+   <text>p20</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="380" y="1475"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEDF0-14">
+  <name>
+   <text>p21</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="380" y="1605"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEDF3-15">
+  <name>
+   <text>p22</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="35" y="1880"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEE82-16">
+  <name>
+   <text>p23</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="215" y="1885"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEE85-17">
+  <name>
+   <text>p24</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>BlueLidLivre</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="500" y="1605"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEE8C-18">
+  <name>
+   <text>p25</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="340" y="1875"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEE90-19">
+  <name>
+   <text>p26</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="480" y="1875"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEE92-20">
+  <name>
+   <text>p27</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="620" y="1050"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEE96-21">
+  <name>
+   <text>p28</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="620" y="1185"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEE98-22">
+  <name>
+   <text>p29</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="620" y="1325"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEE9B-23">
+  <name>
+   <text>p3</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>E1_MaquinaON</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="280" y="355"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEEA0-24">
+  <name>
+   <text>p30</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="60" y="1005"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEEA2-25">
+  <name>
+   <text>p31</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="620" y="1475"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEEA6-26">
+  <name>
+   <text>p32</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="620" y="1605"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEEA8-27">
+  <name>
+   <text>p33</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>GreenLidLivre</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="740" y="1605"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEEAF-28">
+  <name>
+   <text>p34</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="610" y="1880"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEEB1-29">
+  <name>
+   <text>p35</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="810" y="1875"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEEB5-30">
+  <name>
+   <text>p36</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="910" y="1005"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEEB7-31">
+  <name>
+   <text>p37</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="910" y="1140"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEEBA-32">
+  <name>
+   <text>p38</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="910" y="1280"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEF22-33">
+  <name>
+   <text>p39</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="910" y="1430"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEF2C-34">
+  <name>
+   <text>p4</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>PecaEsteira</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="500" y="480"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEF34-35">
+  <name>
+   <text>p40</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="500" y="605"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEF38-36">
+  <name>
+   <text>p41</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="60" y="1140"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEF3E-37">
+  <name>
+   <text>p42</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="910" y="1560"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEF41-38">
+  <name>
+   <text>p43</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>GreenBaseLivre</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="1030" y="1560"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEF4B-39">
+  <name>
+   <text>p44</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="60" y="1560"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEF50-40">
+  <name>
+   <text>p45</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="60" y="1280"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEF56-41">
+  <name>
+   <text>p46</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="60" y="1430"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEF59-42">
+  <name>
+   <text>p47</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>BlueBaseLivre</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="180" y="1560"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEF62-43">
+  <name>
+   <text>p48</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="910" y="1850"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEF68-44">
+  <name>
+   <text>p49</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="1065" y="1860"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEF6B-45">
+  <name>
+   <text>p5</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>BracoPivotOn</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="820" y="485"/>
+   </graphics>
+  </place>
+  <place id="p-2898-DEF75-46">
+  <name>
+   <text>p6</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>E1_MaquinaOff</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="80" y="355"/>
+   </graphics>
+  </place>
+  <transition id="t-2898-DEF82-47">
+  <name>
+   <text>t1</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_machine1FeederActuator</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="280" y="170"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DEF8E-48">
+  <name>
+   <text>t11</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_sortingStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="380" y="1125"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DEFBB-49">
+  <name>
+   <text>t13</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_liftingBlueLidStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="380" y="1545"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DEFC7-50">
+  <name>
+   <text>t15</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_sortingStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="620" y="1125"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DEFD0-51">
+  <name>
+   <text>t16</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_metalSensor</text>
+    <graphics>
+     <offset x="0" y="10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="700" y="525"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DEFD9-52">
+  <name>
+   <text>t17</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_liftingGreenLidStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="620" y="1545"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DEFE3-53">
+  <name>
+   <text>t18</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>discardSensor</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="940" y="525"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DEFED-54">
+  <name>
+   <text>t19</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_sortingStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="910" y="1080"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DEFF5-55">
+  <name>
+   <text>t2</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machineFeeder1Sensor</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="280" y="50"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF000-56">
+  <name>
+   <text>t20</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_mainCrossingInSensor</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="500" y="540"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF009-57">
+  <name>
+   <text>t21</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_liftingGreenBaseStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="910" y="1500"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF014-58">
+  <name>
+   <text>t22</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_mainCrossingOutSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="500" y="825"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF01E-59">
+  <name>
+   <text>t24</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_blueBaseVisionSensor</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="120" y="925"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF029-60">
+  <name>
+   <text>t26</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sortingBlueSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="60" y="1200"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF086-61">
+  <name>
+   <text>t28</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_liftingBlueBaseInSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="60" y="1365"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF091-62">
+  <name>
+   <text>t30</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_liftingBlueLidOutSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="60" y="1640"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF09C-63">
+  <name>
+   <text>t32</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_blueLidVisionSensor</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="380" y="970"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF0A5-64">
+  <name>
+   <text>t34</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sortingBlueSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="380" y="1245"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF0AF-65">
+  <name>
+   <text>t36</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_liftingBlueLidInSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="380" y="1410"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF0B8-66">
+  <name>
+   <text>t38</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_liftingBlueLidOutSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="380" y="1685"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF0C2-67">
+  <name>
+   <text>t40</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_greenBaseVisionSensor</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="620" y="970"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF0CD-68">
+  <name>
+   <text>t42</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sortingGreenSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="620" y="1245"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF0D5-69">
+  <name>
+   <text>t46</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_liftingGreenLidInSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="620" y="1410"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF0DF-70">
+  <name>
+   <text>t48</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_liftingGreenLidOutSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="620" y="1685"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF0EA-71">
+  <name>
+   <text>t5</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_stopCrossingActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="500" y="665"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF0F3-72">
+  <name>
+   <text>t50</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_greenLidVisionSensor</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="880" y="925"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF11D-73">
+  <name>
+   <text>t52</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sortingGreenSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="910" y="1200"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF126-74">
+  <name>
+   <text>t54</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_liftingGreenBaseInSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="910" y="1365"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF131-75">
+  <name>
+   <text>t56</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_liftingGreenBaseOutSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="910" y="1640"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF13D-76">
+  <name>
+   <text>t58</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_boxAlignBlueBaseSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="100" y="1810"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF148-77">
+  <name>
+   <text>t6</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machine1BusySensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="280" y="295"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF151-78">
+  <name>
+   <text>t60</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_boxAlignBlueLidSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="415" y="1815"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF161-79">
+  <name>
+   <text>t62</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_boxAlignGreenLidSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="685" y="1830"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF16A-80">
+  <name>
+   <text>t64</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_boxAlignGreenBaseSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="975" y="1800"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF171-81">
+  <name>
+   <text>t66</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_packagedLineCrossingInSensor</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="920" y="750"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF178-82">
+  <name>
+   <text>t68</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_packagedLineCrossingOutSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="1000" y="750"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF180-83">
+  <name>
+   <text>t7</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_sortingStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="60" y="1080"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF187-84">
+  <name>
+   <text>t8</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machine1OutSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="280" y="415"/>
+   </graphics>
+  </transition>
+  <transition id="t-2898-DF1A5-85">
+  <name>
+   <text>t9</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_liftingBlueBaseStopActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="60" y="1500"/>
+   </graphics>
+  </transition>
+  <arc id="e-2898-DF1AE-86" source="t-2898-DF01E-59" target="p-2898-DEEA0-24">
+  </arc>
+  <arc id="e-2898-DF1B8-87" source="t-2898-DF180-83" target="p-2898-DEF38-36">
+  </arc>
+  <arc id="e-2898-DF1BA-88" source="p-2898-DEEA0-24" target="t-2898-DF180-83">
+  </arc>
+  <arc id="e-2898-DF1BB-89" source="t-2898-DF0EA-71" target="p-2898-DEDCB-6">
+  </arc>
+  <arc id="e-2898-DF1BE-90" source="p-2898-DEF34-35" target="t-2898-DF0EA-71">
+  </arc>
+  <arc id="e-2898-DF1C0-91" source="t-2898-DF000-56" target="p-2898-DEF34-35">
+  </arc>
+  <arc id="e-2898-DF1C1-92" source="p-2898-DEF75-46" target="t-2898-DF148-77">
+  </arc>
+  <arc id="e-2898-DF1C3-93" source="p-2898-DEDDD-9" target="t-2898-DF01E-59">
+  </arc>
+  <arc id="e-2898-DF1C4-94" source="p-2898-DEDDD-9" target="t-2898-DF09C-63">
+  </arc>
+  <arc id="e-2898-DF1C5-95" source="p-2898-DEDDD-9" target="t-2898-DF0C2-67">
+  </arc>
+  <arc id="e-2898-DF1C7-96" source="p-2898-DEDDD-9" target="t-2898-DF0F3-72">
+  </arc>
+  <arc id="e-2898-DF1C8-97" source="p-2898-DEF59-42" target="t-2898-DF086-61">
+  </arc>
+  <arc id="e-2898-DF1CC-98" source="t-2898-DF014-58" target="p-2898-DEDDD-9">
+  </arc>
+  <arc id="e-2898-DF1CD-99" source="p-2898-DEDCB-6" target="t-2898-DF014-58">
+  </arc>
+  <arc id="e-2898-DF1CE-100" source="t-2898-DF178-82" target="p-2898-DEDD0-7">
+  </arc>
+  <arc id="e-2898-DF1D0-101" source="p-2898-DEDD6-8" target="t-2898-DF178-82">
+  </arc>
+  <arc id="e-2898-DF1D1-102" source="t-2898-DF171-81" target="p-2898-DEDD6-8">
+  </arc>
+  <arc id="e-2898-DF1D2-103" source="p-2898-DEDD0-7" target="t-2898-DF171-81">
+  </arc>
+  <arc id="e-2898-DF1D4-104" source="t-2898-DEFE3-53" target="p-2898-DEDC5-5">
+  </arc>
+  <arc id="e-2898-DF1D6-105" source="p-2898-DEF6B-45" target="t-2898-DEFE3-53">
+  </arc>
+  <arc id="e-2898-DF1D8-106" source="p-2898-DEDC5-5" target="t-2898-DEFD0-51">
+  </arc>
+  <arc id="e-2898-DF1D9-107" source="p-2898-DEF2C-34" target="t-2898-DF000-56">
+  </arc>
+  <arc id="e-2898-DF1DB-108" source="p-2898-DEF56-41" target="t-2898-DF1A5-85">
+  </arc>
+  <arc id="e-2898-DF1DC-109" source="t-2898-DF187-84" target="p-2898-DEF75-46">
+  </arc>
+  <arc id="e-2898-DF1DD-110" source="t-2898-DEFD0-51" target="p-2898-DEF6B-45">
+  </arc>
+  <arc id="e-2898-DF1DE-111" source="p-2898-DEF2C-34" target="t-2898-DEFD0-51">
+  </arc>
+  <arc id="e-2898-DF1E0-112" source="t-2898-DF187-84" target="p-2898-DEF2C-34">
+  </arc>
+  <arc id="e-2898-DF1E2-113" source="p-2898-DEE9B-23" target="t-2898-DF187-84">
+  </arc>
+  <arc id="e-2898-DF1E4-114" source="t-2898-DF148-77" target="p-2898-DEE9B-23">
+  </arc>
+  <arc id="e-2898-DF1E5-115" source="p-2898-DEDE8-12" target="t-2898-DF148-77">
+  </arc>
+  <arc id="e-2898-DF1E6-116" source="t-2898-DEF82-47" target="p-2898-DEDE8-12">
+  </arc>
+  <arc id="e-2898-DF1E8-117" source="t-2898-DEF82-47" target="p-2898-DEDB8-3">
+  </arc>
+  <arc id="e-2898-DF1E9-118" source="p-2898-DED9F-2" target="t-2898-DEF82-47">
+  </arc>
+  <arc id="e-2898-DF1EB-119" source="t-2898-DF086-61" target="p-2898-DEF56-41">
+  </arc>
+  <arc id="e-2898-DF1EC-120" source="t-2898-DEFF5-55" target="p-2898-DED9F-2">
+  </arc>
+  <arc id="e-2898-DF1EF-121" source="p-2898-DEDB8-3" target="t-2898-DEFF5-55">
+  </arc>
+  <arc id="e-2898-DF1F0-122" source="t-2898-DF151-78" target="p-2898-DEE90-19">
+  </arc>
+  <arc id="e-2898-DF1F2-123" source="p-2898-DEDC1-4" target="t-2898-DEF8E-48">
+  </arc>
+  <arc id="e-2898-DF1F4-124" source="t-2898-DEF8E-48" target="p-2898-DEDE2-10">
+  </arc>
+  <arc id="e-2898-DF1F5-125" source="p-2898-DEDE2-10" target="t-2898-DF0A5-64">
+  </arc>
+  <arc id="e-2898-DF1F6-126" source="t-2898-DEFBB-49" target="p-2898-DEDF0-14">
+  </arc>
+  <arc id="e-2898-DF1F8-127" source="p-2898-DEDF0-14" target="t-2898-DF0B8-66">
+  </arc>
+  <arc id="e-2898-DF20D-128" source="t-2898-DF0A5-64" target="p-2898-DEDE4-11">
+  </arc>
+  <arc id="e-2898-DF20F-129" source="p-2898-DEDE4-11" target="t-2898-DF0AF-65">
+  </arc>
+  <arc id="e-2898-DF210-130" source="p-2898-DEF50-40" target="t-2898-DF086-61">
+  </arc>
+  <arc id="e-2898-DF211-131" source="t-2898-DF0AF-65" target="p-2898-DEDED-13">
+  </arc>
+  <arc id="e-2898-DF213-132" source="p-2898-DEDED-13" target="t-2898-DEFBB-49">
+  </arc>
+  <arc id="e-2898-DF214-133" source="t-2898-DF0B8-66" target="p-2898-DEE85-17">
+  </arc>
+  <arc id="e-2898-DF215-134" source="p-2898-DEE85-17" target="t-2898-DF0AF-65">
+  </arc>
+  <arc id="e-2898-DF216-135" source="t-2898-DF09C-63" target="p-2898-DEDC1-4">
+  </arc>
+  <arc id="e-2898-DF219-136" source="p-2898-DEEA8-27" target="t-2898-DF0D5-69">
+  </arc>
+  <arc id="e-2898-DF21B-137" source="t-2898-DF0DF-70" target="p-2898-DEEA8-27">
+  </arc>
+  <arc id="e-2898-DF21C-138" source="p-2898-DEEA2-25" target="t-2898-DEFD9-52">
+  </arc>
+  <arc id="e-2898-DF21E-139" source="t-2898-DF0D5-69" target="p-2898-DEEA2-25">
+  </arc>
+  <arc id="e-2898-DF21F-140" source="p-2898-DEE98-22" target="t-2898-DF0D5-69">
+  </arc>
+  <arc id="e-2898-DF220-141" source="t-2898-DF029-60" target="p-2898-DEF50-40">
+  </arc>
+  <arc id="e-2898-DF222-142" source="t-2898-DF0CD-68" target="p-2898-DEE98-22">
+  </arc>
+  <arc id="e-2898-DF225-143" source="p-2898-DEEA6-26" target="t-2898-DF0DF-70">
+  </arc>
+  <arc id="e-2898-DF227-144" source="t-2898-DEFD9-52" target="p-2898-DEEA6-26">
+  </arc>
+  <arc id="e-2898-DF228-145" source="p-2898-DEE96-21" target="t-2898-DF0CD-68">
+  </arc>
+  <arc id="e-2898-DF229-146" source="t-2898-DEFC7-50" target="p-2898-DEE96-21">
+  </arc>
+  <arc id="e-2898-DF22A-147" source="p-2898-DEE92-20" target="t-2898-DEFC7-50">
+  </arc>
+  <arc id="e-2898-DF22C-148" source="t-2898-DF161-79" target="p-2898-DEEB1-29">
+  </arc>
+  <arc id="e-2898-DF22D-149" source="p-2898-DEEAF-28" target="t-2898-DF161-79">
+  </arc>
+  <arc id="e-2898-DF22E-150" source="t-2898-DF0C2-67" target="p-2898-DEE92-20">
+  </arc>
+  <arc id="e-2898-DF231-151" source="p-2898-DEF62-43" target="t-2898-DF16A-80">
+  </arc>
+  <arc id="e-2898-DF233-152" source="p-2898-DEF4B-39" target="t-2898-DF091-62">
+  </arc>
+  <arc id="e-2898-DF234-153" source="t-2898-DF16A-80" target="p-2898-DEF68-44">
+  </arc>
+  <arc id="e-2898-DF236-154" source="p-2898-DEEB5-30" target="t-2898-DEFED-54">
+  </arc>
+  <arc id="e-2898-DF237-155" source="t-2898-DEFED-54" target="p-2898-DEEB7-31">
+  </arc>
+  <arc id="e-2898-DF239-156" source="p-2898-DEEB7-31" target="t-2898-DF11D-73">
+  </arc>
+  <arc id="e-2898-DF23A-157" source="t-2898-DF009-57" target="p-2898-DEF3E-37">
+  </arc>
+  <arc id="e-2898-DF23B-158" source="p-2898-DEF3E-37" target="t-2898-DF131-75">
+  </arc>
+  <arc id="e-2898-DF23E-159" source="t-2898-DF11D-73" target="p-2898-DEEBA-32">
+  </arc>
+  <arc id="e-2898-DF240-160" source="p-2898-DEEBA-32" target="t-2898-DF126-74">
+  </arc>
+  <arc id="e-2898-DF241-161" source="t-2898-DF126-74" target="p-2898-DEF22-33">
+  </arc>
+  <arc id="e-2898-DF242-162" source="p-2898-DEF22-33" target="t-2898-DF009-57">
+  </arc>
+  <arc id="e-2898-DF243-163" source="t-2898-DF1A5-85" target="p-2898-DEF4B-39">
+  </arc>
+  <arc id="e-2898-DF244-164" source="t-2898-DF131-75" target="p-2898-DEF41-38">
+  </arc>
+  <arc id="e-2898-DF245-165" source="p-2898-DEF41-38" target="t-2898-DF126-74">
+  </arc>
+  <arc id="e-2898-DF248-166" source="t-2898-DF0F3-72" target="p-2898-DEEB5-30">
+  </arc>
+  <arc id="e-2898-DF24A-167" source="t-2898-DF091-62" target="p-2898-DEF59-42">
+  </arc>
+  <arc id="e-2898-DF24B-168" source="p-2898-DEDF3-15" target="t-2898-DF13D-76">
+  </arc>
+  <arc id="e-2898-DF24D-169" source="t-2898-DF13D-76" target="p-2898-DEE82-16">
+  </arc>
+  <arc id="e-2898-DF24E-170" source="p-2898-DEE8C-18" target="t-2898-DF151-78">
+  </arc>
+  <arc id="e-2898-DF250-171" source="p-2898-DEE82-16" target="t-2898-DF091-62">
+  </arc>
+  <arc id="e-2898-DF251-172" source="t-2898-DF091-62" target="p-2898-DEDF3-15">
+  </arc>
+  <arc id="e-2898-DF252-173" source="t-2898-DF0B8-66" target="p-2898-DEE8C-18">
+  </arc>
+  <arc id="e-2898-DF28E-174" source="p-2898-DEF38-36" target="t-2898-DF029-60">
+  </arc>
+  <arc id="e-2898-DF28F-175" source="p-2898-DEE90-19" target="t-2898-DF0B8-66">
+  </arc>
+  <arc id="e-2898-DF291-176" source="t-2898-DF0DF-70" target="p-2898-DEEAF-28">
+  </arc>
+  <arc id="e-2898-DF292-177" source="p-2898-DEEB1-29" target="t-2898-DF0DF-70">
+  </arc>
+  <arc id="e-2898-DF293-178" source="t-2898-DF131-75" target="p-2898-DEF62-43">
+  </arc>
+  <arc id="e-2898-DF295-179" source="p-2898-DEF68-44" target="t-2898-DF131-75">
+  </arc>
+ </page>
+ </net>
+</pnml>

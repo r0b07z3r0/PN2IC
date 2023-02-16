@@ -1,0 +1,169 @@
+p 600.0 835.0 p12 0 w sortingConveyor e
+p 160.0 955.0 p13 0 n blueBaseOnConveyor ne
+p 160.0 1095.0 p14 0 w sortingBconveyor e
+p 160.0 1235.0 p15 0 w pushLeft e
+p 160.0 1385.0 p16 0 w waitBoxBB e
+p 160.0 1545.0 p17 0 w rampBB e
+p 160.0 1725.0 p18 0 w blueBaseOnBox e
+p 160.0 1895.0 p19 0 w moveBoxBB e
+p 280.0 1895.0 p20 1 n boxAlignedBB ne
+p 480.0 1005.0 p21 0 n blueLidOnConveyor ne
+p 480.0 1135.0 p22 0 w sortingBconveyor e
+p 480.0 1275.0 p23 0 w pushRight e
+p 480.0 1435.0 p24 0 w waitBoxBL e
+p 480.0 1575.0 p25 0 w rampBL e
+p 480.0 1735.0 p26 0 w blueLidOnBox e
+p 480.0 1895.0 p27 0 w moveBoxBL e
+p 610.0 1895.0 p28 1 n boxAlignedBL ne
+p 720.0 1005.0 p29 0 n greenBaseOnConveyor ne
+p 720.0 1135.0 p30 0 w sortingGconveyor e
+p 720.0 1275.0 p31 0 w pushRight e
+p 720.0 1435.0 p32 0 w waitBoxGB e
+p 720.0 1575.0 p33 0 w rampGB e
+p 720.0 1735.0 p34 0 w greenBaseOnBox e
+p 720.0 1895.0 p35 0 w moveBoxGB e
+p 850.0 1895.0 p36 1 n boxAlignedGB ne
+p 1010.0 955.0 p37 0 n greenLidOnConveyor ne
+p 1010.0 1095.0 p38 0 w sortingGconveyor e
+p 1010.0 1235.0 p39 0 w pushLeft e
+p 1010.0 1385.0 p40 0 w waitBoxGL e
+p 1010.0 1555.0 p41 0 w rampGL e
+p 1010.0 1715.0 p42 0 w greenLidOnBox e
+p 1010.0 1895.0 p43 0 w moveBoxGL e
+p 1160.0 1895.0 p44 1 n boxAlignedGL ne
+t 160.0 1795.0 t11 c 0 w n c_moveBoxConveyor e
+t 480.0 1075.0 t13 c 0 w n c_sortingStopActuator e
+t 480.0 1495.0 t15 c 0 w n c_liftingBlueLidStopActuator e
+t 600.0 775.0 t16 c 0 w n o_mainCrossingOutSensor e
+t 480.0 1795.0 t17 c 0 w n c_moveBoxConveyor e
+t 220.0 875.0 t18 c 0 w n o_blueBaseVisionSensor ne
+t 720.0 1075.0 t19 c 0 w n c_sortingStopActuator e
+t 160.0 1165.0 t20 c 0 w n o_sortingBlueSensor e
+t 720.0 1495.0 t21 c 0 w n c_liftingGreenLidStopActuator e
+t 160.0 1315.0 t22 c 0 w n o_liftingBlueBaseInSensor e
+t 720.0 1815.0 t23 c 0 w n c_moveBoxConveyor e
+t 160.0 1645.0 t24 c 0 w n o_liftingBlueLidOutSensor e
+t 1010.0 1035.0 t25 c 0 w n c_sortingStopActuator e
+t 160.0 1975.0 t26 c 0 w n o_boxAlignBlueBaseSensor e
+t 1010.0 1455.0 t27 c 0 w n c_liftingGreenBaseStopActuator e
+t 480.0 925.0 t28 c 0 w n o_blueLidVisionSensor ne
+t 1010.0 1795.0 t29 c 0 w n c_moveBoxConveyor e
+t 480.0 1195.0 t30 c 0 w n o_sortingBlueSensor e
+t 480.0 1365.0 t32 c 0 w n o_liftingBlueLidInSensor e
+t 480.0 1655.0 t34 c 0 w n o_liftingBlueLidOutSensor e
+t 480.0 1975.0 t36 c 0 w n o_boxAlignBlueLidSensor e
+t 720.0 925.0 t38 c 0 w n o_greenBaseVisionSensor ne
+t 720.0 1195.0 t40 c 0 w n o_sortingGreenSensor e
+t 720.0 1365.0 t42 c 0 w n o_liftingGreenLidInSensor e
+t 720.0 1655.0 t44 c 0 w n o_liftingGreenLidOutSensor e
+t 720.0 1975.0 t46 c 0 w n o_boxAlignGreenLidSensor e
+t 980.0 875.0 t48 c 0 w n o_greenLidVisionSensor ne
+t 1010.0 1155.0 t50 c 0 w n o_sortingGreenSensor e
+t 1010.0 1315.0 t52 c 0 w n o_liftingGreenBaseInSensor e
+t 1010.0 1645.0 t54 c 0 w n o_liftingGreenBaseOutSensor e
+t 1010.0 1975.0 t56 c 0 w n o_boxAlignGreenBaseSensor e
+t 160.0 1035.0 t7 c 0 w n c_sortingStopActuator e
+t 125.0 280.0 t4 c 0 w n o_machine1BusySensor e
+p 160.0 345.0 p4 0 w machine1On e
+t 140.0 425.0 t6 c 0 w n o_machine1OutSensor e
+t 160.0 1460.0 t9 c 0 w n c_liftingBlueBaseStopActuator e
+t 575.0 105.0 t3 c 0 w n c_machine2FeederActuator w
+p 675.0 185.0 p7 0 w input2Available e
+t 755.0 265.0 t10 c 0 w n o_machine2BusySensor e
+p 830.0 370.0 p8 0 w machine2On e
+t 780.0 445.0 t12 c 0 w n o_machine2OutSensor ne
+p 475.0 560.0 p9 0 nw PecaEsteira ne
+p 370.0 50.0 pSUPCON_S1_0 1 n AUTONET_SUPCON_S1_0 c
+t 375.0 170.0 t5 c 0 w n c_stopCrossingActuator e
+t 210.0 120.0 t1 c 0 w n c_machine1FeederActuator w
+p 120.0 200.0 p3 0 w input1Available e
+t 465.0 355.0 t14 c 0 w n o_mainCrossingInSensor e
+p 425.0 255.0 p10 0 w waitCrossing e
+e pSUPCON_S1_0 t3 1 n
+e t5 pSUPCON_S1_0 1 n
+e pSUPCON_S1_0 t1 1 n
+e p42 t29 1 n
+e t54 p42 1 n
+e p34 t23 1 n
+e p28 t17 1 n
+e p14 t20 1 n
+e t44 p34 1 n
+e p26 t17 1 n
+e t34 p26 1 n
+e p18 t11 1 n
+e t24 p18 1 n
+e p44 t29 1 n
+e p27 t36 1 n
+e t11 p19 1 n
+e p20 t11 1 n
+e p12 t28 1 n
+e t26 p20 1 n
+e t9 p17 1 n
+e p19 t26 1 n
+e t29 p43 1 n
+e t48 p37 1 n
+e p40 t27 1 n
+e t56 p44 1 n
+e t52 p40 1 n
+e p39 t52 1 n
+e t50 p39 1 n
+e p12 t18 1 n
+e p41 t54 1 n
+e t27 p41 1 n
+e p17 t24 1 n
+e p38 t50 1 n
+e t25 p38 1 n
+e p37 t25 1 n
+e p43 t56 1 n
+e t38 p29 1 n
+e t23 p35 1 n
+e p29 t19 1 n
+e t14 p10 1 n
+e t19 p30 1 n
+e p30 t40 1 n
+e t21 p33 1 n
+e t36 p28 1 n
+e p33 t44 1 n
+e t40 p31 1 n
+e p31 t42 1 n
+e t42 p32 1 n
+e p32 t21 1 n
+e t28 p21 1 n
+e p10 t5 1 n
+e p36 t23 1 n
+e p24 t15 1 n
+e t32 p24 1 n
+e p23 t32 1 n
+e t20 p15 1 n
+e t30 p23 1 n
+e p25 t34 1 n
+e t15 p25 1 n
+e p22 t30 1 n
+e t13 p22 1 n
+e p21 t13 1 n
+e t46 p36 1 n
+e p15 t22 1 n
+e t1 p3 1 n
+e p3 t4 1 n
+e t4 p4 1 n
+e p13 t7 1 n
+e p4 t6 1 n
+e t6 p9 1 n
+e p35 t46 1 n
+e t12 p9 1 n
+e p8 t12 1 n
+e t10 p8 1 n
+e t22 p16 1 n
+e p7 t10 1 n
+e t3 p7 1 n
+e t7 p14 1 n
+e p9 t14 1 n
+e t17 p27 1 n
+e t16 p12 1 n
+e p16 t9 1 n
+e p12 t48 1 n
+e p12 t38 1 n
+e t18 p13 1 n
+h flow11
+
+

@@ -1,0 +1,586 @@
+Spec10_0 = Create(Spec10_0,[mark 0],[tran [0,27,1],[1,29,0]])  (2,2)
+
+Spec10_1 = Create(Spec10_1,[mark 0],[tran [0,27,1],[1,29,0]])  (2,2)
+
+Spec1_0 = Create(Spec1_0,[mark 0],[tran [0,1,1],[0,3,1],[1,5,0]])  (2,3)
+
+Spec1_1 = Create(Spec1_1,[mark 0],[tran [0,1,1],[0,3,1],[1,5,0]])  (2,3)
+
+Spec2_0 = Create(Spec2_0,[mark 0],[tran [0,5,1],[1,7,0],[1,13,0],[1,19,0],
+          [1,25,0]])  (2,5)
+
+Spec2_1 = Create(Spec2_1,[mark 0],[tran [0,5,1],[1,7,0],[1,13,0],[1,19,0],
+          [1,25,0]])  (2,5)
+
+Spec3_0 = Create(Spec3_0,[mark 0],[tran [0,7,1],[1,9,0]])  (2,2)
+
+Spec3_1 = Create(Spec3_1,[mark 0],[tran [0,7,1],[1,9,0]])  (2,2)
+
+Spec4_0 = Create(Spec4_0,[mark 0],[tran [0,13,1],[1,15,0]])  (2,2)
+
+Spec4_1 = Create(Spec4_1,[mark 0],[tran [0,13,1],[1,15,0]])  (2,2)
+
+Spec5_0 = Create(Spec5_0,[mark 0],[tran [0,19,1],[1,21,0]])  (2,2)
+
+Spec5_1 = Create(Spec5_1,[mark 0],[tran [0,19,1],[1,21,0]])  (2,2)
+
+Spec6_0 = Create(Spec6_0,[mark 0],[tran [0,25,1],[1,27,0]])  (2,2)
+
+Spec6_1 = Create(Spec6_1,[mark 0],[tran [0,25,1],[1,27,0]])  (2,2)
+
+Spec7_0 = Create(Spec7_0,[mark 0],[tran [0,9,1],[1,11,0]])  (2,2)
+
+Spec7_1 = Create(Spec7_1,[mark 0],[tran [0,9,1],[1,11,0]])  (2,2)
+
+Spec8_0 = Create(Spec8_0,[mark 0],[tran [0,15,1],[1,17,0]])  (2,2)
+
+Spec8_1 = Create(Spec8_1,[mark 0],[tran [0,15,1],[1,17,0]])  (2,2)
+
+Spec9_0 = Create(Spec9_0,[mark 0],[tran [0,21,1],[1,23,0]])  (2,2)
+
+Spec9_1 = Create(Spec9_1,[mark 0],[tran [0,21,1],[1,23,0]])  (2,2)
+
+p1 = Create(p1,[mark 0],[tran [0,2,1],[1,1,0]])  (2,2)
+
+p10 = Create(p10,[mark 0],[tran [0,14,1],[1,5,0]])  (2,2)
+
+p11 = Create(p11,[mark 0],[tran [0,5,1],[1,16,0]])  (2,2)
+
+p12 = Create(p12,[mark 0],[tran [0,16,1],[1,18,0],[1,28,0],[1,38,0],[1,48,
+      0]])  (2,5)
+
+p13 = Create(p13,[mark 0],[tran [0,18,1],[1,7,0]])  (2,2)
+
+p14 = Create(p14,[mark 0],[tran [0,7,1],[1,20,0]])  (2,2)
+
+p15 = Create(p15,[mark 0],[tran [0,20,1],[1,22,0]])  (2,2)
+
+p16 = Create(p16,[mark 0],[tran [0,22,1],[1,9,0]])  (2,2)
+
+p17 = Create(p17,[mark 0],[tran [0,9,1],[1,24,0]])  (2,2)
+
+p18 = Create(p18,[mark 0],[tran [0,24,1],[1,11,0]])  (2,2)
+
+p19 = Create(p19,[mark 0],[tran [0,11,1],[1,26,0]])  (2,2)
+
+p2 = Create(p2,[mark 0],[tran [0,2,1],[1,1,0]])  (2,2)
+
+p20 = Create(p20,[mark 0],[tran [0,11,1],[1,26,0]])  (2,2)
+
+p21 = Create(p21,[mark 0],[tran [0,28,1],[1,13,0]])  (2,2)
+
+p22 = Create(p22,[mark 0],[tran [0,13,1],[1,30,0]])  (2,2)
+
+p23 = Create(p23,[mark 0],[tran [0,30,1],[1,32,0]])  (2,2)
+
+p24 = Create(p24,[mark 0],[tran [0,32,1],[1,15,0]])  (2,2)
+
+p25 = Create(p25,[mark 0],[tran [0,15,1],[1,34,0]])  (2,2)
+
+p26 = Create(p26,[mark 0],[tran [0,34,1],[1,17,0]])  (2,2)
+
+p27 = Create(p27,[mark 0],[tran [0,17,1],[1,36,0]])  (2,2)
+
+p28 = Create(p28,[mark 0],[tran [0,17,1],[1,36,0]])  (2,2)
+
+p29 = Create(p29,[mark 0],[tran [0,38,1],[1,19,0]])  (2,2)
+
+p3 = Create(p3,[mark 0],[tran [0,1,1],[1,4,0]])  (2,2)
+
+p30 = Create(p30,[mark 0],[tran [0,19,1],[1,40,0]])  (2,2)
+
+p31 = Create(p31,[mark 0],[tran [0,40,1],[1,42,0]])  (2,2)
+
+p32 = Create(p32,[mark 0],[tran [0,42,1],[1,21,0]])  (2,2)
+
+p33 = Create(p33,[mark 0],[tran [0,21,1],[1,44,0]])  (2,2)
+
+p34 = Create(p34,[mark 0],[tran [0,44,1],[1,23,0]])  (2,2)
+
+p35 = Create(p35,[mark 0],[tran [0,23,1],[1,46,0]])  (2,2)
+
+p36 = Create(p36,[mark 0],[tran [0,23,1],[1,46,0]])  (2,2)
+
+p37 = Create(p37,[mark 0],[tran [0,48,1],[1,25,0]])  (2,2)
+
+p38 = Create(p38,[mark 0],[tran [0,25,1],[1,50,0]])  (2,2)
+
+p39 = Create(p39,[mark 0],[tran [0,50,1],[1,52,0]])  (2,2)
+
+p4 = Create(p4,[mark 0],[tran [0,4,1],[1,6,0]])  (2,2)
+
+p40 = Create(p40,[mark 0],[tran [0,52,1],[1,27,0]])  (2,2)
+
+p41 = Create(p41,[mark 0],[tran [0,27,1],[1,54,0]])  (2,2)
+
+p42 = Create(p42,[mark 0],[tran [0,54,1],[1,29,0]])  (2,2)
+
+p43 = Create(p43,[mark 0],[tran [0,29,1],[1,56,0]])  (2,2)
+
+p44 = Create(p44,[mark 0],[tran [0,29,1],[1,56,0]])  (2,2)
+
+p5 = Create(p5,[mark 0],[tran [0,8,1],[1,3,0]])  (2,2)
+
+p6 = Create(p6,[mark 0],[tran [0,8,1],[1,3,0]])  (2,2)
+
+p7 = Create(p7,[mark 0],[tran [0,3,1],[1,10,0]])  (2,2)
+
+p8 = Create(p8,[mark 0],[tran [0,10,1],[1,12,0]])  (2,2)
+
+p9 = Create(p9,[mark 0],[tran [0,6,1],[0,12,1],[1,14,0]])  (2,3)
+
+SYNCPLANT_S1 = Sync(P3,P4,P7,P8,P9,P10)  (64,176)  Blocked_events = None  
+               Computing time = 00:00:00
+
+SYNCALL_S1 = Sync(SYNCPLANT_S1,SPEC1_0)  (7,8)  Blocked_events = None  
+             Computing time = 00:00:00
+
+SUPCON_S1 = Supcon(SYNCPLANT_S1,SYNCALL_S1)  (7,8)
+            Computing time = 00:00:00
+
+SYNCPLANT_S2 = Sync(P11,P12,P13,P21,P29,P37)  (64,240)  Blocked_events = N
+               one  
+               Computing time = 00:00:00
+
+SYNCALL_S2 = Sync(SYNCPLANT_S2,SPEC2_0)  (7,10)  Blocked_events = None  
+             Computing time = 00:00:00
+
+SUPCON_S2 = Supcon(SYNCPLANT_S2,SYNCALL_S2)  (7,10)
+            Computing time = 00:00:00
+
+SYNCPLANT_S3 = Sync(P14,P15,P16)  (8,12)  Blocked_events = None  
+               Computing time = 00:00:00
+
+SYNCALL_S3 = Sync(SYNCPLANT_S3,SPEC3_0)  (4,4)  Blocked_events = None  
+             Computing time = 00:00:00
+
+SUPCON_S3 = Supcon(SYNCPLANT_S3,SYNCALL_S3)  (4,4)
+            Computing time = 00:00:00
+
+SYNCPLANT_S4 = Sync(P22,P23,P24)  (8,12)  Blocked_events = None  
+               Computing time = 00:00:00
+
+SYNCALL_S4 = Sync(SYNCPLANT_S4,SPEC4_0)  (4,4)  Blocked_events = None  
+             Computing time = 00:00:00
+
+SUPCON_S4 = Supcon(SYNCPLANT_S4,SYNCALL_S4)  (4,4)
+            Computing time = 00:00:00
+
+SYNCPLANT_S5 = Sync(P30,P31,P32)  (8,12)  Blocked_events = None  
+               Computing time = 00:00:00
+
+SYNCALL_S5 = Sync(SYNCPLANT_S5,SPEC5_0)  (4,4)  Blocked_events = None  
+             Computing time = 00:00:00
+
+SUPCON_S5 = Supcon(SYNCPLANT_S5,SYNCALL_S5)  (4,4)
+            Computing time = 00:00:00
+
+SYNCPLANT_S6 = Sync(P38,P39,P40)  (8,12)  Blocked_events = None  
+               Computing time = 00:00:00
+
+SYNCALL_S6 = Sync(SYNCPLANT_S6,SPEC6_0)  (4,4)  Blocked_events = None  
+             Computing time = 00:00:01
+
+SUPCON_S6 = Supcon(SYNCPLANT_S6,SYNCALL_S6)  (4,4)
+            Computing time = 00:00:00
+
+SYNCPLANT_S7 = Sync(P17,P18)  (4,5)  Blocked_events = None  
+               Computing time = 00:00:00
+
+SYNCALL_S7 = Sync(SYNCPLANT_S7,SPEC7_0)  (3,3)  Blocked_events = None  
+             Computing time = 00:00:00
+
+SUPCON_S7 = Supcon(SYNCPLANT_S7,SYNCALL_S7)  (3,3)
+            Computing time = 00:00:00
+
+SYNCPLANT_S8 = Sync(P25,P26)  (4,5)  Blocked_events = None  
+               Computing time = 00:00:00
+
+SYNCALL_S8 = Sync(SYNCPLANT_S8,SPEC8_0)  (3,3)  Blocked_events = None  
+             Computing time = 00:00:00
+
+SUPCON_S8 = Supcon(SYNCPLANT_S8,SYNCALL_S8)  (3,3)
+            Computing time = 00:00:01
+
+SYNCPLANT_S9 = Sync(P33,P34)  (4,5)  Blocked_events = None  
+               Computing time = 00:00:00
+
+SYNCALL_S9 = Sync(SYNCPLANT_S9,SPEC9_0)  (3,3)  Blocked_events = None  
+             Computing time = 00:00:00
+
+SUPCON_S9 = Supcon(SYNCPLANT_S9,SYNCALL_S9)  (3,3)
+            Computing time = 00:00:00
+
+Spec10_0 = Create(Spec10_0,[mark 0],[tran [0,27,1],[0,29,1],[1,54,0],[1,56
+           ,0]])  (2,4)
+
+Spec10_1 = Create(Spec10_1,[mark 0],[tran [0,27,1],[0,29,1],[1,54,0],[1,56
+           ,0]])  (2,4)
+
+Spec1_0 = Create(Spec1_0,[mark 0],[tran [0,1,1],[0,3,1],[1,5,0]])  (2,3)
+
+Spec1_1 = Create(Spec1_1,[mark 0],[tran [0,1,1],[0,3,1],[1,5,0]])  (2,3)
+
+Spec2_0 = Create(Spec2_0,[mark 0],[tran [0,5,1],[1,7,0],[1,13,0],[1,19,0],
+          [1,25,0]])  (2,5)
+
+Spec2_1 = Create(Spec2_1,[mark 0],[tran [0,5,1],[1,7,0],[1,13,0],[1,19,0],
+          [1,25,0]])  (2,5)
+
+Spec3_0 = Create(Spec3_0,[mark 0],[tran [0,7,1],[1,9,0]])  (2,2)
+
+Spec3_1 = Create(Spec3_1,[mark 0],[tran [0,7,1],[1,9,0]])  (2,2)
+
+Spec4_0 = Create(Spec4_0,[mark 0],[tran [0,13,1],[1,15,0]])  (2,2)
+
+Spec4_1 = Create(Spec4_1,[mark 0],[tran [0,13,1],[1,15,0]])  (2,2)
+
+Spec5_0 = Create(Spec5_0,[mark 0],[tran [0,19,1],[1,21,0]])  (2,2)
+
+Spec5_1 = Create(Spec5_1,[mark 0],[tran [0,19,1],[1,21,0]])  (2,2)
+
+Spec6_0 = Create(Spec6_0,[mark 0],[tran [0,25,1],[1,27,0]])  (2,2)
+
+Spec6_1 = Create(Spec6_1,[mark 0],[tran [0,25,1],[1,27,0]])  (2,2)
+
+Spec7_0 = Create(Spec7_0,[mark 0],[tran [0,9,1],[0,11,1],[1,24,0],[1,26,0]
+          ])  (2,4)
+
+Spec7_1 = Create(Spec7_1,[mark 0],[tran [0,9,1],[0,11,1],[1,24,0],[1,26,0]
+          ])  (2,4)
+
+Spec8_0 = Create(Spec8_0,[mark 0],[tran [0,15,1],[0,17,1],[1,34,0],[1,36,0
+          ]])  (2,4)
+
+Spec8_1 = Create(Spec8_1,[mark 0],[tran [0,15,1],[0,17,1],[1,34,0],[1,36,0
+          ]])  (2,4)
+
+Spec9_0 = Create(Spec9_0,[mark 0],[tran [0,21,1],[0,23,1],[1,44,0],[1,46,0
+          ]])  (2,4)
+
+Spec9_1 = Create(Spec9_1,[mark 0],[tran [0,21,1],[0,23,1],[1,44,0],[1,46,0
+          ]])  (2,4)
+
+p1 = Create(p1,[mark 0],[tran [0,2,1],[1,1,0]])  (2,2)
+
+p10 = Create(p10,[mark 0],[tran [0,14,1],[1,5,0]])  (2,2)
+
+p11 = Create(p11,[mark 0],[tran [0,5,1],[1,16,0]])  (2,2)
+
+p12 = Create(p12,[mark 0],[tran [0,16,1],[1,18,0],[1,28,0],[1,38,0],[1,48,
+      0]])  (2,5)
+
+p13 = Create(p13,[mark 0],[tran [0,18,1],[1,7,0]])  (2,2)
+
+p14 = Create(p14,[mark 0],[tran [0,7,1],[1,20,0]])  (2,2)
+
+p15 = Create(p15,[mark 0],[tran [0,20,1],[1,22,0]])  (2,2)
+
+p16 = Create(p16,[mark 0],[tran [0,22,1],[1,9,0]])  (2,2)
+
+p17 = Create(p17,[mark 0],[tran [0,9,1],[1,24,0]])  (2,2)
+
+p18 = Create(p18,[mark 0],[tran [0,24,1],[1,11,0]])  (2,2)
+
+p19 = Create(p19,[mark 0],[tran [0,11,1],[1,26,0]])  (2,2)
+
+p2 = Create(p2,[mark 0],[tran [0,2,1],[1,1,0]])  (2,2)
+
+p20 = Create(p20,[mark 0],[tran [0,11,1],[1,26,0]])  (2,2)
+
+p21 = Create(p21,[mark 0],[tran [0,28,1],[1,13,0]])  (2,2)
+
+p22 = Create(p22,[mark 0],[tran [0,13,1],[1,30,0]])  (2,2)
+
+p23 = Create(p23,[mark 0],[tran [0,30,1],[1,32,0]])  (2,2)
+
+p24 = Create(p24,[mark 0],[tran [0,32,1],[1,15,0]])  (2,2)
+
+p25 = Create(p25,[mark 0],[tran [0,15,1],[1,34,0]])  (2,2)
+
+p26 = Create(p26,[mark 0],[tran [0,34,1],[1,17,0]])  (2,2)
+
+p27 = Create(p27,[mark 0],[tran [0,17,1],[1,36,0]])  (2,2)
+
+p28 = Create(p28,[mark 0],[tran [0,17,1],[1,36,0]])  (2,2)
+
+p29 = Create(p29,[mark 0],[tran [0,38,1],[1,19,0]])  (2,2)
+
+p3 = Create(p3,[mark 0],[tran [0,1,1],[1,4,0]])  (2,2)
+
+p30 = Create(p30,[mark 0],[tran [0,19,1],[1,40,0]])  (2,2)
+
+p31 = Create(p31,[mark 0],[tran [0,40,1],[1,42,0]])  (2,2)
+
+p32 = Create(p32,[mark 0],[tran [0,42,1],[1,21,0]])  (2,2)
+
+p33 = Create(p33,[mark 0],[tran [0,21,1],[1,44,0]])  (2,2)
+
+p34 = Create(p34,[mark 0],[tran [0,44,1],[1,23,0]])  (2,2)
+
+p35 = Create(p35,[mark 0],[tran [0,23,1],[1,46,0]])  (2,2)
+
+p36 = Create(p36,[mark 0],[tran [0,23,1],[1,46,0]])  (2,2)
+
+p37 = Create(p37,[mark 0],[tran [0,48,1],[1,25,0]])  (2,2)
+
+p38 = Create(p38,[mark 0],[tran [0,25,1],[1,50,0]])  (2,2)
+
+p39 = Create(p39,[mark 0],[tran [0,50,1],[1,52,0]])  (2,2)
+
+p4 = Create(p4,[mark 0],[tran [0,4,1],[1,6,0]])  (2,2)
+
+p40 = Create(p40,[mark 0],[tran [0,52,1],[1,27,0]])  (2,2)
+
+p41 = Create(p41,[mark 0],[tran [0,27,1],[1,54,0]])  (2,2)
+
+p42 = Create(p42,[mark 0],[tran [0,54,1],[1,29,0]])  (2,2)
+
+p43 = Create(p43,[mark 0],[tran [0,29,1],[1,56,0]])  (2,2)
+
+p44 = Create(p44,[mark 0],[tran [0,29,1],[1,56,0]])  (2,2)
+
+p5 = Create(p5,[mark 0],[tran [0,8,1],[1,3,0]])  (2,2)
+
+p6 = Create(p6,[mark 0],[tran [0,8,1],[1,3,0]])  (2,2)
+
+p7 = Create(p7,[mark 0],[tran [0,3,1],[1,10,0]])  (2,2)
+
+p8 = Create(p8,[mark 0],[tran [0,10,1],[1,12,0]])  (2,2)
+
+p9 = Create(p9,[mark 0],[tran [0,6,1],[0,12,1],[1,14,0]])  (2,3)
+
+SYNCPLANT_S7 = Sync(P17,P19)  (4,8)  Blocked_events = None  
+               Computing time = 00:00:00
+
+SYNCALL_S7 = Sync(SYNCPLANT_S7,SPEC7_0)  (3,4)  Blocked_events = None  
+             Computing time = 00:00:00
+
+SUPCON_S7 = Supcon(SYNCPLANT_S7,SYNCALL_S7)  (3,4)
+            Computing time = 00:00:00
+
+SYNCPLANT_S8 = Sync(P25,P27)  (4,8)  Blocked_events = None  
+               Computing time = 00:00:00
+
+SYNCALL_S8 = Sync(SYNCPLANT_S8,SPEC8_0)  (3,4)  Blocked_events = None  
+             Computing time = 00:00:00
+
+SUPCON_S8 = Supcon(SYNCPLANT_S8,SYNCALL_S8)  (3,4)
+            Computing time = 00:00:00
+
+SYNCPLANT_S9 = Sync(P33,P35)  (4,8)  Blocked_events = None  
+               Computing time = 00:00:00
+
+SYNCALL_S9 = Sync(SYNCPLANT_S9,SPEC9_0)  (3,4)  Blocked_events = None  
+             Computing time = 00:00:00
+
+SUPCON_S9 = Supcon(SYNCPLANT_S9,SYNCALL_S9)  (3,4)
+            Computing time = 00:00:00
+
+SYNCPLANT_S10 = Sync(P41,P43)  (4,8)  Blocked_events = None  
+                Computing time = 00:00:00
+
+SYNCALL_S10 = Sync(SYNCPLANT_S10,SPEC10_0)  (3,4)  Blocked_events = None  
+              Computing time = 00:00:00
+
+SUPCON_S10 = Supcon(SYNCPLANT_S10,SYNCALL_S10)  (3,4)
+             Computing time = 00:00:00
+
+SUPCON_S1 = Create(SUPCON_S1,[mark 0],[tran [0,1,1],[0,3,2],[1,4,3],[2,10,
+            4],[3,6,5],[4,12,5],[5,14,6],[6,5,0]])  (7,8)
+
+SUPCON_S10 = Create(SUPCON_S10,[mark 0],[tran [0,27,1],[0,29,2],[1,54,0],[
+             2,56,0]])  (3,4)
+
+SUPCON_S2 = Create(SUPCON_S2,[mark 0],[tran [0,5,1],[1,16,2],[2,18,3],[2,2
+            8,4],[2,38,5],[2,48,6],[3,7,0],[4,13,0],[5,19,0],[6,25,0]])  (
+            7,10)
+
+SUPCON_S3 = Create(SUPCON_S3,[mark 0],[tran [0,7,1],[1,20,2],[2,22,3],[3,9
+            ,0]])  (4,4)
+
+SUPCON_S4 = Create(SUPCON_S4,[mark 0],[tran [0,13,1],[1,30,2],[2,32,3],[3,
+            15,0]])  (4,4)
+
+SUPCON_S5 = Create(SUPCON_S5,[mark 0],[tran [0,19,1],[1,40,2],[2,42,3],[3,
+            21,0]])  (4,4)
+
+SUPCON_S6 = Create(SUPCON_S6,[mark 0],[tran [0,25,1],[1,50,2],[2,52,3],[3,
+            27,0]])  (4,4)
+
+SUPCON_S7 = Create(SUPCON_S7,[mark 0],[tran [0,9,1],[0,11,2],[1,24,0],[2,2
+            6,0]])  (3,4)
+
+SUPCON_S8 = Create(SUPCON_S8,[mark 0],[tran [0,15,1],[0,17,2],[1,34,0],[2,
+            36,0]])  (3,4)
+
+SUPCON_S9 = Create(SUPCON_S9,[mark 0],[tran [0,21,1],[0,23,2],[1,44,0],[2,
+            46,0]])  (3,4)
+
+Spec10_0 = Create(Spec10_0,[mark 0],[tran [0,27,1],[1,56,0]])  (2,2)
+
+Spec10_1 = Create(Spec10_1,[mark 0],[tran [0,27,1],[1,56,0]])  (2,2)
+
+Spec1_0 = Create(Spec1_0,[mark 0],[tran [0,1,1],[0,3,1],[1,5,0]])  (2,3)
+
+Spec1_1 = Create(Spec1_1,[mark 0],[tran [0,1,1],[0,3,1],[1,5,0]])  (2,3)
+
+Spec2_0 = Create(Spec2_0,[mark 0],[tran [0,5,1],[1,7,0],[1,13,0],[1,19,0],
+          [1,25,0]])  (2,5)
+
+Spec2_1 = Create(Spec2_1,[mark 0],[tran [0,5,1],[1,7,0],[1,13,0],[1,19,0],
+          [1,25,0]])  (2,5)
+
+Spec3_0 = Create(Spec3_0,[mark 0],[tran [0,7,1],[1,9,0]])  (2,2)
+
+Spec3_1 = Create(Spec3_1,[mark 0],[tran [0,7,1],[1,9,0]])  (2,2)
+
+Spec4_0 = Create(Spec4_0,[mark 0],[tran [0,13,1],[1,15,0]])  (2,2)
+
+Spec4_1 = Create(Spec4_1,[mark 0],[tran [0,13,1],[1,15,0]])  (2,2)
+
+Spec5_0 = Create(Spec5_0,[mark 0],[tran [0,19,1],[1,21,0]])  (2,2)
+
+Spec5_1 = Create(Spec5_1,[mark 0],[tran [0,19,1],[1,21,0]])  (2,2)
+
+Spec6_0 = Create(Spec6_0,[mark 0],[tran [0,25,1],[1,27,0]])  (2,2)
+
+Spec6_1 = Create(Spec6_1,[mark 0],[tran [0,25,1],[1,27,0]])  (2,2)
+
+Spec7_0 = Create(Spec7_0,[mark 0],[tran [0,9,1],[1,26,0]])  (2,2)
+
+Spec7_1 = Create(Spec7_1,[mark 0],[tran [0,9,1],[1,26,0]])  (2,2)
+
+Spec8_0 = Create(Spec8_0,[mark 0],[tran [0,15,1],[1,36,0]])  (2,2)
+
+Spec8_1 = Create(Spec8_1,[mark 0],[tran [0,15,1],[1,36,0]])  (2,2)
+
+Spec9_0 = Create(Spec9_0,[mark 0],[tran [0,21,1],[1,46,0]])  (2,2)
+
+Spec9_1 = Create(Spec9_1,[mark 0],[tran [0,21,1],[1,46,0]])  (2,2)
+
+p1 = Create(p1,[mark 0],[tran [0,2,1],[1,1,0]])  (2,2)
+
+p10 = Create(p10,[mark 0],[tran [0,14,1],[1,5,0]])  (2,2)
+
+p11 = Create(p11,[mark 0],[tran [0,5,1],[1,16,0]])  (2,2)
+
+p12 = Create(p12,[mark 0],[tran [0,16,1],[1,18,0],[1,28,0],[1,38,0],[1,48,
+      0]])  (2,5)
+
+p13 = Create(p13,[mark 0],[tran [0,18,1],[1,7,0]])  (2,2)
+
+p14 = Create(p14,[mark 0],[tran [0,7,1],[1,20,0]])  (2,2)
+
+p15 = Create(p15,[mark 0],[tran [0,20,1],[1,22,0]])  (2,2)
+
+p16 = Create(p16,[mark 0],[tran [0,22,1],[1,9,0]])  (2,2)
+
+p17 = Create(p17,[mark 0],[tran [0,9,1],[1,24,0]])  (2,2)
+
+p18 = Create(p18,[mark 0],[tran [0,24,1],[1,11,0]])  (2,2)
+
+p19 = Create(p19,[mark 0],[tran [0,11,1],[1,26,0]])  (2,2)
+
+p2 = Create(p2,[mark 0],[tran [0,2,1],[1,1,0]])  (2,2)
+
+p20 = Create(p20,[mark 0],[tran [0,11,1],[1,26,0]])  (2,2)
+
+p21 = Create(p21,[mark 0],[tran [0,28,1],[1,13,0]])  (2,2)
+
+p22 = Create(p22,[mark 0],[tran [0,13,1],[1,30,0]])  (2,2)
+
+p23 = Create(p23,[mark 0],[tran [0,30,1],[1,32,0]])  (2,2)
+
+p24 = Create(p24,[mark 0],[tran [0,32,1],[1,15,0]])  (2,2)
+
+p25 = Create(p25,[mark 0],[tran [0,15,1],[1,34,0]])  (2,2)
+
+p26 = Create(p26,[mark 0],[tran [0,34,1],[1,17,0]])  (2,2)
+
+p27 = Create(p27,[mark 0],[tran [0,17,1],[1,36,0]])  (2,2)
+
+p28 = Create(p28,[mark 0],[tran [0,17,1],[1,36,0]])  (2,2)
+
+p29 = Create(p29,[mark 0],[tran [0,38,1],[1,19,0]])  (2,2)
+
+p3 = Create(p3,[mark 0],[tran [0,1,1],[1,4,0]])  (2,2)
+
+p30 = Create(p30,[mark 0],[tran [0,19,1],[1,40,0]])  (2,2)
+
+p31 = Create(p31,[mark 0],[tran [0,40,1],[1,42,0]])  (2,2)
+
+p32 = Create(p32,[mark 0],[tran [0,42,1],[1,21,0]])  (2,2)
+
+p33 = Create(p33,[mark 0],[tran [0,21,1],[1,44,0]])  (2,2)
+
+p34 = Create(p34,[mark 0],[tran [0,44,1],[1,23,0]])  (2,2)
+
+p35 = Create(p35,[mark 0],[tran [0,23,1],[1,46,0]])  (2,2)
+
+p36 = Create(p36,[mark 0],[tran [0,23,1],[1,46,0]])  (2,2)
+
+p37 = Create(p37,[mark 0],[tran [0,48,1],[1,25,0]])  (2,2)
+
+p38 = Create(p38,[mark 0],[tran [0,25,1],[1,50,0]])  (2,2)
+
+p39 = Create(p39,[mark 0],[tran [0,50,1],[1,52,0]])  (2,2)
+
+p4 = Create(p4,[mark 0],[tran [0,4,1],[1,6,0]])  (2,2)
+
+p40 = Create(p40,[mark 0],[tran [0,52,1],[1,27,0]])  (2,2)
+
+p41 = Create(p41,[mark 0],[tran [0,27,1],[1,54,0]])  (2,2)
+
+p42 = Create(p42,[mark 0],[tran [0,54,1],[1,29,0]])  (2,2)
+
+p43 = Create(p43,[mark 0],[tran [0,29,1],[1,56,0]])  (2,2)
+
+p44 = Create(p44,[mark 0],[tran [0,29,1],[1,56,0]])  (2,2)
+
+p5 = Create(p5,[mark 0],[tran [0,8,1],[1,3,0]])  (2,2)
+
+p6 = Create(p6,[mark 0],[tran [0,8,1],[1,3,0]])  (2,2)
+
+p7 = Create(p7,[mark 0],[tran [0,3,1],[1,10,0]])  (2,2)
+
+p8 = Create(p8,[mark 0],[tran [0,10,1],[1,12,0]])  (2,2)
+
+p9 = Create(p9,[mark 0],[tran [0,6,1],[0,12,1],[1,14,0]])  (2,3)
+
+SYNCPLANT_S7 = Sync(P17,P18,P19)  (8,12)  Blocked_events = None  
+               Computing time = 00:00:00
+
+SYNCALL_S7 = Sync(SYNCPLANT_S7,SPEC7_0)  (4,4)  Blocked_events = None  
+             Computing time = 00:00:00
+
+SUPCON_S7 = Supcon(SYNCPLANT_S7,SYNCALL_S7)  (4,4)
+            Computing time = 00:00:00
+
+SYNCPLANT_S8 = Sync(P25,P26,P27)  (8,12)  Blocked_events = None  
+               Computing time = 00:00:01
+
+SYNCALL_S8 = Sync(SYNCPLANT_S8,SPEC8_0)  (4,4)  Blocked_events = None  
+             Computing time = 00:00:00
+
+SUPCON_S8 = Supcon(SYNCPLANT_S8,SYNCALL_S8)  (4,4)
+            Computing time = 00:00:00
+
+SYNCPLANT_S9 = Sync(P33,P34,P35)  (8,12)  Blocked_events = None  
+               Computing time = 00:00:00
+
+SYNCALL_S9 = Sync(SYNCPLANT_S9,SPEC9_0)  (4,4)  Blocked_events = None  
+             Computing time = 00:00:00
+
+SUPCON_S9 = Supcon(SYNCPLANT_S9,SYNCALL_S9)  (4,4)
+            Computing time = 00:00:00
+
+SYNCPLANT_S10 = Sync(P41,P42,P43)  (8,12)  Blocked_events = None  
+                Computing time = 00:00:00
+
+SYNCALL_S10 = Sync(SYNCPLANT_S10,SPEC10_0)  (4,4)  Blocked_events = None  
+              Computing time = 00:00:00
+
+SUPCON_S10 = Supcon(SYNCPLANT_S10,SYNCALL_S10)  (4,4)
+             Computing time = 00:00:00
+

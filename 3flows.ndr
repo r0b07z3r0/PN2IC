@@ -1,0 +1,56 @@
+p 185.0 110.0 p1 1 n input1Empty w
+p 465.0 600.0 p10 0 w waitCrossing e
+p 465.0 740.0 p11 0 w conveyorCrossing e
+p 465.0 880.0 p12 0 w sortingConveyor e
+p 305.0 110.0 p2 0 n input1Filled e
+p 245.0 230.0 p3 0 w input1Available e
+p 245.0 360.0 p4 0 w machine1On e
+p 685.0 230.0 p7 0 w input2Available e
+p 685.0 360.0 p8 0 w machine2On e
+p 465.0 480.0 p9 0 nw PecaEsteira ne
+t 245.0 170.0 t1 c 0 w n c_machine1FeederActuator w
+t 685.0 300.0 t10 c 0 w n o_machine2BusySensor e
+t 685.0 420.0 t12 c 0 w n o_machine2OutSensor ne
+t 465.0 540.0 t14 c 0 w n o_mainCrossingInSensor w
+t 465.0 820.0 t16 c 0 w n o_mainCrossingOutSensor e
+t 245.0 50.0 t2 c 0 w n o_machineFeeder1Sensor n
+t 685.0 170.0 t3 c 0 w n c_machine2FeederActuator w
+t 245.0 300.0 t4 c 0 w n o_machine1BusySensor e
+t 465.0 660.0 t5 c 0 w n c_stopCrossingActuator e
+t 245.0 420.0 t6 c 0 w n o_machine1OutSensor e
+t 25.0 1080.0 t7 c 0 w n c_sortingStopActuator e
+p 90.0 1005.0 p13 0 n blueBaseOnConveyor ne
+t 245.0 920.0 t18 c 0 w n o_blueBaseVisionSensor ne
+p 465.0 285.0 SUPCON_S1_0 1 n AUTONET_SUPCON_S1_0 c
+p 170.0 735.0 SUPCON_S2_0 1 n AUTONET_SUPCON_S2_0 c
+e t7 SUPCON_S2_0 1 n
+e SUPCON_S2_0 t5 1 n
+e SUPCON_S1_0 t3 1 n
+e t5 SUPCON_S1_0 1 n
+e SUPCON_S1_0 t1 1 n
+e p12 t18 1 n
+e t14 p10 1 n
+e p10 t5 1 n
+e t5 p11 1 n
+e p1 t2 1 n
+e t2 p2 1 n
+e p2 t1 1 n
+e t1 p1 1 n
+e t1 p3 1 n
+e p3 t4 1 n
+e t4 p4 1 n
+e p13 t7 1 n
+e p4 t6 1 n
+e t6 p9 1 n
+e t12 p9 1 n
+e p8 t12 1 n
+e t10 p8 1 n
+e p7 t10 1 n
+e t3 p7 1 n
+e p9 t14 1 n
+e p11 t16 1 n
+e t16 p12 1 n
+e t18 p13 1 n
+h 3flows
+
+

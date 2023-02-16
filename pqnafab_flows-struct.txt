@@ -1,0 +1,33 @@
+Struct version 3.6.0 -- 07/07/20 -- LAAS/CNRS
+
+parsed net pqnafab_flows
+
+7 places, 4 transitions, 14 arcs
+
+net pqnafab_flows
+tr t0 Spec1_0 p1  -> Spec1_1 p0 
+tr t1 p0  -> p1 p4 
+tr t2 Spec1_1 p3 p4  -> Spec1_0 p2 
+tr t3 p2  -> p3 
+pl Spec1_0 : AUTONET_Spec1 (1)
+pl p1 (1)
+pl p3 (1)
+pl Spec1_1 : AUTONET_Spec1
+
+0.000s
+
+P-SEMI-FLOWS GENERATING SET ------------------------------------- 
+
+invariant
+
+p0 p1 (1)
+Spec1_0 p0 p4 (1)
+Spec1_0 Spec1_1 (1)
+p2 p3 (1)
+
+0.000s
+
+ANALYSIS COMPLETED  --------------------------------------------- 
+
+
+

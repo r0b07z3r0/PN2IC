@@ -1,0 +1,134 @@
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="n-5CA8-78421-0" type ="http://www.pnml.org/version-2009/grammar/ptnet">
+  <name>
+   <text>pequenaFabricaTCT</text>
+  </name>
+ <page id="g-5CA8-7872D-1">
+  <place id="p-5CA8-78881-2">
+  <name>
+   <text>p0</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="85" y="50"/>
+   </graphics>
+  </place>
+  <place id="p-5CA8-78A38-3">
+  <name>
+   <text>p1</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="85" y="170"/>
+   </graphics>
+  </place>
+  <place id="p-5CA8-78A46-4">
+  <name>
+   <text>p2</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="405" y="50"/>
+   </graphics>
+  </place>
+  <place id="p-5CA8-78A4A-5">
+  <name>
+   <text>p3</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="405" y="170"/>
+   </graphics>
+  </place>
+  <place id="p-5CA8-78A50-6">
+  <name>
+   <text>p4</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="245" y="110"/>
+   </graphics>
+  </place>
+  <transition id="t-5CA8-78A54-7">
+  <name>
+   <text>t1</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="25" y="110"/>
+   </graphics>
+  </transition>
+  <transition id="t-5CA8-78A5B-8">
+  <name>
+   <text>t2</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="145" y="110"/>
+   </graphics>
+  </transition>
+  <transition id="t-5CA8-78A5F-9">
+  <name>
+   <text>t3</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="345" y="110"/>
+   </graphics>
+  </transition>
+  <transition id="t-5CA8-78A63-10">
+  <name>
+   <text>t4</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="465" y="110"/>
+   </graphics>
+  </transition>
+  <arc id="e-5CA8-78A6B-11" source="t-5CA8-78A63-10" target="p-5CA8-78A4A-5">
+  </arc>
+  <arc id="e-5CA8-78A74-12" source="t-5CA8-78A54-7" target="p-5CA8-78881-2">
+  </arc>
+  <arc id="e-5CA8-78A75-13" source="p-5CA8-78A46-4" target="t-5CA8-78A63-10">
+  </arc>
+  <arc id="e-5CA8-78A7A-14" source="t-5CA8-78A5F-9" target="p-5CA8-78A46-4">
+  </arc>
+  <arc id="e-5CA8-78A7C-15" source="p-5CA8-78A50-6" target="t-5CA8-78A5F-9">
+  </arc>
+  <arc id="e-5CA8-78A7E-16" source="t-5CA8-78A5B-8" target="p-5CA8-78A50-6">
+  </arc>
+  <arc id="e-5CA8-78A84-17" source="p-5CA8-78A38-3" target="t-5CA8-78A54-7">
+  </arc>
+  <arc id="e-5CA8-78A86-18" source="t-5CA8-78A5B-8" target="p-5CA8-78A38-3">
+  </arc>
+  <arc id="e-5CA8-78A87-19" source="p-5CA8-78881-2" target="t-5CA8-78A5B-8">
+  </arc>
+  <arc id="e-5CA8-78A89-20" source="p-5CA8-78A4A-5" target="t-5CA8-78A5F-9">
+  </arc>
+ </page>
+ </net>
+</pnml>

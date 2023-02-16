@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--created Wed Dec 14 21:47:55 2022 by ndrio version 3.7.0-->
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="n-3CF8-71E06-0" type ="http://www.laas.fr/tina/tpn">
+  <name>
+   <text>flow11</text>
+  </name>
+ <page id="g-3CF8-72195-1">
+  <place id="p-3CF8-7219C-2">
+  <name>
+   <text>p10</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>waitCrossing</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="425" y="255"/>
+   </graphics>
+  </place>
+  <place id="p-3CF8-7265F-3">
+  <name>
+   <text>p3</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>input1Available</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="120" y="200"/>
+   </graphics>
+  </place>
+  <place id="p-3CF8-7266A-4">
+  <name>
+   <text>p4</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>machine1On</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="160" y="345"/>
+   </graphics>
+  </place>
+  <place id="p-3CF8-7266E-5">
+  <name>
+   <text>p7</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>input2Available</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="675" y="185"/>
+   </graphics>
+  </place>
+  <place id="p-3CF8-72671-6">
+  <name>
+   <text>p8</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>machine2On</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="830" y="370"/>
+   </graphics>
+  </place>
+  <place id="p-3CF8-72673-7">
+  <name>
+   <text>p9</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>PecaEsteira</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="475" y="560"/>
+   </graphics>
+  </place>
+  <place id="p-3CF8-72678-8">
+  <name>
+   <text>pSUPCON_S1_0</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>AUTONET_SUPCON_S1_0</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="370" y="50"/>
+   </graphics>
+  </place>
+  <transition id="t-3CF8-7267C-9">
+  <name>
+   <text>t1</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_machine1FeederActuator</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="210" y="120"/>
+   </graphics>
+  </transition>
+  <transition id="t-3CF8-72684-10">
+  <name>
+   <text>t10</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machine2BusySensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="755" y="265"/>
+   </graphics>
+  </transition>
+  <transition id="t-3CF8-72689-11">
+  <name>
+   <text>t12</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machine2OutSensor</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="780" y="445"/>
+   </graphics>
+  </transition>
+  <transition id="t-3CF8-7268D-12">
+  <name>
+   <text>t14</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_mainCrossingInSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="465" y="355"/>
+   </graphics>
+  </transition>
+  <transition id="t-3CF8-72691-13">
+  <name>
+   <text>t3</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_machine2FeederActuator</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="575" y="105"/>
+   </graphics>
+  </transition>
+  <transition id="t-3CF8-72716-14">
+  <name>
+   <text>t4</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machine1BusySensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="125" y="280"/>
+   </graphics>
+  </transition>
+  <transition id="t-3CF8-7271C-15">
+  <name>
+   <text>t5</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_stopCrossingActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="375" y="170"/>
+   </graphics>
+  </transition>
+  <transition id="t-3CF8-72720-16">
+  <name>
+   <text>t6</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machine1OutSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="140" y="425"/>
+   </graphics>
+  </transition>
+  <arc id="e-3CF8-72726-17" source="p-3CF8-72678-8" target="t-3CF8-72691-13">
+  </arc>
+  <arc id="e-3CF8-7272A-18" source="t-3CF8-72720-16" target="p-3CF8-72673-7">
+  </arc>
+  <arc id="e-3CF8-7272B-19" source="t-3CF8-72689-11" target="p-3CF8-72673-7">
+  </arc>
+  <arc id="e-3CF8-7272B-20" source="p-3CF8-72671-6" target="t-3CF8-72689-11">
+  </arc>
+  <arc id="e-3CF8-7272C-21" source="t-3CF8-72684-10" target="p-3CF8-72671-6">
+  </arc>
+  <arc id="e-3CF8-7272F-22" source="p-3CF8-7266E-5" target="t-3CF8-72684-10">
+  </arc>
+  <arc id="e-3CF8-72730-23" source="t-3CF8-72691-13" target="p-3CF8-7266E-5">
+  </arc>
+  <arc id="e-3CF8-72730-24" source="p-3CF8-72673-7" target="t-3CF8-7268D-12">
+  </arc>
+  <arc id="e-3CF8-72731-25" source="t-3CF8-7271C-15" target="p-3CF8-72678-8">
+  </arc>
+  <arc id="e-3CF8-72732-26" source="p-3CF8-72678-8" target="t-3CF8-7267C-9">
+  </arc>
+  <arc id="e-3CF8-72733-27" source="t-3CF8-7268D-12" target="p-3CF8-7219C-2">
+  </arc>
+  <arc id="e-3CF8-72734-28" source="p-3CF8-7219C-2" target="t-3CF8-7271C-15">
+  </arc>
+  <arc id="e-3CF8-72735-29" source="t-3CF8-7267C-9" target="p-3CF8-7265F-3">
+  </arc>
+  <arc id="e-3CF8-72737-30" source="p-3CF8-7265F-3" target="t-3CF8-72716-14">
+  </arc>
+  <arc id="e-3CF8-72738-31" source="t-3CF8-72716-14" target="p-3CF8-7266A-4">
+  </arc>
+  <arc id="e-3CF8-72739-32" source="p-3CF8-7266A-4" target="t-3CF8-72720-16">
+  </arc>
+ </page>
+ </net>
+</pnml>

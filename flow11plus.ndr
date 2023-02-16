@@ -1,0 +1,63 @@
+p 335.0 50.0 pSUPCON_S1_0 1 n AUTONET_SUPCON_S1_0 c
+t 55.0 105.0 t1 c 0 w n c_machine1FeederActuator e
+p 60.0 205.0 p3 0 w input1Available e
+t 55.0 285.0 t4 c 0 w n o_machine1BusySensor e
+p 50.0 355.0 p4 0 w machine1On e
+t 45.0 460.0 t6 c 0 w n o_machine1OutSensor e
+p 310.0 535.0 p9 0 nw PecaEsteira ne
+t 525.0 290.0 t10 c 0 w n o_machine2BusySensor e
+p 530.0 190.0 p7 0 w input2Available e
+t 525.0 110.0 t3 c 0 w n c_machine2FeederActuator w
+p 810.0 175.0 p1 0 w input3Available e
+t 805.0 95.0 t7 c 0 w n c_machine3FeederActuator w
+p 535.0 395.0 p8 0 w machine2On e
+t 505.0 490.0 t12 c 0 w n o_machine2OutSensor ne
+p 750.0 355.0 p0 0 w machine3On e
+t 755.0 475.0 t0 c 0 w n o_machine3OutSensor ne
+p 965.0 370.0 p12 0 w machine4On e
+t 970.0 490.0 t13 c 0 w n o_machine4OutSensor ne
+t 760.0 260.0 t2 c 0 w n o_machine3BusySensor e
+t 980.0 285.0 t11 c 0 w n o_machine4BusySensor e
+t 310.0 420.0 t14 c 0 w n o_mainCrossingInSensor e
+p 310.0 310.0 p10 0 w waitCrossing e
+t 400.0 250.0 t15 c 0 w n c_stopCrossingActuator2 e
+p 255.0 170.0 p13 0 w waitCrossing2 e
+p 410.0 170.0 p14 0 w waitCrossing3 e
+t 250.0 230.0 t5 c 0 w n c_stopCrossingActuator e
+t 290.0 110.0 t16 c 0 w n c_fim1 e
+t 390.0 115.0 t17 c 0 w n c_fim2 e
+e p14 t17 1 n
+e t17 pSUPCON_S1_0 1 n
+e t16 pSUPCON_S1_0 1 n
+e p13 t16 1 n
+e t5 p13 1 n
+e t15 p14 1 n
+e p10 t15 1 n
+e p1 t11 1 n
+e t11 p12 1 n
+e p12 t13 1 n
+e t13 p9 1 n
+e pSUPCON_S1_0 t7 1 n
+e t0 p9 1 n
+e p0 t0 1 n
+e t2 p0 1 n
+e p1 t2 1 n
+e t7 p1 1 n
+e p4 t6 1 n
+e t4 p4 1 n
+e p3 t4 1 n
+e t1 p3 1 n
+e p10 t5 1 n
+e t14 p10 1 n
+e pSUPCON_S1_0 t1 1 n
+e p9 t14 1 n
+e t3 p7 1 n
+e p7 t10 1 n
+e t10 p8 1 n
+e p8 t12 1 n
+e t12 p9 1 n
+e t6 p9 1 n
+e pSUPCON_S1_0 t3 1 n
+h flow11plus
+
+

@@ -146,6 +146,12 @@ class Place:
                 return instance.name
     
     @classmethod
+    def getLabel(cls, name):
+        for instance in cls.instances:
+            if instance.name == name:
+                return instance.label
+            
+    @classmethod
     def getInitialMark(cls, name):
         for instance in cls.instances:
             #print(instance.name)
@@ -212,6 +218,13 @@ class Transition:
         for instance in cls.instances:
             if instance.id == id:
                 return instance.name
+            
+    @classmethod
+    def getID(cls, name):
+        for instance in cls.instances:
+            if instance.name == name:
+                return instance.id
+            
 class Arc:
     
     id: str
@@ -281,6 +294,7 @@ class Arc:
                 listTSuc.append(instance.target)
         return listTSuc
     
+
 def parsePNML(pnmlfile):
 
       

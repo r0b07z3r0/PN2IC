@@ -1,0 +1,57 @@
+Struct version 3.7.0 -- 06/05/22 -- LAAS/CNRS
+
+parsed net 3flows
+
+13 places, 12 transitions, 28 arcs
+
+net 3flows
+tr t1 : c_machine1FeederActuator pSUPCON_S1_0 p2  -> p1 p3 
+tr t10 : o_machine2BusySensor p7  -> p8 
+tr t12 : o_machine2OutSensor p8  -> p9 
+tr t14 : o_mainCrossingInSensor p9  -> p10 
+tr t16 : o_mainCrossingOutSensor p11  -> p12 
+tr t18 : o_blueBaseVisionSensor p12  -> p13 
+tr t2 : o_machineFeeder1Sensor p1  -> p2 
+tr t3 : c_machine2FeederActuator pSUPCON_S1_0  -> p7 
+tr t4 : o_machine1BusySensor p3  -> p4 
+tr t5 : c_stopCrossingActuator pSUPCON_S2_0 p10  -> pSUPCON_S1_0 p11 
+tr t6 : o_machine1OutSensor p4  -> p9 
+tr t7 : c_sortingStopActuator p13  -> pSUPCON_S2_0 
+pl pSUPCON_S1_0 : AUTONET_pSUPCON_S1_0 (1)
+pl pSUPCON_S2_0 : AUTONET_pSUPCON_S2_0 (1)
+pl p1 : input1Empty (1)
+pl p10 : waitCrossing
+pl p11 : conveyorCrossing
+pl p12 : sortingConveyor
+pl p13 : blueBaseOnConveyor
+pl p2 : input1Filled
+pl p3 : input1Available
+pl p4 : machine1On
+pl p7 : input2Available
+pl p8 : machine2On
+pl p9 : PecaEsteira
+
+0.000s
+
+P-SEMI-FLOWS GENERATING SET ------------------------------------- 
+
+p1 p2 (1)
+pSUPCON_S1_0 p10 p3 p4 p7 p8 p9 (1)
+pSUPCON_S2_0 p11 p12 p13 (1)
+
+invariant
+
+0.000s
+
+T-SEMI-FLOWS GENERATING SET ------------------------------------- 
+
+t1 t14 t16 t18 t2 t4 t5 t6 t7 (9)
+t10 t12 t14 t16 t18 t3 t5 t7 (8)
+
+consistent
+
+0.000s
+
+ANALYSIS COMPLETED  --------------------------------------------- 
+
+

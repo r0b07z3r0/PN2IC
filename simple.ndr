@@ -1,0 +1,15 @@
+p 195.0 50.0 z3 1 n l1 ne
+t 55.0 100.0 t0 c 0 w n tr0 ne
+p 50.0 180.0 p1 0 w l2 ne
+t 30.0 300.0 t2 c 0 w n tr2 ne
+p 105.0 360.0 p3 0 n l3 ne
+t 340.0 370.0 t5 c 0 w n tr5 ne
+e z3 t0 1 n
+e t0 p1 1 n
+e p1 t2 1 n
+e t2 p3 1 n
+e p3 t5 1 n
+e t5 z3 1 n
+h simple
+
+
