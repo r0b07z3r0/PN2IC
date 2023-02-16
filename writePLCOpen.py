@@ -440,7 +440,8 @@ def defineFlows():
         for place in flow:
                 if Place.getInitialMark(place) == "1":
                     flowOrder.append(place)
-                    flowTrail.remove(place)    
+                    flowTrail.remove(place)
+                        
         flowOrder.extend(flowTrail)
         flowlistOrder.append(flowOrder)
     
@@ -497,10 +498,14 @@ def definePOUs(flowlist):
         indSeq = 0
         changeIndRep = False
         
+        
+        
         for num in range(len(adjustSequence)):
             apt = seqList[indSeq].copy()
             if adjustSequence[num:].count(adjustSequence[num]) > 1:
                 apt.append(adjustSequence[num])
+                print('Debug apt:')
+                print(apt)
                 if isSublist(apt,adjustSequence[num:]) and apt != ['JumpStep']:
                     seqList[indSeq].append(adjustSequence[num])
                     changeIndRep = True
@@ -511,7 +516,19 @@ def definePOUs(flowlist):
                 seqList.append([])
                 changeIndRep = False
 
+        changeIndRep = False
+        indSeq = 0
+        
+        print('Debug seqList:')
+        print(seqList)
         for seqClean in seqList:
+            print('Debug seqClean:')
+            print(seqClean)
+            print('Debug adjustSequence:')
+            print(adjustSequence)
+            if adjustSequence[1] == 't9' or adjustSequence[1] == 't15' or adjustSequence[1] == 't13' or adjustSequence[1] == 't19' or adjustSequence[1] == 't21' or adjustSequence[1] == 't5' or adjustSequence[1] == 't1' or adjustSequence[1] == 't25' or adjustSequence[1] == 't27' or adjustSequence[1] == 't7':
+                adjustSequence.remove('JumpStep')
+            
             adjustSequence = removeSublistFromList(seqClean, adjustSequence)
         
         newFlowSequence = adjustSequence.copy()
@@ -1148,8 +1165,8 @@ def runPLCopenWriter():
 
 def main():
     
-    writerpnml = open("WRITER.pnml")
-    parsePNML(writerpnml)
+    #writerpnml = open("WRITER.pnml")
+    #parsePNML(writerpnml)
     flowlist = defineFlows()
     definePOUs(flowlist)
     writePLCOpen()

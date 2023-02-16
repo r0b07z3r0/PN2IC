@@ -1,0 +1,148 @@
+Struct version 3.7.0 -- 06/05/22 -- LAAS/CNRS
+
+parsed net WRITER
+
+54 places, 43 transitions, 116 arcs
+
+net WRITER
+tr t1 : c_machine1FeederActuator p2 pSUPCON_S1_0  -> p1 p3 
+tr t10 : o_machine2BusySensor p7  -> p8 
+tr t11 : c_moveBoxConveyor p18 p20  -> p19 
+tr t12 : o_machine2OutSensor p8  -> p9 
+tr t13 : c_sortingStopActuator p21 pSUPCON_S4_0  -> p22 pSUPCON_S2_0 
+tr t14 : o_mainCrossingInSensor p9  -> p10 
+tr t15 : c_liftingBlueLidStopActuator p24 pSUPCON_S8_0  -> p25 pSUPCON_S4_0 
+tr t16 : o_mainCrossingOutSensor p11  -> p12 
+tr t17 : c_moveBoxConveyor p26 p28  -> p27 
+tr t18 : o_blueBaseVisionSensor p12  -> p13 
+tr t19 : c_sortingStopActuator p29 pSUPCON_S5_0  -> p30 pSUPCON_S2_0 
+tr t2 : o_machineFeeder1Sensor p1  -> p2 
+tr t20 : o_sortingBlueSensor p14  -> p15 
+tr t21 : c_liftingGreenLidStopActuator p32 pSUPCON_S9_0  -> p33 pSUPCON_S5_0 
+tr t22 : o_liftingBlueBaseInSensor p15  -> p16 
+tr t23 : c_moveBoxConveyor p34 p36  -> p35 
+tr t24 : o_liftingBlueLidOutSensor p17  -> p18 
+tr t25 : c_sortingStopActuator p37 pSUPCON_S6_0  -> p38 pSUPCON_S2_0 
+tr t26 : o_boxAlignBlueBaseSensor p19  -> p20 pSUPCON_S7_0 
+tr t27 : c_liftingGreenBaseStopActuator p40 pSUPCON_S10_0  -> p41 pSUPCON_S6_0 
+tr t28 : o_blueLidVisionSensor p12  -> p21 
+tr t29 : c_moveBoxConveyor p42 p44  -> p43 
+tr t3 : c_machine2FeederActuator p6 pSUPCON_S1_0  -> p5 p7 
+tr t30 : o_sortingBlueSensor p22  -> p23 
+tr t32 : o_liftingBlueLidInSensor p23  -> p24 
+tr t34 : o_liftingBlueLidOutSensor p25  -> p26 
+tr t36 : o_boxAlignBlueLidSensor p27  -> p28 pSUPCON_S8_0 
+tr t38 : o_greenBaseVisionSensor p12  -> p29 
+tr t4 : o_machine1BusySensor p3  -> p4 
+tr t40 : o_sortingGreenSensor p30  -> p31 
+tr t42 : o_liftingGreenLidInSensor p31  -> p32 
+tr t44 : o_liftingGreenLidOutSensor p33  -> p34 
+tr t46 : o_boxAlignGreenLidSensor p35  -> p36 pSUPCON_S9_0 
+tr t48 : o_greenLidVisionSensor p12  -> p37 
+tr t5 : c_stopCrossingActuator p10 pSUPCON_S2_0  -> p11 pSUPCON_S1_0 
+tr t50 : o_sortingGreenSensor p38  -> p39 
+tr t52 : o_liftingGreenBaseInSensor p39  -> p40 
+tr t54 : o_liftingGreenBaseOutSensor p41  -> p42 
+tr t56 : o_boxAlignGreenBaseSensor p43  -> p44 pSUPCON_S10_0 
+tr t6 : o_machine1OutSensor p4  -> p9 
+tr t7 : c_sortingStopActuator p13 pSUPCON_S3_0  -> p14 pSUPCON_S2_0 
+tr t8 : o_machineFeeder2Sensor p5  -> p6 
+tr t9 : c_liftingBlueBaseStopActuator p16 pSUPCON_S7_0  -> p17 pSUPCON_S3_0 
+pl p1 : input1Empty (1)
+pl p20 : boxAlignedBB (1)
+pl p28 : boxAlignedBL (1)
+pl p36 : boxAlignedGB (1)
+pl p44 : boxAlignedGL (1)
+pl p5 : input2Empty (1)
+pl pSUPCON_S10_0 : AUTONET_SUPCON_S10_0 (1)
+pl pSUPCON_S1_0 : AUTONET_SUPCON_S1_0 (1)
+pl pSUPCON_S2_0 : AUTONET_SUPCON_S2_0 (1)
+pl pSUPCON_S3_0 : AUTONET_SUPCON_S3_0 (1)
+pl pSUPCON_S4_0 : AUTONET_SUPCON_S4_0 (1)
+pl pSUPCON_S5_0 : AUTONET_SUPCON_S5_0 (1)
+pl pSUPCON_S6_0 : AUTONET_SUPCON_S6_0 (1)
+pl pSUPCON_S7_0 : AUTONET_SUPCON_S7_0 (1)
+pl pSUPCON_S8_0 : AUTONET_SUPCON_S8_0 (1)
+pl pSUPCON_S9_0 : AUTONET_SUPCON_S9_0 (1)
+pl p10 : waitCrossing
+pl p11 : conveyorCrossing
+pl p12 : sortingConveyor
+pl p13 : blueBaseOnConveyor
+pl p14 : sortingBconveyor
+pl p15 : pushLeft
+pl p16 : waitBoxBB
+pl p17 : rampBB
+pl p18 : blueBaseOnBox
+pl p19 : moveBoxBB
+pl p2 : input1Filled
+pl p21 : blueLidOnConveyor
+pl p22 : sortingBconveyor
+pl p23 : pushRight
+pl p24 : waitBoxBL
+pl p25 : rampBL
+pl p26 : blueLidOnBox
+pl p27 : moveBoxBL
+pl p29 : greenBaseOnConveyor
+pl p3 : input1Available
+pl p30 : sortingGconveyor
+pl p31 : pushRight
+pl p32 : waitBoxGB
+pl p33 : rampGB
+pl p34 : greenBaseOnBox
+pl p35 : moveBoxGB
+pl p37 : greenLidOnConveyor
+pl p38 : sortingGconveyor
+pl p39 : pushLeft
+pl p4 : machine1On
+pl p40 : waitBoxGL
+pl p41 : rampGL
+pl p42 : greenLidOnBox
+pl p43 : moveBoxGL
+pl p6 : input2Filled
+pl p7 : input2Available
+pl p8 : machine2On
+pl p9 : PecaEsteira
+
+0.000s
+
+P-SEMI-FLOWS GENERATING SET ------------------------------------- 
+
+p1 p2 (1)
+p19 p20 (1)
+p17 p18 p19 pSUPCON_S7_0 (1)
+p27 p28 (1)
+p25 p26 p27 pSUPCON_S8_0 (1)
+p22 p23 p24 pSUPCON_S4_0 (1)
+p30 p31 p32 pSUPCON_S5_0 (1)
+p35 p36 (1)
+p33 p34 p35 pSUPCON_S9_0 (1)
+p11 p12 p13 p21 p29 p37 pSUPCON_S2_0 (1)
+p10 p3 p4 p7 p8 p9 pSUPCON_S1_0 (1)
+p5 p6 (1)
+p38 p39 p40 pSUPCON_S6_0 (1)
+p43 p44 (1)
+p41 p42 p43 pSUPCON_S10_0 (1)
+p14 p15 p16 pSUPCON_S3_0 (1)
+
+invariant
+
+0.016s
+
+T-SEMI-FLOWS GENERATING SET ------------------------------------- 
+
+t10 t12 t14 t16 t25 t27 t29 t3 t48 t5 t50 t52 t54 t56 t8 (15)
+t10 t12 t14 t16 t19 t21 t23 t3 t38 t40 t42 t44 t46 t5 t8 (15)
+t10 t12 t13 t14 t15 t16 t17 t28 t3 t30 t32 t34 t36 t5 t8 (15)
+t10 t11 t12 t14 t16 t18 t20 t22 t24 t26 t3 t5 t7 t8 t9 (15)
+t1 t14 t16 t2 t25 t27 t29 t4 t48 t5 t50 t52 t54 t56 t6 (15)
+t1 t14 t16 t19 t2 t21 t23 t38 t4 t40 t42 t44 t46 t5 t6 (15)
+t1 t13 t14 t15 t16 t17 t2 t28 t30 t32 t34 t36 t4 t5 t6 (15)
+t1 t11 t14 t16 t18 t2 t20 t22 t24 t26 t4 t5 t6 t7 t9 (15)
+
+consistent
+
+0.000s
+
+ANALYSIS COMPLETED  --------------------------------------------- 
+
+

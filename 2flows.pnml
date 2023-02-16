@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--created Wed Feb 15 22:45:05 2023 by ndrio version 3.7.0-->
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="n-141C-C8C44-0" type ="http://www.laas.fr/tina/tpn">
+  <name>
+   <text>2flows</text>
+  </name>
+ <page id="g-141C-C8DE3-1">
+  <place id="p-141C-C8DFE-2">
+  <name>
+   <text>p0</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>machine3On</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="750" y="345"/>
+   </graphics>
+  </place>
+  <place id="p-141C-C9228-3">
+  <name>
+   <text>p1</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>input3Available</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="820" y="185"/>
+   </graphics>
+  </place>
+  <place id="p-141C-C923F-4">
+  <name>
+   <text>p10</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>waitCrossing</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="310" y="335"/>
+   </graphics>
+  </place>
+  <place id="p-141C-C9248-5">
+  <name>
+   <text>p12</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>machine4On</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="960" y="345"/>
+   </graphics>
+  </place>
+  <place id="p-141C-C9250-6">
+  <name>
+   <text>p13</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>waitCrossing2</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="260" y="195"/>
+   </graphics>
+  </place>
+  <place id="p-141C-C9258-7">
+  <name>
+   <text>p14</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>waitCrossing3</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="410" y="205"/>
+   </graphics>
+  </place>
+  <place id="p-141C-C925D-8">
+  <name>
+   <text>p15</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>machineConju</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="860" y="515"/>
+   </graphics>
+  </place>
+  <place id="p-141C-C9266-9">
+  <name>
+   <text>p17</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>pTesteJump</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="620" y="165"/>
+   </graphics>
+  </place>
+  <place id="p-141C-C926F-10">
+  <name>
+   <text>p2</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>p2flow1</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="560" y="55"/>
+   </graphics>
+  </place>
+  <place id="p-141C-C9277-11">
+  <name>
+   <text>p3</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>input1Available</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="60" y="225"/>
+   </graphics>
+  </place>
+  <place id="p-141C-C927F-12">
+  <name>
+   <text>p4</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>machine1On</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="50" y="385"/>
+   </graphics>
+  </place>
+  <place id="p-141C-C9285-13">
+  <name>
+   <text>p5</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>p2flow2</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="765" y="75"/>
+   </graphics>
+  </place>
+  <place id="p-141C-C928D-14">
+  <name>
+   <text>p7</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>input2Available</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="530" y="215"/>
+   </graphics>
+  </place>
+  <place id="p-141C-C937C-15">
+  <name>
+   <text>p8</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>machine2On</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="540" y="425"/>
+   </graphics>
+  </place>
+  <place id="p-141C-C9386-16">
+  <name>
+   <text>p9</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>PecaEsteira</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="310" y="565"/>
+   </graphics>
+  </place>
+  <place id="p-141C-C938B-17">
+  <name>
+   <text>pSUPCON_S1_0</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>AUTONET_SUPCON_S1_0</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="340" y="75"/>
+   </graphics>
+  </place>
+  <transition id="t-141C-C93A2-18">
+  <name>
+   <text>t0</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machine3OutSensor</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="760" y="435"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C93BC-19">
+  <name>
+   <text>t1</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_machine1FeederActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="60" y="125"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C93D5-20">
+  <name>
+   <text>t10</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machine2BusySensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="520" y="315"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C93EB-21">
+  <name>
+   <text>t11</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machine4BusySensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="960" y="255"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C9404-22">
+  <name>
+   <text>t12</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machine2OutSensor</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="500" y="515"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C941E-23">
+  <name>
+   <text>t13</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machine4OutSensor</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="970" y="445"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C9434-24">
+  <name>
+   <text>t14</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_mainCrossingInSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="310" y="445"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C9446-25">
+  <name>
+   <text>t15</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_stopCrossingActuator2</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="400" y="275"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C9457-26">
+  <name>
+   <text>t16</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_fim1</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="240" y="145"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C9678-27">
+  <name>
+   <text>t17</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_fim2</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="420" y="165"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C96BB-28">
+  <name>
+   <text>t18</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_teste</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="660" y="545"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C96D2-29">
+  <name>
+   <text>t19</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_teste2</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="660" y="605"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C96EB-30">
+  <name>
+   <text>t2</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machine3BusySensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="740" y="265"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C96F5-31">
+  <name>
+   <text>t20</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_testeJump</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="670" y="265"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C96FE-32">
+  <name>
+   <text>t21</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_testeJumpFIM</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="560" y="135"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C9707-33">
+  <name>
+   <text>t22</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>t2flow3</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="625" y="80"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C970C-34">
+  <name>
+   <text>t3</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_machine2FeederActuator</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="500" y="145"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C9718-35">
+  <name>
+   <text>t4</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machine1BusySensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="60" y="305"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C9721-36">
+  <name>
+   <text>t5</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_stopCrossingActuator</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="250" y="255"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C972A-37">
+  <name>
+   <text>t6</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_machine1OutSensor</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="40" y="485"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C9733-38">
+  <name>
+   <text>t7</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_machine3FeederActuator</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="800" y="125"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C976B-39">
+  <name>
+   <text>t8</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>t2flow1</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="480" y="50"/>
+   </graphics>
+  </transition>
+  <transition id="t-141C-C9778-40">
+  <name>
+   <text>t9</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>t2flow2</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="680" y="55"/>
+   </graphics>
+  </transition>
+  <arc id="e-141C-C978A-41" source="t-141C-C9707-33" target="p-141C-C938B-17">
+  </arc>
+  <arc id="e-141C-C9791-42" source="t-141C-C941E-23" target="p-141C-C925D-8">
+  </arc>
+  <arc id="e-141C-C9798-43" source="p-141C-C925D-8" target="t-141C-C96D2-29">
+  </arc>
+  <arc id="e-141C-C979B-44" source="t-141C-C96D2-29" target="p-141C-C9386-16">
+  </arc>
+  <arc id="e-141C-C979F-45" source="p-141C-C938B-17" target="t-141C-C970C-34">
+  </arc>
+  <arc id="e-141C-C97A2-46" source="p-141C-C8DFE-2" target="t-141C-C96F5-31">
+  </arc>
+  <arc id="e-141C-C97A6-47" source="t-141C-C972A-37" target="p-141C-C9386-16">
+  </arc>
+  <arc id="e-141C-C97A9-48" source="t-141C-C9404-22" target="p-141C-C9386-16">
+  </arc>
+  <arc id="e-141C-C97B3-49" source="p-141C-C937C-15" target="t-141C-C9404-22">
+  </arc>
+  <arc id="e-141C-C97B6-50" source="t-141C-C93D5-20" target="p-141C-C937C-15">
+  </arc>
+  <arc id="e-141C-C97BC-51" source="p-141C-C928D-14" target="t-141C-C93D5-20">
+  </arc>
+  <arc id="e-141C-C97BF-52" source="p-141C-C9285-13" target="t-141C-C9707-33">
+  </arc>
+  <arc id="e-141C-C97C1-53" source="t-141C-C970C-34" target="p-141C-C928D-14">
+  </arc>
+  <arc id="e-141C-C97C3-54" source="p-141C-C9386-16" target="t-141C-C9434-24">
+  </arc>
+  <arc id="e-141C-C97C6-55" source="p-141C-C938B-17" target="t-141C-C93BC-19">
+  </arc>
+  <arc id="e-141C-C97C9-56" source="t-141C-C9434-24" target="p-141C-C923F-4">
+  </arc>
+  <arc id="e-141C-C97CC-57" source="p-141C-C923F-4" target="t-141C-C9721-36">
+  </arc>
+  <arc id="e-141C-C97D2-58" source="t-141C-C96F5-31" target="p-141C-C9266-9">
+  </arc>
+  <arc id="e-141C-C97D5-59" source="t-141C-C93BC-19" target="p-141C-C9277-11">
+  </arc>
+  <arc id="e-141C-C97D8-60" source="p-141C-C9277-11" target="t-141C-C9718-35">
+  </arc>
+  <arc id="e-141C-C97DC-61" source="t-141C-C9718-35" target="p-141C-C927F-12">
+  </arc>
+  <arc id="e-141C-C97DE-62" source="p-141C-C927F-12" target="t-141C-C972A-37">
+  </arc>
+  <arc id="e-141C-C97E1-63" source="p-141C-C938B-17" target="t-141C-C9733-38">
+  </arc>
+  <arc id="e-141C-C97E3-64" source="t-141C-C9733-38" target="p-141C-C9228-3">
+  </arc>
+  <arc id="e-141C-C97E8-65" source="p-141C-C9228-3" target="t-141C-C96EB-30">
+  </arc>
+  <arc id="e-141C-C97F2-66" source="t-141C-C96EB-30" target="p-141C-C8DFE-2">
+  </arc>
+  <arc id="e-141C-C97F6-67" source="p-141C-C8DFE-2" target="t-141C-C93A2-18">
+  </arc>
+  <arc id="e-141C-C97F9-68" source="p-141C-C9248-5" target="t-141C-C941E-23">
+  </arc>
+  <arc id="e-141C-C97FC-69" source="p-141C-C9266-9" target="t-141C-C96FE-32">
+  </arc>
+  <arc id="e-141C-C97FE-70" source="t-141C-C93EB-21" target="p-141C-C9248-5">
+  </arc>
+  <arc id="e-141C-C9800-71" source="p-141C-C9228-3" target="t-141C-C93EB-21">
+  </arc>
+  <arc id="e-141C-C9802-72" source="p-141C-C923F-4" target="t-141C-C9446-25">
+  </arc>
+  <arc id="e-141C-C9804-73" source="t-141C-C9446-25" target="p-141C-C9258-7">
+  </arc>
+  <arc id="e-141C-C9809-74" source="t-141C-C9778-40" target="p-141C-C9285-13">
+  </arc>
+  <arc id="e-141C-C980C-75" source="t-141C-C9721-36" target="p-141C-C9250-6">
+  </arc>
+  <arc id="e-141C-C980F-76" source="p-141C-C9250-6" target="t-141C-C9457-26">
+  </arc>
+  <arc id="e-141C-C9812-77" source="t-141C-C9457-26" target="p-141C-C938B-17">
+  </arc>
+  <arc id="e-141C-C9814-78" source="t-141C-C9678-27" target="p-141C-C938B-17">
+  </arc>
+  <arc id="e-141C-C9816-79" source="p-141C-C9258-7" target="t-141C-C9678-27">
+  </arc>
+  <arc id="e-141C-C9818-80" source="p-141C-C925D-8" target="t-141C-C96BB-28">
+  </arc>
+  <arc id="e-141C-C9883-81" source="t-141C-C96FE-32" target="p-141C-C938B-17">
+  </arc>
+  <arc id="e-141C-C9886-82" source="p-141C-C926F-10" target="t-141C-C9778-40">
+  </arc>
+  <arc id="e-141C-C9888-83" source="t-141C-C976B-39" target="p-141C-C926F-10">
+  </arc>
+  <arc id="e-141C-C988A-84" source="p-141C-C938B-17" target="t-141C-C976B-39">
+  </arc>
+  <arc id="e-141C-C988C-85" source="t-141C-C96BB-28" target="p-141C-C9386-16">
+  </arc>
+  <arc id="e-141C-C988F-86" source="t-141C-C93A2-18" target="p-141C-C925D-8">
+  </arc>
+ </page>
+ </net>
+</pnml>

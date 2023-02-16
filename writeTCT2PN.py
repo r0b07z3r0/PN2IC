@@ -54,7 +54,7 @@ def main():
             #LOOP Each Specification
             print(specs)
             globals()["p-" + str(specs)] = Place("p-" + str(specs))
-            globals()["p-" + str(specs)].setPlaceName(str(specs))
+            globals()["p-" + str(specs)].setPlaceName("p"+str(specs))
             if specs.endswith("0"):
                 globals()["p-" + str(specs)].setInitialMark("1")
             else:
