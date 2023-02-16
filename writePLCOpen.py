@@ -521,14 +521,7 @@ def definePOUs(flowlist):
         
         print('Debug seqList:')
         print(seqList)
-        for seqClean in seqList:
-            print('Debug seqClean:')
-            print(seqClean)
-            print('Debug adjustSequence:')
-            print(adjustSequence)
-            if adjustSequence[1] == 't9' or adjustSequence[1] == 't15' or adjustSequence[1] == 't13' or adjustSequence[1] == 't19' or adjustSequence[1] == 't21' or adjustSequence[1] == 't5' or adjustSequence[1] == 't1' or adjustSequence[1] == 't25' or adjustSequence[1] == 't27' or adjustSequence[1] == 't7':
-                adjustSequence.remove('JumpStep')
-            
+        for seqClean in seqList:         
             adjustSequence = removeSublistFromList(seqClean, adjustSequence)
         
         newFlowSequence = adjustSequence.copy()
@@ -1165,8 +1158,8 @@ def runPLCopenWriter():
 
 def main():
     
-    #writerpnml = open("WRITER.pnml")
-    #parsePNML(writerpnml)
+    writerpnml = open("WRITER.pnml")
+    parsePNML(writerpnml)
     flowlist = defineFlows()
     definePOUs(flowlist)
     writePLCOpen()
