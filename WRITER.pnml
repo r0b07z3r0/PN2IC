@@ -161,21 +161,21 @@
      <position x="380" y="1050" />
     </graphics>
    </place>
-   <place id="p-15C4-D567B-9">
+   <place id="p-15C4-D5680-10">
     <name>
-     <text>p16</text>
+     <text>p17</text>
      <graphics>
       <offset x="-10" y="0" />
      </graphics>
     </name>
     <label>
-     <text>waitBoxBB</text>
+     <text>rampBB</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="60" y="1430" />
+     <position x="60" y="1590" />
     </graphics>
    </place>
    <place id="p-15C4-D5753-16">
@@ -195,112 +195,38 @@
      <position x="380" y="1180" />
     </graphics>
    </place>
-   <place id="p-15C4-D5747-14">
+   <place id="p-15C4-D5665-4">
     <name>
-     <text>p20</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text>boxAlignedBB</text>
-     <graphics>
-      <offset x="10" y="-10" />
-     </graphics>
-    </label>
-    <initialMarking>
-     <text>1</text>
-    </initialMarking>
-    <graphics>
-     <position x="180" y="1940" />
-    </graphics>
-   </place>
-   <place id="p-15C4-D566B-5">
-    <name>
-     <text>p12</text>
+     <text>p11</text>
      <graphics>
       <offset x="-10" y="0" />
      </graphics>
     </name>
     <label>
-     <text>sortingConveyor</text>
+     <text>conveyorCrossing</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="500" y="880" />
+     <position x="500" y="740" />
     </graphics>
    </place>
-   <place id="p-15C4-D5685-11">
+   <place id="p-15C4-D568A-12">
     <name>
-     <text>p18</text>
+     <text>p19</text>
      <graphics>
       <offset x="-10" y="0" />
      </graphics>
     </name>
     <label>
-     <text>blueBaseOnBox</text>
+     <text>moveBoxBB</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="60" y="1770" />
-    </graphics>
-   </place>
-   <place id="p-15C4-D5680-10">
-    <name>
-     <text>p17</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>rampBB</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="60" y="1590" />
-    </graphics>
-   </place>
-   <place id="p-15C4-D5202-2">
-    <name>
-     <text>p1</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text>input1Empty</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </label>
-    <initialMarking>
-     <text>1</text>
-    </initialMarking>
-    <graphics>
-     <position x="220" y="110" />
-    </graphics>
-   </place>
-   <place id="p-15C4-D5670-6">
-    <name>
-     <text>p13</text>
-     <graphics>
-      <offset x="0" y="-10" />
-     </graphics>
-    </name>
-    <label>
-     <text>blueBaseOnConveyor</text>
-     <graphics>
-      <offset x="10" y="-10" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="60" y="1000" />
+     <position x="60" y="1940" />
     </graphics>
    </place>
    <place id="p-15C4-D568C-13">
@@ -337,55 +263,41 @@
      <position x="60" y="1140" />
     </graphics>
    </place>
-   <place id="p-15C4-D565B-3">
+   <place id="p-15C4-D5747-14">
     <name>
-     <text>p10</text>
+     <text>p20</text>
      <graphics>
-      <offset x="-10" y="0" />
+      <offset x="0" y="-10" />
      </graphics>
     </name>
     <label>
-     <text>waitCrossing</text>
+     <text>boxAlignedBB</text>
      <graphics>
-      <offset x="10" y="0" />
+      <offset x="10" y="-10" />
      </graphics>
     </label>
+    <initialMarking>
+     <text>1</text>
+    </initialMarking>
     <graphics>
-     <position x="500" y="600" />
+     <position x="180" y="1940" />
     </graphics>
    </place>
-   <place id="p-15C4-D568A-12">
+   <place id="p-15C4-D5685-11">
     <name>
-     <text>p19</text>
+     <text>p18</text>
      <graphics>
       <offset x="-10" y="0" />
      </graphics>
     </name>
     <label>
-     <text>moveBoxBB</text>
+     <text>blueBaseOnBox</text>
      <graphics>
       <offset x="10" y="0" />
      </graphics>
     </label>
     <graphics>
-     <position x="60" y="1940" />
-    </graphics>
-   </place>
-   <place id="p-15C4-D5665-4">
-    <name>
-     <text>p11</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>conveyorCrossing</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="500" y="740" />
+     <position x="60" y="1770" />
     </graphics>
    </place>
    <place id="p-15C4-D5679-8">
@@ -403,6 +315,94 @@
     </label>
     <graphics>
      <position x="60" y="1280" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D566B-5">
+    <name>
+     <text>p12</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>sortingConveyor</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="500" y="880" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D565B-3">
+    <name>
+     <text>p10</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>waitCrossing</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="500" y="600" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D5202-2">
+    <name>
+     <text>p1</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text>input1Empty</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </label>
+    <initialMarking>
+     <text>1</text>
+    </initialMarking>
+    <graphics>
+     <position x="220" y="110" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D567B-9">
+    <name>
+     <text>p16</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>waitBoxBB</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="60" y="1430" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D5670-6">
+    <name>
+     <text>p13</text>
+     <graphics>
+      <offset x="0" y="-10" />
+     </graphics>
+    </name>
+    <label>
+     <text>blueBaseOnConveyor</text>
+     <graphics>
+      <offset x="10" y="-10" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="60" y="1000" />
     </graphics>
    </place>
    <place id="p-SUPCON_S1_0">
@@ -805,23 +805,6 @@
      <position x="910" y="1760" />
     </graphics>
    </place>
-   <place id="p-15C4-D57D7-39">
-    <name>
-     <text>p43</text>
-     <graphics>
-      <offset x="-10" y="0" />
-     </graphics>
-    </name>
-    <label>
-     <text>moveBoxGL</text>
-     <graphics>
-      <offset x="10" y="0" />
-     </graphics>
-    </label>
-    <graphics>
-     <position x="910" y="1940" />
-    </graphics>
-   </place>
    <place id="p-SUPCON_S10_0">
     <name>
      <text>pSUPCON_S10_0</text>
@@ -840,6 +823,23 @@
     </initialMarking>
     <graphics>
      <position x="0" y="0" />
+    </graphics>
+   </place>
+   <place id="p-15C4-D57D7-39">
+    <name>
+     <text>p43</text>
+     <graphics>
+      <offset x="-10" y="0" />
+     </graphics>
+    </name>
+    <label>
+     <text>moveBoxGL</text>
+     <graphics>
+      <offset x="10" y="0" />
+     </graphics>
+    </label>
+    <graphics>
+     <position x="910" y="1940" />
     </graphics>
    </place>
    <place id="p-15C4-D57EF-40">
@@ -1704,92 +1704,92 @@
    <arc id="e-ARC-SUP-SUPCON_S2_19" source="t-15C4-D5894-63" target="p-SUPCON_S2_0" />
    <arc id="e-ARC-SUP-SUPCON_S3_0" source="p-SUPCON_S3_0" target="t-15C4-D595B-86" />
    <arc id="e-15C4-D597F-89" source="t-15C4-D586D-55" target="p-15C4-D5670-6" />
-   <arc id="e-15C4-D5985-90" source="p-15C4-D566B-5" target="t-15C4-D58EE-73" />
    <arc id="e-ARC-SUP-SUPCON_S3_7" source="t-15C4-D5963-88" target="p-SUPCON_S3_0" />
+   <arc id="e-15C4-D5985-90" source="p-15C4-D566B-5" target="t-15C4-D58EE-73" />
    <arc id="e-15C4-D5986-91" source="p-15C4-D566B-5" target="t-15C4-D593C-79" />
    <arc id="e-15C4-D5987-92" source="p-15C4-D567B-9" target="t-15C4-D5963-88" />
    <arc id="e-15C4-D5988-93" source="t-15C4-D5865-53" target="p-15C4-D566B-5" />
    <arc id="e-15C4-D5989-94" source="p-15C4-D5665-4" target="t-15C4-D5865-53" />
-   <arc id="e-15C4-D598A-95" source="t-15C4-D5869-54" target="p-15C4-D5765-21" />
    <arc id="e-ARC-SUP-SUPCON_S4_0" source="p-SUPCON_S4_0" target="t-15C4-D5822-50" />
+   <arc id="e-15C4-D598A-95" source="t-15C4-D5869-54" target="p-15C4-D5765-21" />
    <arc id="e-15C4-D598B-96" source="p-15C4-D5803-45" target="t-15C4-D5829-51" />
    <arc id="e-15C4-D598C-97" source="p-15C4-D57F3-41" target="t-15C4-D595F-87" />
    <arc id="e-15C4-D598E-98" source="t-15C4-D595F-87" target="p-15C4-D57F7-42" />
    <arc id="e-15C4-D598F-99" source="p-15C4-D57F7-42" target="t-15C4-D58D6-68" />
    <arc id="e-15C4-D5990-100" source="t-15C4-D595B-86" target="p-15C4-D5675-7" />
    <arc id="e-15C4-D5992-101" source="t-15C4-D58D6-68" target="p-15C4-D57F3-41" />
-   <arc id="e-15C4-D5992-102" source="t-15C4-D58D6-68" target="p-15C4-D57FD-43" />
    <arc id="e-ARC-SUP-SUPCON_S4_7" source="t-15C4-D5861-52" target="p-SUPCON_S4_0" />
+   <arc id="e-15C4-D5992-102" source="t-15C4-D58D6-68" target="p-15C4-D57FD-43" />
    <arc id="e-15C4-D5993-103" source="p-15C4-D57FD-43" target="t-15C4-D580D-47" />
    <arc id="e-15C4-D5994-104" source="t-15C4-D5886-60" target="p-15C4-D567B-9" />
    <arc id="e-15C4-D5995-105" source="t-15C4-D580D-47" target="p-15C4-D5801-44" />
    <arc id="e-15C4-D5998-106" source="p-15C4-D5801-44" target="t-15C4-D5816-49" />
-   <arc id="e-15C4-D5998-107" source="t-15C4-D5816-49" target="p-15C4-D5803-45" />
    <arc id="e-ARC-SUP-SUPCON_S5_0" source="p-SUPCON_S5_0" target="t-15C4-D5871-56" />
+   <arc id="e-15C4-D5998-107" source="t-15C4-D5816-49" target="p-15C4-D5803-45" />
    <arc id="e-15C4-D5999-108" source="p-15C4-D57B9-30" target="t-15C4-D5938-78" />
    <arc id="e-15C4-D599B-109" source="t-15C4-D5958-85" target="p-15C4-D5803-45" />
    <arc id="e-15C4-D599C-110" source="p-15C4-D57CA-35" target="t-15C4-D5958-85" />
    <arc id="e-15C4-D599D-111" source="p-15C4-D5670-6" target="t-15C4-D595B-86" />
    <arc id="e-15C4-D599E-112" source="t-15C4-D58F3-74" target="p-15C4-D57CA-35" />
    <arc id="e-15C4-D59A0-113" source="p-15C4-D5771-24" target="t-15C4-D58F3-74" />
-   <arc id="e-15C4-D59A1-114" source="t-15C4-D5807-46" target="p-15C4-D5771-24" />
    <arc id="e-ARC-SUP-SUPCON_S5_7" source="t-15C4-D5880-59" target="p-SUPCON_S5_0" />
+   <arc id="e-15C4-D59A1-114" source="t-15C4-D5807-46" target="p-15C4-D5771-24" />
    <arc id="e-15C4-D59A2-115" source="t-15C4-D5807-46" target="p-15C4-D5202-2" />
    <arc id="e-15C4-D59A3-116" source="p-15C4-D5679-8" target="t-15C4-D5886-60" />
    <arc id="e-15C4-D59A4-117" source="p-15C4-D568C-13" target="t-15C4-D5807-46" />
    <arc id="e-15C4-D59A5-118" source="t-15C4-D5877-57" target="p-15C4-D568C-13" />
-   <arc id="e-15C4-D59A6-119" source="t-15C4-D5938-78" target="p-15C4-D57BC-31" />
    <arc id="e-ARC-SUP-SUPCON_S6_0" source="p-SUPCON_S6_0" target="t-15C4-D5894-63" />
+   <arc id="e-15C4-D59A6-119" source="t-15C4-D5938-78" target="p-15C4-D57BC-31" />
    <arc id="e-15C4-D59A7-120" source="p-15C4-D5202-2" target="t-15C4-D5877-57" />
    <arc id="e-15C4-D59A9-121" source="p-15C4-D574F-15" target="t-15C4-D5822-50" />
    <arc id="e-15C4-D59AA-122" source="t-15C4-D5940-80" target="p-15C4-D5665-4" />
    <arc id="e-15C4-D59AB-123" source="t-15C4-D5822-50" target="p-15C4-D5753-16" />
    <arc id="e-15C4-D59AD-124" source="p-15C4-D5753-16" target="t-15C4-D58DD-69" />
    <arc id="e-15C4-D59AE-125" source="t-15C4-D5861-52" target="p-15C4-D575E-19" />
-   <arc id="e-15C4-D59AF-126" source="p-15C4-D575E-19" target="t-15C4-D58E6-71" />
    <arc id="e-ARC-SUP-SUPCON_S6_7" source="t-15C4-D58C9-65" target="p-SUPCON_S6_0" />
+   <arc id="e-15C4-D59AF-126" source="p-15C4-D575E-19" target="t-15C4-D58E6-71" />
    <arc id="e-15C4-D59B0-127" source="t-15C4-D58DD-69" target="p-15C4-D5757-17" />
    <arc id="e-15C4-D59B1-128" source="t-15C4-D587B-58" target="p-15C4-D5679-8" />
    <arc id="e-15C4-D59B4-129" source="p-15C4-D5757-17" target="t-15C4-D58E1-70" />
    <arc id="e-15C4-D59B5-130" source="t-15C4-D58E1-70" target="p-15C4-D575B-18" />
-   <arc id="e-15C4-D59B6-131" source="p-15C4-D575B-18" target="t-15C4-D5861-52" />
    <arc id="e-ARC-SUP-SUPCON_S7_0" source="p-SUPCON_S7_0" target="t-15C4-D5963-88" />
+   <arc id="e-15C4-D59B6-131" source="p-15C4-D575B-18" target="t-15C4-D5861-52" />
    <arc id="e-15C4-D59C9-132" source="p-15C4-D57BC-31" target="t-15C4-D588B-61" />
    <arc id="e-15C4-D59CA-133" source="p-15C4-D565B-3" target="t-15C4-D5940-80" />
    <arc id="e-15C4-D59CB-134" source="t-15C4-D58CD-66" target="p-15C4-D574F-15" />
    <arc id="e-15C4-D59CC-135" source="p-15C4-D57AD-27" target="t-15C4-D5880-59" />
    <arc id="e-15C4-D59CF-136" source="t-15C4-D592B-76" target="p-15C4-D57AD-27" />
    <arc id="e-15C4-D59D0-137" source="p-15C4-D5778-26" target="t-15C4-D592B-76" />
-   <arc id="e-15C4-D59D1-138" source="t-15C4-D58F7-75" target="p-15C4-D5778-26" />
    <arc id="e-ARC-SUP-SUPCON_S7_7" source="t-15C4-D58C3-64" target="p-SUPCON_S7_0" />
+   <arc id="e-15C4-D59D1-138" source="t-15C4-D58F7-75" target="p-15C4-D5778-26" />
    <arc id="e-15C4-D59D2-139" source="p-15C4-D57B1-28" target="t-15C4-D5933-77" />
    <arc id="e-15C4-D59D3-140" source="t-15C4-D58EA-72" target="p-15C4-D5769-22" />
    <arc id="e-15C4-D59D4-141" source="t-15C4-D5880-59" target="p-15C4-D57B1-28" />
    <arc id="e-15C4-D59D5-142" source="p-15C4-D5775-25" target="t-15C4-D58F7-75" />
-   <arc id="e-15C4-D59D6-143" source="t-15C4-D5871-56" target="p-15C4-D5775-25" />
    <arc id="e-ARC-SUP-SUPCON_S8_0" source="p-SUPCON_S8_0" target="t-15C4-D5861-52" />
+   <arc id="e-15C4-D59D6-143" source="t-15C4-D5871-56" target="p-15C4-D5775-25" />
    <arc id="e-15C4-D59D8-144" source="t-15C4-D5829-51" target="p-15C4-D565B-3" />
    <arc id="e-15C4-D59D9-145" source="p-15C4-D576D-23" target="t-15C4-D5871-56" />
    <arc id="e-15C4-D59DA-146" source="t-15C4-D588B-61" target="p-15C4-D57B9-30" />
    <arc id="e-15C4-D59DB-147" source="t-15C4-D58EE-73" target="p-15C4-D576D-23" />
    <arc id="e-15C4-D59DC-148" source="p-15C4-D57D7-39" target="t-15C4-D5953-84" />
    <arc id="e-15C4-D59DD-149" source="p-15C4-D57BF-32" target="t-15C4-D5894-63" />
-   <arc id="e-15C4-D59DE-150" source="t-15C4-D5894-63" target="p-15C4-D57C3-33" />
    <arc id="e-ARC-SUP-SUPCON_S8_7" source="t-15C4-D58EA-72" target="p-SUPCON_S8_0" />
+   <arc id="e-15C4-D59DE-150" source="t-15C4-D5894-63" target="p-15C4-D57C3-33" />
    <arc id="e-15C4-D59E0-151" source="p-15C4-D57C3-33" target="t-15C4-D5945-81" />
    <arc id="e-15C4-D59E1-152" source="p-15C4-D5680-10" target="t-15C4-D588F-62" />
    <arc id="e-15C4-D59E3-153" source="t-15C4-D58C9-65" target="p-15C4-D57D1-37" />
    <arc id="e-15C4-D59E3-154" source="p-15C4-D57D1-37" target="t-15C4-D594E-83" />
-   <arc id="e-15C4-D59E4-155" source="p-15C4-D566B-5" target="t-15C4-D586D-55" />
    <arc id="e-ARC-SUP-SUPCON_S9_0" source="p-SUPCON_S9_0" target="t-15C4-D5880-59" />
+   <arc id="e-15C4-D59E4-155" source="p-15C4-D566B-5" target="t-15C4-D586D-55" />
    <arc id="e-15C4-D59E5-156" source="t-15C4-D5945-81" target="p-15C4-D57C7-34" />
    <arc id="e-15C4-D59E6-157" source="p-15C4-D57C7-34" target="t-15C4-D5949-82" />
    <arc id="e-15C4-D59E7-158" source="t-15C4-D5949-82" target="p-15C4-D57CE-36" />
    <arc id="e-15C4-D59EA-159" source="t-15C4-D5953-84" target="p-15C4-D57EF-40" />
    <arc id="e-15C4-D59EB-160" source="p-15C4-D57CE-36" target="t-15C4-D58C9-65" />
    <arc id="e-15C4-D59EC-161" source="t-15C4-D593C-79" target="p-15C4-D57BF-32" />
-   <arc id="e-15C4-D59ED-162" source="t-15C4-D58D1-67" target="p-15C4-D57D7-39" />
    <arc id="e-ARC-SUP-SUPCON_S9_7" source="t-15C4-D5938-78" target="p-SUPCON_S9_0" />
+   <arc id="e-15C4-D59ED-162" source="t-15C4-D58D1-67" target="p-15C4-D57D7-39" />
    <arc id="e-15C4-D59EE-163" source="p-15C4-D568A-12" target="t-15C4-D58C3-64" />
    <arc id="e-15C4-D59EF-164" source="t-15C4-D5963-88" target="p-15C4-D5680-10" />
    <arc id="e-15C4-D59F0-165" source="t-15C4-D58C3-64" target="p-15C4-D5747-14" />

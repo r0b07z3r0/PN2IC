@@ -75,6 +75,9 @@ class Steps:
     instances: set
     instances = set()
     
+    nameInstances: set
+    nameInstances = set()
+    
     stepsInstances = []
     listStepsName = []
     
@@ -86,7 +89,7 @@ class Steps:
     
     def setStepsName(self, name):
         self.name = name
-        #Steps.instances.add(self)
+        Steps.nameInstances.add(self)
         Steps.listStepsName.append(self.name)
     
     def setStepsLabel(self, label):
@@ -112,10 +115,23 @@ class Steps:
                 return instance.localID
             
     @classmethod
+    def getStepPOU(cls, name):
+        for instance in cls.nameInstances:
+            if instance.name == name:
+                return instance.POUname
+     
+    @classmethod
+    def getStepName(cls, id):
+        for instance in cls.instances:
+            if instance.id == id:
+                return instance.name
+                   
+    @classmethod
     def print_instances(cls):
         for instance in cls.instances:
             print('ID: ' + instance.id)
             print('Name: ' + instance.name)
+            print('POU: ' + instance.POUname)
             print('InitialStep: ' + instance.initialStep)
             print("LocalID:" + instance.localID)
             
@@ -1123,9 +1139,13 @@ def writePLCOpen():
             specif = re.findall("p-(.*)", pSpec)[0]
             print("Specification:")
             print(specif)
-            if specif.startswith("Spec"):
+            if specif.startswith("SUPCON"):
+                print("sup POU name")
+                print(pSpec)
+                stepPouName = Steps.getStepPOU("p"+specif)
+                print(stepPouName)
                 specif2 = re.findall("(.*)_", specif)[0]
-                decList.append(" AND " + specif2 + "." + specif + ".x")
+                decList.append(" AND " + stepPouName + ".AUTONET_" + specif + ".x")
             print("End specification")
         
         transitionName = tr.name
