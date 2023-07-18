@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--created Mon Jul 17 21:57:40 2023 by ndrio version 3.7.0-->
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="n-4254-C6F64-0" type ="http://www.laas.fr/tina/tpn">
+  <name>
+   <text>maquinasCompartilhaEsteira</text>
+  </name>
+ <page id="g-4254-C6FA8-1">
+  <place id="p-4254-C6FB1-2">
+  <name>
+   <text>p1</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>esteiraAlimentadora1Vazia</text>
+    <graphics>
+     <offset x="0" y="10" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="105" y="290"/>
+   </graphics>
+  </place>
+  <place id="p-4254-C6FD7-3">
+  <name>
+   <text>p10</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>bracoPivoDesligado</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="765" y="515"/>
+   </graphics>
+  </place>
+  <place id="p-4254-C6FE2-4">
+  <name>
+   <text>p11</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>bracoPivoAtuado</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="765" y="625"/>
+   </graphics>
+  </place>
+  <place id="p-4254-C6FE8-5">
+  <name>
+   <text>p12</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>pecaEsperaPassagem</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="450" y="705"/>
+   </graphics>
+  </place>
+  <place id="p-4254-C6FEF-6">
+  <name>
+   <text>p13</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>pecaCruzandoEsteira</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="370" y="870"/>
+   </graphics>
+  </place>
+  <place id="p-4254-C6FF5-7">
+  <name>
+   <text>p14</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>cruzamentoLivre</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="535" y="870"/>
+   </graphics>
+  </place>
+  <place id="p-4254-C6FFD-8">
+  <name>
+   <text>p15</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>esteiraPalletLivre</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="990" y="935"/>
+   </graphics>
+  </place>
+  <place id="p-4254-C7004-9">
+  <name>
+   <text>p16</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>palletEsperaPassagem</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="750" y="715"/>
+   </graphics>
+  </place>
+  <place id="p-4254-C700B-10">
+  <name>
+   <text>p17</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>esteiraPalletOcupada</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="750" y="860"/>
+   </graphics>
+  </place>
+  <place id="p-4254-C7013-11">
+  <name>
+   <text>p2</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>esteiraAlimentadora1Cheia</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="230" y="55"/>
+   </graphics>
+  </place>
+  <place id="p-4254-C701C-12">
+  <name>
+   <text>p3</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>maquina1Alimentada</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="230" y="210"/>
+   </graphics>
+  </place>
+  <place id="p-4254-C70EF-13">
+  <name>
+   <text>p4</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>maquina1EmTrabalho</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="230" y="360"/>
+   </graphics>
+  </place>
+  <place id="p-4254-C70FD-14">
+  <name>
+   <text>p5</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>esteiraAlimentadora2Vazia</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="835" y="290"/>
+   </graphics>
+  </place>
+  <place id="p-4254-C7107-15">
+  <name>
+   <text>p6</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>esteiraAlimentadora2Cheia</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="715" y="50"/>
+   </graphics>
+  </place>
+  <place id="p-4254-C710E-16">
+  <name>
+   <text>p7</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>maquina2Alimentada</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="715" y="205"/>
+   </graphics>
+  </place>
+  <place id="p-4254-C7116-17">
+  <name>
+   <text>p8</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>maquina2EmTrabalho</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="715" y="350"/>
+   </graphics>
+  </place>
+  <place id="p-4254-C711D-18">
+  <name>
+   <text>p9</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>pecaNaEsteiraCompartilhada</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="450" y="520"/>
+   </graphics>
+  </place>
+  <transition id="t-4254-C7125-19">
+  <name>
+   <text>t1</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_atuadorAlimentador1</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="230" y="130"/>
+   </graphics>
+  </transition>
+  <transition id="t-4254-C712F-20">
+  <name>
+   <text>t10</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorMaquina2EmTrabalho</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="715" y="290"/>
+   </graphics>
+  </transition>
+  <transition id="t-4254-C7137-21">
+  <name>
+   <text>t12</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorSaidaMaquina2</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="715" y="445"/>
+   </graphics>
+  </transition>
+  <transition id="t-4254-C713F-22">
+  <name>
+   <text>t14</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorMetal</text>
+    <graphics>
+     <offset x="0" y="10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="650" y="560"/>
+   </graphics>
+  </transition>
+  <transition id="t-4254-C7146-23">
+  <name>
+   <text>t16</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorDescarte</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="890" y="560"/>
+   </graphics>
+  </transition>
+  <transition id="t-4254-C714D-24">
+  <name>
+   <text>t18</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorCruzamentoEsteira</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="450" y="620"/>
+   </graphics>
+  </transition>
+  <transition id="t-4254-C7155-25">
+  <name>
+   <text>t2</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorEsteiraAlimentadora1</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="105" y="55"/>
+   </graphics>
+  </transition>
+  <transition id="t-4254-C71CC-26">
+  <name>
+   <text>t20</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorSaidaCruzamentoPeca</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="450" y="945"/>
+   </graphics>
+  </transition>
+  <transition id="t-4254-C71D5-27">
+  <name>
+   <text>t22</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorCruzamentoPallet</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="990" y="715"/>
+   </graphics>
+  </transition>
+  <transition id="t-4254-C71E1-28">
+  <name>
+   <text>t24</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_saidaCruzamentoPallet</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="750" y="935"/>
+   </graphics>
+  </transition>
+  <transition id="t-4254-C71EA-29">
+  <name>
+   <text>t3</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_atuadorAlimentador2</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="715" y="120"/>
+   </graphics>
+  </transition>
+  <transition id="t-4254-C71F2-30">
+  <name>
+   <text>t4</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorMaquina1EmTrabalho</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="230" y="290"/>
+   </graphics>
+  </transition>
+  <transition id="t-4254-C71FA-31">
+  <name>
+   <text>t5</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_atuadorBloqueioPeca</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="450" y="795"/>
+   </graphics>
+  </transition>
+  <transition id="t-4254-C7202-32">
+  <name>
+   <text>t6</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorSaidaMaquina1</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="230" y="445"/>
+   </graphics>
+  </transition>
+  <transition id="t-4254-C720A-33">
+  <name>
+   <text>t7</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_atuadorBloqueioPallet</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="750" y="790"/>
+   </graphics>
+  </transition>
+  <transition id="t-4254-C7212-34">
+  <name>
+   <text>t8</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorEsteiraAlimentadora2</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="835" y="50"/>
+   </graphics>
+  </transition>
+  <arc id="e-4254-C7221-35" source="t-4254-C720A-33" target="p-4254-C700B-10">
+  </arc>
+  <arc id="e-4254-C7227-36" source="p-4254-C700B-10" target="t-4254-C71E1-28">
+  </arc>
+  <arc id="e-4254-C7229-37" source="p-4254-C6FFD-8" target="t-4254-C71D5-27">
+  </arc>
+  <arc id="e-4254-C722B-38" source="t-4254-C7146-23" target="p-4254-C6FD7-3">
+  </arc>
+  <arc id="e-4254-C722D-39" source="p-4254-C6FE2-4" target="t-4254-C7146-23">
+  </arc>
+  <arc id="e-4254-C722F-40" source="p-4254-C6FD7-3" target="t-4254-C713F-22">
+  </arc>
+  <arc id="e-4254-C7231-41" source="p-4254-C711D-18" target="t-4254-C714D-24">
+  </arc>
+  <arc id="e-4254-C7235-42" source="p-4254-C70FD-14" target="t-4254-C7212-34">
+  </arc>
+  <arc id="e-4254-C7237-43" source="t-4254-C7212-34" target="p-4254-C7107-15">
+  </arc>
+  <arc id="e-4254-C7239-44" source="p-4254-C7107-15" target="t-4254-C71EA-29">
+  </arc>
+  <arc id="e-4254-C7263-45" source="t-4254-C71EA-29" target="p-4254-C710E-16">
+  </arc>
+  <arc id="e-4254-C7265-46" source="p-4254-C7004-9" target="t-4254-C720A-33">
+  </arc>
+  <arc id="e-4254-C7267-47" source="p-4254-C710E-16" target="t-4254-C712F-20">
+  </arc>
+  <arc id="e-4254-C7269-48" source="t-4254-C712F-20" target="p-4254-C7116-17">
+  </arc>
+  <arc id="e-4254-C7272-49" source="p-4254-C7116-17" target="t-4254-C7137-21">
+  </arc>
+  <arc id="e-4254-C7274-50" source="t-4254-C7137-21" target="p-4254-C711D-18">
+  </arc>
+  <arc id="e-4254-C7276-51" source="t-4254-C713F-22" target="p-4254-C6FE2-4">
+  </arc>
+  <arc id="e-4254-C7278-52" source="p-4254-C711D-18" target="t-4254-C713F-22">
+  </arc>
+  <arc id="e-4254-C727A-53" source="t-4254-C7202-32" target="p-4254-C711D-18">
+  </arc>
+  <arc id="e-4254-C727C-54" source="p-4254-C70EF-13" target="t-4254-C7202-32">
+  </arc>
+  <arc id="e-4254-C727E-55" source="t-4254-C71F2-30" target="p-4254-C70EF-13">
+  </arc>
+  <arc id="e-4254-C727F-56" source="p-4254-C701C-12" target="t-4254-C71F2-30">
+  </arc>
+  <arc id="e-4254-C7284-57" source="t-4254-C71D5-27" target="p-4254-C7004-9">
+  </arc>
+  <arc id="e-4254-C7286-58" source="t-4254-C7125-19" target="p-4254-C701C-12">
+  </arc>
+  <arc id="e-4254-C7288-59" source="p-4254-C7013-11" target="t-4254-C7125-19">
+  </arc>
+  <arc id="e-4254-C728A-60" source="t-4254-C7155-25" target="p-4254-C7013-11">
+  </arc>
+  <arc id="e-4254-C728C-61" source="p-4254-C6FB1-2" target="t-4254-C7155-25">
+  </arc>
+  <arc id="e-4254-C728E-62" source="p-4254-C6FF5-7" target="t-4254-C71FA-31">
+  </arc>
+  <arc id="e-4254-C7290-63" source="t-4254-C712F-20" target="p-4254-C70FD-14">
+  </arc>
+  <arc id="e-4254-C7292-64" source="t-4254-C71F2-30" target="p-4254-C6FB1-2">
+  </arc>
+  <arc id="e-4254-C7297-65" source="t-4254-C71FA-31" target="p-4254-C6FEF-6">
+  </arc>
+  <arc id="e-4254-C7299-66" source="p-4254-C6FE8-5" target="t-4254-C71FA-31">
+  </arc>
+  <arc id="e-4254-C729B-67" source="t-4254-C714D-24" target="p-4254-C6FE8-5">
+  </arc>
+  <arc id="e-4254-C729D-68" source="t-4254-C71CC-26" target="p-4254-C6FF5-7">
+  </arc>
+  <arc id="e-4254-C729E-69" source="p-4254-C6FEF-6" target="t-4254-C71CC-26">
+  </arc>
+  <arc id="e-4254-C72A0-70" source="t-4254-C71E1-28" target="p-4254-C6FFD-8">
+  </arc>
+ </page>
+ </net>
+</pnml>

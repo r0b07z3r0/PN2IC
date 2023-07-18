@@ -1,0 +1,82 @@
+p 210.0 110.0 p1 1 e esteiraAlimentadora1Vazia w
+p 800.0 480.0 p10 1 n bracoPivoDesligado e
+p 800.0 580.0 p11 0 n bracoPivoAtuado e
+p 490.0 660.0 p12 0 e pecaEsperaPassagem w
+p 410.0 830.0 p13 0 e pecaCruzandoEsteira w
+p 580.0 830.0 p14 1 w cruzamentoLivre e
+p 1030.0 900.0 p15 1 n esteiraPalletLivre e
+p 790.0 680.0 p16 0 w palletEsperaPassgem n
+p 790.0 820.0 p17 0 w esteiraPalletOcupada e
+p 330.0 110.0 p2 0 e esteiraAlimentadora1Cheia ne
+p 270.0 230.0 p3 0 w maquina1Alimentada e
+p 270.0 360.0 p4 0 w maquina1EmTrabalho e
+p 650.0 110.0 p5 1 w esteiraAlimentadora2Vazia sw
+p 770.0 110.0 p6 0 w esteiraAlimentadora2Cheia e
+p 710.0 230.0 p7 0 w maquina2Alimentada e
+p 710.0 360.0 p8 0 w maquina2EmTrabalho e
+p 490.0 480.0 p9 0 nw pecaNaEsteiraCompartilhada w
+t 270.0 170.0 t1 c 0 w n c_atuadorAlimentador1 w
+t 710.0 300.0 t10 c 0 w n o_sensorMaquina2EmTrabalho e
+t 710.0 420.0 t12 c 0 w n o_sensorSaidaMaquina2 e
+t 690.0 520.0 t14 c 0 w n o_sensorMetal s
+t 930.0 520.0 t16 c 0 w n o_sensorDescarte e
+t 490.0 580.0 t18 c 0 w n o_sensorCruzamentoEsteira w
+t 270.0 50.0 t2 c 0 w n o_sensorEsteiraAlimentadora1 n
+t 490.0 900.0 t20 c 0 w n o_sensorSaidaCruzamentoPeca w
+t 1030.0 680.0 t22 c 0 w n o_sensorCruzamentoPallet e
+t 790.0 900.0 t24 c 0 w n o_saidaCruzamentoPallet w
+t 710.0 170.0 t3 c 0 w n c_atuadorAlimentador2 e
+t 270.0 300.0 t4 c 0 w n o_sensorMaquina1EmTrabalho e
+t 490.0 760.0 t5 c 0 w n c_atuadorBloqueioPeca w
+t 270.0 420.0 t6 c 0 w n o_sensorSaidaMaquina1 e
+t 790.0 750.0 t7 c 0 w n c_atuadorBloqueioPallet e
+t 710.0 50.0 t8 c 0 w n o_sensorEsteiraAlimentadora2 n
+p 510.0 225.0 pSUPCON_S1_0 1 n AUTONET_SUPCON_S1_0 se
+p 645.0 690.0 pSUPCON_S2_0 1 n AUTONET_SUPCON_S2_0 s
+e t24 pSUPCON_S2_0 1 n
+e t20 pSUPCON_S2_0 1 n
+e pSUPCON_S2_0 t7 1 n
+e pSUPCON_S2_0 t5 1 n
+e pSUPCON_S1_0 t3 1 n
+e t5 pSUPCON_S1_0 1 n
+e t14 pSUPCON_S1_0 1 n
+e pSUPCON_S1_0 t1 1 n
+e t24 p15 1 n
+e p13 t20 1 n
+e t20 p14 1 n
+e t18 p12 1 n
+e p12 t5 1 n
+e t5 p13 1 n
+e p14 t5 1 n
+e p1 t2 1 n
+e t2 p2 1 n
+e p2 t1 1 n
+e t1 p1 1 n
+e t1 p3 1 n
+e p3 t4 1 n
+e t22 p16 1 n
+e t4 p4 1 n
+e p4 t6 1 n
+e t6 p9 1 n
+e p9 t14 1 n
+e t14 p11 1 n
+e t12 p9 1 n
+e p8 t12 1 n
+e t10 p8 1 n
+e p7 t10 1 n
+e t3 p7 1 n
+e p16 t7 1 n
+e t3 p5 1 n
+e p6 t3 1 n
+e t8 p6 1 n
+e p5 t8 1 n
+e p9 t18 1 n
+e p10 t14 1 n
+e p11 t16 1 n
+e t16 p10 1 n
+e p15 t22 1 n
+e p17 t24 1 n
+e t7 p17 1 n
+h compartilhaEsteiraAutoNet
+
+

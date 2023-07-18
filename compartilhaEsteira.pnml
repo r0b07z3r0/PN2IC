@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--created Sat Jul 15 19:29:19 2023 by ndrio version 3.7.0-->
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="n-41B4-8CF62-0" type ="http://www.laas.fr/tina/tpn">
+  <name>
+   <text>compartilhaEsteira</text>
+  </name>
+ <page id="g-41B4-8D30F-1">
+  <place id="p-41B4-8D313-2">
+  <name>
+   <text>p1</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>esteiraAlimentadora1Vazia</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="210" y="110"/>
+   </graphics>
+  </place>
+  <place id="p-41B4-8D8A7-3">
+  <name>
+   <text>p10</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>bracoPivoDesligado</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="805" y="475"/>
+   </graphics>
+  </place>
+  <place id="p-41B4-8D8B2-4">
+  <name>
+   <text>p11</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>bracoPivoAtuado</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="805" y="585"/>
+   </graphics>
+  </place>
+  <place id="p-41B4-8D8B5-5">
+  <name>
+   <text>p12</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>pecaEsperaPassagem</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="490" y="665"/>
+   </graphics>
+  </place>
+  <place id="p-41B4-8D8B9-6">
+  <name>
+   <text>p13</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>pecaCruzandoEsteira</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="410" y="830"/>
+   </graphics>
+  </place>
+  <place id="p-41B4-8D8BD-7">
+  <name>
+   <text>p14</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>cruzamentoLivre</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="575" y="830"/>
+   </graphics>
+  </place>
+  <place id="p-41B4-8D8C1-8">
+  <name>
+   <text>p15</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>esteiraPalletLivre</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="1030" y="895"/>
+   </graphics>
+  </place>
+  <place id="p-41B4-8D8C5-9">
+  <name>
+   <text>p16</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>palletEsperaPassgem</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="790" y="675"/>
+   </graphics>
+  </place>
+  <place id="p-41B4-8D8CA-10">
+  <name>
+   <text>p17</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>esteiraPalletOcupada</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="790" y="820"/>
+   </graphics>
+  </place>
+  <place id="p-41B4-8D8CE-11">
+  <name>
+   <text>p2</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>esteiraAlimentadora1Cheia</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="330" y="110"/>
+   </graphics>
+  </place>
+  <place id="p-41B4-8D8D3-12">
+  <name>
+   <text>p3</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>maquina1Alimentada</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="270" y="230"/>
+   </graphics>
+  </place>
+  <place id="p-41B4-8D8D7-13">
+  <name>
+   <text>p4</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>maquina1EmTrabalho</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="270" y="360"/>
+   </graphics>
+  </place>
+  <place id="p-41B4-8DAA9-14">
+  <name>
+   <text>p5</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>esteiraAlimentadora2Vazia</text>
+    <graphics>
+     <offset x="-10" y="10" />
+    </graphics>
+   </label>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="650" y="110"/>
+   </graphics>
+  </place>
+  <place id="p-41B4-8DAB6-15">
+  <name>
+   <text>p6</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>esteiraAlimentadora2Cheia</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="770" y="110"/>
+   </graphics>
+  </place>
+  <place id="p-41B4-8DABB-16">
+  <name>
+   <text>p7</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>maquina2Alimentada</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="710" y="230"/>
+   </graphics>
+  </place>
+  <place id="p-41B4-8DABF-17">
+  <name>
+   <text>p8</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>maquina2EmTrabalho</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="710" y="360"/>
+   </graphics>
+  </place>
+  <place id="p-41B4-8DAC3-18">
+  <name>
+   <text>p9</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+  </name>
+   <label>
+    <text>pecaNaEsteiraCompartilhada</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="490" y="480"/>
+   </graphics>
+  </place>
+  <transition id="t-41B4-8DAC8-19">
+  <name>
+   <text>t1</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_atuadorAlimentador1</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="270" y="170"/>
+   </graphics>
+  </transition>
+  <transition id="t-41B4-8DACF-20">
+  <name>
+   <text>t10</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorMaquina2EmTrabalho</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="710" y="300"/>
+   </graphics>
+  </transition>
+  <transition id="t-41B4-8DAD3-21">
+  <name>
+   <text>t12</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorSaidaMaquina2</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="710" y="420"/>
+   </graphics>
+  </transition>
+  <transition id="t-41B4-8DAD7-22">
+  <name>
+   <text>t14</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorMetal</text>
+    <graphics>
+     <offset x="0" y="10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="690" y="520"/>
+   </graphics>
+  </transition>
+  <transition id="t-41B4-8DADB-23">
+  <name>
+   <text>t16</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorDescarte</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="930" y="520"/>
+   </graphics>
+  </transition>
+  <transition id="t-41B4-8DADF-24">
+  <name>
+   <text>t18</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorCruzamentoEsteira</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="490" y="580"/>
+   </graphics>
+  </transition>
+  <transition id="t-41B4-8DAE3-25">
+  <name>
+   <text>t2</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorEsteiraAlimentadora1</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="270" y="50"/>
+   </graphics>
+  </transition>
+  <transition id="t-41B4-8DB24-26">
+  <name>
+   <text>t20</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorSaidaCruzamentoPeca</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="490" y="905"/>
+   </graphics>
+  </transition>
+  <transition id="t-41B4-8DB2B-27">
+  <name>
+   <text>t22</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorCruzamentoPallet</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="1030" y="675"/>
+   </graphics>
+  </transition>
+  <transition id="t-41B4-8DB2F-28">
+  <name>
+   <text>t24</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_saidaCruzamentoPallet</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="790" y="895"/>
+   </graphics>
+  </transition>
+  <transition id="t-41B4-8DB33-29">
+  <name>
+   <text>t3</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_atuadorAlimentador2</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="710" y="170"/>
+   </graphics>
+  </transition>
+  <transition id="t-41B4-8DB37-30">
+  <name>
+   <text>t4</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorMaquina1EmTrabalho</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="270" y="300"/>
+   </graphics>
+  </transition>
+  <transition id="t-41B4-8DB3B-31">
+  <name>
+   <text>t5</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_atuadorBloqueioPeca</text>
+    <graphics>
+     <offset x="-10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="490" y="755"/>
+   </graphics>
+  </transition>
+  <transition id="t-41B4-8DB3F-32">
+  <name>
+   <text>t6</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorSaidaMaquina1</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="270" y="420"/>
+   </graphics>
+  </transition>
+  <transition id="t-41B4-8DB43-33">
+  <name>
+   <text>t7</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>c_atuadorBloqueioPallet</text>
+    <graphics>
+     <offset x="10" y="0" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="790" y="750"/>
+   </graphics>
+  </transition>
+  <transition id="t-41B4-8DB47-34">
+  <name>
+   <text>t8</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>o_sensorEsteiraAlimentadora2</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="710" y="50"/>
+   </graphics>
+  </transition>
+  <arc id="e-41B4-8DB51-35" source="t-41B4-8DB43-33" target="p-41B4-8D8CA-10">
+  </arc>
+  <arc id="e-41B4-8DB56-36" source="p-41B4-8D8CA-10" target="t-41B4-8DB2F-28">
+  </arc>
+  <arc id="e-41B4-8DB57-37" source="p-41B4-8D8C1-8" target="t-41B4-8DB2B-27">
+  </arc>
+  <arc id="e-41B4-8DB58-38" source="t-41B4-8DADB-23" target="p-41B4-8D8A7-3">
+  </arc>
+  <arc id="e-41B4-8DB59-39" source="p-41B4-8D8B2-4" target="t-41B4-8DADB-23">
+  </arc>
+  <arc id="e-41B4-8DB5A-40" source="p-41B4-8D8A7-3" target="t-41B4-8DAD7-22">
+  </arc>
+  <arc id="e-41B4-8DB5B-41" source="p-41B4-8DAC3-18" target="t-41B4-8DADF-24">
+  </arc>
+  <arc id="e-41B4-8DB5E-42" source="p-41B4-8DAA9-14" target="t-41B4-8DB47-34">
+  </arc>
+  <arc id="e-41B4-8DB5F-43" source="t-41B4-8DB47-34" target="p-41B4-8DAB6-15">
+  </arc>
+  <arc id="e-41B4-8DB5F-44" source="p-41B4-8DAB6-15" target="t-41B4-8DB33-29">
+  </arc>
+  <arc id="e-41B4-8DB75-45" source="t-41B4-8DB33-29" target="p-41B4-8DAA9-14">
+  </arc>
+  <arc id="e-41B4-8DB76-46" source="p-41B4-8D8C5-9" target="t-41B4-8DB43-33">
+  </arc>
+  <arc id="e-41B4-8DB77-47" source="t-41B4-8DB33-29" target="p-41B4-8DABB-16">
+  </arc>
+  <arc id="e-41B4-8DB78-48" source="p-41B4-8DABB-16" target="t-41B4-8DACF-20">
+  </arc>
+  <arc id="e-41B4-8DB79-49" source="t-41B4-8DACF-20" target="p-41B4-8DABF-17">
+  </arc>
+  <arc id="e-41B4-8DB7B-50" source="p-41B4-8DABF-17" target="t-41B4-8DAD3-21">
+  </arc>
+  <arc id="e-41B4-8DB7C-51" source="t-41B4-8DAD3-21" target="p-41B4-8DAC3-18">
+  </arc>
+  <arc id="e-41B4-8DB7D-52" source="t-41B4-8DAD7-22" target="p-41B4-8D8B2-4">
+  </arc>
+  <arc id="e-41B4-8DB7E-53" source="p-41B4-8DAC3-18" target="t-41B4-8DAD7-22">
+  </arc>
+  <arc id="e-41B4-8DB7F-54" source="t-41B4-8DB3F-32" target="p-41B4-8DAC3-18">
+  </arc>
+  <arc id="e-41B4-8DB80-55" source="p-41B4-8D8D7-13" target="t-41B4-8DB3F-32">
+  </arc>
+  <arc id="e-41B4-8DB81-56" source="t-41B4-8DB37-30" target="p-41B4-8D8D7-13">
+  </arc>
+  <arc id="e-41B4-8DB83-57" source="t-41B4-8DB2B-27" target="p-41B4-8D8C5-9">
+  </arc>
+  <arc id="e-41B4-8DB84-58" source="p-41B4-8D8D3-12" target="t-41B4-8DB37-30">
+  </arc>
+  <arc id="e-41B4-8DB85-59" source="t-41B4-8DAC8-19" target="p-41B4-8D8D3-12">
+  </arc>
+  <arc id="e-41B4-8DB86-60" source="t-41B4-8DAC8-19" target="p-41B4-8D313-2">
+  </arc>
+  <arc id="e-41B4-8DB87-61" source="p-41B4-8D8CE-11" target="t-41B4-8DAC8-19">
+  </arc>
+  <arc id="e-41B4-8DB87-62" source="t-41B4-8DAE3-25" target="p-41B4-8D8CE-11">
+  </arc>
+  <arc id="e-41B4-8DB88-63" source="p-41B4-8D313-2" target="t-41B4-8DAE3-25">
+  </arc>
+  <arc id="e-41B4-8DB89-64" source="p-41B4-8D8BD-7" target="t-41B4-8DB3B-31">
+  </arc>
+  <arc id="e-41B4-8DB8B-65" source="t-41B4-8DB3B-31" target="p-41B4-8D8B9-6">
+  </arc>
+  <arc id="e-41B4-8DB8C-66" source="p-41B4-8D8B5-5" target="t-41B4-8DB3B-31">
+  </arc>
+  <arc id="e-41B4-8DB8D-67" source="t-41B4-8DADF-24" target="p-41B4-8D8B5-5">
+  </arc>
+  <arc id="e-41B4-8DB8E-68" source="t-41B4-8DB24-26" target="p-41B4-8D8BD-7">
+  </arc>
+  <arc id="e-41B4-8DB8E-69" source="p-41B4-8D8B9-6" target="t-41B4-8DB24-26">
+  </arc>
+  <arc id="e-41B4-8DB8F-70" source="t-41B4-8DB2F-28" target="p-41B4-8D8C1-8">
+  </arc>
+ </page>
+ </net>
+</pnml>

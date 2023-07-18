@@ -6,6 +6,7 @@ from tokenize import String
 from parsePNML import ET, getET, Net, Page, Place, Transition, Arc, parsePNML, runPNMLParse
 import xml.etree.ElementTree as POxml
 import re
+import gc
 
 #flowlist = []
 #global sfcSeq
@@ -113,11 +114,19 @@ class Steps:
         for instance in cls.instances:
             if instance.id == id:
                 return instance.localID
-            
+    
     @classmethod
-    def getStepPOU(cls, name):
+    def getStepListPOU(cls, name):
+        listPou = []
         for instance in cls.nameInstances:
             if instance.name == name:
+                listPou.append(instance.id)        
+        return listPou
+                    
+    @classmethod
+    def getStepPOU(cls, id):
+        for instance in cls.nameInstances:
+            if instance.id == id:
                 return instance.POUname
      
     @classmethod
@@ -554,7 +563,7 @@ def definePOUs(flowlist):
                 trList.append(eachTr)
         
         print('Adding selDiverge to Place with > 1 transition')
-        
+        print(newFlowSequence)
         newFlowAux = newFlowSequence.copy()
         
         selDivNum = 0
@@ -1133,19 +1142,26 @@ def writePLCOpen():
     for tr in Transition.instances:
         
         decList = []
-        #print(tr.name)
+        print("Writing transition logic control")
         print(Arc.getTPre(tr.id))
-        for pSpec in Arc.getTPre(tr.id):
-            specif = re.findall("p-(.*)", pSpec)[0]
-            print("Specification:")
-            print(specif)
-            if specif.startswith("SUPCON"):
-                print("sup POU name")
-                print(pSpec)
-                stepPouName = Steps.getStepPOU("p"+specif)
-                print(stepPouName)
-                specif2 = re.findall("(.*)_", specif)[0]
-                decList.append(" AND " + stepPouName + ".AUTONET_" + specif + ".x")
+        for prevPlace in Arc.getTPre(tr.id):
+            prevSteps = Steps.getStepListPOU(Place.getName(prevPlace))
+            print(prevSteps)
+            for eachPrevStep in prevSteps:
+                eachPrevStepPou = re.findall("^(flow_\d+)", eachPrevStep)[0]
+                eachPrevPlaceName = re.findall("_\d+_(.*)", eachPrevStep)[0]
+                eachPrevStepName = Place.getLabel(eachPrevPlaceName)
+
+                if 'SUPCON' in eachPrevPlaceName:
+                    eachPrevPlaceName = re.findall("p(.*)", eachPrevPlaceName)[0]
+                    eachPrevStepName = "AUTONET_" + eachPrevPlaceName
+                    
+                print(eachPrevStepPou)
+                print(eachPrevPlaceName)
+                #eachPrevStepName = Place.getLabel(eachPrevPlaceName)
+                
+
+                decList.append(" AND " + eachPrevStepPou + "." + eachPrevStepName + ".x")
             print("End specification")
         
         transitionName = tr.name
@@ -1179,7 +1195,7 @@ def runPLCopenWriter():
 def main():
     
     writerpnml = open("WRITER.pnml")
-    parsePNML(writerpnml)
+    #parsePNML(writerpnml)
     flowlist = defineFlows()
     definePOUs(flowlist)
     writePLCOpen()

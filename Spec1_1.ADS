@@ -27,4 +27,5 @@ Transitions:
 # Example: 2 0 1 (for transition labeled 0 from state 2 to state 1).
 0     1  1    
 0     3  1    
+1     16  0    
 1     5  0    
