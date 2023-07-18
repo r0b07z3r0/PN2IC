@@ -1,0 +1,199 @@
+p 220.0 110.0 p1 1 n input1Empty w
+p 500.0 600.0 p10 0 w waitCrossing e
+p 500.0 740.0 p11 0 w conveyorCrossing e
+p 500.0 880.0 p12 0 w sortingConveyor e
+p 60.0 1990.0 p19 0 w moveBoxBB e
+p 340.0 110.0 p2 0 n input1Filled e
+p 180.0 1990.0 p20 1 n boxAlignedBB ne
+p 375.0 1350.0 p23 0 w blueLidOnPreLift e
+p 375.0 1510.0 p24 0 w waitBoxBL e
+p 375.0 1670.0 p25 0 w rampBL e
+p 375.0 1830.0 p26 0 w blueLidOnBox e
+p 375.0 1990.0 p27 0 w moveBoxBL e
+p 505.0 1990.0 p28 1 n boxAlignedBL ne
+p 280.0 230.0 p3 0 w input1Available e
+p 620.0 1510.0 p32 0 w waitBoxGB e
+p 620.0 1830.0 p34 0 w greenBaseOnBox e
+p 620.0 1990.0 p35 0 w moveBoxGB e
+p 750.0 1990.0 p36 1 n boxAlignedGB ne
+p 280.0 360.0 p4 0 w machine1On e
+p 910.0 1990.0 p43 0 w moveBoxGL e
+p 1060.0 1990.0 p44 1 n boxAlignedGL ne
+p 660.0 110.0 p5 1 n input2Empty w
+p 780.0 110.0 p6 0 w input2Filled e
+p 720.0 230.0 p7 0 w input2Available e
+p 720.0 360.0 p8 0 w machine2On e
+p 500.0 480.0 p9 0 nw PecaEsteira ne
+t 280.0 170.0 t1 c 0 w n c_machine1FeederActuator w
+t 720.0 300.0 t10 c 0 w n o_machine2BusySensor e
+t 720.0 420.0 t12 c 0 w n o_machine2OutSensor e
+t 500.0 540.0 t14 c 0 w n o_mainCrossingInSensor w
+t 375.0 1590.0 t15 c 0 w n c_liftingBlueLidStopActuator e
+t 500.0 820.0 t16 c 0 w n o_mainCrossingOutSensor e
+t 280.0 50.0 t2 c 0 w n o_machineFeeder1Sensor n
+t 620.0 1590.0 t21 c 0 w n c_liftingGreenBaseStopActuator e
+t 620.0 1910.0 t23 c 0 w n c_moveBoxConveyor e
+t 60.0 2070.0 t26 c 0 w n o_boxAlignBlueBaseSensor e
+t 720.0 170.0 t3 c 0 w n c_machine2FeederActuator w
+t 375.0 1750.0 t34 c 0 w n o_liftingBlueLidOutSensor e
+t 375.0 2070.0 t36 c 0 w n o_boxAlignBlueLidSensor e
+t 280.0 300.0 t4 c 0 w n o_machine1BusySensor e
+t 620.0 1440.0 t42 c 0 w n o_liftingGreenBaseInSensor e
+t 620.0 1750.0 t44 c 0 w n o_liftingGreenBaseOutSensor e
+t 620.0 2070.0 t46 c 0 w n o_boxAlignGreenBaseSensor e
+t 500.0 660.0 t5 c 0 w n c_stopCrossingActuator e
+t 910.0 2070.0 t56 c 0 w n o_boxAlignGreenLidSensor e
+t 280.0 420.0 t6 c 0 w n o_machine1OutSensor e
+t 720.0 50.0 t8 c 0 w n o_machineFeeder2Sensor n
+t 905.0 925.0 t48 c 0 w n o_greenLidVisionSensor ne
+p 500.0 1025.0 p0 0 n sortColorsHold ne
+p 620.0 1670.0 p33 0 w rampGB e
+t 910.0 1755.0 t54 c 0 w n o_liftingGreenLidOutSensor e
+p 905.0 1680.0 p51 0 w rampGL e
+t 905.0 1590.0 t33 c 0 w n c_liftingGreenLidStopActuator e
+p 905.0 1510.0 p50 0 w waitBoxGL e
+t 905.0 1440.0 t25 c 0 w n o_liftingGreenLidBaseInSensor e
+p 905.0 1350.0 p49 0 w greenLidOnPreLift e
+t 905.0 1230.0 t19 c 0 w n c_sendGLconveyor e
+t 620.0 1230.0 t13 c 0 w n c_sendGBconveyor e
+t 765.0 1200.0 t0 c 0 w n c_sendGconveyor e
+p 765.0 1045.0 p46 0 w greenPiece e
+t 620.0 945.0 t38 c 0 w n o_greenBaseVisionSensor e
+t 375.0 1910.0 t17 c 0 w n c_moveBoxConveyor e
+t 60.0 1920.0 t11 c 0 w n c_moveBoxConveyor e
+t 910.0 1915.0 t29 c 0 w n c_moveBoxConveyor e
+p 910.0 1830.0 p42 0 w greenLidOnBox e
+p 60.0 1830.0 p18 0 w blueBaseOnBox e
+t 60.0 1750.0 t24 c 0 w n o_liftingBlueBaseOutSensor e
+p 60.0 1675.0 p17 0 w rampBB e
+t 60.0 1590.0 t9 c 0 w n c_liftingBlueBaseStopActuator e
+p 60.0 1510.0 p16 0 w waitBoxBB e
+t 60.0 1440.0 t22 c 0 w n o_liftingBlueBaseInSensor e
+p 60.0 1350.0 p15 0 w blueBaseOnPreLift e
+t 60.0 920.0 t18 c 0 w n o_blueBaseVisionSensor ne
+p 200.0 1040.0 p45 0 w bluePiece e
+t 375.0 950.0 t28 c 0 w n o_blueLidVisionSensor e
+p 620.0 1350.0 p48 0 w greenBaseOnPreLift e
+p 60.0 1140.0 p13 0 w blueBaseOnConveyor e
+p 375.0 1150.0 p21 0 w blueLidOnConveyor e
+p 620.0 1150.0 p29 0 w greenBaseOnConveyor e
+p 905.0 1150.0 p37 0 w greenLidOnConveyor e
+p 765.0 1270.0 p30 0 w onWayGconveyor e
+t 765.0 1335.0 t40 c 0 w n o_sortingGreenSensor e
+p 765.0 1405.0 p31 0 w sortingGreenConveyor e
+t 375.0 1435.0 t32 c 0 w n o_liftingBlueLidInSensor e
+p 200.0 1400.0 p52 0 w sortingBlueConveyor e
+t 200.0 1325.0 t35 c 0 w n o_sortingBlueSensor e
+p 200.0 1265.0 p14 0 w onWayBconveyor e
+t 200.0 1190.0 t7 c 0 w n c_sendBconveyor e
+t 60.0 1225.0 t20 c 0 w n c_sendGBconveyor e
+t 375.0 1225.0 t30 c 0 w n c_sendBLconveyor e
+e p42 t29 1 n
+e t54 p42 1 n
+e p34 t23 1 n
+e p28 t17 1 n
+e t44 p34 1 n
+e p26 t17 1 n
+e t34 p26 1 n
+e p18 t11 1 n
+e t24 p18 1 n
+e p44 t29 1 n
+e p27 t36 1 n
+e t11 p19 1 n
+e p20 t11 1 n
+e p12 t28 1 n
+e t26 p20 1 n
+e t9 p17 1 n
+e p19 t26 1 n
+e t29 p43 1 n
+e t48 p37 1 n
+e t56 p44 1 n
+e p12 t18 1 n
+e p17 t24 1 n
+e p43 t56 1 n
+e t38 p29 1 n
+e t23 p35 1 n
+e t14 p10 1 n
+e p30 t40 1 n
+e t21 p33 1 n
+e t36 p28 1 n
+e p33 t44 1 n
+e t40 p31 1 n
+e p31 t42 1 n
+e t42 p32 1 n
+e p32 t21 1 n
+e t28 p21 1 n
+e p10 t5 1 n
+e p36 t23 1 n
+e p24 t15 1 n
+e t32 p24 1 n
+e p23 t32 1 n
+e t20 p15 1 n
+e t30 p23 1 n
+e p25 t34 1 n
+e t15 p25 1 n
+e t5 p11 1 n
+e p1 t2 1 n
+e t46 p36 1 n
+e t2 p2 1 n
+e p2 t1 1 n
+e p15 t22 1 n
+e t1 p1 1 n
+e t1 p3 1 n
+e p3 t4 1 n
+e t4 p4 1 n
+e p4 t6 1 n
+e t6 p9 1 n
+e p35 t46 1 n
+e t12 p9 1 n
+e p8 t12 1 n
+e t10 p8 1 n
+e t22 p16 1 n
+e p7 t10 1 n
+e t3 p7 1 n
+e t3 p5 1 n
+e t7 p14 1 n
+e p6 t3 1 n
+e t8 p6 1 n
+e p5 t8 1 n
+e p9 t14 1 n
+e t17 p27 1 n
+e p11 t16 1 n
+e t16 p12 1 n
+e p16 t9 1 n
+e p12 t48 1 n
+e p12 t38 1 n
+e t18 p13 1 n
+e t28 p0 1 n
+e t18 p0 1 n
+e t38 p0 1 n
+e t48 p0 1 n
+e p0 t7 1 n
+e t28 p45 1 n
+e t18 p45 1 n
+e p45 t7 1 n
+e t38 p46 1 n
+e t48 p46 1 n
+e p46 t0 1 n
+e t0 p30 1 n
+e p0 t0 1 n
+e p29 t13 1 n
+e p37 t19 1 n
+e t13 p48 1 n
+e t19 p49 1 n
+e p31 t25 1 n
+e p48 t42 1 n
+e p49 t25 1 n
+e t33 p51 1 n
+e p51 t54 1 n
+e t25 p50 1 n
+e p50 t33 1 n
+e p13 t20 1 n
+e p21 t30 1 n
+e p14 t35 1 n
+e t35 p52 1 n
+e p52 t22 1 n
+e p52 t32 1 n
+h celulaRobotizada_v14
+
+

@@ -1,0 +1,72 @@
+p 715.0 350.0 p8 0 w maquina2EmTrabalho e
+p 450.0 520.0 p9 0 nw pecaNaEsteiraCompartilhada w
+t 715.0 290.0 t10 c 0 w n o_sensorMaquina2EmTrabalho w
+t 650.0 560.0 t14 c 0 w n o_sensorMetal s
+t 890.0 560.0 t16 c 0 w n o_sensorDescarte e
+t 450.0 620.0 t18 c 0 w n o_sensorCruzamentoEsteira w
+t 230.0 290.0 t4 c 0 w n o_sensorMaquina1EmTrabalho e
+t 450.0 795.0 t5 c 0 w n c_atuadorBloqueioPeca w
+t 450.0 945.0 t20 c 0 w n o_sensorSaidaCruzamentoPeca w
+p 765.0 515.0 p10 1 n bracoPivoDesligado e
+p 765.0 625.0 p11 0 n bracoPivoAtuado e
+p 450.0 705.0 p12 0 e pecaEsperaPassagem w
+p 750.0 715.0 p16 0 w palletEsperaPassagem n
+p 535.0 870.0 p14 1 w cruzamentoLivre e
+p 370.0 870.0 p13 0 e pecaCruzandoEsteira w
+t 750.0 790.0 t7 c 0 w n c_atuadorBloqueioPallet e
+p 750.0 860.0 p17 0 w esteiraPalletOcupada e
+p 990.0 935.0 p15 1 n esteiraPalletLivre e
+t 750.0 935.0 t24 c 0 w n o_saidaCruzamentoPallet w
+t 990.0 715.0 t22 c 0 w n o_sensorCruzamentoPallet e
+t 835.0 50.0 t8 c 0 w n o_sensorEsteiraAlimentadora2 e
+p 835.0 290.0 p5 1 e esteiraAlimentadora2Vazia ne
+t 715.0 120.0 t3 c 0 w n c_atuadorAlimentador2 w
+p 715.0 205.0 p7 0 e maquina2Alimentada w
+t 715.0 445.0 t12 c 0 w n o_sensorSaidaMaquina2 e
+p 715.0 50.0 p6 0 n esteiraAlimentadora2Cheia w
+p 230.0 360.0 p4 0 w maquina1EmTrabalho e
+t 230.0 445.0 t6 c 0 w n o_sensorSaidaMaquina1 e
+p 230.0 210.0 p3 0 w maquina1Alimentada e
+p 105.0 290.0 p1 1 w esteiraAlimentadora1Vazia s
+t 105.0 55.0 t2 c 0 w n o_sensorEsteiraAlimentadora1 n
+p 230.0 55.0 p2 0 n esteiraAlimentadora1Cheia e
+t 230.0 130.0 t1 c 0 w n c_atuadorAlimentador1 e
+e t4 p1 1 n
+e t10 p5 1 n
+e p14 t5 1 n
+e p1 t2 1 n
+e t2 p2 1 n
+e p2 t1 1 n
+e t1 p3 1 n
+e p3 t4 1 n
+e t4 p4 1 n
+e p4 t6 1 n
+e t6 p9 1 n
+e p9 t14 1 n
+e t14 p11 1 n
+e t12 p9 1 n
+e p8 t12 1 n
+e t10 p8 1 n
+e p7 t10 1 n
+e t3 p7 1 n
+e p6 t3 1 n
+e t8 p6 1 n
+e p5 t8 1 n
+e p9 t18 1 n
+e p10 t14 1 n
+e p11 t16 1 n
+e t16 p10 1 n
+e p15 t22 1 n
+e p17 t24 1 n
+e t24 p15 1 n
+e p13 t20 1 n
+e t20 p14 1 n
+e t18 p12 1 n
+e p12 t5 1 n
+e t5 p13 1 n
+e t22 p16 1 n
+e p16 t7 1 n
+e t7 p17 1 n
+h maquinasCompartilhaEsteira
+
+
